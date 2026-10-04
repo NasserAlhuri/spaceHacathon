@@ -1,10 +1,14 @@
 {
-  "status": "python_cells_passed_normal_kernel_blocked",
-  "runtime_seconds": 3.5,
+  "status": "passed_normal_jupyter_kernel",
+  "runtime_seconds": 3.9,
   "executed_code_cells": 5,
   "errors": 0,
-  "environment": "Fresh Python 3.12 virtual environment with pinned dependencies; copied source and empty generated-output directories",
-  "kernel_limit": "Normal Jupyter kernel startup fails due workspace networking restrictions. It is not marked as passed.",
-  "second_physical_machine": false,
-  "required_next_check": "Run python src/check_notebook.py in normal Jupyter on another machine or Colab."
+  "sample_hashes_verified": 35,
+  "python_version": "3.12.14",
+  "system": "Linux",
+  "environment": "GitHub-hosted runner",
+  "separate_execution_environment": true,
+  "review_note": "Kernel execution verifies reproducibility, not independent scientific accuracy.",
+  "source_commit": "868c08a00bb31c81620485c27a83a8f190f87b36",
+  "workflow_run_url": "https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37223755463"
 }
