@@ -1,0 +1,120 @@
+{
+  "scope": "Exploratory shortlist for site investigation; not a heat-health risk model or intervention prescription.",
+  "score": "0.50 heat percentile + 0.30 inverse green-pixel percentile + 0.20 mapped-building percentile; 0-100 relative only within this pilot.",
+  "osm_download_date": "2026-10-04",
+  "osm_scope": "Closed tagged ways only, center-pixel rasterisation; multipolygon relations and unmapped buildings may be missed. Not total building density or paved area.",
+  "osm_polygon_counts": {
+    "building": 396,
+    "water": 20,
+    "grass": 6
+  },
+  "reference_checks": [
+    {
+      "reference_class": "building",
+      "eligible_core_10m_pixels": 1010,
+      "spaced_samples": 30,
+      "screened_water_percent": 0.0,
+      "ndvi_green_percent": 3.3,
+      "worldcover_built_up_percent": 83.3
+    },
+    {
+      "reference_class": "water",
+      "eligible_core_10m_pixels": 14,
+      "spaced_samples": 3,
+      "screened_water_percent": 0.0,
+      "ndvi_green_percent": 0.0,
+      "worldcover_built_up_percent": 33.3
+    },
+    {
+      "reference_class": "grass",
+      "eligible_core_10m_pixels": 0,
+      "spaced_samples": 0,
+      "screened_water_percent": null,
+      "ndvi_green_percent": null,
+      "worldcover_built_up_percent": null
+    },
+    {
+      "reference_class": "coastal_water",
+      "eligible_core_10m_pixels": null,
+      "spaced_samples": 30,
+      "screened_water_percent": 100.0,
+      "ndvi_green_percent": 0.0,
+      "worldcover_built_up_percent": null
+    }
+  ],
+  "validation_limit": "OSM positive polygon checks are independent contributed reference checks for optical rules, not a representative accuracy assessment or field truth. WorldCover uses some OSM auxiliary inputs, so building agreement is not independent model validation. Reference ages vary; human confirmations pending.",
+  "common_samples": 1278,
+  "common_footprint_km2": 1.1502,
+  "reported_cells": 16,
+  "top3": [
+    {
+      "cell_id": "V02-05",
+      "common_30m_samples": 80,
+      "temp_c_2026-09-14": 45.503448486328125,
+      "vegetation_pct_2026-09-14": 6.0416669845581055,
+      "st_qa_k_2026-09-14": 1.8700000047683716,
+      "temp_c_2026-09-30": 44.8232421875,
+      "vegetation_pct_2026-09-30": 4.375,
+      "st_qa_k_2026-09-30": 1.834999918937683,
+      "mapped_building_pct": 34.93055725097656,
+      "worldcover2021_built_pct": 48.95833206176758,
+      "retained_cell_pct": 80.0,
+      "mean_date_median_temp_c": 45.16334533691406,
+      "mean_date_green_pixel_pct": 5.208333492279053,
+      "investigation_score": 91.875,
+      "investigation_rank": 1,
+      "scenario_best_rank": 1,
+      "scenario_worst_rank": 1,
+      "scenarios_eligible": 11,
+      "scenario_top3_count": 11,
+      "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+    },
+    {
+      "cell_id": "V04-04",
+      "common_30m_samples": 96,
+      "temp_c_2026-09-14": 45.077880859375,
+      "vegetation_pct_2026-09-14": 5.902778148651123,
+      "st_qa_k_2026-09-14": 1.899999976158142,
+      "temp_c_2026-09-30": 44.67626953125,
+      "vegetation_pct_2026-09-30": 6.192130088806152,
+      "st_qa_k_2026-09-30": 1.8700000047683716,
+      "mapped_building_pct": 24.681711196899414,
+      "worldcover2021_built_pct": 98.37963104248047,
+      "retained_cell_pct": 96.0,
+      "mean_date_median_temp_c": 44.8770751953125,
+      "mean_date_green_pixel_pct": 6.047454118728638,
+      "investigation_score": 81.25,
+      "investigation_rank": 2,
+      "scenario_best_rank": 2,
+      "scenario_worst_rank": 3,
+      "scenarios_eligible": 11,
+      "scenario_top3_count": 11,
+      "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+    },
+    {
+      "cell_id": "V04-03",
+      "common_30m_samples": 59,
+      "temp_c_2026-09-14": 44.170379638671875,
+      "vegetation_pct_2026-09-14": 5.118483066558838,
+      "st_qa_k_2026-09-14": 1.9499999284744263,
+      "temp_c_2026-09-30": 44.248992919921875,
+      "vegetation_pct_2026-09-30": 3.2227487564086914,
+      "st_qa_k_2026-09-30": 1.9199999570846558,
+      "mapped_building_pct": 30.28435707092285,
+      "worldcover2021_built_pct": 86.49288940429688,
+      "retained_cell_pct": 59.0,
+      "mean_date_median_temp_c": 44.209686279296875,
+      "mean_date_green_pixel_pct": 4.170615911483765,
+      "investigation_score": 78.74999999999999,
+      "investigation_rank": 3,
+      "scenario_best_rank": 2,
+      "scenario_worst_rank": 6,
+      "scenarios_eligible": 11,
+      "scenario_top3_count": 8,
+      "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+    }
+  ],
+  "sensitivity_scenarios": 11,
+  "worldcover_scope": "2021 historical CatBoost-derived land cover, not current segmentation. Class 50 merges buildings, roads and structures.",
+  "unresolved": "No independent thermal calibration, air temperature, population, shade, heat-health validation or causal cooling estimate."
+}

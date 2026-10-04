@@ -1,0 +1,837 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "V00-02",
+        "common_30m_samples": 57,
+        "temp_c_2026-09-14": 42.663055419921875,
+        "vegetation_pct_2026-09-14": 5.95121955871582,
+        "st_qa_k_2026-09-14": 1.909999966621399,
+        "temp_c_2026-09-30": 43.158660888671875,
+        "vegetation_pct_2026-09-30": 5.8479533195495605,
+        "st_qa_k_2026-09-30": 1.8899999856948853,
+        "mapped_building_pct": 18.664718627929688,
+        "worldcover2021_built_pct": 64.03508758544922,
+        "retained_cell_pct": 56.99999999999999,
+        "mean_date_median_temp_c": 42.910858154296875,
+        "mean_date_green_pixel_pct": 5.89958643913269,
+        "investigation_score": 37.5,
+        "investigation_rank": 12,
+        "scenario_best_rank": 9,
+        "scenario_worst_rank": 15,
+        "scenarios_eligible": 11,
+        "scenario_top3_count": 0,
+        "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.543893648837496,
+              25.3792595244607
+            ],
+            [
+              51.54687568709309,
+              25.379248471633243
+            ],
+            [
+              51.54686348817522,
+              25.376539406275057
+            ],
+            [
+              51.543881516430645,
+              25.376550457758427
+            ],
+            [
+              51.543893648837496,
+              25.3792595244607
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "V01-01",
+        "common_30m_samples": 50,
+        "temp_c_2026-09-14": 43.717498779296875,
+        "vegetation_pct_2026-09-14": 19.095478057861328,
+        "st_qa_k_2026-09-14": 1.9499999284744263,
+        "temp_c_2026-09-30": 43.350067138671875,
+        "vegetation_pct_2026-09-30": 16.247907638549805,
+        "st_qa_k_2026-09-30": 1.9199999570846558,
+        "mapped_building_pct": 24.90228843688965,
+        "worldcover2021_built_pct": 58.3472900390625,
+        "retained_cell_pct": 50.0,
+        "mean_date_median_temp_c": 43.533782958984375,
+        "mean_date_green_pixel_pct": 17.671692848205566,
+        "investigation_score": 48.125,
+        "investigation_rank": 8,
+        "scenario_best_rank": 5,
+        "scenario_worst_rank": 11,
+        "scenarios_eligible": 11,
+        "scenario_top3_count": 0,
+        "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.5408995429356,
+              25.376561448821025
+            ],
+            [
+              51.543881516430645,
+              25.376550457758427
+            ],
+            [
+              51.54386938577425,
+              25.373841390053403
+            ],
+            [
+              51.5408874787808,
+              25.37385237977933
+            ],
+            [
+              51.5408995429356,
+              25.376561448821025
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "V01-02",
+        "common_30m_samples": 74,
+        "temp_c_2026-09-14": 43.884979248046875,
+        "vegetation_pct_2026-09-14": 22.86035919189453,
+        "st_qa_k_2026-09-14": 1.9199999570846558,
+        "temp_c_2026-09-30": 44.173797607421875,
+        "vegetation_pct_2026-09-30": 21.875003814697266,
+        "st_qa_k_2026-09-30": 1.8899999856948853,
+        "mapped_building_pct": 18.2228946685791,
+        "worldcover2021_built_pct": 79.63103485107422,
+        "retained_cell_pct": 74.0,
+        "mean_date_median_temp_c": 44.029388427734375,
+        "mean_date_green_pixel_pct": 22.3676815032959,
+        "investigation_score": 45.0,
+        "investigation_rank": 9,
+        "scenario_best_rank": 7,
+        "scenario_worst_rank": 11,
+        "scenarios_eligible": 11,
+        "scenario_top3_count": 0,
+        "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.543881516430645,
+              25.376550457758427
+            ],
+            [
+              51.54686348817522,
+              25.376539406275057
+            ],
+            [
+              51.54685129101741,
+              25.373830339914065
+            ],
+            [
+              51.54386938577425,
+              25.373841390053403
+            ],
+            [
+              51.543881516430645,
+              25.376550457758427
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "V01-05",
+        "common_30m_samples": 79,
+        "temp_c_2026-09-14": 44.5361328125,
+        "vegetation_pct_2026-09-14": 42.01828384399414,
+        "st_qa_k_2026-09-14": 1.8899999856948853,
+        "temp_c_2026-09-30": 44.43359375,
+        "vegetation_pct_2026-09-30": 40.611812591552734,
+        "st_qa_k_2026-09-30": 1.8499999046325684,
+        "mapped_building_pct": 8.016877174377441,
+        "worldcover2021_built_pct": 41.31504440307617,
+        "retained_cell_pct": 79.0,
+        "mean_date_median_temp_c": 44.48486328125,
+        "mean_date_green_pixel_pct": 41.31504821777344,
+        "investigation_score": 48.75,
+        "investigation_rank": 7,
+        "scenario_best_rank": 3,
+        "scenario_worst_rank": 13,
+        "scenarios_eligible": 11,
+        "scenario_top3_count": 1,
+        "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.552827426374584,
+              25.376517122046565
+            ],
+            [
+              51.55580939281018,
+              25.376505889301722
+            ],
+            [
+              51.55579699614915,
+              25.373796827016907
+            ],
+            [
+              51.55281509621445,
+              25.373808058395678
+            ],
+            [
+              51.552827426374584,
+              25.376517122046565
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "V02-00",
+        "common_30m_samples": 44,
+        "temp_c_2026-09-14": 43.505584716796875,
+        "vegetation_pct_2026-09-14": 34.60075759887695,
+        "st_qa_k_2026-09-14": 1.9299999475479126,
+        "temp_c_2026-09-30": 42.898895263671875,
+        "vegetation_pct_2026-09-30": 30.412696838378906,
+        "st_qa_k_2026-09-30": 1.899999976158142,
+        "mapped_building_pct": 21.46031951904297,
+        "worldcover2021_built_pct": 80.0,
+        "retained_cell_pct": 44.0,
+        "mean_date_median_temp_c": 43.202239990234375,
+        "mean_date_green_pixel_pct": 32.50672721862793,
+        "investigation_score": 34.375,
+        "investigation_rank": 13,
+        "scenario_best_rank": 10,
+        "scenario_worst_rank": 14,
+        "scenarios_eligible": 9,
+        "scenario_top3_count": 0,
+        "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.53790557004664,
+              25.373863309091693
+            ],
+            [
+              51.5408874787808,
+              25.37385237977933
+            ],
+            [
+              51.5408754163667,
+              25.37114330973502
+            ],
+            [
+              51.537893574124716,
+              25.371154237718113
+            ],
+            [
+              51.53790557004664,
+              25.373863309091693
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "V02-03",
+        "common_30m_samples": 34,
+        "temp_c_2026-09-14": 43.751678466796875,
+        "vegetation_pct_2026-09-14": 46.40523147583008,
+        "st_qa_k_2026-09-14": 1.9399999380111694,
+        "temp_c_2026-09-30": 43.835418701171875,
+        "vegetation_pct_2026-09-30": 39.46078109741211,
+        "st_qa_k_2026-09-30": 1.9199999570846558,
+        "mapped_building_pct": 5.882352828979492,
+        "worldcover2021_built_pct": 59.967315673828125,
+        "retained_cell_pct": 34.0,
+        "mean_date_median_temp_c": 43.793548583984375,
+        "mean_date_green_pixel_pct": 42.933006286621094,
+        "investigation_score": 26.875,
+        "investigation_rank": 14,
+        "scenario_best_rank": 9,
+        "scenario_worst_rank": 15,
+        "scenarios_eligible": 9,
+        "scenario_top3_count": 0,
+        "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.54685129101741,
+              25.373830339914065
+            ],
+            [
+              51.54983319450068,
+              25.373819229361438
+            ],
+            [
+              51.54982093261111,
+              25.371110163349048
+            ],
+            [
+              51.546839095619504,
+              25.371121272550354
+            ],
+            [
+              51.54685129101741,
+              25.373830339914065
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "V02-04",
+        "common_30m_samples": 76,
+        "temp_c_2026-09-14": 43.522674560546875,
+        "vegetation_pct_2026-09-14": 52.08333206176758,
+        "st_qa_k_2026-09-14": 1.8799999952316284,
+        "temp_c_2026-09-30": 43.126190185546875,
+        "vegetation_pct_2026-09-30": 47.25877380371094,
+        "st_qa_k_2026-09-30": 1.8499999046325684,
+        "mapped_building_pct": 15.387428283691406,
+        "worldcover2021_built_pct": 71.08918762207031,
+        "retained_cell_pct": 76.0,
+        "mean_date_median_temp_c": 43.324432373046875,
+        "mean_date_green_pixel_pct": 49.67105293273926,
+        "investigation_score": 22.5,
+        "investigation_rank": 15,
+        "scenario_best_rank": 11,
+        "scenario_worst_rank": 16,
+        "scenarios_eligible": 11,
+        "scenario_top3_count": 0,
+        "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.54983319450068,
+              25.373819229361438
+            ],
+            [
+              51.55281509621445,
+              25.373808058395678
+            ],
+            [
+              51.552802767833406,
+              25.37109899374195
+            ],
+            [
+              51.54982093261111,
+              25.371110163349048
+            ],
+            [
+              51.54983319450068,
+              25.373819229361438
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "V02-05",
+        "common_30m_samples": 80,
+        "temp_c_2026-09-14": 45.503448486328125,
+        "vegetation_pct_2026-09-14": 6.0416669845581055,
+        "st_qa_k_2026-09-14": 1.8700000047683716,
+        "temp_c_2026-09-30": 44.8232421875,
+        "vegetation_pct_2026-09-30": 4.375,
+        "st_qa_k_2026-09-30": 1.834999918937683,
+        "mapped_building_pct": 34.93055725097656,
+        "worldcover2021_built_pct": 48.95833206176758,
+        "retained_cell_pct": 80.0,
+        "mean_date_median_temp_c": 45.16334533691406,
+        "mean_date_green_pixel_pct": 5.208333492279053,
+        "investigation_score": 91.875,
+        "investigation_rank": 1,
+        "scenario_best_rank": 1,
+        "scenario_worst_rank": 1,
+        "scenarios_eligible": 11,
+        "scenario_top3_count": 11,
+        "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.55281509621445,
+              25.373808058395678
+            ],
+            [
+              51.55579699614915,
+              25.373796827016907
+            ],
+            [
+              51.55578460127679,
+              25.371087763729196
+            ],
+            [
+              51.552802767833406,
+              25.37109899374195
+            ],
+            [
+              51.55281509621445,
+              25.373808058395678
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "V03-03",
+        "common_30m_samples": 35,
+        "temp_c_2026-09-14": 43.179168701171875,
+        "vegetation_pct_2026-09-14": 5.905825614929199,
+        "st_qa_k_2026-09-14": 1.96999990940094,
+        "temp_c_2026-09-30": 42.823699951171875,
+        "vegetation_pct_2026-09-30": 3.3412888050079346,
+        "st_qa_k_2026-09-30": 1.9399999380111694,
+        "mapped_building_pct": 17.740652084350586,
+        "worldcover2021_built_pct": 85.99840545654297,
+        "retained_cell_pct": 35.0,
+        "mean_date_median_temp_c": 43.001434326171875,
+        "mean_date_green_pixel_pct": 4.623557209968567,
+        "investigation_score": 41.87499999999999,
+        "investigation_rank": 10,
+        "scenario_best_rank": 5,
+        "scenario_worst_rank": 14,
+        "scenarios_eligible": 9,
+        "scenario_top3_count": 0,
+        "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.546839095619504,
+              25.371121272550354
+            ],
+            [
+              51.54982093261111,
+              25.371110163349048
+            ],
+            [
+              51.549808672490855,
+              25.36840109633396
+            ],
+            [
+              51.546826901981305,
+              25.36841220418401
+            ],
+            [
+              51.546839095619504,
+              25.371121272550354
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "V03-04",
+        "common_30m_samples": 96,
+        "temp_c_2026-09-14": 44.838623046875,
+        "vegetation_pct_2026-09-14": 12.297454833984375,
+        "st_qa_k_2026-09-14": 1.899999976158142,
+        "temp_c_2026-09-30": 44.095184326171875,
+        "vegetation_pct_2026-09-30": 10.445603370666504,
+        "st_qa_k_2026-09-30": 1.8600000143051147,
+        "mapped_building_pct": 35.82175827026367,
+        "worldcover2021_built_pct": 97.16435241699219,
+        "retained_cell_pct": 96.0,
+        "mean_date_median_temp_c": 44.46690368652344,
+        "mean_date_green_pixel_pct": 11.37152910232544,
+        "investigation_score": 74.375,
+        "investigation_rank": 4,
+        "scenario_best_rank": 3,
+        "scenario_worst_rank": 4,
+        "scenarios_eligible": 11,
+        "scenario_top3_count": 2,
+        "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.54982093261111,
+              25.371110163349048
+            ],
+            [
+              51.552802767833406,
+              25.37109899374195
+            ],
+            [
+              51.55279044123127,
+              25.368389928085467
+            ],
+            [
+              51.549808672490855,
+              25.36840109633396
+            ],
+            [
+              51.54982093261111,
+              25.371110163349048
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "V03-05",
+        "common_30m_samples": 46,
+        "temp_c_2026-09-14": 43.071502685546875,
+        "vegetation_pct_2026-09-14": 40.448753356933594,
+        "st_qa_k_2026-09-14": 1.8849999904632568,
+        "temp_c_2026-09-30": 42.391326904296875,
+        "vegetation_pct_2026-09-30": 36.93803787231445,
+        "st_qa_k_2026-09-30": 1.8499999046325684,
+        "mapped_building_pct": 19.866344451904297,
+        "worldcover2021_built_pct": 69.2588119506836,
+        "retained_cell_pct": 46.0,
+        "mean_date_median_temp_c": 42.731414794921875,
+        "mean_date_green_pixel_pct": 38.69339561462402,
+        "investigation_score": 18.75,
+        "investigation_rank": 16,
+        "scenario_best_rank": 13,
+        "scenario_worst_rank": 16,
+        "scenarios_eligible": 10,
+        "scenario_top3_count": 0,
+        "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.552802767833406,
+              25.37109899374195
+            ],
+            [
+              51.55578460127679,
+              25.371087763729196
+            ],
+            [
+              51.555772208192934,
+              25.36837869943867
+            ],
+            [
+              51.55279044123127,
+              25.368389928085467
+            ],
+            [
+              51.552802767833406,
+              25.37109899374195
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "V04-03",
+        "common_30m_samples": 59,
+        "temp_c_2026-09-14": 44.170379638671875,
+        "vegetation_pct_2026-09-14": 5.118483066558838,
+        "st_qa_k_2026-09-14": 1.9499999284744263,
+        "temp_c_2026-09-30": 44.248992919921875,
+        "vegetation_pct_2026-09-30": 3.2227487564086914,
+        "st_qa_k_2026-09-30": 1.9199999570846558,
+        "mapped_building_pct": 30.28435707092285,
+        "worldcover2021_built_pct": 86.49288940429688,
+        "retained_cell_pct": 59.0,
+        "mean_date_median_temp_c": 44.209686279296875,
+        "mean_date_green_pixel_pct": 4.170615911483765,
+        "investigation_score": 78.74999999999999,
+        "investigation_rank": 3,
+        "scenario_best_rank": 2,
+        "scenario_worst_rank": 6,
+        "scenarios_eligible": 11,
+        "scenario_top3_count": 8,
+        "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.546826901981305,
+              25.36841220418401
+            ],
+            [
+              51.549808672490855,
+              25.36840109633396
+            ],
+            [
+              51.54979641413975,
+              25.365692028316246
+            ],
+            [
+              51.546814710102666,
+              25.365703134815092
+            ],
+            [
+              51.546826901981305,
+              25.36841220418401
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "V04-04",
+        "common_30m_samples": 96,
+        "temp_c_2026-09-14": 45.077880859375,
+        "vegetation_pct_2026-09-14": 5.902778148651123,
+        "st_qa_k_2026-09-14": 1.899999976158142,
+        "temp_c_2026-09-30": 44.67626953125,
+        "vegetation_pct_2026-09-30": 6.192130088806152,
+        "st_qa_k_2026-09-30": 1.8700000047683716,
+        "mapped_building_pct": 24.681711196899414,
+        "worldcover2021_built_pct": 98.37963104248047,
+        "retained_cell_pct": 96.0,
+        "mean_date_median_temp_c": 44.8770751953125,
+        "mean_date_green_pixel_pct": 6.047454118728638,
+        "investigation_score": 81.25,
+        "investigation_rank": 2,
+        "scenario_best_rank": 2,
+        "scenario_worst_rank": 3,
+        "scenarios_eligible": 11,
+        "scenario_top3_count": 11,
+        "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.549808672490855,
+              25.36840109633396
+            ],
+            [
+              51.55279044123127,
+              25.368389928085467
+            ],
+            [
+              51.55277811640786,
+              25.365680861426302
+            ],
+            [
+              51.54979641413975,
+              25.365692028316246
+            ],
+            [
+              51.549808672490855,
+              25.36840109633396
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "V05-02",
+        "common_30m_samples": 74,
+        "temp_c_2026-09-14": 42.996307373046875,
+        "vegetation_pct_2026-09-14": 13.549115180969238,
+        "st_qa_k_2026-09-14": 1.9499999284744263,
+        "temp_c_2026-09-30": 43.298797607421875,
+        "vegetation_pct_2026-09-30": 12.669684410095215,
+        "st_qa_k_2026-09-30": 1.9199999570846558,
+        "mapped_building_pct": 23.07692527770996,
+        "worldcover2021_built_pct": 78.7330322265625,
+        "retained_cell_pct": 74.0,
+        "mean_date_median_temp_c": 43.147552490234375,
+        "mean_date_green_pixel_pct": 13.109399795532227,
+        "investigation_score": 38.125,
+        "investigation_rank": 11,
+        "scenario_best_rank": 6,
+        "scenario_worst_rank": 13,
+        "scenarios_eligible": 11,
+        "scenario_top3_count": 0,
+        "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.5438330043062,
+              25.3657141809227
+            ],
+            [
+              51.546814710102666,
+              25.365703134815092
+            ],
+            [
+              51.5468025199834,
+              25.362994064443694
+            ],
+            [
+              51.54382088064999,
+              25.363005109207506
+            ],
+            [
+              51.5438330043062,
+              25.3657141809227
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "V05-03",
+        "common_30m_samples": 82,
+        "temp_c_2026-09-14": 43.980682373046875,
+        "vegetation_pct_2026-09-14": 9.41734504699707,
+        "st_qa_k_2026-09-14": 1.909999966621399,
+        "temp_c_2026-09-30": 44.394287109375,
+        "vegetation_pct_2026-09-30": 7.926829814910889,
+        "st_qa_k_2026-09-30": 1.8799999952316284,
+        "mapped_building_pct": 17.581300735473633,
+        "worldcover2021_built_pct": 92.716796875,
+        "retained_cell_pct": 82.0,
+        "mean_date_median_temp_c": 44.18748474121094,
+        "mean_date_green_pixel_pct": 8.67208743095398,
+        "investigation_score": 55.00000000000001,
+        "investigation_rank": 6,
+        "scenario_best_rank": 5,
+        "scenario_worst_rank": 7,
+        "scenarios_eligible": 11,
+        "scenario_top3_count": 0,
+        "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.546814710102666,
+              25.365703134815092
+            ],
+            [
+              51.54979641413975,
+              25.365692028316246
+            ],
+            [
+              51.54978415755761,
+              25.36298295929599
+            ],
+            [
+              51.5468025199834,
+              25.362994064443694
+            ],
+            [
+              51.546814710102666,
+              25.365703134815092
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cell_id": "V05-04",
+        "common_30m_samples": 51,
+        "temp_c_2026-09-14": 44.156707763671875,
+        "vegetation_pct_2026-09-14": 10.076251983642578,
+        "st_qa_k_2026-09-14": 1.9799998998641968,
+        "temp_c_2026-09-30": 44.354949951171875,
+        "vegetation_pct_2026-09-30": 9.85838794708252,
+        "st_qa_k_2026-09-30": 1.9499999284744263,
+        "mapped_building_pct": 11.601306915283203,
+        "worldcover2021_built_pct": 95.04357147216797,
+        "retained_cell_pct": 51.0,
+        "mean_date_median_temp_c": 44.255828857421875,
+        "mean_date_green_pixel_pct": 9.967319965362549,
+        "investigation_score": 56.875,
+        "investigation_rank": 5,
+        "scenario_best_rank": 5,
+        "scenario_worst_rank": 9,
+        "scenarios_eligible": 11,
+        "scenario_top3_count": 0,
+        "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.54979641413975,
+              25.365692028316246
+            ],
+            [
+              51.55277811640786,
+              25.365680861426302
+            ],
+            [
+              51.55276579336302,
+              25.362971793764537
+            ],
+            [
+              51.54978415755761,
+              25.36298295929599
+            ],
+            [
+              51.54979641413975,
+              25.365692028316246
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

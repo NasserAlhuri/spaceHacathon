@@ -1,0 +1,19 @@
+{
+  "osm": {
+    "provider": "OpenStreetMap contributors",
+    "downloaded_date": "2026-10-04",
+    "query_url": "https://api.openstreetmap.org/api/0.6/map?bbox=51.537,25.359,51.557,25.380",
+    "filter": "Keep building, natural=water/coastline and landuse=grass ways, node coordinates and edit timestamps. Drop contributor identifiers, contacts, unrelated objects and tags.",
+    "licence": "ODbL 1.0",
+    "licence_url": "https://www.openstreetmap.org/copyright",
+    "exact_reproduction": "Use packaged snapshot; live API database changes."
+  },
+  "worldcover": {
+    "id": "ESA_WorldCover_10m_2021_v200_N24E051",
+    "reference_year": 2021,
+    "version": "v200",
+    "licence": "CC BY 4.0",
+    "doi": "https://doi.org/10.5281/zenodo.7254220",
+    "processing": "Source COG crop in original geographic CRS, nearest neighbour onto 10 m UTM grid."
+  }
+}

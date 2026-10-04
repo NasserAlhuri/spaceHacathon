@@ -1,0 +1,64 @@
+sample_id,reference_class,reference_source,longitude,latitude,optical_row,optical_column,screened_water,ndvi,ndvi_green_at_0_3,worldcover2021_class,human_confirmed
+building-01,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.549314568813074,25.369035067615844,111,114,0,0.02417433261871338,0,50,pending
+building-02,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.5547939562083,25.37181393087493,80,169,0,0.02333931438624859,0,60,pending
+building-03,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.544622459828155,25.364447008023483,162,67,0,0.10990447551012039,0,50,pending
+building-04,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.54900129323576,25.365694995954186,148,111,0,0.03931988403201103,0,50,pending
+building-05,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.5397768584711,25.369973392800556,101,18,0,0.08703666925430298,0,60,pending
+building-06,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.53936605410949,25.366994870908535,134,14,0,0.07152355462312698,0,50,pending
+building-07,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.544643507619995,25.36914273014611,110,67,0,0.011982325464487076,0,50,pending
+building-08,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.54694174273934,25.371843321266564,80,90,0,0.16032809019088745,0,60,pending
+building-09,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.53978087070507,25.3708764165676,91,18,0,0.05761924758553505,0,50,pending
+building-10,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.54342615523545,25.363638694145212,171,55,0,0.0860888659954071,0,50,pending
+building-11,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.55259329955707,25.368751883338664,114,147,0,0.03742533177137375,0,50,pending
+building-12,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.55208895078335,25.367128308281337,132,142,0,0.013863105326890945,0,50,pending
+building-13,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.55488386463826,25.369736606850406,103,170,0,0.07286672294139862,0,50,pending
+building-14,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.53822216830467,25.378016126168035,12,2,0,0.10518261045217514,0,60,pending
+building-15,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.5436503855455,25.369327009362642,108,57,0,0.3511192798614502,1,50,pending
+building-16,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.53877491152549,25.36817098643486,121,8,0,0.05670568719506264,0,50,pending
+building-17,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.55020337925037,25.36776749498489,125,123,0,0.019418511539697647,0,50,pending
+building-18,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.54278328363325,25.37547086767217,40,48,0,0.08205730468034744,0,60,pending
+building-19,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.54803590443009,25.372019858504633,78,101,0,0.02705930359661579,0,50,pending
+building-20,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.54427466140269,25.375555663075087,39,63,0,0.12313937395811081,0,50,pending
+building-21,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.54701186438494,25.365341186947717,152,91,0,-0.008217794820666313,0,50,pending
+building-22,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.53878332111714,25.370067336994925,100,8,0,0.10022152215242386,0,50,pending
+building-23,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.55310876323706,25.37281361443642,69,152,0,0.016367478296160698,0,50,pending
+building-24,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.55081037417348,25.37011312256841,99,129,0,0.20515021681785583,0,50,pending
+building-25,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.55337980294748,25.366852549692013,135,155,0,-0.03181047737598419,0,50,pending
+building-26,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.54860903295019,25.36687040799475,135,107,0,0.04182910919189453,0,50,pending
+building-27,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.55260726508615,25.37182215762497,80,147,0,0.03344767540693283,0,50,pending
+building-28,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.55289599767874,25.369744087701193,103,150,0,0.07437311857938766,0,50,pending
+building-29,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.545722634852595,25.365978099098015,145,78,0,0.04778817296028137,0,50,pending
+building-30,building,"OSM contributed polygon interior, downloaded 2026-10-04",51.54991950960294,25.370929187568546,90,120,0,0.0658877044916153,0,50,pending
+water-01,water,"OSM contributed polygon interior, downloaded 2026-10-04",51.55349564914363,25.37046426365264,95,156,0,0.12418299913406372,0,50,pending
+water-02,water,"OSM contributed polygon interior, downloaded 2026-10-04",51.54567637988246,25.377808064995474,14,77,0,-0.10531593859195709,0,80,pending
+water-03,water,"OSM contributed polygon interior, downloaded 2026-10-04",51.538093963608716,25.371514720627832,84,1,0,0.08071751892566681,0,80,pending
+coastal-water-01,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.5392109599242,25.376838557194127,25,12,1,-0.1467473804950714,0,80,pending
+coastal-water-02,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.54046417891574,25.368074489492756,122,25,1,-0.08808290213346481,0,80,pending
+coastal-water-03,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.54245161953506,25.36797687462309,123,45,1,-0.10106385499238968,0,80,pending
+coastal-water-04,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.554051248071694,25.361522100434062,194,162,1,-0.17041799426078796,0,80,pending
+coastal-water-05,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.54313888725335,25.366077959186125,144,52,1,-0.11533588916063309,0,80,pending
+coastal-water-06,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.54845998936111,25.377888019889784,13,105,1,-0.10407236963510513,0,80,pending
+coastal-water-07,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.54266452087706,25.371136723950183,88,47,1,-0.07975460588932037,0,80,pending
+coastal-water-08,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.53885347990461,25.363474895353075,173,9,1,-0.14242880046367645,0,80,pending
+coastal-water-09,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.54649704688926,25.36136972885253,196,86,1,-0.14497041702270508,0,80,pending
+coastal-water-10,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.5493570411398,25.378426495618985,7,114,1,-0.10461541265249252,0,80,pending
+coastal-water-11,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.55133767227752,25.37679362213932,25,134,1,-0.07411633431911469,0,80,pending
+coastal-water-12,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.540207765468175,25.377467027603103,18,22,1,-0.16513760387897491,0,80,pending
+coastal-water-13,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.554824892518006,25.37858658768557,5,169,1,-0.1145833358168602,0,80,pending
+coastal-water-14,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.542064123494036,25.370235898235073,98,41,1,-0.07736393064260483,0,80,pending
+coastal-water-15,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.55475602290708,25.36350612996105,172,169,1,-0.11428571492433548,0,80,pending
+coastal-water-16,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.544233800814226,25.36643513050472,140,63,1,-0.08680947124958038,0,80,pending
+coastal-water-17,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.549538681148796,25.374633062784117,49,116,1,-0.04833833873271942,0,80,pending
+coastal-water-18,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.551469653711294,25.362073616602046,188,136,1,-0.08359131962060928,0,80,pending
+coastal-water-19,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.5485882417052,25.362264989882075,186,107,1,-0.10664992779493332,0,80,pending
+coastal-water-20,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.54613643224757,25.369588717209684,105,82,1,-0.08655619621276855,0,80,pending
+coastal-water-21,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.55265737138661,25.36098551663268,200,148,1,-0.1259445995092392,0,80,pending
+coastal-water-22,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.542029882416,25.362560194897696,183,41,1,-0.058604639023542404,0,80,pending
+coastal-water-23,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.54090678226409,25.37818688976477,10,29,1,-0.1562974452972412,0,80,pending
+coastal-water-24,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.54503378797049,25.367515816622074,128,71,1,-0.12455515563488007,0,80,pending
+coastal-water-25,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.547951988546146,25.375451712699547,40,100,1,-0.04552129656076431,0,80,pending
+coastal-water-26,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.55173034631585,25.375708506441338,37,138,1,-0.06265059113502502,0,80,pending
+coastal-water-27,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.55565918810021,25.36539910277202,151,178,1,-0.15223877131938934,0,80,pending
+coastal-water-28,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.55566827311945,25.367385750858794,129,178,1,-0.13522537052631378,0,80,pending
+coastal-water-29,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.5557375170715,25.360793314090856,202,179,1,-0.22962963581085205,0,80,pending
+coastal-water-30,coastal_water,"OSM coastline right side at 60m, >=40m from any mapped coast",51.54364149623223,25.36734035778418,130,57,1,-0.11999998241662979,0,80,pending

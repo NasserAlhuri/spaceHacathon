@@ -1,0 +1,10 @@
+{
+  "status": "python_cells_passed_normal_kernel_blocked",
+  "runtime_seconds": 3.5,
+  "executed_code_cells": 5,
+  "errors": 0,
+  "environment": "Fresh Python 3.12 virtual environment with pinned dependencies; copied source and empty generated-output directories",
+  "kernel_limit": "Normal Jupyter kernel startup fails due workspace networking restrictions. It is not marked as passed.",
+  "second_physical_machine": false,
+  "required_next_check": "Run python src/check_notebook.py in normal Jupyter on another machine or Colab."
+}

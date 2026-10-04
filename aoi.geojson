@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Pearl pilot window",
+        "boundary_status": "Analyst-defined window, not an official district boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              51.538,
+              25.36
+            ],
+            [
+              51.556,
+              25.36
+            ],
+            [
+              51.556,
+              25.379
+            ],
+            [
+              51.538,
+              25.379
+            ],
+            [
+              51.538,
+              25.36
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
