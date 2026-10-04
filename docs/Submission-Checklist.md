@@ -18,10 +18,10 @@ Updated 4 October 2026. This is a review draft. Nothing has been submitted to th
 
 ## Must complete before submission
 
-1. Names are confirmed: Nasser Alhuri, Abdulrahman Almohannadi, Mohammed Almarri, Majed Alkuwari and Ali Alkubaisi. Roles have not been assigned. Confirm their actual contributions and full platform registration. The saved 3 October dashboard showed three invitations pending. Current status could not be checked because the sign-in session expired. A pending invitation is not proof of registration.
+1. Names are confirmed: Nasser Alhuri, Abdulrahman Almohannadi, Mohammed Almarri, Majed Alkuwari and Ali Alkubaisi. Roles have not been assigned. Confirm their actual contributions and full platform registration. Live cockpit checked on 4 October after successful user sign-in: the team is approved and lists five members; two show Signed in and three show Pending. The four teammate display names are email aliases, so their mapping to the supplied full names was not independently verified. A pending invitation is not proof of registration.
 2. Arrange evaluator access to the private GitHub repository. Open it logged out if made public, or grant the specific evaluation account access. The private Site does not satisfy repository access.
 3. Review the PDF and approve the final submission. The platform form requires the GitHub URL and attached PDF, and confirms repository content and organizer access. The supporting archive is optional.
-4. Verify the current deadline. Archived sources disagree: the Cockpit tooltip displayed 10 October 2026 at 22:59, with timezone unclear; the guide said 11 October at 23:59 in the team creator's local time. The guide gives the official website precedence. Plan to finish before the earlier displayed date while resolving this.
+4. Verify the current deadline. Live sources still disagree as of 4 October: the Cockpit tooltip displays 10 October 2026 at 22:59, without an explicit timezone; the current guide says 11 October at 23:59 in the team creator's local time. The guide gives the official website precedence. Plan to finish before the earlier displayed date while resolving this.
 
 ## Scientific work still pending
 
