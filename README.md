@@ -4,7 +4,7 @@ Team **Al Zubarah (الزبارة)**, Qatar. Theme: **Urban Expansion, Land Use 
 
 This open-data PoC combines satellite surface temperature, green-pixel share, contributed building footprints and historical land cover to shortlist places for site investigation across the Al Khor area. It expands the earlier Pearl pilot, retained on `backup/pearl-2026-10-05`.
 
-**Status:** review draft. Clean command-line regeneration and numerical checks passed on 5 October 2026. All five unchanged notebook cells also passed an in-process IPython check with zero errors and all 35 input hashes verified. Normal Jupyter execution of this Al Khor version passed on a separate GitHub-hosted runner on 5 October 2026: five code cells, zero errors and all 35 input hashes checked. [Verified run](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37269889977). The previous Pearl notebook pass does not validate this new version. Team roles, member registration, evaluator access and final approval remain outstanding. Nothing has been submitted.
+**Status:** review draft. Clean command-line regeneration and numerical checks passed on 5 October 2026. All five unchanged notebook cells also passed an in-process IPython check with zero errors and all 35 input hashes verified. Normal Jupyter execution of this Al Khor version passed on a separate GitHub-hosted runner on 5 October 2026: five code cells, zero errors and all 35 input hashes checked. [Verified run](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37269889977). The previous Pearl notebook pass does not validate this new version. All five members are signed in on the platform; review responsibilities are assigned below. Member reviews, evaluator access and final approval remain outstanding. Nothing has been submitted.
 
 ## 1. Intended user and use case
 
@@ -87,7 +87,7 @@ Example inputs: `data/sample_input/red.tif`, `landsat/lwir11.tif`, `reference/wo
 
 ![Matched surface-temperature observations](results/multidate-temperature.png)
 
-`context-cells.csv` contains all observed cells. `planning-cells.csv` and `.geojson` contain the urban shortlist, coverage, scores and sensitivity. `reference-samples.csv` records source labels, rule agreement, retained thermal support and pending human confirmation. `app/` contains the portable interface; its numerical assets regenerate from the notebook. The owner-private hosted map supplements an evaluator-accessible repository.
+`context-cells.csv` contains all observed cells. `planning-cells.csv` and `.geojson` contain the urban shortlist, coverage, scores and sensitivity. `reference-samples.csv` records source labels, rule agreement, retained thermal support and pending human confirmation. `app/` contains the portable interface; its numerical assets regenerate from the notebook. The portable map is the packaged demonstration. A hosted application is optional and is not relied on for this submission; the previous hosted Pearl demo has not been verified as Al Khor.
 
 ## 8. Results and validation limits
 
@@ -109,13 +109,17 @@ ST_QA is product-reported per-pixel uncertainty, not a confidence interval for a
 
 ## 9. Team members and roles
 
-- Nasser Alhuri — registered team leader.
-- Abdulrahman Almohannadi
-- Mohammed Almarri
-- Majed Alkuwari
-- Ali Alkubaisi
+The following review responsibilities were assigned by the team leader on 5 October 2026. They describe ownership of remaining work, not completed contribution claims.
 
-Roles beyond team leadership and actual contributions remain unassigned/unconfirmed. The guide requires members and roles. No role or completed contribution is invented. Code and writing were developed with AI assistance and require team review and ownership.
+| Member | Assigned responsibility | Required review |
+|---|---|---|
+| Nasser Alhuri | Registered team lead; integration, submission and pitch | Approve scope and final package; rehearse the pitch |
+| Abdulrahman Almohannadi | Data and method review | Check provenance, QA rules and scientific limitations |
+| Mohammed Almarri | Map and candidate-site review | Review the study boundary, candidate locations and contributed reference conflicts |
+| Majed Alkuwari | Reproducibility and demo review | Run the notebook instructions and inspect the portable map |
+| Ali Alkubaisi | Presentation and package quality review | Check the deck, source attribution, required files and consistency |
+
+Code, analysis and drafts were developed with AI assistance. The team must review and take ownership of the work; no member is credited here with development or analysis they have not performed. Reviews are pending. All five platform registrations showed Signed in during the live check on 5 October 2026.
 
 ## 10. Licences and sources
 

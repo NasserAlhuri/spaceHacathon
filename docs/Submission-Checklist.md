@@ -1,38 +1,30 @@
 # Al Khor submission checklist
 
-Updated 5 October 2026. Review package only. Nothing submitted.
+Updated 5 October 2026. Review package only; nothing submitted.
 
 ## Prepared
 
-- [x] Al Khor main study, README, dependencies, licences, exact source metadata and all 35 hashed inputs.
-- [x] Clean command-line regeneration and numerical checks.
-- [x] All five unchanged notebook cells passed in-process IPython with visible outputs. This is a fallback, not the separate normal-kernel gate.
-- [x] All seven regenerated CSV tables exactly match the supplied baseline.
-- [x] Portable Al Khor map assets regenerated with 1,111 observed cells and 373 urban candidates.
-- [x] English ten-slide PDF pitch and editable PowerPoint prepared for Al Khor.
-- [x] GitHub private status and existing Pearl backup branch verified. Neither changed.
+- [x] Al Khor study, README, pinned dependencies, licences, exact source metadata and 35 hashed inputs.
+- [x] Clean regeneration and numerical checks; seven regenerated CSV tables match the supplied baseline byte for byte.
+- [x] Normal Jupyter execution on GitHub: five cells, zero errors, all 35 input hashes verified. [Run evidence](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37269889977).
+- [x] Executed notebook and regenerated results retrieved from artifact 11328001190.
+- [x] Portable Al Khor map: 1,111 observed cells and 373 urban candidates.
+- [x] Twelve-slide PDF and editable PowerPoint: official theme/country, problem, use case, data disclosures, editable workflow, actual outputs, sensitivity, verification, limitations, impact and incubation next steps.
+- [x] Honest team responsibilities assigned for remaining reviews; AI assistance disclosed.
+- [x] All five members shown Signed in on the live Cockpit.
+- [x] Project title, summary and repository link prepared in the platform draft form.
 
-## Required before submission
+## Final gates
 
-- [x] User approved upload to the private `pilot/al-khor` branch. All 105 initial files verified remotely with zero mismatches.
-- [x] Ordinary Jupyter-kernel execution passed on GitHub, five cells and zero errors. Retrieved executed notebook and results from the verified artifact. All seven CSVs match the baseline. [Run evidence](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37269889977).
-- [ ] Confirm the live hosted map shows Al Khor and arrange judge access. Current private hosted demo has not been verified here.
-- [ ] Arrange evaluator access to the private repository. Changing visibility or granting access needs a concrete decision.
-- [ ] Confirm each member's actual role/contribution. Nasser is registered leader. Other contributions remain unconfirmed.
-- [ ] Complete all platform registrations. Earlier dashboard showed two Signed in and three Pending, not rechecked here.
-- [ ] Review boundary, candidate sites and contributed-reference labels as a team.
-- [ ] Confirm the live deadline. Earlier cockpit: 10 October 2026, 22:59, timezone unspecified. Guide: 11 October, 23:59 creator-local time. Work toward the earlier date.
-- [ ] User reviews and gives final approval before platform submission.
+- [x] Verified Al Khor promoted to main by a non-force fast-forward; pilot branch contains Al Khor. Pearl backup remains at f9514a479d0d7a9092c32c9e7a2dcbd1ecab6343. Review-document refresh follows without changing tested code or inputs.
+- [ ] Arrange evaluator access: repository remains private; public visibility or an official evaluation-account invitation needs a specific access decision.
+- [ ] Complete assigned member reviews in Team-Review.md. Role assignment is not evidence that a review occurred.
+- [ ] Review boundary, candidate sites and contributed reference-label conflicts.
+- [ ] Confirm the deadline conflict. Live Cockpit: 10 October 2026, 22:59, timezone unstated. Guide: 11 October, 23:59 team-creator local time; guide defers to official timeline. Plan toward the earlier date.
+- [ ] Attach the final PDF and optional ZIP to the form and verify their names and sizes.
+- [ ] Truthfully confirm repository contents and organizer access only after the access gate is satisfied.
+- [ ] Obtain the user's final approval before clicking Submit. Do not contact organizers without explicit authorization.
 
 ## Package limits
 
-Pitch PDF must be at most 50 MB. Optional source ZIP must be at most 200 MB. File sizes are checked during packaging. Uploading to GitHub is preparation, not hackathon submission.
-
-## Review questions
-
-1. Does the team accept the disclosed first-stage scope, including that our own VHR AI segmentation is future work?
-2. Which shortlisted places merit site inspection?
-3. What did each member actually contribute?
-4. Can judges access the repository and demo?
-
-Read `Verification-Report.md` for exact completed checks and remaining gates. Do not use the earlier Pearl notebook pass as Al Khor evidence.
+Presentation PDF: at most 50 MB. Optional ZIP: at most 200 MB. The portable map is sufficient for the packaged demonstration; a hosted app is optional and its previous Pearl deployment is not relied on.

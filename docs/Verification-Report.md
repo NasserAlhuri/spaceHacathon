@@ -52,3 +52,10 @@ Repository remains private. No backup, default-branch or visibility change was m
 - Final user approval before submitting the platform form or contacting organizers.
 
 Use the packaged portable Al Khor map until the hosted deployment is separately verified. Reproducibility does not establish independent scientific accuracy, thermal calibration or intervention benefit.
+
+
+## Review preparation update, 5 October 2026
+
+All five members showed Signed in on the live platform. Assigned future review responsibilities are documented in README section 9 and Team-Review.md; no prior contribution or completed human review is claimed. The 12-slide deck adds the official theme, problem and affected users, native editable workflow, explicit non-use of hyperspectral/813/VHR imagery, potential impact and incubation next steps. The form title, summary and repository URL are drafted. Organizer-access declaration and Submit remain untouched. Private repository evaluator access still needs an explicit decision. Deadline displays conflict: Cockpit 10 October 2026, 22:59 (timezone unstated), versus guide 11 October, 23:59 creator-local time. Work toward the earlier deadline. Optional hosted application is not a submission prerequisite; use the packaged portable Al Khor map. Nothing has been submitted or sent to organizers.
+
+Al Khor was promoted to main by non-force fast-forward on 5 October 2026. Pearl backup was rechecked at f9514a479d0d7a9092c32c9e7a2dcbd1ecab6343. The final document/slide refresh leaves tested notebook, source code, workflow, dependencies and input data unchanged; the normal-kernel evidence remains the run of source commit 9781b95a46d86eb858ae9714ee53198ad22cfb6c, not a new test of presentation changes.
