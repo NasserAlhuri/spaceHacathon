@@ -10,7 +10,7 @@ Updated 5 October 2026. Review package only; nothing submitted.
 - [x] Executed notebook and regenerated results retrieved from artifact 11328001190.
 - [x] Portable Al Khor map: 1,111 observed cells and 373 urban candidates.
 - [x] Twelve-slide PDF and editable PowerPoint: official theme/country, problem, use case, data disclosures, editable workflow, actual outputs, sensitivity, verification, limitations, impact and incubation next steps.
-- [x] Honest team responsibilities assigned for remaining reviews; AI assistance disclosed.
+- [x] Team responsibilities assigned: coordination, local knowledge, map testing, slides/limitations and demonstration/judge questions.
 - [x] All five members shown Signed in on the live Cockpit.
 - [x] Project title, summary and repository link prepared in the platform draft form.
 

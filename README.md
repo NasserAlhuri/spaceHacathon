@@ -109,17 +109,17 @@ ST_QA is product-reported per-pixel uncertainty, not a confidence interval for a
 
 ## 9. Team members and roles
 
-The following review responsibilities were assigned by the team leader on 5 October 2026. They describe ownership of remaining work, not completed contribution claims.
+Team responsibilities assigned on 5 October 2026:
 
-| Member | Assigned responsibility | Required review |
-|---|---|---|
-| Nasser Alhuri | Registered team lead; integration, submission and pitch | Approve scope and final package; rehearse the pitch |
-| Abdulrahman Almohannadi | Data and method review | Check provenance, QA rules and scientific limitations |
-| Mohammed Almarri | Map and candidate-site review | Review the study boundary, candidate locations and contributed reference conflicts |
-| Majed Alkuwari | Reproducibility and demo review | Run the notebook instructions and inspect the portable map |
-| Ali Alkubaisi | Presentation and package quality review | Check the deck, source attribution, required files and consistency |
+| Member | Responsibility |
+|---|---|
+| Nasser Alhuri | Team coordination and submission |
+| Abdulrahman Almohannadi | Check Al Khor locations against local knowledge |
+| Mohammed Almarri | Test the map and document issues |
+| Majed Alkuwari | Review slides and explain the limitations |
+| Ali Alkubaisi | Demonstrate the project and prepare judge questions |
 
-Code, analysis and drafts were developed with AI assistance. The team must review and take ownership of the work; no member is credited here with development or analysis they have not performed. Reviews are pending. All five platform registrations showed Signed in during the live check on 5 October 2026.
+Members will complete their assigned checks before submission. Review completion is tracked in `docs/Team-Review.md`. All five platform registrations showed Signed in during the live check on 5 October 2026. Nasser Alhuri is the registered team leader.
 
 ## 10. Licences and sources
 

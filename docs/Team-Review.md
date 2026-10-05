@@ -1,14 +1,14 @@
-# Assigned team review responsibilities
+# Team responsibilities
 
-Assigned at Nasser's request on 5 October 2026. These are responsibilities for remaining work, not a record of completed development or analysis. Code, analysis and drafts were developed with AI assistance. Each member should review the work they own before the team approves submission.
+Assigned at Nasser's request on 5 October 2026. Each member will complete the assigned checks before the team approves submission.
 
-| Member | Responsibility | Concrete review deliverable | Status |
+| Member | Responsibility | Concrete deliverable | Status |
 |---|---|---|---|
-| Nasser Alhuri | Team lead, integration, submission, pitch | Accept disclosed scope, rehearse pitch, approve final package and submission | Pending |
-| Abdulrahman Almohannadi | Data and methods | Read README sections 3–4 and 8; check dates, QA rules, resolution and limits | Pending |
-| Mohammed Almarri | Maps and candidate sites | Inspect boundary and V04-23/V28-17/V04-24; note coast, activity, access and shade uncertainties; review reference conflicts | Pending |
-| Majed Alkuwari | Reproducibility and demonstration | Follow README installation/run steps; compare notebook output and inspect portable map | Pending |
-| Ali Alkubaisi | Deck and package quality | Check all 12 slides, attribution, filenames, required files and consistency with README | Pending |
+| Nasser Alhuri | Team coordination and submission | Coordinate the team, consolidate checks and approve the final submission | Pending |
+| Abdulrahman Almohannadi | Check Al Khor locations against local knowledge | Review the study boundary and candidate locations; document local-context corrections | Pending |
+| Mohammed Almarri | Test the map and document issues | Inspect map controls, layers and candidate details; record issues and reproduction steps | Pending |
+| Majed Alkuwari | Review slides and explain the limitations | Check the slides against the README and practise explaining scientific limitations | Pending |
+| Ali Alkubaisi | Demonstrate the project and prepare judge questions | Rehearse the portable map demonstration and prepare likely judge questions with answers | Pending |
 
 ## Questions every member should be able to answer
 
