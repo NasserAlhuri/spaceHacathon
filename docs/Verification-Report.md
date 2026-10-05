@@ -1,46 +1,54 @@
 # Al Khor verification report
 
-Checked 5 October 2026. Review package only. Nothing submitted.
+Verified 5 October 2026. Review package only. Nothing submitted.
 
-## Completed locally
+## Ordinary Jupyter-kernel execution: passed
 
-- Python 3.12.14. Required analysis and notebook packages match the direct version pins in `requirements.txt`.
-- All 35 packaged input SHA256 hashes match.
-- Deleted generated results and map assets in a fresh test copy, then regenerated them from packaged inputs without fetching new imagery or changing the OSM snapshot.
-- `src/verify.py` passed: 104,931 common samples, 373 urban candidates and 115 source checks. The interface contains 1,111 observed context cells.
-- All seven regenerated CSV tables match the uploaded baseline byte for byte.
-- Executed all five unchanged notebook code cells in IPython in-process. Zero errors. Saved visible outputs in `pilot.ipynb` and an explicitly labelled report in `results/notebook-verification-inprocess.json`.
-- Prepared an English ten-slide pitch PDF and editable PowerPoint for Al Khor. Data attribution and scientific limitations are included.
+Run: https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37269889977
 
-## Ordinary Jupyter-kernel gate remains open
+Tested source commit: `9781b95a46d86eb858ae9714ee53198ad22cfb6c` on private branch `pilot/al-khor`.
 
-The default kernel failed before cell execution because the workspace denies its local TCP sockets. Jupyter's supported IPC transport also failed with `Operation not permitted`. The in-process check above does **not** constitute a separate ordinary Jupyter-kernel pass. Do not describe it as a GitHub Actions pass.
+- GitHub-hosted Linux runner, Python 3.12.14.
+- Five code cells executed through an ordinary Jupyter kernel, zero errors.
+- All 35 packaged input SHA256 hashes verified.
+- Kernel runtime: 4.7 seconds. This excludes dependency installation and checkout.
+- Workflow removed `results` and `app/assets` before notebook execution, requiring regeneration from packaged inputs.
+- Workflow had `contents: read`. It did not push commits or change repository visibility.
+- Retrieved artifact `verified-notebook`, ID 11328001190, ZIP SHA256 `fe209d0ba54780e03fe2eb515044542ae375eecf4d97919c82b2af6c6417e5e7`.
+- Inspected the report and notebook: all five cells have execution counts, no error outputs, and the cell sources match the uploaded source exactly.
+- All seven GitHub-regenerated CSV tables match the packaged baseline byte for byte.
+- Replaced the packaged notebook and result files with the actual GitHub artifact outputs.
 
-After upload approval, run the packaged read-only GitHub Actions workflow on `pilot/al-khor`. It removes generated outputs, checks input hashes, executes `src/check_notebook.py`, and retains the executed notebook and results as an artifact. Inspect the run report, then retrieve the executed notebook into the final package.
+The machine-readable report is `results/notebook-verification.json`. The earlier in-process fallback record remains for provenance and is superseded by this ordinary-kernel pass.
 
-## GitHub status verified
+## Other completed checks
+
+- Initial upload: 105 files, zero remote Git-blob hash mismatches.
+- Clean local regeneration and `src/verify.py` passed: 104,931 common samples, 373 urban candidates and 115 source checks. Interface has 1,111 observed context cells.
+- English ten-slide Al Khor pitch PDF and editable PowerPoint include data attribution, scope limitations and the completed kernel test.
+- ZIP contents and per-file SHA256 manifest checked. Pitch PDF is below 50 MB; optional ZIP is below 200 MB.
+
+## GitHub and backup
 
 Repository: https://github.com/NasserAlhuri/spaceHacathon
 
-Visibility: private. The three observed branches currently point to `f9514a479d0d7a9092c32c9e7a2dcbd1ecab6343`:
+The user explicitly approved uploading to the private Al Khor branch and running the read-only test. That upload and test completed. Notebook outputs and verification documents are saved to that same branch in a follow-up evidence commit. The test evidence points to the exact source commit above. Analysis source and inputs are unchanged in the evidence update.
 
-| Branch | Verified content/status |
+| Branch | Status |
 | --- | --- |
-| `backup/pearl-2026-10-05` | Pearl backup exists, with 79 files in its tree. Unchanged. |
-| `main` | Same existing Pearl commit. Unchanged. |
-| `pilot/al-khor` | Still the existing Pearl commit. Al Khor upload did not complete. |
+| `pilot/al-khor` | Al Khor package, ordinary-kernel verification and executed outputs. |
+| `backup/pearl-2026-10-05` | Pearl backup retained at `f9514a479d0d7a9092c32c9e7a2dcbd1ecab6343`, unchanged. |
+| `main` | Same existing Pearl commit, unchanged. |
 
-Automatic approval review blocked the upload to this repository, requiring explicit authorization for that destination. No remote branch, visibility or backup changes were made. A proposed workflow with write access was rejected and removed. The packaged workflow only requests `contents: read` and cannot push commits.
+Repository remains private. No backup, default-branch or visibility change was made.
 
-## Submission gates
+## Remaining submission gates
 
-- Ordinary separate Jupyter-kernel execution and outputs from that run.
 - Evaluator access to the private repository and any demo.
-- Actual teammate contributions/roles and completed registrations.
+- Actual teammate roles/contributions and completed registrations.
 - Human review of boundary, reference labels and shortlisted sites.
-- Live deadline confirmation. Prior sources conflict and have not been rechecked here.
-- Final user approval before sending the form or contacting organizers.
+- Live deadline confirmation. Prior sources conflict and were not rechecked here.
+- Verify the hosted map shows Al Khor and arrange access. This task did not change the live deployment.
+- Final user approval before submitting the platform form or contacting organizers.
 
-The hosted map was not changed or verified in this workspace. Use the packaged portable Al Khor map until its live deployment is separately checked.
-
-Reproducibility does not establish independent scientific accuracy.
+Use the packaged portable Al Khor map until the hosted deployment is separately verified. Reproducibility does not establish independent scientific accuracy, thermal calibration or intervention benefit.

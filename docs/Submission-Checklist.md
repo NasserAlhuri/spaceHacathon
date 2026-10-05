@@ -14,8 +14,8 @@ Updated 5 October 2026. Review package only. Nothing submitted.
 
 ## Required before submission
 
-- [ ] Approve upload to the private `pilot/al-khor` branch of https://github.com/NasserAlhuri/spaceHacathon. Automatic approval review requires explicit destination approval.
-- [ ] Complete ordinary Jupyter-kernel execution on GitHub and inspect the report and artifact. Retrieve that executed notebook and outputs into the package.
+- [x] User approved upload to the private `pilot/al-khor` branch. All 105 initial files verified remotely with zero mismatches.
+- [x] Ordinary Jupyter-kernel execution passed on GitHub, five cells and zero errors. Retrieved executed notebook and results from the verified artifact. All seven CSVs match the baseline. [Run evidence](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37269889977).
 - [ ] Confirm the live hosted map shows Al Khor and arrange judge access. Current private hosted demo has not been verified here.
 - [ ] Arrange evaluator access to the private repository. Changing visibility or granting access needs a concrete decision.
 - [ ] Confirm each member's actual role/contribution. Nasser is registered leader. Other contributions remain unconfirmed.

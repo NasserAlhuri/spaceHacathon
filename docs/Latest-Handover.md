@@ -1,15 +1,13 @@
 # UrbanHeat AI: latest handover
 
-5 October 2026. Al Khor remains main; Pearl remains backup. Nothing submitted.
+5 October 2026. Al Khor remains main, Pearl remains backup. Nothing submitted.
 
-Read README.md and docs/Verification-Report.md first. Do not print source files or large tool outputs unless needed.
+Read README.md and docs/Verification-Report.md first. Keep file contents and routine tool output out of the transcript.
 
-Completed: all 35 input hashes, clean command-line regeneration, numerical verification, all seven baseline CSVs matched, five unchanged notebook cells executed via explicitly labelled in-process IPython fallback with zero errors. Visible notebook outputs saved. English ten-slide Al Khor PDF and editable PPTX prepared.
+Completed: user approved private GitHub upload to NasserAlhuri/spaceHacathon, pilot/al-khor. Initial 105 files all verified by Git hash. Normal Jupyter-kernel test PASSED on GitHub: five cells, zero errors, 35 input hashes checked. Tested source commit 9781b95a46d86eb858ae9714ee53198ad22cfb6c. Run https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37269889977 . Artifact ID 11328001190 retrieved and ZIP digest verified. Actual executed notebook/results imported into package. All seven GitHub CSVs match the supplied baseline exactly. Source and inputs unchanged in the evidence update. English ten-slide Al Khor PDF and editable PPTX updated to record success.
 
-Blocked: normal Jupyter TCP and IPC sockets in this workspace. Ordinary separate-kernel gate remains pending. GitHub upload blocked by automatic approval review requiring explicit approval for private repository destination NasserAlhuri/spaceHacathon, branch pilot/al-khor. Workflow uses contents: read and cannot push. Do not retry upload until user explicitly approves it.
+GitHub private. pilot/al-khor contains Al Khor. main and backup/pearl-2026-10-05 remain at f9514a479d0d7a9092c32c9e7a2dcbd1ecab6343 (Pearl). Read-only workflow cannot push commits. Evidence was saved through a separate authorized branch update.
 
-GitHub private; main, pilot/al-khor and backup/pearl-2026-10-05 all remain at f9514a479d0d7a9092c32c9e7a2dcbd1ecab6343 (Pearl). Backup tree has 79 files. No branches changed.
+Next: verify live demo content and access, confirm judge repository access, actual team contributions, pending registrations and current deadline. Prior dashboard showed two Signed in and three Pending. Earlier deadline conflict: cockpit 10 October 22:59 unspecified timezone, guide 11 October 23:59 creator-local. Work toward earlier date. Final approval is still required before hackathon submission or organizer contact. Do not change visibility or default branch without a concrete decision.
 
-Next after upload approval: upload all package files to pilot/al-khor, replacing its tree while leaving main and backup untouched. Run read-only workflow on branch push, inspect hashes and normal-kernel report, retrieve executed notebook/results artifact, update package and pitch status. Verify judge access, live demo and deadline; get actual team contributions and completed registrations. Obtain separate final approval before hackathon submission or organizer contact.
-
-The ZIP contains Python source, 35 sample inputs, metadata, regenerated results, notebook outputs, portable map, README, dependencies, licences, pitch and checklists. Do not claim in-process execution is a normal GitHub-kernel pass.
+The ZIP contains 35 source inputs, Python scripts, exact metadata, notebook with actual GitHub outputs, regenerated results, portable map, README, dependencies, licences, pitch and checklist. Scientific limits and the gap from proposed VHR AI segmentation remain disclosed.

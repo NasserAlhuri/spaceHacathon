@@ -8,4 +8,4 @@ The analysis reports 373 screened urban candidate cells with 31.82 km² of retai
 
 This is a first-stage open-data implementation of the submitted idea. WorldCover provides an upstream ML-derived product. We do not run our own VHR segmentation, separate paved surfaces, quantify shade or estimate human heat-health risk, cooling benefits or long-term urban expansion. Those features require additional data and validation.
 
-The package includes hashed source crops, exact metadata, a notebook, pinned dependencies, portable interactive map, results and presentation. Final team roles, registration, evaluator access, ordinary separate Jupyter-kernel execution and team approval must be confirmed before submission.
+The package includes hashed source crops, exact metadata, a notebook, pinned dependencies, portable interactive map, results and presentation. Normal separate Jupyter-kernel execution passed on GitHub: five cells, zero errors and 35 input hashes. Final team roles, registration, evaluator access and team approval must be confirmed before submission.
