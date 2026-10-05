@@ -1,0 +1,12 @@
+{
+  "status": "passed_inprocess_ipython_fallback",
+  "ordinary_jupyter_kernel_status": "blocked_by_workspace_socket_permissions",
+  "github_kernel_status": "pending_upload_approval",
+  "executed_code_cells": 5,
+  "errors": 0,
+  "sample_hashes_verified": 35,
+  "runtime_seconds": 5.0,
+  "python_version": "3.12.14",
+  "separate_execution_environment": false,
+  "review_note": "Notebook cells executed unchanged in IPython. This does not satisfy the separate normal Jupyter-kernel gate or establish scientific accuracy."
+}

@@ -4,7 +4,7 @@ import os,json,urllib.request,urllib.parse,xml.etree.ElementTree as ET
 import rasterio
 from rasterio.windows import from_bounds
 from rasterio.warp import transform_bounds
-ROOT=Path(__file__).resolve().parents[1];BBOX=[51.538,25.360,51.556,25.379];DATA=ROOT/'data/sample_input'
+ROOT=Path(__file__).resolve().parents[1];BBOX=json.loads((ROOT/'analysis-config.json').read_text())['bbox_wgs84'];DATA=ROOT/'data/sample_input'
 SCENES=[(ROOT/'scene.json',DATA,['red','green','blue','nir','swir16','scl']),(ROOT/'landsat-scene.json',DATA/'landsat',['lwir11','qa_pixel','qa_radsat','qa','cdist'])]
 for path in sorted((ROOT/'metadata/multidate').glob('*.json')):
  scene=json.loads(path.read_text());bands=['red','green','blue','nir','swir16','scl'] if scene['id'].startswith('S2') else ['lwir11','qa_pixel','qa_radsat','qa','cdist'];SCENES.append((path,DATA/'multidate'/scene['id'],bands))

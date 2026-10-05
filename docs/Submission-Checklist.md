@@ -1,51 +1,38 @@
-# Submission checklist and handoff
+# Al Khor submission checklist
 
-Updated 4 October 2026. This is a review draft. Nothing has been submitted to the organizers.
+Updated 5 October 2026. Review package only. Nothing submitted.
 
 ## Prepared
 
-- Root README covering the required use case, data, method, run instructions, results, limitations, licences and team status.
-- Executable analysis notebook with visible outputs, generated from the packaged inputs.
-- Normal Jupyter check passed on a clean GitHub-hosted runner on 4 October: 5 code cells, zero errors, 3.9 seconds, 35 input hashes checked. [Execution evidence](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37223755463).
-- Project uploaded to [NasserAlhuri/spaceHacathon](https://github.com/NasserAlhuri/spaceHacathon); all 79 source-package files checked against their Git blob hashes. Repository remains private.
-- Pinned direct requirements and full tested environment lock.
-- Small sample crops, exact scene metadata, source query, reference snapshot and hashes.
-- Results under `results/`, with actual figures embedded in the README.
-- Land-cover context, contributed building footprints, 16-cell investigation shortlist and 11 sensitivity settings.
-- Reference checks and numerical/data-support tests with their limitations recorded.
-- Required PDF pitch and editable PowerPoint, subject to team review.
-- Updated optional interactive map. Its audience remains owner-private.
+- [x] Al Khor main study, README, dependencies, licences, exact source metadata and all 35 hashed inputs.
+- [x] Clean command-line regeneration and numerical checks.
+- [x] All five unchanged notebook cells passed in-process IPython with visible outputs. This is a fallback, not the separate normal-kernel gate.
+- [x] All seven regenerated CSV tables exactly match the supplied baseline.
+- [x] Portable Al Khor map assets regenerated with 1,111 observed cells and 373 urban candidates.
+- [x] English ten-slide PDF pitch and editable PowerPoint prepared for Al Khor.
+- [x] GitHub private status and existing Pearl backup branch verified. Neither changed.
 
-## Must complete before submission
+## Required before submission
 
-1. Names are confirmed: Nasser Alhuri, Abdulrahman Almohannadi, Mohammed Almarri, Majed Alkuwari and Ali Alkubaisi. Roles have not been assigned. Confirm their actual contributions and full platform registration. Live cockpit checked on 4 October after successful user sign-in: the team is approved and lists five members; two show Signed in and three show Pending. The four teammate display names are email aliases, so their mapping to the supplied full names was not independently verified. A pending invitation is not proof of registration.
-2. Arrange evaluator access to the private GitHub repository. Open it logged out if made public, or grant the specific evaluation account access. The private Site does not satisfy repository access.
-3. Review the PDF and approve the final submission. The platform form requires the GitHub URL and attached PDF, and confirms repository content and organizer access. The supporting archive is optional.
-4. Verify the current deadline. Live sources still disagree as of 4 October: the Cockpit tooltip displays 10 October 2026 at 22:59, without an explicit timezone; the current guide says 11 October at 23:59 in the team creator's local time. The guide gives the official website precedence. Plan to finish before the earlier displayed date while resolving this.
+- [ ] Approve upload to the private `pilot/al-khor` branch of https://github.com/NasserAlhuri/spaceHacathon. Automatic approval review requires explicit destination approval.
+- [ ] Complete ordinary Jupyter-kernel execution on GitHub and inspect the report and artifact. Retrieve that executed notebook and outputs into the package.
+- [ ] Confirm the live hosted map shows Al Khor and arrange judge access. Current private hosted demo has not been verified here.
+- [ ] Arrange evaluator access to the private repository. Changing visibility or granting access needs a concrete decision.
+- [ ] Confirm each member's actual role/contribution. Nasser is registered leader. Other contributions remain unconfirmed.
+- [ ] Complete all platform registrations. Earlier dashboard showed two Signed in and three Pending, not rechecked here.
+- [ ] Review boundary, candidate sites and contributed-reference labels as a team.
+- [ ] Confirm the live deadline. Earlier cockpit: 10 October 2026, 22:59, timezone unspecified. Guide: 11 October, 23:59 creator-local time. Work toward the earlier date.
+- [ ] User reviews and gives final approval before platform submission.
 
-## Scientific work still pending
+## Package limits
 
-- Human confirmation of contributed reference samples and useful vegetation-reference coverage.
-- Independent temperature validation and assessment of emissivity/mixed-pixel limitations.
-- Suitable VHR imagery for current building/paving segmentation if extending toward the full original idea.
+Pitch PDF must be at most 50 MB. Optional source ZIP must be at most 200 MB. File sizes are checked during packaging. Uploading to GitHub is preparation, not hackathon submission.
 
-These limits are disclosed in the README, notebook and deck. Do not claim calibrated heat-health risk, true cooling benefits, air-temperature measurements, UHI intensity against a rural reference, or long-term change.
+## Review questions
 
-## Quick normal-kernel check
+1. Does the team accept the disclosed first-stage scope, including that our own VHR AI segmentation is future work?
+2. Which shortlisted places merit site inspection?
+3. What did each member actually contribute?
+4. Can judges access the repository and demo?
 
-After installation and environment activation:
-
-```sh
-python src/check_notebook.py
-```
-
-This check has passed on GitHub. For future changes, a success regenerates outputs, updates the notebook's visible outputs and writes `results/notebook-verification.json`. Commit that executed notebook and result before the deadline.
-
-For Colab, upload the source ZIP, unzip it, install `requirements.txt`, change to the project root and run the command above. Because the pinned package wheels require Python 3.12, check Colab's Python version first. If it differs, use a local Python 3.12 environment rather than changing dependencies without another verification run.
-
-## Team review questions
-
-- Are the shortlist locations sensible places for a planning site visit?
-- What is each member's actual contribution?
-- Does the team accept the clearly disclosed first-stage scope?
-- Which accessible GitHub repository should receive the prepared project?
+Read `Verification-Report.md` for exact completed checks and remaining gates. Do not use the earlier Pearl notebook pass as Al Khor evidence.

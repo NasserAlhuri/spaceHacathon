@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 from matplotlib.ticker import MaxNLocator
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'results';META=ROOT/'metadata/multidate'
+CONFIG=json.loads((ROOT/'analysis-config.json').read_text());OUT.mkdir(parents=True,exist_ok=True)
 PAIRS=[('2026-09-06','S2B_39RWJ_20260905_0_L2A','LC08_L2SP_162042_20260906_02_T1'),('2026-09-14','S2B_39RWJ_20260915_0_L2A','LC09_L2SP_162042_20260914_02_T1'),('2026-09-30',None,None)]
 with rasterio.open(ROOT/'data/sample_input/red.tif') as src:OT=src.transform;OC=src.crs;OS=src.shape
 with rasterio.open(ROOT/'data/sample_input/landsat/lwir11.tif') as src:TT=src.transform;TC=src.crs;TS=src.shape;TP=src.profile.copy()
@@ -59,9 +60,13 @@ for date,sid,lid in PAIRS:
  known=np.isin(scl,[4,5,6]);qa_water_opt=onopt(water)
  audit={'date':date,'optical_scene_id':om['id'],'optical_date':om['properties']['datetime'][:10],'thermal_scene_id':lm['id'],'thermal_date':lm['properties']['datetime'][:10],'sentinel_clear_land_percent':round(float(land.mean()*100),2),'sentinel_water_percent':round(float(swater.mean()*100),2),'sentinel_uncertain_percent':round(float((~known).mean()*100),2),'landsat_water_percent_on_optical_grid':round(float(qa_water_opt.mean()*100),2),'scl_water_vs_landsat_water_disagreement_known_pixels_percent':round(float(((swater!=qa_water_opt)&known).sum()/known.sum()*100),2),'scl_clear_land_flagged_water_by_other_checks_percent':round(float((land&(candidate|qa_water_opt)).sum()/max(1,land.sum())*100),2),'thermal_nodata_percent':round(float((~np.isfinite(temp)).mean()*100),2),'qa_cloud_shadow_snow_fill_percent':round(float(bad.mean()*100),2)}
  records.append({'date':date,'ndvi':ndvi,'land':land,'landfrac':lf,'greenfrac':gf,'temp':temp,'uq':uq,'base':base,'audit':audit,'rgb':np.clip(np.stack([reflect['red'],reflect['green'],reflect['blue']],axis=-1)/.35,0,1)**(1/1.8)})
+# Historical wetland/water classes provide an additional conservative exclusion,
+# never a claim that the 2021 classes describe current land cover accurately.
+wc=load(ROOT/'data/sample_input/reference/worldcover2021.tif',OS,OT,OC)
+historical_wet=np.isin(wc,[80,90,95])
 # Same fixed conservative inland mask across all dates; no invented coastline boundary.
 def inland(buffer):
- result=persistentland&(~dilate(unionwater,buffer//10))
+ result=persistentland&(~dilate(unionwater|historical_wet,buffer//10))
  n=(buffer+9)//10
  if n: result[:n,:]=False;result[-n:,:]=False;result[:,:n]=False;result[:,-n:]=False
  return result
@@ -70,9 +75,15 @@ strictfrac=avg(strictopt)
 for rec in records:
  rec['baseline']=rec['base']&(rec['uq']<=2)&(rec['landfrac']>=.7)
  rec['strict']=rec['base']&(rec['uq']<=2)&(strictfrac>=.9)
-accepted=[r for r in records if r['strict'].any()]
+# Choose dates by quality coverage, not temperature values. A single valid desert
+# pixel must not qualify a poorly observed city scene for the common comparison.
+historical_urban=(avg(wc==50)>=.1)&(strictfrac>=.9)
+for rec in records:
+ rec['urban_qa_coverage']=float((rec['strict']&historical_urban).sum()/max(1,historical_urban.sum()))
+accepted=[r for r in records if r['strict'].any() and r['urban_qa_coverage']>=.5]
+if len(accepted)<2:raise ValueError('Fewer than two dates cover at least half of the historical urban support; do not claim a city-wide comparison.')
 common=np.logical_and.reduce([r['strict'] for r in accepted]) if accepted else np.zeros(TS,dtype=bool)
-for r in records:r['accepted']=bool(r['strict'].any())
+for r in records:r['accepted']=any(r is a for a in accepted)
 sens=[]
 for buffer in [0,30,60,100]:
  lf=avg(inland(buffer))
@@ -81,7 +92,7 @@ for buffer in [0,30,60,100]:
   sens.append({'buffer_m':buffer,'st_qa_max_k':uncertainty,'common_30m_samples':int(m.sum()),'common_sample_footprint_km2':round(float(m.sum()*900/1e6),4)})
 audits=[]
 for rec in records:
- a=rec['audit'];cm=common if rec['accepted'] else np.zeros(TS,dtype=bool);a['thermal_comparison_status']='accepted' if rec['accepted'] else 'excluded: no samples pass combined quality and inland filters';a.update({'baseline_samples':int(rec['baseline'].sum()),'strict_samples':int(rec['strict'].sum()),'common_samples':int(cm.sum()),'baseline_median_surface_temp_c':round(float(np.median(rec['temp'][rec['baseline']])),2) if rec['baseline'].any() else None,'strict_median_surface_temp_c':round(float(np.median(rec['temp'][rec['strict']])),2) if rec['strict'].any() else None,'common_median_surface_temp_c':round(float(np.median(rec['temp'][cm])),2) if cm.any() else None,'common_median_st_qa_k':round(float(np.median(rec['uq'][cm])),2) if cm.any() else None,'common_vegetation_percent':round(float(rec['greenfrac'][cm].sum()/rec['landfrac'][cm].sum()*100),2) if cm.any() else None})
+ a=rec['audit'];cm=common if rec['accepted'] else np.zeros(TS,dtype=bool);a['thermal_comparison_status']='accepted' if rec['accepted'] else 'excluded: fewer than 50% of historical urban inland samples pass filters';a.update({'historical_urban_qa_coverage_percent':round(rec['urban_qa_coverage']*100,2),'baseline_samples':int(rec['baseline'].sum()),'strict_samples':int(rec['strict'].sum()),'common_samples':int(cm.sum()),'baseline_median_surface_temp_c':round(float(np.median(rec['temp'][rec['baseline']])),2) if rec['baseline'].any() else None,'strict_median_surface_temp_c':round(float(np.median(rec['temp'][rec['strict']])),2) if rec['strict'].any() else None,'common_median_surface_temp_c':round(float(np.median(rec['temp'][cm])),2) if cm.any() else None,'common_median_st_qa_k':round(float(np.median(rec['uq'][cm])),2) if cm.any() else None,'common_vegetation_percent':round(float(rec['greenfrac'][cm].sum()/rec['landfrac'][cm].sum()*100),2) if cm.any() else None})
  audits.append(a)
 rows=[];features=[]
 for r in range(0,TS[0],10):
@@ -99,7 +110,7 @@ correlations={}
 if len(rows)>2:
  for rec in accepted:
   d=rec['date'];correlations[d]=round(float(np.corrcoef([p['temp_c_'+d] for p in rows],[p['vegetation_pct_'+d] for p in rows])[0,1]),3)
-report={'validation_status':'Consistency and visual quality audit only; no independent ground-truth accuracy assessment.','strict_mask':'Clear land in all 3 Sentinel dates; exclude union of SCL water, Landsat QA water and spectral water candidates; add 60m exclusion buffer and remove crop-border halo; >=90% inland optical footprint; ST_QA<=2K; cloud distance>=1km; cloud/shadow/fill/snow/water/saturation excluded.','spectral_water_rule':'MNDWI >0.20 and NDVI <0.10, illustrative uncalibrated flag, SWIR native20m resampled to10m.','accepted_thermal_dates':[r['date'] for r in accepted],'common_30m_samples':int(common.sum()),'common_sample_footprint_km2':round(float(common.sum()*900/1e6),4),'reported_fixed_300m_cells':len(rows),'cell_threshold':'At least 25 common delivered30m samples per cell (>=0.0225km2); thermal native100m, samples spatially dependent.','dates':audits,'sensitivity_scope':'All 3 thermal dates required; this differs from primary comparison of the 2 accepted dates.','sensitivity':sens,'descriptive_cell_pearson_r':correlations,'interpretation':'Only 3 September morning scenes; optical matches within 1 day for first2. Seasonal trends, causal cooling, ground-truth temperature and health risk are not established. Different weather, sensor, emissivity and masking affect values.'}
+report={'date_acceptance':'At least 50% of historical WorldCover-built thermal support passes strict quality filters; cutoff defined before inspecting thermal results. Requires two accepted dates. Historical urban support is an incomplete proxy for current city extent.','historical_urban_support_samples':int(historical_urban.sum()),'validation_status':'Consistency and visual quality audit only; no independent ground-truth accuracy assessment.','strict_mask':'Clear land in all 3 Sentinel dates; exclude union of SCL water, Landsat QA water and spectral water candidates; also exclude historical WorldCover 2021 water, herbaceous wetland and mangrove classes; add 60m exclusion buffer and remove crop-border halo; >=90% inland optical footprint; ST_QA<=2K; cloud distance>=1km; cloud/shadow/fill/snow/water/saturation excluded.','spectral_water_rule':'MNDWI >0.20 and NDVI <0.10, illustrative uncalibrated flag, SWIR native20m resampled to10m.','accepted_thermal_dates':[r['date'] for r in accepted],'common_30m_samples':int(common.sum()),'common_sample_footprint_km2':round(float(common.sum()*900/1e6),4),'reported_fixed_300m_cells':len(rows),'cell_threshold':'At least 25 common delivered30m samples per cell (>=0.0225km2); thermal native100m, samples spatially dependent.','dates':audits,'sensitivity_scope':'All 3 thermal dates required; primary comparison uses the dates passing the baseline quality filters.','sensitivity':sens,'descriptive_cell_pearson_r':correlations,'interpretation':'Only 3 September morning scenes; optical matches within 1 day for first2. Seasonal trends, causal cooling, ground-truth temperature and health risk are not established. Different weather, sensor, emissivity and masking affect values.'}
 json.dump(report,open(OUT/'coastal-multidate-summary.json','w'),indent=2)
 for name,data in [('coastal-date-audit.csv',audits),('coastal-sensitivity.csv',sens),('multidate-grid.csv',rows)]:
  with open(OUT/name,'w') as f:
@@ -115,18 +126,18 @@ for rec in records:
 fig,axs=plt.subplots(1,3,figsize=(14,6),facecolor='#f7f8fa')
 e=[OT.c,OT.c+OS[1]*10,OT.f-OS[0]*10,OT.f];te=[TT.c,TT.c+TS[1]*30,TT.f-TS[0]*30,TT.f]
 axs[0].imshow(records[-1]['rgb'],extent=e);axs[0].set_title('30 Sep satellite view')
-flags=np.zeros(OS);flags[~persistentland]=1;flags[unionwater]=2;flags[strictopt]=3
+flags=np.zeros(OS);flags[~persistentland]=1;flags[unionwater|historical_wet]=2;flags[strictopt]=3
 cmap=ListedColormap(['#e8c791','#8d96a5','#7eb7d0','#2b9669'])
 axs[1].imshow(flags,extent=e,cmap=cmap,vmin=0,vmax=3,interpolation='nearest');axs[1].set_title('Coastal screening across dates')
 axs[2].imshow(np.where(common,1,np.nan),extent=te,cmap=ListedColormap(['#2b9669']),vmin=0,vmax=1,interpolation='nearest');axs[2].set_facecolor('#e8edf0');axs[2].set_title(f'Common thermal footprints · {int(common.sum())}')
 for ax in axs:ax.set_xlabel('UTM east (m)');ax.ticklabel_format(style='plain');ax.tick_params(labelsize=8);ax.xaxis.set_major_locator(MaxNLocator(4))
-fig.suptitle('The Pearl · coastal-mask quality check',fontsize=18,fontweight='bold',y=.97)
-fig.text(.5,.065,'Blue: water flags · Grey: uncertain/not persistent land · Tan: additional shoreline exclusion · Green: retained inland area\nConservative 60 m buffer; consistency check only, not verified coastline or ground-truth classification.',ha='center',fontsize=10)
+fig.suptitle(CONFIG['study_name']+' · coastal-mask quality check',fontsize=18,fontweight='bold',y=.97)
+fig.text(.5,.065,'Blue: water/historical wetland exclusions · Grey: uncertain/not persistent land · Tan: additional shoreline exclusion · Green: retained inland area\nConservative 60 m buffer; consistency check only, not verified coastline or ground-truth classification.',ha='center',fontsize=10)
 fig.subplots_adjust(top=.83,bottom=.19,wspace=.27);fig.savefig(OUT/'coastal-audit.png',dpi=160);plt.close(fig)
-fig,axs=plt.subplots(1,3,figsize=(14,6),facecolor='#f7f8fa');lo=35;hi=50
+fig,axs=plt.subplots(1,3,figsize=(14,6),facecolor='#f7f8fa');lo=30;hi=60
 for ax,rec in zip(axs,records):
  ax.set_facecolor('#e8edf0');im=ax.imshow(np.where(common if rec['accepted'] else np.zeros(TS,dtype=bool),rec['temp'],np.nan),extent=te,cmap='inferno',vmin=lo,vmax=hi,interpolation='nearest');ax.set_title(rec['date']+(' · '+str(rec['audit']['common_median_surface_temp_c'])+'°C median' if rec['accepted'] else ' · excluded by QA'));ax.set_xlabel('UTM east (m)');ax.ticklabel_format(style='plain');ax.tick_params(labelsize=8);ax.xaxis.set_major_locator(MaxNLocator(4))
-fig.suptitle('Surface temperature · 3 dates checked · 2 pass the uncertainty filter',fontsize=17,fontweight='bold',y=.97)
+fig.suptitle(f'Surface temperature · 3 dates checked · {len(accepted)} pass the filters',fontsize=17,fontweight='bold',y=.97)
 fig.subplots_adjust(top=.82,bottom=.19,wspace=.3,right=.87)
 cax=fig.add_axes([.9,.25,.018,.45]);fig.colorbar(im,cax=cax,label='Satellite surface temperature (°C)')
 fig.text(.5,.06,'Morning Landsat observations · 100 m thermal detail on a 30 m grid · Same colour scale\nWater/coastal/uncertain pixels excluded; date-to-date differences are not a long-term warming trend or proof of vegetation cooling.',ha='center',fontsize=10)

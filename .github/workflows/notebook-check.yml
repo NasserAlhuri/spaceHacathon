@@ -2,7 +2,7 @@ name: Notebook reproducibility
 
 on:
   push:
-    branches: [main]
+    branches: [main, pilot/al-khor]
   pull_request:
   workflow_dispatch:
 

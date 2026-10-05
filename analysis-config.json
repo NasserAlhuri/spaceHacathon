@@ -1,0 +1,12 @@
+{
+  "study_name": "Al Khor",
+  "bbox_wgs84": [
+    51.445,
+    25.635,
+    51.555,
+    25.73
+  ],
+  "boundary_status": "Analyst-defined city study window; not an official administrative boundary. Includes surrounding desert and coastal context.",
+  "urban_candidate_rule": "At least 10% historical WorldCover 2021 built-up OR at least 2% mapped OSM building coverage within retained clear-land support of a 300m cell. Screening is incomplete and requires review.",
+  "osm_download_date": "2026-10-05"
+}

@@ -1,19 +1,33 @@
 {
-  "osm": {
-    "provider": "OpenStreetMap contributors",
-    "downloaded_date": "2026-10-04",
-    "query_url": "https://api.openstreetmap.org/api/0.6/map?bbox=51.537,25.359,51.557,25.380",
-    "filter": "Keep building, natural=water/coastline and landuse=grass ways, node coordinates and edit timestamps. Drop contributor identifiers, contacts, unrelated objects and tags.",
-    "licence": "ODbL 1.0",
-    "licence_url": "https://www.openstreetmap.org/copyright",
-    "exact_reproduction": "Use packaged snapshot; live API database changes."
-  },
-  "worldcover": {
-    "id": "ESA_WorldCover_10m_2021_v200_N24E051",
-    "reference_year": 2021,
-    "version": "v200",
-    "licence": "CC BY 4.0",
-    "doi": "https://doi.org/10.5281/zenodo.7254220",
-    "processing": "Source COG crop in original geographic CRS, nearest neighbour onto 10 m UTM grid."
-  }
+  "source": "OpenStreetMap contributors",
+  "download_date": "2026-10-05",
+  "query_urls": [
+    "https://api.openstreetmap.org/api/0.6/map?bbox=51.445000,25.635000,51.472500,25.658750",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=51.472500,25.635000,51.500000,25.658750",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=51.500000,25.635000,51.527500,25.658750",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=51.527500,25.635000,51.555000,25.658750",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=51.445000,25.658750,51.472500,25.682500",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=51.472500,25.658750,51.500000,25.682500",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=51.500000,25.658750,51.527500,25.682500",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=51.527500,25.658750,51.555000,25.682500",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=51.445000,25.682500,51.472500,25.706250",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=51.472500,25.682500,51.500000,25.706250",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=51.500000,25.682500,51.527500,25.706250",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=51.527500,25.682500,51.555000,25.706250",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=51.445000,25.706250,51.472500,25.730000",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=51.472500,25.706250,51.500000,25.730000",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=51.500000,25.706250,51.527500,25.730000",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=51.527500,25.706250,51.555000,25.730000"
+  ],
+  "bbox_wgs84": [
+    51.445,
+    25.635,
+    51.555,
+    25.73
+  ],
+  "licence": "ODbL 1.0",
+  "filter": "Building, water, grass and coastline ways plus referenced coordinates. Contributor identifiers and unrelated tags removed. Multipolygon relations not analysed.",
+  "ways": 934,
+  "nodes": 10774,
+  "complete_node_references": true
 }

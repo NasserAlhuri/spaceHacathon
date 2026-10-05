@@ -1,14 +1,16 @@
 {
+  "date_acceptance": "At least 50% of historical WorldCover-built thermal support passes strict quality filters; cutoff defined before inspecting thermal results. Requires two accepted dates. Historical urban support is an incomplete proxy for current city extent.",
+  "historical_urban_support_samples": 24782,
   "validation_status": "Consistency and visual quality audit only; no independent ground-truth accuracy assessment.",
-  "strict_mask": "Clear land in all 3 Sentinel dates; exclude union of SCL water, Landsat QA water and spectral water candidates; add 60m exclusion buffer and remove crop-border halo; >=90% inland optical footprint; ST_QA<=2K; cloud distance>=1km; cloud/shadow/fill/snow/water/saturation excluded.",
+  "strict_mask": "Clear land in all 3 Sentinel dates; exclude union of SCL water, Landsat QA water and spectral water candidates; also exclude historical WorldCover 2021 water, herbaceous wetland and mangrove classes; add 60m exclusion buffer and remove crop-border halo; >=90% inland optical footprint; ST_QA<=2K; cloud distance>=1km; cloud/shadow/fill/snow/water/saturation excluded.",
   "spectral_water_rule": "MNDWI >0.20 and NDVI <0.10, illustrative uncalibrated flag, SWIR native20m resampled to10m.",
   "accepted_thermal_dates": [
     "2026-09-14",
     "2026-09-30"
   ],
-  "common_30m_samples": 1278,
-  "common_sample_footprint_km2": 1.1502,
-  "reported_fixed_300m_cells": 16,
+  "common_30m_samples": 104931,
+  "common_sample_footprint_km2": 94.4379,
+  "reported_fixed_300m_cells": 1111,
   "cell_threshold": "At least 25 common delivered30m samples per cell (>=0.0225km2); thermal native100m, samples spatially dependent.",
   "dates": [
     {
@@ -17,15 +19,16 @@
       "optical_date": "2026-09-05",
       "thermal_scene_id": "LC08_L2SP_162042_20260906_02_T1",
       "thermal_date": "2026-09-06",
-      "sentinel_clear_land_percent": 69.52,
-      "sentinel_water_percent": 10.93,
-      "sentinel_uncertain_percent": 19.53,
-      "landsat_water_percent_on_optical_grid": 26.83,
-      "scl_water_vs_landsat_water_disagreement_known_pixels_percent": 4.85,
-      "scl_clear_land_flagged_water_by_other_checks_percent": 2.85,
-      "thermal_nodata_percent": 0.0,
-      "qa_cloud_shadow_snow_fill_percent": 0.0,
-      "thermal_comparison_status": "excluded: no samples pass combined quality and inland filters",
+      "sentinel_clear_land_percent": 89.82,
+      "sentinel_water_percent": 9.31,
+      "sentinel_uncertain_percent": 0.81,
+      "landsat_water_percent_on_optical_grid": 9.5,
+      "scl_water_vs_landsat_water_disagreement_known_pixels_percent": 0.51,
+      "scl_clear_land_flagged_water_by_other_checks_percent": 0.57,
+      "thermal_nodata_percent": 6.85,
+      "qa_cloud_shadow_snow_fill_percent": 6.85,
+      "thermal_comparison_status": "excluded: fewer than 50% of historical urban inland samples pass filters",
+      "historical_urban_qa_coverage_percent": 0.0,
       "baseline_samples": 0,
       "strict_samples": 0,
       "common_samples": 0,
@@ -41,23 +44,24 @@
       "optical_date": "2026-09-15",
       "thermal_scene_id": "LC09_L2SP_162042_20260914_02_T1",
       "thermal_date": "2026-09-14",
-      "sentinel_clear_land_percent": 71.14,
-      "sentinel_water_percent": 19.96,
-      "sentinel_uncertain_percent": 8.9,
-      "landsat_water_percent_on_optical_grid": 28.24,
-      "scl_water_vs_landsat_water_disagreement_known_pixels_percent": 6.93,
-      "scl_clear_land_flagged_water_by_other_checks_percent": 6.65,
-      "thermal_nodata_percent": 0.0,
-      "qa_cloud_shadow_snow_fill_percent": 0.0,
+      "sentinel_clear_land_percent": 90.96,
+      "sentinel_water_percent": 8.68,
+      "sentinel_uncertain_percent": 0.36,
+      "landsat_water_percent_on_optical_grid": 9.45,
+      "scl_water_vs_landsat_water_disagreement_known_pixels_percent": 0.91,
+      "scl_clear_land_flagged_water_by_other_checks_percent": 0.98,
+      "thermal_nodata_percent": 2.08,
+      "qa_cloud_shadow_snow_fill_percent": 2.08,
       "thermal_comparison_status": "accepted",
-      "baseline_samples": 2611,
-      "strict_samples": 1278,
-      "common_samples": 1278,
-      "baseline_median_surface_temp_c": 43.2,
-      "strict_median_surface_temp_c": 43.94,
-      "common_median_surface_temp_c": 43.94,
-      "common_median_st_qa_k": 1.91,
-      "common_vegetation_percent": 19.27
+      "historical_urban_qa_coverage_percent": 99.38,
+      "baseline_samples": 114295,
+      "strict_samples": 104931,
+      "common_samples": 104931,
+      "baseline_median_surface_temp_c": 49.74,
+      "strict_median_surface_temp_c": 49.88,
+      "common_median_surface_temp_c": 49.88,
+      "common_median_st_qa_k": 1.82,
+      "common_vegetation_percent": 2.27
     },
     {
       "date": "2026-09-30",
@@ -65,26 +69,27 @@
       "optical_date": "2026-09-30",
       "thermal_scene_id": "LC09_L2SP_162042_20260930_02_T1",
       "thermal_date": "2026-09-30",
-      "sentinel_clear_land_percent": 67.57,
-      "sentinel_water_percent": 10.31,
-      "sentinel_uncertain_percent": 22.12,
-      "landsat_water_percent_on_optical_grid": 28.48,
-      "scl_water_vs_landsat_water_disagreement_known_pixels_percent": 4.35,
-      "scl_clear_land_flagged_water_by_other_checks_percent": 2.68,
+      "sentinel_clear_land_percent": 91.74,
+      "sentinel_water_percent": 6.79,
+      "sentinel_uncertain_percent": 1.47,
+      "landsat_water_percent_on_optical_grid": 9.54,
+      "scl_water_vs_landsat_water_disagreement_known_pixels_percent": 1.67,
+      "scl_clear_land_flagged_water_by_other_checks_percent": 1.82,
       "thermal_nodata_percent": 0.0,
       "qa_cloud_shadow_snow_fill_percent": 0.0,
       "thermal_comparison_status": "accepted",
-      "baseline_samples": 2720,
-      "strict_samples": 1381,
-      "common_samples": 1278,
-      "baseline_median_surface_temp_c": 43.16,
-      "strict_median_surface_temp_c": 43.96,
-      "common_median_surface_temp_c": 43.91,
-      "common_median_st_qa_k": 1.88,
-      "common_vegetation_percent": 17.54
+      "historical_urban_qa_coverage_percent": 99.97,
+      "baseline_samples": 117085,
+      "strict_samples": 107297,
+      "common_samples": 104931,
+      "baseline_median_surface_temp_c": 47.65,
+      "strict_median_surface_temp_c": 47.7,
+      "common_median_surface_temp_c": 47.69,
+      "common_median_st_qa_k": 1.77,
+      "common_vegetation_percent": 1.93
     }
   ],
-  "sensitivity_scope": "All 3 thermal dates required; this differs from primary comparison of the 2 accepted dates.",
+  "sensitivity_scope": "All 3 thermal dates required; primary comparison uses the dates passing the baseline quality filters.",
   "sensitivity": [
     {
       "buffer_m": 0,
@@ -95,14 +100,14 @@
     {
       "buffer_m": 0,
       "st_qa_max_k": 2.5,
-      "common_30m_samples": 2406,
-      "common_sample_footprint_km2": 2.1654
+      "common_30m_samples": 104041,
+      "common_sample_footprint_km2": 93.6369
     },
     {
       "buffer_m": 0,
       "st_qa_max_k": 3,
-      "common_30m_samples": 2406,
-      "common_sample_footprint_km2": 2.1654
+      "common_30m_samples": 104041,
+      "common_sample_footprint_km2": 93.6369
     },
     {
       "buffer_m": 30,
@@ -113,14 +118,14 @@
     {
       "buffer_m": 30,
       "st_qa_max_k": 2.5,
-      "common_30m_samples": 1883,
-      "common_sample_footprint_km2": 1.6947
+      "common_30m_samples": 101654,
+      "common_sample_footprint_km2": 91.4886
     },
     {
       "buffer_m": 30,
       "st_qa_max_k": 3,
-      "common_30m_samples": 1883,
-      "common_sample_footprint_km2": 1.6947
+      "common_30m_samples": 101654,
+      "common_sample_footprint_km2": 91.4886
     },
     {
       "buffer_m": 60,
@@ -131,14 +136,14 @@
     {
       "buffer_m": 60,
       "st_qa_max_k": 2.5,
-      "common_30m_samples": 1428,
-      "common_sample_footprint_km2": 1.2852
+      "common_30m_samples": 99231,
+      "common_sample_footprint_km2": 89.3079
     },
     {
       "buffer_m": 60,
       "st_qa_max_k": 3,
-      "common_30m_samples": 1428,
-      "common_sample_footprint_km2": 1.2852
+      "common_30m_samples": 99231,
+      "common_sample_footprint_km2": 89.3079
     },
     {
       "buffer_m": 100,
@@ -149,19 +154,19 @@
     {
       "buffer_m": 100,
       "st_qa_max_k": 2.5,
-      "common_30m_samples": 985,
-      "common_sample_footprint_km2": 0.8865
+      "common_30m_samples": 95559,
+      "common_sample_footprint_km2": 86.0031
     },
     {
       "buffer_m": 100,
       "st_qa_max_k": 3,
-      "common_30m_samples": 985,
-      "common_sample_footprint_km2": 0.8865
+      "common_30m_samples": 95559,
+      "common_sample_footprint_km2": 86.0031
     }
   ],
   "descriptive_cell_pearson_r": {
-    "2026-09-14": -0.229,
-    "2026-09-30": -0.343
+    "2026-09-14": -0.243,
+    "2026-09-30": -0.334
   },
   "interpretation": "Only 3 September morning scenes; optical matches within 1 day for first2. Seasonal trends, causal cooling, ground-truth temperature and health risk are not established. Different weather, sensor, emissivity and masking affect values."
 }

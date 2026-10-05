@@ -1,11 +1,11 @@
-# UrbanHeat AI: implemented PoC scope
+# UrbanHeat AI: implemented PoC
 
-UrbanHeat AI helps an urban planner identify places that deserve a closer site inspection before proposing heat-mitigation work. Our first pilot covers a small part of The Pearl, Qatar.
+UrbanHeat AI provides an explainable starting point for urban-planning site visits across the Al Khor area, Qatar. The broad analyst-defined window includes surrounding desert and coast and is not an official city boundary.
 
-We combine two accepted September 2026 morning Landsat surface-temperature observations with Sentinel-2 green-pixel indicators, contributed building footprints from OpenStreetMap, and historical ESA WorldCover land cover. The workflow excludes coastal and uncertain observations, compares the same retained footprints, and produces an explainable planning shortlist with observation coverage and sensitivity to alternative settings.
+We combine two quality-screened September 2026 morning Landsat surface-temperature observations, Sentinel-2 green-pixel indicators, contributed OSM building footprints and historical WorldCover land cover. Conservative coastal and wetland exclusions and a common observation footprint support comparison. The map separates temperature, greenery, mapped buildings, relative investigation priority and uncertainty.
 
-The corrected comparison retains 1.15 km² and reports 16 cells. The leading candidate remains first across all eleven tested settings. We use limited contributed-reference checks and publish their failures as well as agreements. These checks do not establish overall land-cover accuracy or thermal calibration.
+The analysis reports 373 screened urban candidate cells with 31.82 km² of retained sample footprint; 1111 observed cells remain inspectable. Thirteen alternative settings show that the leading candidates are sensitive to thresholds and weights. Contributed-reference checks have mixed results and human confirmation is pending. No overall accuracy or thermal calibration is claimed.
 
-This is a first-stage open-data implementation of the submitted idea. ESA WorldCover provides a precomputed machine-learning-derived product. Our PoC does not run its own VHR AI segmentation, separate buildings from paved surfaces automatically, or estimate air temperature, human heat-health risk or intervention cooling benefits. Suitable VHR segmentation, shade/paving indicators, independent validation and broader temporal coverage are planned extensions.
+This is a first-stage open-data implementation of the submitted idea. WorldCover provides an upstream ML-derived product. We do not run our own VHR segmentation, separate paved surfaces, quantify shade or estimate human heat-health risk, cooling benefits or long-term urban expansion. Those features require additional data and validation.
 
-The repository includes source crops, exact metadata, a notebook, pinned dependencies, example figures and tables. The interactive map is a supplementary demonstration. Normal Jupyter execution on another machine and final team/repository details must be confirmed before submission.
+The package includes hashed source crops, exact metadata, a notebook, pinned dependencies, portable interactive map, results and presentation. Final team roles, registration, evaluator access, ordinary separate Jupyter-kernel execution and team approval must be confirmed before submission.

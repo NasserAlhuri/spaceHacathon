@@ -16,11 +16,11 @@ base_shape=(TS[0]*3,TS[1]*3);BT=Affine(10,0,TT.c,0,-10,TT.f)
 latest=data['records'][-1]['rgb'];base=np.zeros((*base_shape,3),dtype='float32')
 for k in range(3):reproject(latest[:,:,k],base[:,:,k],src_transform=OT,src_crs=OC,dst_transform=BT,dst_crs=TC,resampling=Resampling.bilinear)
 Image.fromarray((np.clip(base,0,1)*255).astype('uint8')).save(site/'satellite.jpg',quality=92)
-config={'width':TS[1]*30,'height':TS[0]*30,'dates':['2026-09-14','2026-09-30'],'cells':[],'summary':data['report'],'attribution':'Contains modified Copernicus Sentinel data (2026). Landsat imagery courtesy of USGS.','layers':{'temperature':{'min':35,'max':50,'unit':'°C','colors':['#000004','#57106e','#bc3754','#f98e09','#fcffa4']},'greenery':{'min':0,'max':100,'unit':'%','colors':['#ffffe5','#e4f4ae','#77c679','#238443','#005a32']},'uncertainty':{'min':1.5,'max':2,'unit':'K','colors':['#edf8fb','#9ebcda','#8856a7','#810f7c','#4d004b']}}}
+config={'width':TS[1]*30,'height':TS[0]*30,'dates':[r['date'] for r in records],'cells':[],'summary':data['report'],'attribution':'Contains modified Copernicus Sentinel data (2026). Landsat imagery courtesy of USGS.','layers':{'temperature':{'min':30,'max':60,'unit':'°C','colors':['#000004','#57106e','#bc3754','#f98e09','#fcffa4']},'greenery':{'min':0,'max':100,'unit':'%','colors':['#ffffe5','#e4f4ae','#77c679','#238443','#005a32']},'uncertainty':{'min':1.5,'max':2,'unit':'K','colors':['#edf8fb','#9ebcda','#8856a7','#810f7c','#4d004b']}}}
 for rec in records:
  date=rec['date']
  greenery=np.divide(rec['greenfrac'],rec['landfrac'],out=np.full(TS,np.nan),where=rec['landfrac']>0)*100
- for layer,arr,cmap,lo,hi in [('temperature',rec['temp'],'inferno',35,50),('greenery',greenery,'YlGn',0,100),('uncertainty',rec['uq'],'BuPu',1.5,2)]:
+ for layer,arr,cmap,lo,hi in [('temperature',rec['temp'],'inferno',30,60),('greenery',greenery,'YlGn',0,100),('uncertainty',rec['uq'],'BuPu',1.5,2)]:
   rgba=(colormaps[cmap](np.clip((arr-lo)/(hi-lo),0,1))*255).astype('uint8');rgba[:,:,3]=np.where(common,255,0)
   Image.fromarray(rgba).save(site/f'{layer}-{date}.png')
 excluded=np.zeros((*TS,4),dtype='uint8');excluded[:,:,:3]=[210,221,229];excluded[:,:,3]=np.where(common,0,225);Image.fromarray(excluded).save(site/'excluded.png')
@@ -39,13 +39,15 @@ for name,arr,cmap in [('buildings',np.divide(planning['build30'],data['records']
   rgba=(colormaps[cmap](np.clip(np.nan_to_num(arr)/100,0,1))*255).astype('uint8');rgba[:,:,3]=np.where(common&np.isfinite(arr),255,0);Image.fromarray(rgba).save(site/f'{name}-{date}.png')
 config['mask']=common.astype('uint8').ravel().tolist();config['rasterShape']=list(TS)
 trans=Transformer.from_crs('EPSG:4326',TC,always_xy=True)
-for f in planning['features']:
+context_by_id={p['cell_id']:p for p in planning['all_context_rows']}
+for f in data['features']:
  points=[]
  for lon,lat in f['geometry']['coordinates'][0][:-1]:
   x,y=trans.transform(lon,lat);points.append([round(x-TT.c,3),round(TT.f-y,3)])
- p=f['properties'];cell={'id':p['cell_id'],'points':points,'samples':p['common_30m_samples'],'values':{}}
+ p=context_by_id[f['properties']['cell_id']];cell={'id':p['cell_id'],'points':points,'samples':p['common_30m_samples'],'values':{}}
  for date in config['dates']:cell['values'][date]={'temperature':p['temp_c_'+date],'greenery':p['vegetation_pct_'+date],'uncertainty':p['st_qa_k_'+date],'buildings':p['mapped_building_pct'],'historicalBuilt':p['worldcover2021_built_pct']}
- cell['planning']={k:p[k] for k in ['investigation_score','investigation_rank','scenario_best_rank','scenario_worst_rank','scenarios_eligible','scenario_top3_count','retained_cell_pct','recommendation']}
+ cell['urbanCandidate']=p['urban_candidate']
+ cell['planning']={k:p[k] for k in ['investigation_score','investigation_rank','scenario_best_rank','scenario_worst_rank','scenarios_eligible','scenario_top3_count','retained_cell_pct','recommendation']} if p['urban_candidate'] else None
  config['cells'].append(cell)
 (site/'data.json').write_text(json.dumps(config,separators=(',',':')))
-print('Created aligned satellite image, ten transparent layers and',len(config['cells']),'interactive cells.')
+print('Created aligned satellite image, transparent layers and',len(config['cells']),'interactive cells.')

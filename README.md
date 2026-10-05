@@ -1,97 +1,113 @@
-# UrbanHeat AI: The Pearl planning pilot
+# UrbanHeat AI: Al Khor area study
 
-Team **Al Zubarah (الزبارة)**, Qatar. Theme: **Urban Expansion, Land Use Change & Heat Risk**. This PoC combines satellite surface temperature, a greenery signal, contributed building footprints and historical land cover to shortlist places for urban-planning investigation in a small part of The Pearl.
+Team **Al Zubarah (الزبارة)**, Qatar. Theme: **Urban Expansion, Land Use Change & Heat Risk**.
 
-**Status:** review draft. Source repository: [NasserAlhuri/spaceHacathon](https://github.com/NasserAlhuri/spaceHacathon). The normal Jupyter notebook check passed on a clean GitHub-hosted runner. Member contributions, reviewer access, platform registration/deadline checks and final submission remain to be completed. The live optional map is owner-private and cannot substitute for an accessible GitHub repository.
+This open-data PoC combines satellite surface temperature, green-pixel share, contributed building footprints and historical land cover to shortlist places for site investigation across the Al Khor area. It expands the earlier Pearl pilot, retained on `backup/pearl-2026-10-05`.
 
-## 1. Business use case
+**Status:** review draft. Clean command-line regeneration and numerical checks passed on 5 October 2026. All five unchanged notebook cells also passed an in-process IPython check with zero errors and all 35 input hashes verified. Normal Jupyter execution of this Al Khor version on a separate machine is pending. The previous Pearl notebook pass does not validate this new version. Team roles, member registration, evaluator access and final approval remain outstanding. Nothing has been submitted.
 
-The intended user is an urban planner deciding where to arrange site visits before proposing shade or planting improvements. The pilot provides a small, explainable shortlist with observation coverage and sensitivity. Site visits must confirm pedestrian activity, shade, ownership and feasibility. We have not interviewed an end user or measured time/cost savings. Existing imagery and site inspection remain part of the decision.
+## 1. Intended user and use case
 
-## 2. Problem and scope
+An urban planner can use the map to arrange site visits before proposing shade or planting improvements. Each candidate shows the contributing indicators, observed coverage and rank sensitivity. Visits must establish pedestrian activity, shade, ownership and feasibility. No user interview, measured time saving or cooling benefit is claimed.
 
-Building and paved surfaces, sparse vegetation and shade can affect urban thermal conditions. Satellite data provide repeatable spatial context, while field inspection provides local detail. Our analyst-defined window is 51.538–51.556°E, 25.360–25.379°N, around Porto Arabia and nearby areas. It is approximately 3.84 km² including water and is not an official Zone 66 boundary or a study of all Doha.
+## 2. Problem and study scope
 
-The original proposal described VHR pretrained AI segmentation of buildings, paving, vegetation and open land. This first-stage PoC uses available open data: contributed building geometry, a precomputed ML-derived land-cover product, optical indices and an existing thermal retrieval. **We do not run our own AI segmentation, separately measure paved area, or claim individual-building thermal detail.** VHR segmentation and additional indicators remain extensions.
+The analyst-defined WGS84 window is **51.445–51.555°E, 25.635–25.730°N**, around Al Khor, its northern urban edge, Al Bayt Stadium and surrounding desert/coastal context. It is a broad city-area study window, approximately 116 km², **not an official administrative boundary or the whole municipality**. It does not imply complete observation of every property. Review the boundary on the satellite image before interpreting coverage.
 
-## 3. Data
+The submitted idea proposed VHR pretrained AI segmentation of buildings, paving, vegetation and open land. This first-stage implementation uses open imagery, contributed building geometry and an upstream ML-derived land-cover product. It does not run our own AI segmentation, separate paved surfaces, map current shade, estimate health risk or measure urban expansion. Suitable VHR data and those indicators remain extensions.
 
-| Dataset | Dates / version | Processing and source | Licence |
+## 3. Data and provenance
+
+| Source | Dates/version | Use | Terms |
 |---|---|---|---|
-| Copernicus Sentinel-2 L2A | 5, 15, 30 September 2026 | BOA reflectance, 10 m red/NIR/visible and 20 m SWIR/SCL; Element 84 Earth Search | Copernicus Sentinel terms; acknowledge modified data |
-| USGS Landsat 8/9 Collection 2 L2 | 6, 14, 30 September 2026 | ST_B10, QA_PIXEL, QA_RADSAT, ST_QA and cloud distance; Microsoft Planetary Computer | Unrestricted USGS use, citation included |
-| ESA WorldCover | 2021, v200 | Historical CatBoost-derived 10 m land cover from Sentinel-1/2 and auxiliary inputs; Planetary Computer | CC BY 4.0 |
-| OpenStreetMap | Downloaded 4 October 2026, feature edit dates vary | Filtered contributed building, grass, water and coastline geometry; official OSM API | ODbL 1.0 |
+| Sentinel-2 L2A, Element 84 Earth Search | 5, 15, 30 Sep 2026 | BOA reflectance; 10 m visible/NIR; 20 m SWIR and SCL | Copernicus Sentinel terms |
+| Landsat 8/9 Collection 2 L2, Planetary Computer | 6, 14, 30 Sep 2026 | ST_B10, QA_PIXEL, QA_RADSAT, ST_QA, cloud distance | USGS unrestricted use, attribution |
+| ESA WorldCover 2021 v200 | Historical 2021 | CatBoost-derived 10 m land-cover context and conservative screening | CC BY 4.0 |
+| OpenStreetMap official API | Downloaded 5 Oct 2026; edit dates vary | Closed building, water, grass ways and coastline references | ODbL 1.0 |
 
-Exact scene IDs, unsigned source URLs, dates and scale/offset metadata are in `scene.json`, `landsat-scene.json` and `metadata/`. Source crop hashes are in `data/sample_input/SHA256.json`. Reference provenance is in `metadata/reference-provenance.json`. The OSM excerpt removes contributor identifiers, contact tags and unrelated features. It is not a complete building inventory. Historical WorldCover is context, not evidence of 2026 land cover or change since 2021. No commercial, VHR, 813 or hyperspectral imagery is used.
+`scene.json`, `landsat-scene.json`, `metadata/` and `analysis-config.json` record exact source IDs, unsigned URLs, scaling, tiled OSM queries and study parameters. All 35 packaged input files have SHA256 hashes. The OSM excerpt removes contributor identifiers, contact tags and unrelated features. Mapping is incomplete and some water tags conflict with visible land. No VHR, 813 or hyperspectral data are used.
 
-## 4. Technical approach
+## 4. Processing and screening
 
-1. Align optical crops on a 10 m UTM 39N grid. Honor Earth Search's already-applied BOA offset flag. Use nearest-neighbour SCL and bilinear SWIR resampling. Calculate NDVI and MNDWI.
-2. Screen land using SCL 4/5. Combine SCL water, Landsat QA water and the illustrative spectral rule MNDWI >0.20 with NDVI <0.10. Require persistent clear land across all three optical dates.
-3. Exclude a 60 m water buffer and the outer 60 m crop halo. The crop-border exclusion prevents treating unseen water beyond the crop as absent.
-4. Convert Landsat ST_B10 with `DN × 0.00341802 + 149 − 273.15`. Reject QA bits 0–5, water bit 7, radiometric flags, missing values, ST_QA >2 K, cloud distance <1 km or <90% inland optical support. Thermal detail is approximately 100 m on a delivered 30 m grid. No downscaling is used.
-5. Compare the same retained thermal footprints on 14 and 30 September. The 6 September scene fails the combined filters. Its exclusion is a screening choice, not a claim that the source scene is unusable.
-6. Rasterise closed OSM building ways onto the optical grid, and reproject historical WorldCover with nearest neighbours. Class 50 combines buildings, roads and structures. OSM relations and unmapped buildings may be missed.
-7. Aggregate matched-support cell medians and green-pixel share (`NDVI ≥0.30`) in 300 m cells with at least 25 delivered samples. Report the observed proportion of each cell. Green-pixel share is not subpixel fractional vegetation cover or a shade/tree inventory.
-8. Calculate an exploratory score: `100 × (0.50 × heat percentile + 0.30 × inverse green-signal percentile + 0.20 × mapped-building percentile)`. Percentile midranks handle ties. The score compares only this pilot and provides a site-investigation shortlist. It is not calibrated heat-health risk. The historical WorldCover layer is context and does not enter the score.
-9. Check contributed-reference points and 11 sensitivity scenarios. Change NDVI thresholds (0.2/0.3/0.4), coastal buffers (30/60/100 m), ST_QA limits (2/2.5/3 K), minimum cell counts (25/50) and weights, including a heat-only baseline.
+1. Align optical crops on a 10 m UTM 39N grid. Respect Earth Search's applied BOA offset flag. Use nearest-neighbour SCL and bilinear SWIR resampling. Compute NDVI and MNDWI.
+2. Require SCL 4/5 land on all three optical dates. Flag water using SCL, Landsat QA and an uncalibrated MNDWI >0.20 / NDVI <0.10 rule. Conservatively also exclude historical WorldCover water, herbaceous wetland and mangrove classes. These historical classes are exclusions, not current truth.
+3. Buffer those exclusions by 60 m and remove a 60 m crop-edge halo. Require ≥90% inland optical support per delivered thermal pixel.
+4. Convert ST_B10 using `DN × 0.00341802 + 149 − 273.15`. Exclude QA bits 0–5 and water bit 7, radiometric flags, missing values, ST_QA >2 K and cloud distance <1 km. Native thermal detail is about 100 m on a delivered 30 m grid.
+5. Qualify a date only if ≥50% of historical urban inland support passes strict QA. The cutoff was defined before inspecting Al Khor temperatures. Historical support means ≥10% WorldCover built-up optical pixels per thermal footprint; it is an incomplete current-city proxy. At least two dates must qualify. September 6 covers 0%; September 14 and 30 cover about 99% each. Compare their intersecting support.
+6. Rasterise closed OSM ways and WorldCover. Multipolygon relations, small center-sampled buildings and unmapped development may be missed. WorldCover class 50 includes buildings, roads and structures.
+7. Report 300 m cells with ≥25 common delivered 30 m samples. Temperature and product uncertainty are medians; green-pixel share is the fraction of matched clear-land pixels with NDVI ≥0.30. Report observed cell coverage. It is not subpixel fractional vegetation or a tree/shade inventory.
+8. Screen urban candidates using historical built-up share ≥10% OR mapped-building share ≥2% within retained land support. Keep all observed context cells available for inspection, but assign no rank to excluded context. This uncalibrated rule can miss new or unmapped urban areas.
+9. Score only the candidate pool: `100 × (0.50 heat percentile + 0.30 inverse green-pixel percentile + 0.20 mapped-building percentile)`, with tie-aware midranks. WorldCover affects eligibility but does not directly enter the score. This is a relative investigation heuristic, not heat-health risk.
+10. Test 13 settings: NDVI 0.2/0.3/0.4, buffers 30/60/100 m, ST_QA 2/2.5/3 K, minimum samples 25/50, alternative score weights and looser/tighter urban cutoffs (5%/1%, 20%/5%). Urban-cutoff scenarios change the candidate pool; other settings use the baseline pool. The separate coastal sensitivity table requires all three thermal dates, unlike the primary comparison.
 
-The pipeline is deterministic. Reference sampling uses seed `20261004`. No model training, GPU, API key or live API is required for the packaged analysis.
+The deterministic workflow uses reference-sampling seed `20261004`. No model training, GPU, API key or live API is needed for the packaged analysis.
 
 ## 5. Installation
 
-Requires Python 3.12. After cloning your accessible GitHub repository or extracting this package, change into its root:
+Requires Python 3.12. From the repository root:
 
 ```sh
 python -m venv .venv
-# Linux/macOS:
+# Linux/macOS
 source .venv/bin/activate
-# Windows PowerShell instead:
-# .venv\Scripts\Activate.ps1
+# Windows PowerShell: .venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 ```
 
-All direct dependencies, including notebook execution and map asset generation, are pinned. `requirements-lock.txt` records the full tested environment. A normal laptop should need no GPU.
+Direct dependencies are pinned; `requirements-lock.txt` records the tested environment.
 
-## 6. Run
+## 6. Run and reproduce
 
 ```sh
 jupyter lab pilot.ipynb
 ```
 
-Restart the kernel and run all cells. The notebook regenerates maps, tables, reference checks and map assets from the included crops. It uses paths relative to this repository. A command-line equivalent is:
+Restart the kernel and run all cells. The notebook regenerates result tables, figures and map assets from the included inputs. Command-line equivalent:
 
 ```sh
 python src/export_map.py
 python src/verify.py
 ```
 
-The included inputs run offline. Optional `python src/fetch_sample.py` retrieves the exact satellite crops if missing. Preserve the packaged OSM snapshot for exact reproduction because the live database changes. Results appear under `results/`; map assets under `app/assets/`. Expect roughly a minute on a standard laptop, depending on hardware. See `results/notebook-verification.json` for the actual execution status and runtime rather than assuming notebook validation passed.
+For the portable interactive map, after generating assets:
 
-## 7. Example input and output
+```sh
+python -m http.server 8000 --directory app
+```
 
-Source examples include `data/sample_input/red.tif`, `data/sample_input/landsat/lwir11.tif`, `data/sample_input/reference/worldcover2021.tif` and `data/sample_input/reference/osm-map.osm`.
+Open `http://localhost:8000`. The map keeps temperature, green signal, mapped buildings, investigation score and temperature uncertainty separate. It supports all observed cells, with urban candidates distinguished from context.
 
-![Actual land-cover context and investigation score](results/planning-map.png)
+Optional `src/fetch_sample.py` retrieves missing source crops. `src/fetch_osm.py` retrieves a new live snapshot; this changes inputs and must not be presented as exact reproduction. Preserve the packaged OSM data. `src/check_notebook.py` verifies hashes and executes an ordinary notebook kernel; its report must be read before claiming that check passed. GitHub Actions removes generated outputs before executing.
 
-![Actual accepted surface-temperature comparison](results/multidate-temperature.png)
+## 7. Example inputs and outputs
 
-`results/planning-cells.csv` and `.geojson` contain values, ranks, sensitivity ranges and retained cell coverage. `reference-samples.csv` exposes source labels and pending human confirmations. `planning-sensitivity.csv` provides all tested settings. `app/assets/data.json` and PNGs reproduce the optional hosted map's numerical layers. The hosted interface is maintained separately through Sites and is a supplement to the notebook.
+Example inputs: `data/sample_input/red.tif`, `landsat/lwir11.tif`, `reference/worldcover2021.tif`, `reference/osm-map.osm`.
 
-## 8. Results, validation and limits
+![Actual Al Khor land-cover context and shortlist](results/planning-map.png)
 
-The corrected main comparison retains **1.1502 km²**, **1,278 delivered thermal samples** and **16 reported cells**. Delivered samples are spatially dependent. The top shortlist is V02-05, V04-04 and V04-03. The first stays rank 1 across all 11 scenarios, the second ranges 2–3 and the third 2–6. This stability applies only to the selected data and tested settings; it does not certify true planning priority.
+![Matched surface-temperature observations](results/multidate-temperature.png)
 
-Contributed-reference checks use 100 m sample spacing where feasible. All 30 offshore reference points agree with the water screen. Three sampled interiors of small mapped water features are missed. Of 30 sampled mapped-building interiors, one passes the greenery threshold and 25 overlap historical WorldCover built-up. No OSM grass interior survives the 10 m erosion, so these data do not independently validate vegetation. Reference data are contributed, vary in age and await human confirmation. Positive-only, limited-coverage checks are not overall accuracy estimates. WorldCover uses some OSM auxiliary inputs, so OSM-building agreement is not independent WorldCover validation.
+`context-cells.csv` contains all observed cells. `planning-cells.csv` and `.geojson` contain the urban shortlist, coverage, scores and sensitivity. `reference-samples.csv` records source labels, rule agreement, retained thermal support and pending human confirmation. `app/` contains the portable interface; its numerical assets regenerate from the notebook. The owner-private hosted map supplements an evaluator-accessible repository.
 
-QA and numerical checks verify raw temperature conversion, grid alignment, source exclusions, support/counts and score bounds. [The normal Jupyter check passed](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37223755463) on 4 October 2026 in a clean GitHub-hosted Linux environment with Python 3.12.14 and the pinned dependencies. All five code cells ran with zero errors in 3.9 seconds after generated outputs were removed, and 35 packaged input hashes were verified. The committed notebook contains the resulting visible outputs and its report is in `results/notebook-verification.json`. The tested analysis commit is `868c08a00bb31c81620485c27a83a8f190f87b36`; the following evidence/documentation commit preserves the code and inputs. A separate execution environment is not independent scientific validation.
+## 8. Results and validation limits
 
-There is no independent temperature calibration. ST_QA is product-reported per-pixel uncertainty, not a confidence interval for a cell median or proof of accuracy. Historical ASTER emissivity inputs, known Landsat vegetation-adjustment issues, small-target blockiness, water mixing, shadows, reference ages and threshold choices may affect results. Surface temperature is distinct from air temperature and human exposure. We have not estimated UHI intensity against a rural reference, long-term urban expansion, warming trends, population vulnerability, cooling effects or health outcomes. Two September morning observations cannot support those claims.
+The primary comparison retains **94.4379 km²** of matching inland sample footprints across the broad window. It reports **1111 observed cells**, including **373 screened urban candidates** with **31.8195 km²** of retained sample footprint. These are sample footprints, not a measurement of total city built-up area. Delivered thermal pixels are spatially dependent.
 
-## 9. Team, licence and attribution
+| Candidate | Mean cell surface °C* | Green %* | Mapped buildings % | Rank range |
+|---|---:|---:|---:|---:|
+| V04-23 | 50.4 | 0.0 | 2.3 | 1–14 |
+| V28-17 | 50.0 | 0.0 | 0.1 | 1–23 |
+| V04-24 | 50.2 | 0.1 | 2.9 | 2–34 |
 
-Team: Al Zubarah (الزبارة), Qatar. Members confirmed by the team on 4 October 2026:
+*Means of date-level cell summaries. Rank ranges describe selected settings, not confidence intervals. The leading candidates change order under alternative weights and thresholds; there is no uniquely certified priority site.
+
+Reference checks use contributed labels, 100 m spacing where feasible and a 10 m interior erosion. Of 30 coastal reference points, 20 agree with the spectral/QA water flag; **none enter retained thermal support** after conservative exclusions. Shoreline vegetation and tides complicate those labels. All 30 sampled OSM-water polygon points disagree with the rule; imagery review shows that some contributed water geometry spans dry/urban land. These conflicts are documented rather than treated as reliable truth or used to force a water mask. Of 25 grass reference points, 24 pass the green threshold; none of 30 building references do. Historical built-up class agrees at 25/30 building points. Human confirmations are pending. Positive-only checks are not overall accuracy estimates; WorldCover uses some OSM auxiliary inputs.
+
+Numerical checks verify temperature conversion, QA exclusions, support counts, grid alignment, urban eligibility and map consistency. All five notebook cells passed an in-process IPython check in this workspace. All seven regenerated CSV tables exactly match the uploaded baseline. Separate ordinary Jupyter execution remains pending because workspace socket permissions blocked normal kernel startup. See `results/notebook-verification-inprocess.json` and `docs/Verification-Report.md`. Reproducibility does not establish scientific accuracy.
+
+ST_QA is product-reported per-pixel uncertainty, not a confidence interval for a cell median or all systematic error. ASTER emissivity history, vegetation-adjustment issues, small-target blockiness, water mixing, missing mapping and threshold choices can affect results. No field thermal calibration, air temperature, population exposure, shade validation, rural-reference UHI, long-term change, causal cooling or health outcomes are established. Two accepted morning dates cannot establish these claims.
+
+## 9. Team members and roles
 
 - Nasser Alhuri — registered team leader.
 - Abdulrahman Almohannadi
@@ -99,21 +115,19 @@ Team: Al Zubarah (الزبارة), Qatar. Members confirmed by the team on 4 Oct
 - Majed Alkuwari
 - Ali Alkubaisi
 
-**Roles are not assigned yet, and each member's actual project contribution remains to be confirmed.** The submission guide asks for members and roles. The team can divide the remaining map review, demo testing and presentation work, then document completed contributions. No contribution or role is invented. The code and writing were developed with AI assistance and require team ownership/review.
+Roles beyond team leadership and actual contributions remain unassigned/unconfirmed. The guide requires members and roles. No role or completed contribution is invented. Code and writing were developed with AI assistance and require team review and ownership.
 
-Original project code: MIT (`LICENSE`). Sentinel, Landsat, WorldCover and OpenStreetMap data retain their own terms. The filtered OSM database and adapted OSM geometry remain ODbL (`DATA-LICENSES.md`). Do not imply that the MIT licence relicenses upstream data.
+## 10. Licences and sources
 
-Sources:
+Original code: MIT. Upstream data retain their terms; filtered/derived OSM geometry remains ODbL. See `LICENSE` and `DATA-LICENSES.md`.
 
-- [USGS surface-temperature method and caveats](https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-temperature)
+- [USGS surface-temperature processing](https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-temperature)
 - [USGS known issues](https://www.usgs.gov/landsat-missions/landsat-collection-2-known-issues)
-- [NASA Landsat-9 thermal resolution](https://science.nasa.gov/mission/landsat-9/)
-- [Element 84 Earth Search processing](https://github.com/Element84/earth-search/blob/main/README.md)
-- [Copernicus Sentinel terms](https://dataspace.copernicus.eu/terms-and-conditions)
-- [ESA WorldCover 2021 v200 dataset](https://doi.org/10.5281/zenodo.7254220)
-- [WorldCover product manual and CatBoost method](https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/docs/WorldCover_PUM_V2.0.pdf)
-- [WorldCover licensing](https://esa-worldcover.org/en/data-access)
-- [OpenStreetMap copyright and licence](https://www.openstreetmap.org/copyright)
-- [OSM coastline direction convention](https://wiki.openstreetmap.org/wiki/Tag:natural%3Dcoastline)
+- [NASA Landsat 9](https://science.nasa.gov/mission/landsat-9/)
+- [Earth Search processing](https://github.com/Element84/earth-search/blob/main/README.md)
+- [ESA WorldCover dataset](https://doi.org/10.5281/zenodo.7254220)
+- [WorldCover product manual](https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/docs/WorldCover_PUM_V2.0.pdf)
+- [OSM licence](https://www.openstreetmap.org/copyright)
+- [OSM coastline convention](https://wiki.openstreetmap.org/wiki/Tag:natural%3Dcoastline)
 
-Contains modified Copernicus Sentinel data (2026). Landsat Collection 2 Level-2 imagery courtesy of the U.S. Geological Survey. EROS Center (2020), Landsat 8–9 OLI/TIRS L2, C2, https://doi.org/10.5066/P9OGBGM6. ESA WorldCover 2021 v200, Zanaga et al. (2022), https://doi.org/10.5281/zenodo.7254220. © OpenStreetMap contributors.
+Contains modified Copernicus Sentinel data (2026). Landsat imagery courtesy of USGS; doi.org/10.5066/P9OGBGM6. ESA WorldCover 2021 v200, Zanaga et al. (2022), CC BY 4.0, doi.org/10.5281/zenodo.7254220. © OpenStreetMap contributors, ODbL.
