@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-06",
+  "status": "passed",
+  "workflow_run_url": "https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37505530323",
+  "workflow_run_id": 37505530323,
+  "workflow_job_id": 112413109720,
+  "source_commit": "5e7c540afdd9954363f73b9cde588d237291c388",
+  "artifact_id": 11431542823,
+  "artifact_zip_sha256": "5e7dfbf69d1661adf339c7ad861020ceaebacecc28dcf16ed8a25b05f5df1f93",
+  "ordinary_jupyter_kernel": {
+    "executed_code_cells": 5,
+    "errors": 0,
+    "sample_hashes_verified": 35,
+    "runtime_seconds": 7.2,
+    "python_version": "3.12.14"
+  },
+  "numerical_checks": {
+    "common_samples": 104931,
+    "urban_candidates": 373,
+    "source_checks": 115,
+    "status": "passed"
+  },
+  "original_csv_tables_identical": 7,
+  "local_greenery_audit": "passed",
+  "review_figures": "rendered",
+  "map_control_checks": "passed",
+  "map_control_method": "Node VM with DOM adapter; not a full browser or touch-device review",
+  "actual_artifact_retrieved_and_verified": true,
+  "notebook_cell_sources_unchanged": true,
+  "original_analysis_and_input_data_unchanged": true,
+  "published_branches": [
+    "main",
+    "pilot/al-khor"
+  ],
+  "pearl_backup_unchanged": "f9514a479d0d7a9092c32c9e7a2dcbd1ecab6343",
+  "al_khor_baseline_backup_unchanged": "2b46fd0b470ce586b110f117f96f8b9f4c98cfee",
+  "submission_status": "Not submitted; final approval required."
+}

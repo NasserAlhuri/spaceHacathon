@@ -6,8 +6,8 @@ Updated 6 October 2026. Review package only; nothing submitted.
 
 - [x] Al Khor study, README, pinned dependencies, licences, exact source metadata and 35 hashed inputs.
 - [x] Clean regeneration and numerical checks; seven regenerated CSV tables match the supplied baseline byte for byte.
-- [x] Normal Jupyter execution on GitHub: five cells, zero errors, all 35 input hashes verified. [Run evidence](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37269889977).
-- [x] Executed notebook and regenerated results retrieved from artifact 11328001190.
+- [x] Normal Jupyter execution on GitHub: five cells, zero errors, all 35 input hashes verified. [Run evidence](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37505530323).
+- [x] Executed notebook and regenerated results retrieved from artifact 11431542823.
 - [x] Portable Al Khor map: 1,111 observed cells and 373 urban candidates.
 - [x] Twelve-slide PDF and editable PowerPoint: official theme/country, problem, use case, data disclosures, editable workflow, actual outputs, sensitivity, verification, limitations, impact and incubation next steps.
 - [x] Team responsibilities assigned: coordination, local knowledge, map testing, slides/limitations and demonstration/judge questions.
@@ -26,7 +26,7 @@ Updated 6 October 2026. Review package only; nothing submitted.
 - [x] Repository visibility verified public on 6 October 2026. Recheck final links before submission.
 - [ ] Complete assigned member reviews in Team-Review.md. Role assignment is not evidence that a review occurred.
 - [ ] Review boundary, candidate sites and contributed reference-label conflicts.
-- [ ] Confirm the deadline conflict. Live Cockpit: 10 October 2026, 22:59, timezone unstated. Guide: 11 October, 23:59 team-creator local time; guide defers to official timeline. Plan toward the earlier date.
+- [x] Organizer message supplied by Nasser confirms 11 October; hour/timezone unspecified. Plan to finish before the date. See Organizer-Access-and-Deadline.md.
 - [ ] Attach the final PDF and optional ZIP to the form and verify their names and sizes.
 - [ ] Truthfully confirm repository contents and organizer access only after the access gate is satisfied.
 - [ ] Obtain the user's final approval before clicking Submit. Do not contact organizers without explicit authorization.
@@ -35,11 +35,12 @@ Updated 6 October 2026. Review package only; nothing submitted.
 
 Presentation PDF: at most 50 MB. Optional ZIP: at most 200 MB. The portable map is sufficient for the packaged demonstration; a hosted app is optional and its previous Pearl deployment is not relied on.
 
-## Continuation checkpoint, 6 October 2026
+## Expanded verification and publication
 
-- [x] [Fresh ordinary-kernel rerun](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37269889977/attempts/2): five cells, zero errors, 35 input hashes.
-- [x] Retrieved actual fresh artifact and verified seven original CSV tables byte for byte.
-- [x] Pearl backup rechecked unchanged.
-- [x] Nasser explicitly approved publishing the complete package, including attributed local observations, to the public repository on 6 October 2026.
-- [ ] Finish GitHub upload and run the expanded workflow after approved publication.
+- [x] Improved map, local evidence, audit, figures and twelve-slide deck published to main and pilot/al-khor.
+- [x] Expanded clean GitHub workflow passed: notebook, numerical checks, seven table comparisons, greenery audit, figures and map controls.
+- [x] Actual artifact 11431542823 retrieved and verified; executed notebook and reports saved.
+- [x] Both backup branches preserved unchanged.
+- [x] Current public repository meets the organizer's supplied access instruction; no collaborator invitations needed.
+- [ ] Complete full browser/device review and other assigned teammate checks.
 - [ ] Final hackathon submission approval. Nothing submitted.

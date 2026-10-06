@@ -19,5 +19,7 @@
   "main_commit_unchanged": "2b46fd0b470ce586b110f117f96f8b9f4c98cfee",
   "pearl_backup_commit_unchanged": "f9514a479d0d7a9092c32c9e7a2dcbd1ecab6343",
   "github_upload_status": "Pending explicit public-publication approval after automatic review rejection of app/local-review.json. No branch was updated.",
-  "submission_status": "Not submitted; final user approval required."
+  "submission_status": "Not submitted; final user approval required.",
+  "historical_snapshot": true,
+  "superseded_by": "results/expanded-workflow-verification.json"
 }

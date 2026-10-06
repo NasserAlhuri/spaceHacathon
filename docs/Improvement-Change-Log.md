@@ -16,24 +16,18 @@ Local verification completed: clean regeneration passed; all seven original CSV 
 
 ## Unresolved
 
-Detailed follow-up site assessment; exact bus-stop sign coordinates; passenger use/times; shade through the day; route safety; ownership and hospital expansion plans; independent thermal/vegetation validation; other team reviews; final submission attachments and approval. Deadline displays still conflict; no current authenticated deadline confirmation was performed in this revision. Use the earlier recorded cutoff until resolved.
+Detailed follow-up site assessment; exact bus-stop sign coordinates; passenger use/times; shade through the day; route safety; ownership and hospital expansion plans; independent thermal/vegetation validation; other team reviews; final submission attachments and approval. The organizer response supplied by Nasser confirms 11 October; no hour/timezone is specified. The team plans to finish before the date.
 
 ## Future work
 
 A third suitable thermal date, comparable imagery from different years, validated segmentation, shade/paving indicators and reliable human-use data. None is represented as implemented. No new heatwave feature, human-use score or measured cooling/health benefit is claimed. No external demo was deployed and nothing was submitted.
 
-## Fresh notebook verification, 6 October 2026
+## Expanded GitHub verification and publication
 
-[GitHub run attempt 2](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37269889977/attempts/2) passed on Python 3.12.14: five code cells, zero errors, 35 input hashes verified and 4.3 seconds of kernel runtime. Generated outputs were removed before execution. Artifact 11428558809 was downloaded and its ZIP SHA256 verified (`cca350ef0a16d570ac9390b75484dac0f70d3768de77131a44959fe39e4f6ec4`). All seven regenerated CSV tables match the preserved baseline byte for byte. Notebook cell sources are unchanged; the packaged notebook and notebook report now contain the actual fresh artifact outputs.
+[Run 37505530323](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37505530323) passed on source `5e7c540afdd9954363f73b9cde588d237291c388`: five cells, zero errors, 35 input hashes; numerical, greenery-audit, figure and map-control checks passed. All seven original CSV tables match byte for byte. Actual artifact 11431542823 was retrieved, checked and saved. The ordinary notebook test now accompanies all added audit/interface checks in the same clean workflow.
 
-This reran source commit `9781b95a46d86eb858ae9714ee53198ad22cfb6c`. Its original analysis scripts, inputs, metadata and dependencies match current main and this package. The improved local-review interface and added audit/figure scripts were outside that earlier workflow. The supplied audit/figure evidence is retained; the current map-control checks were independently rerun successfully using the Node DOM adapter. Full browser/device and scientific validation remain separate.
+The improved package was published to pilot/al-khor and promoted to main by non-force fast-forward. Evidence/document refresh leaves tested code, dependencies, inputs, ranking and seven original CSV tables unchanged. Both backups remain unchanged. The organizer correspondence supplied by Nasser accepts public access and confirms 11 October; complete the project before the date. Nothing has been submitted and final submission approval remains required.
 
-The package adds `metadata/original-results-sha256.json`, `src/verify_reproduction.py` and a workflow step to check the seven tables on future clean runs. This expanded workflow is prepared locally and has not yet run on GitHub.
+## Continuity and evidence refresh
 
-Full GitHub publication is pending: automatic approval review rejected `app/local-review.json` because the public upload includes precise site coordinates and local observations attributed to named individuals. No branch was updated. Current main and pilot remain `2b46fd0b470ce586b110f117f96f8b9f4c98cfee`; Pearl backup remains `f9514a479d0d7a9092c32c9e7a2dcbd1ecab6343`. Some Git blobs were prepared before publication stopped; the package is not present on main. Explicit approval of the complete public payload is needed to finish publishing it. Nothing has been submitted to the hackathon; final submission approval remains required.
-
-Machine-readable fresh evidence: `results/fresh-run-evidence.json`. Table comparison: `results/original-results-comparison.json`.
-
-## Publication consent, 6 October 2026
-
-Nasser explicitly approved public publication of the complete reviewed package, including coordinates, local observations, visit confirmation, named attribution, team responsibilities, documentation, figures and the deck. Publication and expanded verification are in progress. Final hackathon submission approval remains outstanding.
+Added PROJECT_STATE.md as the concise resume checkpoint and linked it from README and Latest-Handover. Reconciled live branch heads, successful expanded run, actual artifact digest and 23 files; verified the 35 input and seven original result hashes again. Reviewed the 12-slide PDF/PowerPoint and added Delivery-Review.md. Full browser/device and teammate checks remain pending.

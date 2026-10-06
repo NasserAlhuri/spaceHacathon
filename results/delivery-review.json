@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-06",
+  "status": "passed_with_pending_reviews",
+  "published_source_commit": "5e7c540afdd9954363f73b9cde588d237291c388",
+  "expanded_run_live_status": "completed_success",
+  "artifact_digest_verified": true,
+  "artifact_files_matching_local": 23,
+  "packaged_input_hashes_verified": 35,
+  "original_csv_tables_identical": 7,
+  "notebook_executed_code_cells": 5,
+  "notebook_errors": 0,
+  "presentation_pdf_pages": 12,
+  "presentation_pptx_slides": 12,
+  "presentation_visual_review": "passed; actual PDF contact sheet inspected; matching PowerPoint text and figures checked",
+  "presentation_pdf_bytes": 2917430,
+  "presentation_pptx_bytes": 1574000,
+  "map_browser_review": "pending; Playwright package available, Chromium executable unavailable; no real-browser pass claimed",
+  "teammate_reviews": "pending; no member completion inferred",
+  "submission_status": "not submitted; final approval required"
+}

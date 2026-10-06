@@ -4,7 +4,9 @@ Team **Al Zubarah (الزبارة)**, Qatar. Theme: **Urban Expansion, Land Use 
 
 This open-data PoC combines satellite surface temperature, green-pixel share, contributed building footprints and historical land cover to shortlist places for site investigation across the Al Khor area. It expands the earlier Pearl pilot, retained on `backup/pearl-2026-10-05`.
 
-**Status:** review draft. Clean command-line regeneration and numerical checks passed on 5 October 2026. All five unchanged notebook cells also passed an in-process IPython check with zero errors and all 35 input hashes verified. Normal Jupyter execution of this Al Khor version passed on a separate GitHub-hosted runner on 5 October 2026: five code cells, zero errors and all 35 input hashes checked. [Verified run](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37269889977). The previous Pearl notebook pass does not validate this new version. All five members are signed in on the platform; review responsibilities are assigned below. Local observations for three cells were supplied by Abdulrahman and recorded on 6 October; Nasser confirms site visits and the same physical situation as in September 2026; exact visit dates were not supplied. Detailed site assessment and the other member reviews remain pending. Repository visibility was verified public on 6 October; final approval is still required. Nothing has been submitted.
+**Status:** review draft published to public GitHub. [Expanded clean verification](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37505530323) passed on 6 October 2026: five notebook code cells, zero errors, 35 input hashes checked, numerical checks and all seven original CSV tables reproduced byte for byte. The greenery audit, review-figure rendering and map-control tests also passed. Local observations for three cells were supplied by Abdulrahman; Nasser confirms site visits and unchanged physical conditions relative to September 2026, with exact visit dates unspecified. Detailed site assessment and other teammate reviews remain pending. Final submission approval is required. Nothing has been submitted.
+
+For current progress and the next unfinished task, start with [PROJECT_STATE.md](PROJECT_STATE.md).
 
 ## 1. Intended user and use case
 
@@ -103,7 +105,7 @@ The primary comparison retains **94.4379 km²** of matching inland sample footpr
 
 Reference checks use contributed labels, 100 m spacing where feasible and a 10 m interior erosion. Of 30 coastal reference points, 20 agree with the spectral/QA water flag; **none enter retained thermal support** after conservative exclusions. Shoreline vegetation and tides complicate those labels. All 30 sampled OSM-water polygon points disagree with the rule; imagery review shows that some contributed water geometry spans dry/urban land. These conflicts are documented rather than treated as reliable truth or used to force a water mask. Of 25 grass reference points, 24 pass the green threshold; none of 30 building references do. Historical built-up class agrees at 25/30 building points. Human confirmations are pending. Positive-only checks are not overall accuracy estimates; WorldCover uses some OSM auxiliary inputs.
 
-Numerical checks verify temperature conversion, QA exclusions, support counts, grid alignment, urban eligibility and map consistency. All five notebook cells passed an in-process IPython check in this workspace. All seven regenerated CSV tables exactly match the uploaded baseline. Separate ordinary Jupyter execution passed on GitHub. The executed notebook and regenerated results were retrieved from artifact 11328001190, and all seven CSV tables match the packaged baseline. See `results/notebook-verification.json` and `docs/Verification-Report.md`. The earlier local fallback record is retained for provenance. Reproducibility does not establish scientific accuracy.
+Numerical checks verify temperature conversion, QA exclusions, support counts, grid alignment, urban eligibility and map consistency. The expanded clean GitHub workflow passed through an ordinary Jupyter kernel and reproduced all seven original CSV tables exactly. Actual outputs were retrieved from artifact 11431542823. See `results/notebook-verification.json`, `results/expanded-workflow-verification.json` and `docs/Verification-Report.md`. Earlier test records remain for provenance. Reproducibility does not establish scientific accuracy.
 
 ST_QA is product-reported per-pixel uncertainty, not a confidence interval for a cell median or all systematic error. ASTER emissivity history, vegetation-adjustment issues, small-target blockiness, water mixing, missing mapping and threshold choices can affect results. No field thermal calibration, air temperature, population exposure, shade validation, rural-reference UHI, long-term change, causal cooling or health outcomes are established. Two accepted morning dates cannot establish these claims.
 
@@ -123,7 +125,7 @@ python src/audit_local_greenery.py
 python src/render_review_figures.py
 ```
 
-The original five-cell notebook, screening, input data and seven CSV outputs are unchanged. The new audit and map-interface checks are separate from the previously verified notebook execution. Clean command-line regeneration on 6 October passed and all seven original CSV tables match byte for byte. Map-control tests use a DOM adapter; full browser/device review remains pending. Optional interface check: `node src/test_map_review.mjs` (Node.js required for this check only).
+The five notebook cell sources, original screening, input data and seven CSV outputs are unchanged. The expanded GitHub workflow now verifies the notebook, numerical results, seven CSV comparisons, separate greenery audit, review figures and map controls in one clean run. Actual executed/generated outputs are retained. Map-control tests use a DOM adapter; full browser/device review remains pending. Optional interface check: `node src/test_map_review.mjs` (Node.js required for this check only).
 
 ## 9. Team members and roles
 
@@ -154,8 +156,8 @@ Original code: MIT. Upstream data retain their terms; filtered/derived OSM geome
 
 Contains modified Copernicus Sentinel data (2026). Landsat imagery courtesy of USGS; doi.org/10.5066/P9OGBGM6. ESA WorldCover 2021 v200, Zanaga et al. (2022), CC BY 4.0, doi.org/10.5281/zenodo.7254220. © OpenStreetMap contributors, ODbL.
 
-## Fresh verification and publication status, 6 October 2026
+## Current verification and publication, 6 October 2026
 
-[Fresh GitHub run attempt 2](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37269889977/attempts/2) passed: five cells, zero errors, all 35 input hashes verified. The retrieved artifact reproduces all seven original CSV tables byte for byte; notebook cell sources are unchanged. The improved interface was checked separately. See `docs/Verification-Report.md` and `results/fresh-run-evidence.json`.
+[Expanded GitHub run](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37505530323) passed on source `5e7c540afdd9954363f73b9cde588d237291c388`. The actual artifact 11431542823 was retrieved and verified; the package contains its executed notebook and result evidence. All seven original CSV tables are unchanged. See `docs/Verification-Report.md` and `results/expanded-workflow-verification.json`.
 
-The full improved package has not been published to main. Nasser explicitly approved public publication of the complete package on 6 October 2026, including local observations and named attribution. Publication and expanded verification are in progress. Pearl backup is unchanged. Nothing has been submitted.
+The improved package is published to main and pilot/al-khor. Pearl and the Al Khor baseline backups remain unchanged. The organizer message supplied by Nasser accepts a public repository and confirms 11 October; the team plans to finish before the date. See `docs/Organizer-Access-and-Deadline.md`. Full browser/device checks, assigned teammate reviews and final submission approval remain pending. Nothing has been submitted.
