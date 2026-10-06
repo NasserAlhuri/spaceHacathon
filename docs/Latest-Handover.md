@@ -18,7 +18,7 @@ Pearl backup must remain at `f9514a479d0d7a9092c32c9e7a2dcbd1ecab6343`. Al Khor 
 
 ## Next work
 
-Complete Mohammed's full browser/device review, Majed's slide/limitations review and Ali's demo/judge-question rehearsal. Detailed shade/use/access, exact bus-stop sign location, ownership/land plans and independent validation remain pending. Do not mark teammate reviews complete without their confirmation.
+The technical Chromium desktop/mobile-emulation review is complete; see Browser-Review.md. Complete Mohammed's own browser/device review, Majed's slide/limitations review and Ali's demo/judge-question rehearsal. Detailed shade/use/access, exact bus-stop sign location, ownership/land plans and independent validation remain pending. Do not mark teammate reviews complete without their confirmation.
 
 The organizer message supplied by Nasser confirms 11 October and accepts public repository access. Exact hour/timezone are unspecified; Nasser plans to finish before the date, so timing ambiguity is not a blocker. Finish final attachments and platform declarations only after checking the final links/files.
 

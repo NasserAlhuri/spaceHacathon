@@ -36,3 +36,7 @@ Final PDF/ZIP attachments, truthful platform declarations and final user approva
 ## Evidence reconciliation, 6 October 2026
 
 Live branch heads and the successful expanded run were checked again. The artifact ZIP digest matches GitHub, and all 23 retrieved files match the local package. The 35 original input hashes and seven original result-table hashes pass again. The current checkpoint is PROJECT_STATE.md. Presentation and delivery review are recorded in Delivery-Review.md. A local real-browser attempt could not run because Chromium is unavailable; browser/device and teammate review remain pending.
+
+## Real-browser technical check, 6 October 2026
+
+Real Chromium desktop and touch-emulated mobile checks now pass after repairing label readability and desktop card stretching. Two dates, five layers, the three sites, comparison, actual CSV download, map clicks/taps, pan, zoom/focus/reset and opacity were exercised. Each profile passed 24 groups, with zero JavaScript/console/network errors; narrow-width checks cover 1024 and 320 px. See [Browser-Review.md](Browser-Review.md) and `results/browser-review.json`. This supersedes the earlier local Chromium-unavailable limitation for this environment, but physical-device, other-browser and member reviews remain pending. The earlier expanded workflow remains evidence for the unchanged scientific analysis; the current browser report validates the UI repairs. No analysis was rerun.

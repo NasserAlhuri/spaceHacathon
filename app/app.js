@@ -1,7 +1,7 @@
 'use strict';
 const $=id=>document.getElementById(id);
 const NS='http://www.w3.org/2000/svg';
-let data=null,localReview={cells:[]},state={date:'2026-09-30',layer:'priority',cell:null},view={x:0,y:0,w:1830,h:2100},drag=null,dragged=false;
+let data=null,localReview={cells:[]},mapLabels=[],state={date:'2026-09-30',layer:'priority',cell:null},view={x:0,y:0,w:1830,h:2100},drag=null,dragged=false;
 const escapeHtml=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const reviewFor=id=>localReview.cells.find(c=>c.cell_id===id);
 function localDetails(cell){
@@ -51,7 +51,19 @@ function point(event){return new DOMPoint(event.clientX,event.clientY).matrixTra
 function updateView(){
  view.x=Math.max(-data.width*.1,Math.min(data.width*1.1-view.w,view.x));view.y=Math.max(-data.height*.1,Math.min(data.height*1.1-view.h,view.y));
  $('map').setAttribute('viewBox',`${view.x} ${view.y} ${view.w} ${view.h}`);
- const rect=$('map').getBoundingClientRect();$('scale-line').style.width=`${300*Math.min(rect.width/view.w,rect.height/view.h)}px`;
+ const rect=$('map').getBoundingClientRect(),scale=Math.min(rect.width/view.w,rect.height/view.h);
+ $('scale-line').style.width=`${300*scale}px`;
+ // Keep labels readable in screen pixels as the map is resized or zoomed.
+ const font=13/scale,margin=8/scale,compact=rect.width<600;
+ for(const {label,cell,review,x,y} of mapLabels){
+  const visible=cell.points.some(p=>p[0]>=view.x&&p[0]<=view.x+view.w&&p[1]>=view.y&&p[1]<=view.y+view.h);
+  label.style.display=visible?'':'none';
+  label.textContent=compact?cell.id:cell.id+' · '+review.map_label;
+  label.style.fontSize=`${font}px`;label.style.strokeWidth=`${2/scale}px`;
+  const textWidth=label.textContent.length*font*.7;
+  label.setAttribute('x',Math.max(view.x+margin,Math.min(view.x+view.w-textWidth-margin,x+review.label_offset[0])));
+  label.setAttribute('y',Math.max(view.y+font+margin,Math.min(view.y+view.h-margin,y+review.label_offset[1])));
+ }
 }
 function zoom(factor,center){if(!data)return;const c=center??{x:view.x+view.w/2,y:view.y+view.h/2};const nw=Math.max(data.width/5,Math.min(data.width,view.w*factor));const f=nw/view.w;view={x:c.x-(c.x-view.x)*f,y:c.y-(c.y-view.y)*f,w:nw,h:view.h*f};updateView();}
 function inside(p,cell){const xs=cell.points.map(q=>q[0]),ys=cell.points.map(q=>q[1]);return p.x>=Math.min(...xs)&&p.x<=Math.max(...xs)&&p.y>=Math.min(...ys)&&p.y<=Math.max(...ys);}
@@ -91,7 +103,7 @@ async function initialize(){
  try{const response=await fetch('local-review.json');if(!response.ok)throw new Error('Local review unavailable');localReview=await response.json();}catch(e){$('review-status').textContent='Local-review details unavailable; satellite results remain accessible.';$('comparison-toggle').disabled=true;$('download-review').disabled=true;}
  for(const c of data.cells){const polygon=document.createElementNS(NS,'polygon');polygon.setAttribute('points',c.points.map(p=>p.join(',')).join(' '));$('cells').append(polygon);const option=document.createElement('option');option.value=c.id;option.textContent=c.id+(reviewFor(c.id)?' · '+reviewFor(c.id).name:c.urbanCandidate?' · urban candidate':' · context');$('cell-select').append(option);}
  if(localReview.study_boundary_points){const polygon=document.createElementNS(NS,'polygon');polygon.setAttribute('points',localReview.study_boundary_points.map(p=>p.join(',')).join(' '));polygon.setAttribute('class','study-boundary');$('map-labels').append(polygon);}
- for(const review of localReview.cells){const c=data.cells.find(c=>c.id===review.cell_id);if(!c)continue;const x=c.points.reduce((s,p)=>s+p[0],0)/c.points.length,y=c.points.reduce((s,p)=>s+p[1],0)/c.points.length;const label=document.createElementNS(NS,'text');label.setAttribute('x',x+review.label_offset[0]);label.setAttribute('y',y+review.label_offset[1]);label.textContent=c.id+' · '+review.map_label;$('map-labels').append(label);const outline=document.createElementNS(NS,'polygon');outline.setAttribute('points',c.points.map(p=>p.join(',')).join(' '));outline.setAttribute('class','review-cell');$('map-labels').append(outline);}
+ for(const review of localReview.cells){const c=data.cells.find(c=>c.id===review.cell_id);if(!c)continue;const x=c.points.reduce((s,p)=>s+p[0],0)/c.points.length,y=c.points.reduce((s,p)=>s+p[1],0)/c.points.length;const label=document.createElementNS(NS,'text');label.textContent=c.id+' · '+review.map_label;$('map-labels').append(label);mapLabels.push({label,cell:c,review,x,y});const outline=document.createElementNS(NS,'polygon');outline.setAttribute('points',c.points.map(p=>p.join(',')).join(' '));outline.setAttribute('class','review-cell');$('map-labels').append(outline);}
  $('date').replaceChildren();for(const date of [...data.dates].reverse()){const option=document.createElement('option');option.value=date;option.textContent=new Date(date+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});$('date').append(option);}state.date=data.dates.at(-1);$('date').value=state.date;
  $('date-count').textContent=data.dates.length+' dates';
  for(const id of ['base','mask-image','layer-image']){$(id).setAttribute('width',data.width);$(id).setAttribute('height',data.height);}
