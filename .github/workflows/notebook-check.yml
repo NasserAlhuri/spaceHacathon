@@ -35,6 +35,15 @@ jobs:
           PY
       - name: Execute notebook through a normal Jupyter kernel
         run: python src/check_notebook.py
+      - name: Verify regenerated numerical results and original tables
+        run: |
+          python src/verify.py
+          python src/verify_reproduction.py
+      - name: Audit local evidence and render review figures
+        run: |
+          python src/audit_local_greenery.py
+          python src/render_review_figures.py
+          node src/test_map_review.mjs
       - name: Retain executed notebook and verification evidence
         uses: actions/upload-artifact@v4
         with:

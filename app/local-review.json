@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-10-06",
+  "scope": "Separate local review; does not change satellite measurements or ranking.",
+  "study_boundary_points": [
+    [
+      36.565,
+      10566.534
+    ],
+    [
+      11079.17,
+      10524.842
+    ],
+    [
+      11035.004,
+      4.342
+    ],
+    [
+      1.153,
+      46.145
+    ],
+    [
+      36.565,
+      10566.534
+    ]
+  ],
+  "cells": [
+    {
+      "cell_id": "V04-23",
+      "name": "Bus-stop road near Al Khor Hospital",
+      "map_label": "Bus-stop road",
+      "centre": {
+        "latitude": 25.717995,
+        "longitude": 51.515221
+      },
+      "label_offset": [
+        -2900,
+        -220
+      ],
+      "observation": "Abdulrahman reports roadside trees and a bus stop without a shelter, with a short sidewalk and limited continuous walking access. Nasser reports visiting the sites and confirms that the described physical situation is the same as in September 2026; exact visit dates were not supplied. Shade through the day and route safety remain unmeasured.",
+      "usage_pattern": "Bus-stop passenger use reported; numbers and use times unknown.",
+      "shade": "No shelter visible in the supplied view. Trees cast some shade; shade at waiting times is unknown.",
+      "walking_access": "Short local sidewalk reported; route continuity and safety require a site check.",
+      "planned_use": "Stop ownership, permissions and planned road works unknown.",
+      "next_check": "Locate the sign precisely; check waiting-time shade, passenger use, route continuity, ownership and shelter or access feasibility.",
+      "street_view": {
+        "url": "https://maps.app.goo.gl/gPEzxW3NFqErPWNP8",
+        "camera_latitude": 25.7175476,
+        "camera_longitude": 51.5145504,
+        "image_capture_month": "2023-03",
+        "coordinate_type": "camera position; not surveyed stop coordinate",
+        "inside_cell": true
+      },
+      "observer": "Abdulrahman Almohannadi (local report); Nasser Alhuri (site-visit confirmation)",
+      "recorded_date": "2026-10-06",
+      "observation_date": null,
+      "evidence_type": "Team-member local report and firsthand site-visit confirmation",
+      "field_status": "site visit confirmed; detailed assessment pending",
+      "site_confirmation": {
+        "observer": "Nasser Alhuri",
+        "recorded_date": "2026-10-06",
+        "visit_date": null,
+        "statement": "Nasser reports visiting the sites and confirms that the described physical situation is the same as in September 2026. Exact visit dates were not supplied.",
+        "scope": "Physical site description; not measured temperature, NDVI, all-day shade, passenger counts, ownership or expansion plans."
+      }
+    },
+    {
+      "cell_id": "V28-17",
+      "name": "Al Bayt Stadium parking",
+      "map_label": "Stadium parking",
+      "centre": {
+        "latitude": 25.653042,
+        "longitude": 51.497008
+      },
+      "label_offset": [
+        -600,
+        460
+      ],
+      "observation": "Abdulrahman identifies stadium parking, mainly busy on match days. This is a local report, not a measured attendance or exposure estimate. Nasser reports visiting the sites and confirms the described physical situation is the same as in September 2026; exact visit dates were not supplied. Attendance and exposure were not measured.",
+      "usage_pattern": "Event-dependent use reported; use outside match days unknown.",
+      "shade": "Current pedestrian shade unknown.",
+      "walking_access": "Pedestrian routes, crossings and waiting areas unverified.",
+      "planned_use": "Ownership and event-management plans unverified.",
+      "next_check": "Check event timing, pedestrian routes, existing shade and ordinary-day use before assessing event-specific protection.",
+      "observer": "Abdulrahman Almohannadi (local report); Nasser Alhuri (site-visit confirmation)",
+      "recorded_date": "2026-10-06",
+      "observation_date": null,
+      "evidence_type": "Team-member local report and firsthand site-visit confirmation",
+      "field_status": "site visit confirmed; detailed assessment pending",
+      "site_confirmation": {
+        "observer": "Nasser Alhuri",
+        "recorded_date": "2026-10-06",
+        "visit_date": null,
+        "statement": "Nasser reports visiting the sites and confirms that the described physical situation is the same as in September 2026. Exact visit dates were not supplied.",
+        "scope": "Physical site description; not measured temperature, NDVI, all-day shade, passenger counts, ownership or expansion plans."
+      }
+    },
+    {
+      "cell_id": "V04-24",
+      "name": "Hospital-associated empty land",
+      "map_label": "Hospital land",
+      "centre": {
+        "latitude": 25.717984,
+        "longitude": 51.518211
+      },
+      "label_offset": [
+        -200,
+        680
+      ],
+      "observation": "Abdulrahman identifies empty land associated with Al Khor Hospital. He thinks it may be reserved for expansion; ownership and expansion plans are unconfirmed. Nasser reports visiting the sites and confirms the described physical situation is the same as in September 2026; exact visit dates were not supplied. This does not confirm ownership or expansion plans.",
+      "usage_pattern": "Present pedestrian use unknown; possible future development unconfirmed.",
+      "shade": "Current shade and vegetation unverified.",
+      "walking_access": "Access and public use unknown.",
+      "planned_use": "Possible hospital expansion is a team-member hypothesis, not a confirmed plan.",
+      "next_check": "Confirm land ownership and planned use before assessing any intervention. Do not assume empty land has low future priority.",
+      "observer": "Abdulrahman Almohannadi (local report); Nasser Alhuri (site-visit confirmation)",
+      "recorded_date": "2026-10-06",
+      "observation_date": null,
+      "evidence_type": "Team-member local report and firsthand site-visit confirmation",
+      "field_status": "site visit confirmed; detailed assessment pending",
+      "site_confirmation": {
+        "observer": "Nasser Alhuri",
+        "recorded_date": "2026-10-06",
+        "visit_date": null,
+        "statement": "Nasser reports visiting the sites and confirms that the described physical situation is the same as in September 2026. Exact visit dates were not supplied.",
+        "scope": "Physical site description; not measured temperature, NDVI, all-day shade, passenger counts, ownership or expansion plans."
+      }
+    }
+  ]
+}

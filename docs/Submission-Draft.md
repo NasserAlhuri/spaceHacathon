@@ -1,10 +1,10 @@
 # Platform submission draft
 
-Status: prepared for review, not submitted. Final access confirmation and user approval are required.
+Status: prepared for review, not submitted. The repository is public; team review, attachment checks and final user approval are required.
 
 **Project title:** UrbanHeat AI: Al Khor area study
 
-**Summary:** An explainable open-data PoC that combines quality-screened Landsat surface temperature, Sentinel-2 green-pixel indicators, contributed building footprints and historical land cover to shortlist 373 urban cells for site investigation across an analyst-defined Al Khor study window, Qatar; the notebook is reproducible, sensitivity is reported, and field validation remains pending.
+**Summary:** An explainable open-data PoC combining quality-screened Landsat surface temperature, Sentinel-2 green-pixel indicators, contributed buildings and historical land cover to shortlist 373 urban cells in an analyst-defined Al Khor study window. Three local-review examples show why a bus-stop road, event-dependent stadium parking and hospital-associated land need different site checks. The map keeps satellite ranking separate from team observations and unknown human use. The notebook is reproducible; field validation remains pending.
 
 **Repository:** https://github.com/NasserAlhuri/spaceHacathon
 
@@ -14,4 +14,4 @@ Status: prepared for review, not submitted. Final access confirmation and user a
 
 **Team:** Al Zubarah (الزبارة), Qatar. Theme: Urban Expansion, Land Use Change & Heat Risk.
 
-Repository access must be granted before checking the organizer-access declaration. Required acknowledgements and Submit remain untouched. The title, summary and URL have been entered in the live draft form; do not assume that unsent form values persist across reloads.
+The repository was verified public on 6 October; recheck access before completing the organizer-access declaration. Required acknowledgements and Submit remain untouched. The title, summary and URL were previously entered in the live draft form; the revised summary above has not been entered; do not assume that unsent form values persist across reloads.

@@ -4,11 +4,11 @@ Team **Al Zubarah (الزبارة)**, Qatar. Theme: **Urban Expansion, Land Use 
 
 This open-data PoC combines satellite surface temperature, green-pixel share, contributed building footprints and historical land cover to shortlist places for site investigation across the Al Khor area. It expands the earlier Pearl pilot, retained on `backup/pearl-2026-10-05`.
 
-**Status:** review draft. Clean command-line regeneration and numerical checks passed on 5 October 2026. All five unchanged notebook cells also passed an in-process IPython check with zero errors and all 35 input hashes verified. Normal Jupyter execution of this Al Khor version passed on a separate GitHub-hosted runner on 5 October 2026: five code cells, zero errors and all 35 input hashes checked. [Verified run](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37269889977). The previous Pearl notebook pass does not validate this new version. All five members are signed in on the platform; review responsibilities are assigned below. Member reviews, evaluator access and final approval remain outstanding. Nothing has been submitted.
+**Status:** review draft. Clean command-line regeneration and numerical checks passed on 5 October 2026. All five unchanged notebook cells also passed an in-process IPython check with zero errors and all 35 input hashes verified. Normal Jupyter execution of this Al Khor version passed on a separate GitHub-hosted runner on 5 October 2026: five code cells, zero errors and all 35 input hashes checked. [Verified run](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37269889977). The previous Pearl notebook pass does not validate this new version. All five members are signed in on the platform; review responsibilities are assigned below. Local observations for three cells were supplied by Abdulrahman and recorded on 6 October; Nasser confirms site visits and the same physical situation as in September 2026; exact visit dates were not supplied. Detailed site assessment and the other member reviews remain pending. Repository visibility was verified public on 6 October; final approval is still required. Nothing has been submitted.
 
 ## 1. Intended user and use case
 
-An urban planner can use the map to arrange site visits before proposing shade or planting improvements. Each candidate shows the contributing indicators, observed coverage and rank sensitivity. Visits must establish pedestrian activity, shade, ownership and feasibility. No user interview, measured time saving or cooling benefit is claimed.
+An urban planner can use the map to arrange site visits before proposing shade or planting improvements. Each candidate shows the contributing indicators, observed coverage and rank sensitivity. The three examples also show separate team-member local observations, reported use and next checks; unknown use and shade remain unknown. Visits must establish pedestrian activity, shade, walking access, ownership and feasibility before considering trees, shelters or route improvements. No user interview, measured time saving or cooling benefit is claimed.
 
 ## 2. Problem and study scope
 
@@ -75,7 +75,7 @@ For the portable interactive map, after generating assets:
 python -m http.server 8000 --directory app
 ```
 
-Open `http://localhost:8000`. The map keeps temperature, green signal, mapped buildings, investigation score and temperature uncertainty separate. It supports all observed cells, with urban candidates distinguished from context.
+Open `http://localhost:8000`. The map keeps temperature, green signal, mapped buildings, investigation score and temperature uncertainty separate. It supports all observed cells, with urban candidates distinguished from context. Three named examples have local-review details, a comparison table and CSV download. A dashed boundary marks the analyst-defined study window. Local review does not change the satellite ranking.
 
 Optional `src/fetch_sample.py` retrieves missing source crops. `src/fetch_osm.py` retrieves a new live snapshot; this changes inputs and must not be presented as exact reproduction. Preserve the packaged OSM data. `src/check_notebook.py` verifies hashes and executes an ordinary notebook kernel; its report must be read before claiming that check passed. GitHub Actions removes generated outputs before executing.
 
@@ -107,6 +107,24 @@ Numerical checks verify temperature conversion, QA exclusions, support counts, g
 
 ST_QA is product-reported per-pixel uncertainty, not a confidence interval for a cell median or all systematic error. ASTER emissivity history, vegetation-adjustment issues, small-target blockiness, water mixing, missing mapping and threshold choices can affect results. No field thermal calibration, air temperature, population exposure, shade validation, rural-reference UHI, long-term change, causal cooling or health outcomes are established. Two accepted morning dates cannot establish these claims.
 
+## 8a. Local review and the bus-stop example
+
+Abdulrahman Almohannadi supplied local observations for V04-23 (bus-stop road near Al Khor Hospital), V28-17 (event-dependent stadium parking) and V04-24 (hospital-associated empty land; possible expansion unconfirmed). Reports were recorded on 6 October 2026; observation dates were unspecified. Nasser subsequently reports visiting the sites and confirms the described physical situation is the same as in September 2026; exact visit dates were not supplied. V04-23 and V04-24 are adjacent, not independent neighbourhoods. A nearby seasonal market is not attributed to either cell without geometry evidence.
+
+The supplied [Street View reference](https://maps.app.goo.gl/gPEzxW3NFqErPWNP8) is dated March 2023. Its camera position is inside V04-23, about 84 m from the cell centre; it is not a surveyed bus-stop coordinate. The supplied view shows trees, a bus-stop sign and a short sidewalk; no shelter is visible in that view. Nasser confirms the described physical situation is the same as in September 2026 based on site visits; exact visit dates were not supplied. Shade through the day remains unmeasured. Historical imagery is linked rather than redistributed.
+
+A separate pixel audit reproduces V04-23's original 0% detected greenery at NDVI >=0.30. Inside the full cell polygon, clear-land pixel-centre maxima are 0.26262 and 0.24985 on 15 and 30 September 2026. At a diagnostic 0.20 threshold, matched-support green shares are 2.7222% and 0.3889%. The original threshold and rankings remain unchanged. Low detected green signal does not mean no trees; resolution, mixed pixels, spectral conditions and different dates are possible contributors, not established causes.
+
+For the bus-stop example, the cell-level satellite evidence and local report justify a site assessment. They do not measure conditions at the sign, passengers' exposure or an intervention benefit. Check waiting-time shade, passenger use, access, ownership and feasibility before considering a shelter, planting or route changes. See `docs/Local-Review.md`, `app/local-review.json` and `results/local-greenery-audit.json`.
+
+```sh
+# Separate audit and presentation figures after regenerating the original outputs
+python src/audit_local_greenery.py
+python src/render_review_figures.py
+```
+
+The original five-cell notebook, screening, input data and seven CSV outputs are unchanged. The new audit and map-interface checks are separate from the previously verified notebook execution. Clean command-line regeneration on 6 October passed and all seven original CSV tables match byte for byte. Map-control tests use a DOM adapter; full browser/device review remains pending. Optional interface check: `node src/test_map_review.mjs` (Node.js required for this check only).
+
 ## 9. Team members and roles
 
 Team responsibilities assigned on 5 October 2026:
@@ -119,7 +137,7 @@ Team responsibilities assigned on 5 October 2026:
 | Majed Alkuwari | Review slides and explain the limitations |
 | Ali Alkubaisi | Demonstrate the project and prepare judge questions |
 
-Members will complete their assigned checks before submission. Review completion is tracked in `docs/Team-Review.md`. All five platform registrations showed Signed in during the live check on 5 October 2026. Nasser Alhuri is the registered team leader.
+Abdulrahman has supplied local observations for three cells; Nasser confirms site visits; detailed shade/use/access assessment remains pending. Other members will complete their assigned checks before submission. Review completion is tracked in `docs/Team-Review.md`. All five platform registrations showed Signed in during the live check on 5 October 2026. Nasser Alhuri is the registered team leader.
 
 ## 10. Licences and sources
 
@@ -135,3 +153,9 @@ Original code: MIT. Upstream data retain their terms; filtered/derived OSM geome
 - [OSM coastline convention](https://wiki.openstreetmap.org/wiki/Tag:natural%3Dcoastline)
 
 Contains modified Copernicus Sentinel data (2026). Landsat imagery courtesy of USGS; doi.org/10.5066/P9OGBGM6. ESA WorldCover 2021 v200, Zanaga et al. (2022), CC BY 4.0, doi.org/10.5281/zenodo.7254220. © OpenStreetMap contributors, ODbL.
+
+## Fresh verification and publication status, 6 October 2026
+
+[Fresh GitHub run attempt 2](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37269889977/attempts/2) passed: five cells, zero errors, all 35 input hashes verified. The retrieved artifact reproduces all seven original CSV tables byte for byte; notebook cell sources are unchanged. The improved interface was checked separately. See `docs/Verification-Report.md` and `results/fresh-run-evidence.json`.
+
+The full improved package has not been published to main. Nasser explicitly approved public publication of the complete package on 6 October 2026, including local observations and named attribution. Publication and expanded verification are in progress. Pearl backup is unchanged. Nothing has been submitted.

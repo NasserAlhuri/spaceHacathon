@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-06",
+  "clean_regeneration": "passed",
+  "numerical_checks": "passed",
+  "original_csv_tables_identical": 7,
+  "greenery_audit": "passed",
+  "map_control_checks": "passed",
+  "analysis_changed": false,
+  "browser_visual_review": "pending team review; DOM-adapter tests are not a full browser test"
+}

@@ -1,0 +1,63 @@
+{
+  "cell_id": "V04-23",
+  "audit_recorded": "2026-10-06",
+  "threshold": 0.3,
+  "geometry_scope": "Full cell polygon. Centre-in-polygon pixel counts differ slightly from area-weighted matched thermal support at boundaries.",
+  "dates": [
+    {
+      "optical_date": "2026-09-15",
+      "thermal_date": "2026-09-14",
+      "optical_scene_id": "S2B_39RWJ_20260915_0_L2A",
+      "pixel_centres_inside_polygon": 897,
+      "clear_land_pixel_centres": 897,
+      "ndvi_min": -0.04598073288798332,
+      "ndvi_max": 0.2626197934150696,
+      "ndvi_median": 0.07958708703517914,
+      "pixel_counts_by_threshold": {
+        "0.2": 25,
+        "0.3": 0,
+        "0.4": 0
+      },
+      "matched_support_green_percent_by_threshold": {
+        "0.2": 2.722222328186035,
+        "0.3": 0.0,
+        "0.4": 0.0
+      },
+      "original_green_percent": 0.0,
+      "common_30m_samples": 100
+    },
+    {
+      "optical_date": "2026-09-30",
+      "thermal_date": "2026-09-30",
+      "optical_scene_id": "S2C_39RWJ_20260930_0_L2A",
+      "pixel_centres_inside_polygon": 897,
+      "clear_land_pixel_centres": 897,
+      "ndvi_min": -0.040982671082019806,
+      "ndvi_max": 0.24984653294086456,
+      "ndvi_median": 0.06027492880821228,
+      "pixel_counts_by_threshold": {
+        "0.2": 4,
+        "0.3": 0,
+        "0.4": 0
+      },
+      "matched_support_green_percent_by_threshold": {
+        "0.2": 0.3888888955116272,
+        "0.3": 0.0,
+        "0.4": 0.0
+      },
+      "original_green_percent": 0.0,
+      "common_30m_samples": 100
+    }
+  ],
+  "street_view_reference": {
+    "latitude": 25.7175476,
+    "longitude": 51.5145504,
+    "coordinate_type": "Street View camera position; not a surveyed bus-stop coordinate",
+    "image_capture_month": "2023-03",
+    "source_url": "https://maps.app.goo.gl/gPEzxW3NFqErPWNP8",
+    "inside_V04_23": true
+  },
+  "finding": "The original zero is reproduced on matched support. No clear-land pixel centre inside the polygon reaches NDVI 0.30 on either accepted optical date.",
+  "interpretation": "Zero detected green pixels is not an inventory of trees. Mixed pixels, spectral conditions and the different imagery dates may contribute; no single cause is established.",
+  "decision": "Keep the tested threshold and ranking. Record local observations separately; obtain current site evidence."
+}

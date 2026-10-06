@@ -1,0 +1,23 @@
+{
+  "verified_at_utc": "2026-10-06T17:00:11Z",
+  "status": "passed",
+  "workflow_run_id": 37269889977,
+  "workflow_run_attempt": 2,
+  "workflow_job_id": 112394367859,
+  "workflow_run_url": "https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37269889977/attempts/2",
+  "tested_source_commit": "9781b95a46d86eb858ae9714ee53198ad22cfb6c",
+  "artifact_id": 11428558809,
+  "artifact_zip_sha256": "cca350ef0a16d570ac9390b75484dac0f70d3768de77131a44959fe39e4f6ec4",
+  "executed_code_cells": 5,
+  "errors": 0,
+  "sample_hashes_verified": 35,
+  "runtime_seconds": 4.3,
+  "original_csv_tables_identical": 7,
+  "notebook_cell_sources_unchanged": true,
+  "analysis_scripts_inputs_metadata_dependencies_match_current_main": true,
+  "scope": "Fresh rerun of the unchanged analysis. Improved local-review interface and added audit/figure scripts were not part of this older workflow; map-control checks were run separately.",
+  "main_commit_unchanged": "2b46fd0b470ce586b110f117f96f8b9f4c98cfee",
+  "pearl_backup_commit_unchanged": "f9514a479d0d7a9092c32c9e7a2dcbd1ecab6343",
+  "github_upload_status": "Pending explicit public-publication approval after automatic review rejection of app/local-review.json. No branch was updated.",
+  "submission_status": "Not submitted; final user approval required."
+}
