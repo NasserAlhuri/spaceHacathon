@@ -1,32 +1,29 @@
 # UrbanHeat AI — project state
 Updated: 6 October 2026. Team Al Zubarah. Repository: https://github.com/NasserAlhuri/spaceHacathon
 
+## Completed publication
+The full prepared pending-update documentation/evidence refresh is published to public main and pilot/al-khor in commit 436f2c20ad65fe7f26b3650943d9fb02dd6bdcfa. Both branches were updated with force=false and an expected previous head of 5e7c540afdd9954363f73b9cde588d237291c388. No newer branch work was overwritten. This checkpoint and its package-manifest entry are a follow-up to that verified publication.
+
+Nasser explicitly approved publishing the complete pending-update payload on 6 October 2026, including team names, Abdulrahman's attributed observations, Nasser's site-visit confirmation, precise site coordinates, documentation, test evidence, notebook, images and this checkpoint. That explicit approval resolved the earlier automatic-review publication block. Hackathon submission requires separate final approval and is not authorized. Nothing has been submitted or sent to organizers.
+
 ## Verified
-- Improved Al Khor map, separate greenery audit, local-review examples and 12-slide PDF/PowerPoint are published.
-- Before publication, live main and pilot/al-khor were rechecked at tested source 5e7c540afdd9954363f73b9cde588d237291c388. All 125 published file blobs matched the local baseline; no newer branch work was present.
-- The prepared documentation/evidence refresh has been reconciled and validated locally. Nasser explicitly approved publishing the full pending-update payload, including team names, attributed observations, site visits, precise coordinates, notebook and images, on 6 October 2026. Publication is now authorized; hackathon submission remains unauthorized.
-- Expanded run 37505530323 passed: five notebook cells, zero errors, 35 input hashes, numerical checks, seven original CSV tables reproduced byte for byte, audit, figures and map-control checks.
-- Actual artifact 11431542823 matches its GitHub SHA256 digest and all 23 extracted files match the local evidence. See docs/Verification-Report.md and results/expanded-workflow-verification.json.
-- Both backups were verified unchanged: Pearl f9514a479d0d7a9092c32c9e7a2dcbd1ecab6343; Al Khor baseline 2b46fd0b470ce586b110f117f96f8b9f4c98cfee.
-- Repository is public. The supplied organizer message accepts public access and gives 11 October as the deadline. Finish before that date.
-- Presentation has 12 slides; visual and content checks passed. PDF and PowerPoint agree.
-- Nothing has been submitted.
+- Before publication, all 125 existing public file blobs matched the local baseline. All 17 supplied overlay files matched their provided Git blob hashes before the checkpoint and manifest were updated.
+- After publication, the entire 130-file remote tree matched the local package: zero missing, extra or mismatched file blobs. Main and pilot/al-khor were re-read at the evidence commit; repository visibility remains public.
+- The full package manifest covers 129 files, excluding the manifest itself. All SHA256 entries pass, including the updated checkpoint.
+- All 35 original input hashes, seven original CSV table hashes, notebook cell sources, analysis scripts and dependencies remain unchanged. The retained executed notebook has five successful code cells and zero errors.
+- Expanded GitHub run 37505530323 remains completed/success on tested source 5e7c540afdd9954363f73b9cde588d237291c388. It verified ordinary-kernel execution, numerical checks, byte-identical reproduction of seven tables, greenery audit, figures and map controls. No analysis was rerun for publication; [skip ci] prevents a redundant push-triggered run. GitHub reported zero workflow runs for the evidence commit at the publication check.
+- Artifact 11431542823 has GitHub SHA256 digest 5e7dfbf69d1661adf339c7ad861020ceaebacecc28dcf16ed8a25b05f5df1f93. Prior retrieval and comparison of all 23 artifact files are retained as supplied evidence, not claimed as a new download in this session.
+- Both backup heads were rechecked unchanged: backup/pearl-2026-10-05 at f9514a479d0d7a9092c32c9e7a2dcbd1ecab6343; backup/al-khor-tested-2026-10-06 at 2b46fd0b470ce586b110f117f96f8b9f4c98cfee.
+- The improved Al Khor map, separate greenery audit, local-review examples and matching twelve-slide PDF/PowerPoint remain published. Prior visual/content checks are retained; presentation files did not change in this update.
 
-## Publication checkpoint — approved and ready
-The resume bundle's 17 pending files were compared against the current public source. All supplied Git blob hashes and the full 129-file overlay manifest passed before checkpoint edits. The original 35 input hashes, seven CSV table hashes and all notebook cell sources are unchanged. The executed notebook retains five successful code cells and zero errors. Only documentation, execution evidence and two generated review figures changed.
-
-The managed environment is running and its local files are available. Direct Git networking failed because the configured proxy was unreachable; the connected GitHub API provided read/write access. The prepared publication will use the existing base tree, a normal child commit and expected-head non-force branch updates. No analysis was rerun. Use [skip ci] on the evidence commit because tested source, dependencies and inputs are unchanged.
-
-The successful expanded run and artifact digest were rechecked on GitHub. Historical artifact retrieval and presentation-review results in the supplied evidence are retained; they are not represented as new browser/device or member reviews. Earlier automatic-review rejections were resolved by Nasser's explicit public-payload approval in the current chat. The approval covers all pending-update files and the checkpoint, but explicitly excludes hackathon submission. The original bundle remains intact.
-
-Live branch heads were re-read after approval and remain at the recorded baseline. Next, upload missing prepared blobs, upload any missing prepared blobs, publish with expected-head non-force updates, verify the full remote tree and both backups, and update this checkpoint to record completion.
+## Environment and continuity
+The managed environment is running and local files are available. Direct Git networking failed because the configured proxy was unreachable; the connected GitHub API completed publication and remote verification. The original resume ZIP and pending-update overlay are preserved. Local publication files are in /workspace/urbanheat-publish; the updated resume checkpoint is in /workspace/urbanheat-resume/PROJECT_STATE.md.
 
 ## Remaining
-1. Finish publishing the approved documentation/evidence refresh and verify both branches and backups.
-2. Complete teammate reviews in docs/Team-Review.md. Automated DOM checks passed; actual browser/mobile review is pending. Chromium was unavailable in this execution environment.
-3. Keep detailed shade/use/access, ownership and independent scientific validation marked pending.
-4. Review final submission attachments and platform declarations, then obtain Nasser's final approval before submission.
+1. Complete the assigned teammate reviews in docs/Team-Review.md. Automated DOM checks passed; actual browser/mobile review, slide review and demonstration rehearsal remain pending. Do not infer member completion.
+2. Keep detailed shade/use/access, exact bus-stop location, ownership/land plans and independent scientific validation marked pending. Site visits were confirmed, but exact dates are unspecified.
+3. Review final PDF/ZIP attachments, sizes, public links and platform declarations. The organizer message supplied by Nasser accepts public access and names 11 October 2026; hour/timezone are unspecified. Finish before that date.
+4. Obtain Nasser's separate final approval before submitting to the hackathon.
 
 ## Working rules
-Explain progress in simple Arabic; project and presentation files stay English. Preserve backups and original inputs, analysis and seven result tables. Site visits were confirmed, but exact dates are unspecified. Public publication was authorized; hackathon submission is not authorized.
-Read this file first when resuming. Inspect only files needed for the next task, then update this checkpoint after each milestone. Do not copy the full chat history or restart completed analysis.
+Explain progress in simple Arabic; project and presentation files remain English. Preserve both backups, original inputs, analysis and seven result tables. Re-read live branch heads before every future publication and use guarded non-force updates. Reuse the successful expanded verification unless a technical source/input discrepancy warrants another run. Read this checkpoint first when resuming; inspect only what the next task needs and update the checkpoint after each milestone.
