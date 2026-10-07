@@ -1,0 +1,159 @@
+{
+  "status": "partial_dated_2026_visual_diagnostics_only",
+  "scientific_release": false,
+  "overall_accuracy": "not estimated",
+  "2021_reference_images_inspected": 0,
+  "2026_context_views_inspected": 16,
+  "sample_locations": 8,
+  "source_scene_ids": [
+    "S2B_39RWJ_20260905_0_L2A",
+    "S2B_39RWJ_20260915_0_L2A"
+  ],
+  "source_dates": {
+    "S2B_39RWJ_20260905_0_L2A": "2026-09-05T07:22:28.781000Z",
+    "S2B_39RWJ_20260915_0_L2A": "2026-09-15T07:22:29.581000Z"
+  },
+  "selection_bias": "convenience stable/Unknown strata; no changed 0.50 locations or validated vegetation sample",
+  "independence_limit": "Same upstream Sentinel-2 imagery, not independent ground truth",
+  "historical_fetch_attempt": "Earth Search dated September 2021 query unavailable through web tool; exact source-index search produced no suitable image; runtime hosts excluded by enforced network policy",
+  "samples": [
+    {
+      "sample_id": "DW-01",
+      "longitude": 51.5129704,
+      "latitude": 25.6930348,
+      "predicted_before": "water",
+      "predicted_after": "water",
+      "reviewer": "Codex visual diagnostic; not a teammate acceptance review",
+      "dates_inspected": [
+        "2026-09-05",
+        "2026-09-15"
+      ],
+      "observation": "Dark water-like context at the target on both 2026 dates; tidal/suspended-material detail is unresolved.",
+      "reference_label_before": "Unknown: 2021 imagery missing",
+      "reference_label_after": "not assigned; contextual plausibility only",
+      "disagreement": "not established",
+      "status": "partial_2026_diagnostic_not_paired_validation"
+    },
+    {
+      "sample_id": "DW-02",
+      "longitude": 51.5476595,
+      "latitude": 25.6726815,
+      "predicted_before": "water",
+      "predicted_after": "water",
+      "reviewer": "Codex visual diagnostic; not a teammate acceptance review",
+      "dates_inspected": [
+        "2026-09-05",
+        "2026-09-15"
+      ],
+      "observation": "Water-like mottled coastal context on both dates; coastal/tidal detail needs dedicated review.",
+      "reference_label_before": "Unknown: 2021 imagery missing",
+      "reference_label_after": "not assigned; contextual plausibility only",
+      "disagreement": "not established",
+      "status": "partial_2026_diagnostic_not_paired_validation"
+    },
+    {
+      "sample_id": "DW-03",
+      "longitude": 51.53411,
+      "latitude": 25.7178817,
+      "predicted_before": "built",
+      "predicted_after": "built",
+      "reviewer": "Codex visual diagnostic; not a teammate acceptance review",
+      "dates_inspected": [
+        "2026-09-05",
+        "2026-09-15"
+      ],
+      "observation": "Built-up street/block context on both dates; the target mixes built/paved/bare material at 10 m.",
+      "reference_label_before": "Unknown: 2021 imagery missing",
+      "reference_label_after": "not assigned; contextual plausibility only",
+      "disagreement": "not established",
+      "status": "partial_2026_diagnostic_not_paired_validation"
+    },
+    {
+      "sample_id": "DW-04",
+      "longitude": 51.5283122,
+      "latitude": 25.7142005,
+      "predicted_before": "built",
+      "predicted_after": "built",
+      "reviewer": "Codex visual diagnostic; not a teammate acceptance review",
+      "dates_inspected": [
+        "2026-09-05",
+        "2026-09-15"
+      ],
+      "observation": "Built-up street/block context on both dates; exact centre class is ambiguous at 10 m.",
+      "reference_label_before": "Unknown: 2021 imagery missing",
+      "reference_label_after": "not assigned; contextual plausibility only",
+      "disagreement": "not established",
+      "status": "partial_2026_diagnostic_not_paired_validation"
+    },
+    {
+      "sample_id": "DW-05",
+      "longitude": 51.5543156,
+      "latitude": 25.711395,
+      "predicted_before": "bare",
+      "predicted_after": "bare",
+      "reviewer": "Codex visual diagnostic; not a teammate acceptance review",
+      "dates_inspected": [
+        "2026-09-05",
+        "2026-09-15"
+      ],
+      "observation": "Bright bare-looking context at the target on both dates; right-side black crop padding is not classified evidence.",
+      "reference_label_before": "Unknown: 2021 imagery missing",
+      "reference_label_after": "not assigned; contextual plausibility only",
+      "disagreement": "not established",
+      "status": "partial_2026_diagnostic_not_paired_validation"
+    },
+    {
+      "sample_id": "DW-06",
+      "longitude": 51.4578842,
+      "latitude": 25.6740744,
+      "predicted_before": "bare",
+      "predicted_after": "bare",
+      "reviewer": "Codex visual diagnostic; not a teammate acceptance review",
+      "dates_inspected": [
+        "2026-09-05",
+        "2026-09-15"
+      ],
+      "observation": "Predominantly bright bare-looking context on both dates; subtle vegetation cannot be excluded.",
+      "reference_label_before": "Unknown: 2021 imagery missing",
+      "reference_label_after": "not assigned; contextual plausibility only",
+      "disagreement": "not established",
+      "status": "partial_2026_diagnostic_not_paired_validation"
+    },
+    {
+      "sample_id": "DW-07",
+      "longitude": 51.5438234,
+      "latitude": 25.7056553,
+      "predicted_before": "Unknown",
+      "predicted_after": "Unknown",
+      "reviewer": "Codex visual diagnostic; not a teammate acceptance review",
+      "dates_inspected": [
+        "2026-09-05",
+        "2026-09-15"
+      ],
+      "observation": "Mixed built/bare surroundings; exported Unknown is retained without assigning a reference class.",
+      "reference_label_before": "Unknown: 2021 imagery missing",
+      "reference_label_after": "not assigned; contextual plausibility only",
+      "disagreement": "not established",
+      "status": "partial_2026_diagnostic_not_paired_validation"
+    },
+    {
+      "sample_id": "DW-08",
+      "longitude": 51.5009522,
+      "latitude": 25.6551504,
+      "predicted_before": "Unknown",
+      "predicted_after": "Unknown",
+      "reviewer": "Codex visual diagnostic; not a teammate acceptance review",
+      "dates_inspected": [
+        "2026-09-05",
+        "2026-09-15"
+      ],
+      "observation": "Road/open-land mixed context; exported Unknown is retained without assigning a reference class.",
+      "reference_label_before": "Unknown: 2021 imagery missing",
+      "reference_label_after": "not assigned; contextual plausibility only",
+      "disagreement": "not established",
+      "status": "partial_2026_diagnostic_not_paired_validation"
+    }
+  ],
+  "member_acceptance": "pending",
+  "paired_manual_review": "pending; original manual-review CSV remains empty"
+}

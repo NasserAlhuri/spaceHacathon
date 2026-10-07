@@ -1,0 +1,47 @@
+{
+  "status": "partial_raster_checks_annual_files_missing",
+  "publication_ready": false,
+  "raster_checks": {
+    "AlKhor_DW_transition_2021_2026.tif": {
+      "bytes": 44826,
+      "sha256": "2e71882ebb2d950f3c0d5f0a2479b2e026be8b4d7674984bd139667625d8aa4d",
+      "crs": "EPSG:32639",
+      "transform": [
+        10.0,
+        0.0,
+        544635.0,
+        0.0,
+        -10.0,
+        2845905.0
+      ],
+      "width": 1108,
+      "height": 1057,
+      "band_count": 1,
+      "dtypes": [
+        "uint8"
+      ],
+      "declared_nodata": 255.0,
+      "band_descriptions": [
+        "class"
+      ],
+      "raw_code_counts": {
+        "0": 99574,
+        "60": 5408,
+        "70": 262967,
+        "255": 803207
+      },
+      "outside_rectangle_pixels": 9813,
+      "outside_rectangle_non_nodata_pixels": 8652,
+      "outside_region_display": "must be Unknown; raw border codes are not evidence",
+      "annual_finite_support_comparison": "pending until both annual files are available"
+    }
+  },
+  "missing_files": [
+    "AlKhor_DynamicWorld_September_2021.tif",
+    "AlKhor_DynamicWorld_September_2026.tif"
+  ],
+  "scientific_review": "pending",
+  "region_rule": "Projected pixel centres transformed into unchanged WGS84 study rectangle; finite annual support also mandatory",
+  "area_rule": "Raster counts use projected 100 m2 pixels for diagnostics only. Scientific coverage display uses unmodified Earth Engine CSV pixelArea sums.",
+  "boundary_note": "Centre-based rectangle checks may differ at clipped edge pixels; do not interpret border codes as transitions."
+}

@@ -9,6 +9,8 @@ Original Python code and documentation use the MIT licence. Upstream data remain
 
 The filtered OSM snapshot and adapted OSM reference geometry are made available under ODbL 1.0. The combined planning tables/maps retain OSM attribution and are provided with their underlying adapted OSM database in this package. Preserve attribution and review ODbL requirements when redistributing or combining databases.
 
-## Planned Dynamic World extension (not retrieved)
+## Actual Dynamic World experimental exports
 
-The official catalog identifies GOOGLE/DYNAMICWORLD/V1 as CC BY 4.0. No Dynamic World pixels were retrieved for this revision; prepared code and documentation are not historical outputs. If exports are later included, preserve the dataset's required producer attribution and Sentinel-data notices from https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1 . This does not change any existing source licence.
+GOOGLE/DYNAMICWORLD/V1 is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Required attribution: "This dataset is produced for the Dynamic World Project by Google in partnership with National Geographic Society and the World Resources Institute."
+
+Contains modified Copernicus Sentinel data (2021, 2026); see the [Sentinel Data Legal Notice](https://sentinels.copernicus.eu/web/sentinel/terms-and-conditions). Dataset/source information: https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1 . The separate experimental exports were executed by Nasser in Code Editor; six originals are locally checksum-verified, while two annual TIFFs remain transfer-blocked. The supplied external review is preserved with provenance. These exports do not replace the existing thermal analysis and licences. Dated 2026 RGB diagnostic crops contain modified Copernicus Sentinel data (2026) and use the preserved original source metadata; they are not field photographs or independent ground truth.

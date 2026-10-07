@@ -1,0 +1,907 @@
+{
+  "checked_at_utc": "2026-10-07T20:39:14.870685+00:00",
+  "method": "Real headless Chromium via Playwright, local HTTP server, actual clicks/taps and download",
+  "profiles": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "touch_emulation": false,
+      "checks": [
+        {
+          "name": "historical experiment matches actual CSV and retains failed gate/Unknown",
+          "status": "passed",
+          "detail": {
+            "source": "immutable actual CSV",
+            "primary_gate": "failed",
+            "scientific_review": "pending"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-14 / temperature",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-14",
+            "layer": "temperature",
+            "image_decoded": true,
+            "legend": "Surface temperature"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-14 / greenery",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-14",
+            "layer": "greenery",
+            "image_decoded": true,
+            "legend": "Green pixel share"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-14 / buildings",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-14",
+            "layer": "buildings",
+            "image_decoded": true,
+            "legend": "Mapped building footprint"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-14 / priority",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-14",
+            "layer": "priority",
+            "image_decoded": true,
+            "legend": "Investigation priority"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-14 / uncertainty",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-14",
+            "layer": "uncertainty",
+            "image_decoded": true,
+            "legend": "Temperature uncertainty"
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-14 / V04-23",
+          "status": "passed",
+          "detail": {
+            "cell": "V04-23",
+            "date": "2026-09-14",
+            "metrics": [
+              "51.4\u00b0C",
+              "0.0%",
+              "1.85 K"
+            ]
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-14 / V28-17",
+          "status": "passed",
+          "detail": {
+            "cell": "V28-17",
+            "date": "2026-09-14",
+            "metrics": [
+              "50.6\u00b0C",
+              "0.0%",
+              "1.82 K"
+            ]
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-14 / V04-24",
+          "status": "passed",
+          "detail": {
+            "cell": "V04-24",
+            "date": "2026-09-14",
+            "metrics": [
+              "51.3\u00b0C",
+              "0.1%",
+              "1.85 K"
+            ]
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-14 / V18-26",
+          "status": "passed",
+          "detail": {
+            "cell": "V18-26",
+            "date": "2026-09-14",
+            "metrics": [
+              "48.0\u00b0C",
+              "0.0772%",
+              "1.86 K"
+            ]
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-14 / V24-07",
+          "status": "passed",
+          "detail": {
+            "cell": "V24-07",
+            "date": "2026-09-14",
+            "metrics": [
+              "50.5\u00b0C",
+              "0.0%",
+              "1.82 K"
+            ]
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-30 / temperature",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-30",
+            "layer": "temperature",
+            "image_decoded": true,
+            "legend": "Surface temperature"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-30 / greenery",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-30",
+            "layer": "greenery",
+            "image_decoded": true,
+            "legend": "Green pixel share"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-30 / buildings",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-30",
+            "layer": "buildings",
+            "image_decoded": true,
+            "legend": "Mapped building footprint"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-30 / priority",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-30",
+            "layer": "priority",
+            "image_decoded": true,
+            "legend": "Investigation priority"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-30 / uncertainty",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-30",
+            "layer": "uncertainty",
+            "image_decoded": true,
+            "legend": "Temperature uncertainty"
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-30 / V04-23",
+          "status": "passed",
+          "detail": {
+            "cell": "V04-23",
+            "date": "2026-09-30",
+            "metrics": [
+              "49.4\u00b0C",
+              "0.0%",
+              "1.80 K"
+            ]
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-30 / V28-17",
+          "status": "passed",
+          "detail": {
+            "cell": "V28-17",
+            "date": "2026-09-30",
+            "metrics": [
+              "49.4\u00b0C",
+              "0.0%",
+              "1.79 K"
+            ]
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-30 / V04-24",
+          "status": "passed",
+          "detail": {
+            "cell": "V04-24",
+            "date": "2026-09-30",
+            "metrics": [
+              "49.1\u00b0C",
+              "0.0%",
+              "1.79 K"
+            ]
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-30 / V18-26",
+          "status": "passed",
+          "detail": {
+            "cell": "V18-26",
+            "date": "2026-09-30",
+            "metrics": [
+              "46.9\u00b0C",
+              "0.0%",
+              "1.81 K"
+            ]
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-30 / V24-07",
+          "status": "passed",
+          "detail": {
+            "cell": "V24-07",
+            "date": "2026-09-30",
+            "metrics": [
+              "48.0\u00b0C",
+              "0.0%",
+              "1.78 K"
+            ]
+          }
+        },
+        {
+          "name": "three shortlist buttons",
+          "status": "passed",
+          "detail": {
+            "selected_cells": [
+              "V04-23",
+              "V28-17",
+              "V04-24"
+            ]
+          }
+        },
+        {
+          "name": "comparison opens, follows date, scrolls and closes",
+          "status": "passed",
+          "detail": {
+            "rows": 5,
+            "dates_checked": [
+              "2026-09-14",
+              "2026-09-30"
+            ],
+            "mobile_table_uses_horizontal_scroll": false
+          }
+        },
+        {
+          "name": "actual CSV download and content",
+          "status": "passed",
+          "detail": {
+            "filename": "AlKhor-Location-Review.csv",
+            "rows": 10,
+            "sha256": "43ac9dc0284aa45cdec905e0caf68634ac62dd2f1fc4f97531eadbcc5b304706"
+          }
+        },
+        {
+          "name": "zoom in, zoom out, selected-site focus and reset",
+          "status": "passed",
+          "detail": {
+            "initial_view_box": [
+              0.0,
+              0.0,
+              11070.0,
+              10560.0
+            ],
+            "selection_focus_width": 2214.0,
+            "zoomed_label_bounds": [
+              {
+                "text": "V04-23 \u00b7 Bus-stop road",
+                "font": 13.000004545454544,
+                "inside": true
+              },
+              {
+                "text": "V04-24 \u00b7 Hospital land",
+                "font": 13.000004545454544,
+                "inside": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "actual map clicks or touch taps on all three sites",
+          "status": "passed",
+          "detail": {
+            "selected_via_real_pointer": [
+              "V04-23",
+              "V28-17",
+              "V04-24",
+              "V18-26",
+              "V24-07"
+            ]
+          }
+        },
+        {
+          "name": "map pan",
+          "status": "passed",
+          "detail": {
+            "method": "mouse drag"
+          }
+        },
+        {
+          "name": "layer opacity",
+          "status": "passed",
+          "detail": {
+            "range": "0% to 100%"
+          }
+        },
+        {
+          "name": "layout and readable map labels at normal and narrow widths",
+          "status": "passed",
+          "detail": [
+            {
+              "viewport": 1440,
+              "page": 1440,
+              "labels": [
+                {
+                  "text": "V04-23 \u00b7 Bus-stop road",
+                  "screen_font_px": 13.000004545454546
+                },
+                {
+                  "text": "V28-17 \u00b7 Stadium parking",
+                  "screen_font_px": 13.000004545454546
+                },
+                {
+                  "text": "V04-24 \u00b7 Hospital land",
+                  "screen_font_px": 13.000004545454546
+                },
+                {
+                  "text": "V18-26 \u00b7 Jogging route",
+                  "screen_font_px": 13.000004545454546
+                },
+                {
+                  "text": "V24-07 \u00b7 Reported unused land",
+                  "screen_font_px": 13.000004545454546
+                }
+              ],
+              "metrics": [
+                {
+                  "text": "Surface temperature\n49.4\u00b0C",
+                  "overflow": 0
+                },
+                {
+                  "text": "Green pixel share\n0.0%",
+                  "overflow": 0
+                },
+                {
+                  "text": "Temperature uncertainty\n1.80 K",
+                  "overflow": 0
+                },
+                {
+                  "text": "Mapped building footprint\n2.3%",
+                  "overflow": 0
+                },
+                {
+                  "text": "Historical built-up land (2021)\n25.2%",
+                  "overflow": 0
+                },
+                {
+                  "text": "Investigation rank\n1 of 373",
+                  "overflow": 0
+                }
+              ]
+            },
+            {
+              "viewport": 1024,
+              "page": 1024,
+              "labels": [
+                {
+                  "text": "V04-23",
+                  "screen_font_px": 13.000024390243905
+                },
+                {
+                  "text": "V28-17",
+                  "screen_font_px": 13.000024390243905
+                },
+                {
+                  "text": "V04-24",
+                  "screen_font_px": 13.000024390243905
+                },
+                {
+                  "text": "V18-26",
+                  "screen_font_px": 13.000024390243905
+                },
+                {
+                  "text": "V24-07",
+                  "screen_font_px": 13.000024390243905
+                }
+              ],
+              "metrics": [
+                {
+                  "text": "Surface temperature\n49.4\u00b0C",
+                  "overflow": 0
+                },
+                {
+                  "text": "Green pixel share\n0.0%",
+                  "overflow": 0
+                },
+                {
+                  "text": "Temperature uncertainty\n1.80 K",
+                  "overflow": 0
+                },
+                {
+                  "text": "Mapped building footprint\n2.3%",
+                  "overflow": 0
+                },
+                {
+                  "text": "Historical built-up land (2021)\n25.2%",
+                  "overflow": 0
+                },
+                {
+                  "text": "Investigation rank\n1 of 373",
+                  "overflow": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "page_errors": [],
+      "console_errors": [],
+      "failed_requests": [],
+      "http_errors": [],
+      "status": "passed"
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "touch_emulation": true,
+      "checks": [
+        {
+          "name": "historical experiment matches actual CSV and retains failed gate/Unknown",
+          "status": "passed",
+          "detail": {
+            "source": "immutable actual CSV",
+            "primary_gate": "failed",
+            "scientific_review": "pending"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-14 / temperature",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-14",
+            "layer": "temperature",
+            "image_decoded": true,
+            "legend": "Surface temperature"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-14 / greenery",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-14",
+            "layer": "greenery",
+            "image_decoded": true,
+            "legend": "Green pixel share"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-14 / buildings",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-14",
+            "layer": "buildings",
+            "image_decoded": true,
+            "legend": "Mapped building footprint"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-14 / priority",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-14",
+            "layer": "priority",
+            "image_decoded": true,
+            "legend": "Investigation priority"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-14 / uncertainty",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-14",
+            "layer": "uncertainty",
+            "image_decoded": true,
+            "legend": "Temperature uncertainty"
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-14 / V04-23",
+          "status": "passed",
+          "detail": {
+            "cell": "V04-23",
+            "date": "2026-09-14",
+            "metrics": [
+              "51.4\u00b0C",
+              "0.0%",
+              "1.85 K"
+            ]
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-14 / V28-17",
+          "status": "passed",
+          "detail": {
+            "cell": "V28-17",
+            "date": "2026-09-14",
+            "metrics": [
+              "50.6\u00b0C",
+              "0.0%",
+              "1.82 K"
+            ]
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-14 / V04-24",
+          "status": "passed",
+          "detail": {
+            "cell": "V04-24",
+            "date": "2026-09-14",
+            "metrics": [
+              "51.3\u00b0C",
+              "0.1%",
+              "1.85 K"
+            ]
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-14 / V18-26",
+          "status": "passed",
+          "detail": {
+            "cell": "V18-26",
+            "date": "2026-09-14",
+            "metrics": [
+              "48.0\u00b0C",
+              "0.0772%",
+              "1.86 K"
+            ]
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-14 / V24-07",
+          "status": "passed",
+          "detail": {
+            "cell": "V24-07",
+            "date": "2026-09-14",
+            "metrics": [
+              "50.5\u00b0C",
+              "0.0%",
+              "1.82 K"
+            ]
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-30 / temperature",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-30",
+            "layer": "temperature",
+            "image_decoded": true,
+            "legend": "Surface temperature"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-30 / greenery",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-30",
+            "layer": "greenery",
+            "image_decoded": true,
+            "legend": "Green pixel share"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-30 / buildings",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-30",
+            "layer": "buildings",
+            "image_decoded": true,
+            "legend": "Mapped building footprint"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-30 / priority",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-30",
+            "layer": "priority",
+            "image_decoded": true,
+            "legend": "Investigation priority"
+          }
+        },
+        {
+          "name": "date and layer: 2026-09-30 / uncertainty",
+          "status": "passed",
+          "detail": {
+            "date": "2026-09-30",
+            "layer": "uncertainty",
+            "image_decoded": true,
+            "legend": "Temperature uncertainty"
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-30 / V04-23",
+          "status": "passed",
+          "detail": {
+            "cell": "V04-23",
+            "date": "2026-09-30",
+            "metrics": [
+              "49.4\u00b0C",
+              "0.0%",
+              "1.80 K"
+            ]
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-30 / V28-17",
+          "status": "passed",
+          "detail": {
+            "cell": "V28-17",
+            "date": "2026-09-30",
+            "metrics": [
+              "49.4\u00b0C",
+              "0.0%",
+              "1.79 K"
+            ]
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-30 / V04-24",
+          "status": "passed",
+          "detail": {
+            "cell": "V04-24",
+            "date": "2026-09-30",
+            "metrics": [
+              "49.1\u00b0C",
+              "0.0%",
+              "1.79 K"
+            ]
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-30 / V18-26",
+          "status": "passed",
+          "detail": {
+            "cell": "V18-26",
+            "date": "2026-09-30",
+            "metrics": [
+              "46.9\u00b0C",
+              "0.0%",
+              "1.81 K"
+            ]
+          }
+        },
+        {
+          "name": "select reviewed cell: 2026-09-30 / V24-07",
+          "status": "passed",
+          "detail": {
+            "cell": "V24-07",
+            "date": "2026-09-30",
+            "metrics": [
+              "48.0\u00b0C",
+              "0.0%",
+              "1.78 K"
+            ]
+          }
+        },
+        {
+          "name": "three shortlist buttons",
+          "status": "passed",
+          "detail": {
+            "selected_cells": [
+              "V04-23",
+              "V28-17",
+              "V04-24"
+            ]
+          }
+        },
+        {
+          "name": "comparison opens, follows date, scrolls and closes",
+          "status": "passed",
+          "detail": {
+            "rows": 5,
+            "dates_checked": [
+              "2026-09-14",
+              "2026-09-30"
+            ],
+            "mobile_table_uses_horizontal_scroll": true
+          }
+        },
+        {
+          "name": "actual CSV download and content",
+          "status": "passed",
+          "detail": {
+            "filename": "AlKhor-Location-Review.csv",
+            "rows": 10,
+            "sha256": "43ac9dc0284aa45cdec905e0caf68634ac62dd2f1fc4f97531eadbcc5b304706"
+          }
+        },
+        {
+          "name": "zoom in, zoom out, selected-site focus and reset",
+          "status": "passed",
+          "detail": {
+            "initial_view_box": [
+              0.0,
+              0.0,
+              11070.0,
+              10560.0
+            ],
+            "selection_focus_width": 2214.0,
+            "zoomed_label_bounds": [
+              {
+                "text": "V04-23",
+                "font": 13,
+                "inside": true
+              },
+              {
+                "text": "V04-24",
+                "font": 13,
+                "inside": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "actual map clicks or touch taps on all three sites",
+          "status": "passed",
+          "detail": {
+            "selected_via_real_pointer": [
+              "V04-23",
+              "V28-17",
+              "V04-24",
+              "V18-26",
+              "V24-07"
+            ]
+          }
+        },
+        {
+          "name": "map pan",
+          "status": "passed",
+          "detail": {
+            "method": "emulated touch drag"
+          }
+        },
+        {
+          "name": "layer opacity",
+          "status": "passed",
+          "detail": {
+            "range": "0% to 100%"
+          }
+        },
+        {
+          "name": "layout and readable map labels at normal and narrow widths",
+          "status": "passed",
+          "detail": [
+            {
+              "viewport": 390,
+              "page": 390,
+              "labels": [
+                {
+                  "text": "V04-23",
+                  "screen_font_px": 13
+                },
+                {
+                  "text": "V28-17",
+                  "screen_font_px": 13
+                },
+                {
+                  "text": "V04-24",
+                  "screen_font_px": 13
+                },
+                {
+                  "text": "V18-26",
+                  "screen_font_px": 13
+                },
+                {
+                  "text": "V24-07",
+                  "screen_font_px": 13
+                }
+              ],
+              "metrics": [
+                {
+                  "text": "Surface temperature\n49.4\u00b0C",
+                  "overflow": 0
+                },
+                {
+                  "text": "Green pixel share\n0.0%",
+                  "overflow": 0
+                },
+                {
+                  "text": "Temperature uncertainty\n1.80 K",
+                  "overflow": 0
+                },
+                {
+                  "text": "Mapped building footprint\n2.3%",
+                  "overflow": 0
+                },
+                {
+                  "text": "Historical built-up land (2021)\n25.2%",
+                  "overflow": 0
+                },
+                {
+                  "text": "Investigation rank\n1 of 373",
+                  "overflow": 0
+                }
+              ]
+            },
+            {
+              "viewport": 320,
+              "page": 320,
+              "labels": [
+                {
+                  "text": "V04-23",
+                  "screen_font_px": 12.999996612466125
+                },
+                {
+                  "text": "V28-17",
+                  "screen_font_px": 12.999996612466125
+                },
+                {
+                  "text": "V04-24",
+                  "screen_font_px": 12.999996612466125
+                },
+                {
+                  "text": "V18-26",
+                  "screen_font_px": 12.999996612466125
+                },
+                {
+                  "text": "V24-07",
+                  "screen_font_px": 12.999996612466125
+                }
+              ],
+              "metrics": [
+                {
+                  "text": "Surface temperature\n49.4\u00b0C",
+                  "overflow": 0
+                },
+                {
+                  "text": "Green pixel share\n0.0%",
+                  "overflow": 0
+                },
+                {
+                  "text": "Temperature uncertainty\n1.80 K",
+                  "overflow": 0
+                },
+                {
+                  "text": "Mapped building footprint\n2.3%",
+                  "overflow": 0
+                },
+                {
+                  "text": "Historical built-up land (2021)\n25.2%",
+                  "overflow": 0
+                },
+                {
+                  "text": "Investigation rank\n1 of 373",
+                  "overflow": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "page_errors": [],
+      "console_errors": [],
+      "failed_requests": [],
+      "http_errors": [],
+      "status": "passed"
+    }
+  ],
+  "browser": {
+    "engine": "Chromium",
+    "version": "151.0.7922.173"
+  },
+  "status": "passed"
+}

@@ -8,7 +8,7 @@ def fixture():
     tables = {k: [] for k in ['coverage','whole_window_areas','matched_changes','transitions','provenance']}
     for year in [2021,2026]:
         for i in range(3):
-            tables['provenance'].append({'year':year,'asset_id':f'GOOGLE/DYNAMICWORLD/V1/fixture-{year}-{i}',
+            tables['provenance'].append({'year':year,'asset_id':f'GOOGLE/DYNAMICWORLD/V1/{year}09{i+1:02}T080000_{year}09{i+1:02}T080000_T39RWJ',
                 'acquired_utc':f'{year}-09-{i+1:02} 08:00:00','dynamicworld_algorithm_version':'test-only',
                 'qa_algorithm_version':'test-only','crs':'EPSG:32639','grid_transform':'10,0,544635,0,-10,2845905'})
         for t in [0.5,0.6,0.7]:
@@ -32,6 +32,44 @@ def fixture():
 
 
 class HistoricalArithmeticTests(unittest.TestCase):
+    def test_fraction_checks_do_not_inherit_square_metre_tolerance(self):
+        t=fixture();t['coverage'][0]['accepted_fraction']+=.01
+        with self.assertRaises(ValueError):validate(t)
+        t=fixture();t['matched_changes'][0]['common_window_fraction']+=.01
+        with self.assertRaises(ValueError):validate(t)
+
+    def test_duplicate_sources_or_arbitrary_thresholds_rejected(self):
+        t=fixture();t['provenance'].append(copy.deepcopy(t['provenance'][0]))
+        with self.assertRaises(ValueError):validate(t)
+        with self.assertRaises(ValueError):validate(fixture(),thresholds=(.4,.5,.6))
+
+    def test_real_index_provenance_is_explicitly_derived_not_independently_fetched(self):
+        t=fixture()
+        for r in t['provenance']:
+            r['dataset']='GOOGLE/DYNAMICWORLD/V1';r['asset_id']=r['asset_id'].split('/')[-1]
+        original=copy.deepcopy(t)
+        report=validate(t)
+        self.assertEqual(t,original)
+        self.assertTrue(all(r['identifier_origin'].startswith('derived') and not r['independently_fetched'] for r in report['canonical_sources']))
+        t['provenance'][0]['dataset']='untrusted'
+        with self.assertRaises(ValueError):validate(t)
+
+    def test_coverage_failure_is_reported_without_rejecting_valid_arithmetic(self):
+        t=fixture()
+        for r in t['matched_changes']:
+            r.update(common_support_m2=300,excluded_window_m2=700,common_window_fraction=.3,
+                before_m2=300 if r['class_code']==7 else 0,after_m2=300 if r['class_code']==7 else 0)
+        for r in t['transitions']:r['area_m2']=300 if r['from_code']==r['to_code']==7 else 0
+        report=validate(t)
+        self.assertEqual(report['arithmetic_integrity'],'passed')
+        self.assertFalse(report['primary_coverage_gate_passed'])
+        self.assertFalse(report['publication_ready'])
+        self.assertTrue(all(r['minimum_window_fraction']==.5 and not r['gate_passed'] for r in report['coverage_suitability']))
+
+    def test_false_export_gate_flag_is_integrity_failure(self):
+        t=fixture();t['matched_changes'][0]['coverage_screen_pass']='0'
+        with self.assertRaises(ValueError):validate(t)
+
     def test_different_missing_coverage_is_not_change_or_publication_approval(self):
         report = validate(fixture())
         self.assertFalse(report['publication_ready'])

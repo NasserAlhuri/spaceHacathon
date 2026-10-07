@@ -71,6 +71,25 @@ def main():
                 loaded_image()
                 page.screenshot(path=str(args.output / f'{name}-initial.png'), full_page=True)
 
+                def historical_experiment():
+                    text = page.locator('.historical').inner_text()
+                    require('Exports succeeded' in text and 'primary coverage gate failed' in text,
+                        'Execution success and scientific gate failure must stay distinct')
+                    require('69.06%' in text and 'Unknown' in text and 'scientific review is pending' in text,
+                        'Unknown or pending scientific review disappeared')
+                    path = args.app.parent / 'data/dynamic_world/raw/2026-10-07/AlKhor_DW_matched_changes.csv'
+                    with path.open(newline='') as handle:
+                        rows = list(csv.DictReader(handle))
+                    for i,threshold in enumerate([.5,.6,.7]):
+                        row = next(r for r in rows if float(r['confidence_threshold']) == threshold)
+                        actual = page.locator('.historical tbody tr').nth(i).inner_text()
+                        require(f"{float(row['common_support_m2'])/1e6:.4f} km²" in actual,
+                            'Coverage display differs from immutable EE CSV area convention')
+                        require(f"{float(row['common_window_fraction'])*100:.2f}%" in actual,
+                            'Coverage percentage differs from actual exports')
+                    return {'source':'immutable actual CSV', 'primary_gate':'failed', 'scientific_review':'pending'}
+                check('historical experiment matches actual CSV and retains failed gate/Unknown', historical_experiment)
+
                 for date in data['dates']:
                     for layer in ['temperature', 'greenery', 'buildings', 'priority', 'uncertainty']:
                         def layer_check(date=date, layer=layer):
@@ -121,7 +140,7 @@ def main():
                         require(date in page.locator('#comparison-date').inner_text(), 'Comparison date is stale')
                     page.locator('#comparison').scroll_into_view_if_needed()
                     page.screenshot(path=str(args.output / f'{name}-comparison.png'))
-                    scroller = page.locator('.table-scroll')
+                    scroller = page.locator('#comparison .table-scroll')
                     scroller.evaluate('(e) => e.scrollLeft = e.scrollWidth')
                     scroll = scroller.evaluate('(e) => ({width:e.scrollWidth, viewport:e.clientWidth, left:e.scrollLeft})')
                     require(scroll['width'] <= scroll['viewport'] or scroll['left'] > 0, 'Hidden comparison columns cannot be reached')

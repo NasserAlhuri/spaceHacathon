@@ -1,4 +1,5 @@
-// PREPARED, NOT SERVER-EXECUTED: Earth Engine access is blocked in this environment.
+// Nasser successfully exported the two-year workflow in Code Editor on 2026-10-07.
+// This corrected revision is locally syntax-checked; its new exports are not claimed.
 // Paste into an authorized Earth Engine Code Editor. Use your own selected project.
 // Review Console coverage, provenance, sensitivity and source imagery before export.
 // This module never reads or replaces the original thermal/NDVI ranking pipeline.
@@ -29,13 +30,17 @@ YEARS.forEach(function(year) {
   print('Actual scene count ' + year, collection.size());
   // A masked fallback guarantees named bands for an empty collection; not fake data.
   var empty = ee.Image.constant([0,0,0,0,0,0,0,0,0]).rename(CLASSES)
-    .updateMask(ee.Image.constant(0));
+    .toFloat().updateMask(ee.Image.constant(0));
   var clean = collection.map(function(image) {
     var p = image.select(CLASSES);
     return p.updateMask(p.mask().reduce(ee.Reducer.min()))
       .copyProperties(image, image.propertyNames());
   });
-  var safe = ee.ImageCollection([empty]).merge(clean);
+  // Verified runtime correction supplied by Nasser: never mix MaskOnly fallback
+  // images with the real Float probability collection.
+  var safe = ee.ImageCollection(ee.Algorithms.If(
+    collection.size().gt(0), clean, ee.ImageCollection([empty])
+  ));
   var mean = safe.mean().reproject({crs: CRS, crsTransform: TRANSFORM}).clip(REGION);
   var count = safe.select('water').count().unmask(0)
     .reproject({crs: CRS, crsTransform: TRANSFORM}).clip(REGION).rename('observation_count');
@@ -45,7 +50,9 @@ YEARS.forEach(function(year) {
   var rows = ee.FeatureCollection(collection.toList(collection.size()).map(function(item) {
     var image = ee.Image(item);
     return ee.Feature(null, {year: year, dataset: 'GOOGLE/DYNAMICWORLD/V1',
-      asset_id: image.id(), source_sentinel2_id: ee.String('COPERNICUS/S2_HARMONIZED/')
+      image_index: image.get('system:index'),
+      asset_id: ee.String('GOOGLE/DYNAMICWORLD/V1/').cat(ee.String(image.get('system:index'))),
+      source_sentinel2_id: ee.String('COPERNICUS/S2_HARMONIZED/')
         .cat(ee.String(image.get('system:index'))),
       acquired_utc: ee.Date(image.get('system:time_start')).format('YYYY-MM-dd HH:mm:ss'),
       dynamicworld_algorithm_version: image.get('dynamicworld_algorithm_version'),
@@ -59,7 +66,8 @@ YEARS.forEach(function(year) {
   Map.addLayer(count, {min: 0, max: 10}, year + ' valid observation count', false);
   if (CREATE_EXPORT_TASKS) {
     Export.image.toDrive({image: mean.rename(CLASSES.map(function(n){return 'p_' + n;}))
-      .addBands(count).addBands(confidence).addBands(label).toFloat().unmask(-9999).clip(REGION),
+      .addBands(count).addBands(confidence).addBands(label).toFloat().clip(REGION)
+      .unmask({value: -9999, sameFootprint: false}),
       description: 'AlKhor_DynamicWorld_September_' + year, folder: 'UrbanHeat-DynamicWorld',
       region: REGION, crs: CRS, crsTransform: TRANSFORM, maxPixels: 2e7,
       fileFormat: 'GeoTIFF', formatOptions: {cloudOptimized: true, noData: -9999}});
@@ -111,7 +119,8 @@ THRESHOLDS.forEach(function(threshold) {
     });
     if (CREATE_EXPORT_TASKS && threshold === 0.6) {
       Export.image.toDrive({image: composites[before].label.multiply(9)
-        .add(composites[after].label).updateMask(common).unmask(255).toUint8().clip(REGION),
+        .add(composites[after].label).updateMask(common).toUint8().clip(REGION)
+        .unmask({value: 255, sameFootprint: false}),
         description: 'AlKhor_DW_transition_' + before + '_' + after,
         folder: 'UrbanHeat-DynamicWorld', region: REGION, crs: CRS,
         crsTransform: TRANSFORM, maxPixels: 2e7, fileFormat: 'GeoTIFF',
@@ -128,4 +137,5 @@ Object.keys(outputs).forEach(function(name) {
     description: 'AlKhor_DW_' + name, folder: 'UrbanHeat-DynamicWorld', fileFormat: 'CSV'});
 });
 Map.centerObject(REGION, 12);
-print('Blocked locally; server execution, scene availability, exports and imagery review NOT verified.');
+print('Workflow diagnostics only: inspect actual task status and exports. Export creation enabled:', CREATE_EXPORT_TASKS);
+print('Primary threshold remains 0.60; common support must pass the unchanged provisional 50% gate. Dated-imagery scientific review is required.');

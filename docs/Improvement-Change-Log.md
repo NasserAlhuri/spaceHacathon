@@ -31,3 +31,7 @@ The improved package was published to pilot/al-khor and promoted to main by non-
 ## Continuity and evidence refresh
 
 Added PROJECT_STATE.md as the concise resume checkpoint and linked it from README and Latest-Handover. Reconciled live branch heads, successful expanded run, actual artifact digest and 23 files; verified the 35 input and seven original result hashes again. Reviewed the 12-slide PDF/PowerPoint and added Delivery-Review.md. Full browser/device and teammate checks remain pending.
+
+## Actual Dynamic World export review — 7 October 2026
+
+Recorded Nasser's successful Code Editor execution/export separately from managed runtime restrictions. Preserved six checksum-verified actual exports, plus expected hashes and explicit transfer blockers for the two annual TIFFs/ZIP. Fixed fallback, provenance, explicit no-data fills and validators without altering confidence 0.60 or the 50% coverage gate. Real CSV arithmetic passed; primary 30.94% common coverage fails. Partial transition checks and eight 2026-only visual diagnostics leave paired scientific review pending. App/preview/slides now display a limited coverage experiment and Unknown rather than a general change claim. Original analysis, data, tables, ranking, visits and team-review status are preserved.

@@ -1,0 +1,202 @@
+{
+  "status": "integrity_passed_scientific_release_blocked",
+  "years": [
+    2021,
+    2026
+  ],
+  "thresholds": [
+    0.5,
+    0.6,
+    0.7
+  ],
+  "comparison_keys": 3,
+  "arithmetic_integrity": "passed",
+  "provenance_grid_metadata": "passed; source assets not independently fetched",
+  "canonical_sources": [
+    {
+      "year": 2021,
+      "raw_asset_id": "20210901T070619_20210901T071620_T39RWJ",
+      "canonical_asset_id": "GOOGLE/DYNAMICWORLD/V1/20210901T070619_20210901T071620_T39RWJ",
+      "identifier_origin": "derived_from_declared_dataset_and_exported_index",
+      "source_sentinel2_id": "COPERNICUS/S2_HARMONIZED/20210901T070619_20210901T071620_T39RWJ",
+      "acquired_utc": "2021-09-01 07:22:28",
+      "independently_fetched": false
+    },
+    {
+      "year": 2021,
+      "raw_asset_id": "20210906T070621_20210906T071628_T39RWJ",
+      "canonical_asset_id": "GOOGLE/DYNAMICWORLD/V1/20210906T070621_20210906T071628_T39RWJ",
+      "identifier_origin": "derived_from_declared_dataset_and_exported_index",
+      "source_sentinel2_id": "COPERNICUS/S2_HARMONIZED/20210906T070621_20210906T071628_T39RWJ",
+      "acquired_utc": "2021-09-06 07:22:32",
+      "independently_fetched": false
+    },
+    {
+      "year": 2021,
+      "raw_asset_id": "20210911T070619_20210911T071406_T39RWJ",
+      "canonical_asset_id": "GOOGLE/DYNAMICWORLD/V1/20210911T070619_20210911T071406_T39RWJ",
+      "identifier_origin": "derived_from_declared_dataset_and_exported_index",
+      "source_sentinel2_id": "COPERNICUS/S2_HARMONIZED/20210911T070619_20210911T071406_T39RWJ",
+      "acquired_utc": "2021-09-11 07:22:27",
+      "independently_fetched": false
+    },
+    {
+      "year": 2021,
+      "raw_asset_id": "20210916T070621_20210916T071546_T39RWJ",
+      "canonical_asset_id": "GOOGLE/DYNAMICWORLD/V1/20210916T070621_20210916T071546_T39RWJ",
+      "identifier_origin": "derived_from_declared_dataset_and_exported_index",
+      "source_sentinel2_id": "COPERNICUS/S2_HARMONIZED/20210916T070621_20210916T071546_T39RWJ",
+      "acquired_utc": "2021-09-16 07:22:33",
+      "independently_fetched": false
+    },
+    {
+      "year": 2021,
+      "raw_asset_id": "20210921T070619_20210921T071718_T39RWJ",
+      "canonical_asset_id": "GOOGLE/DYNAMICWORLD/V1/20210921T070619_20210921T071718_T39RWJ",
+      "identifier_origin": "derived_from_declared_dataset_and_exported_index",
+      "source_sentinel2_id": "COPERNICUS/S2_HARMONIZED/20210921T070619_20210921T071718_T39RWJ",
+      "acquired_utc": "2021-09-21 07:22:28",
+      "independently_fetched": false
+    },
+    {
+      "year": 2021,
+      "raw_asset_id": "20210926T070641_20210926T072035_T39RWJ",
+      "canonical_asset_id": "GOOGLE/DYNAMICWORLD/V1/20210926T070641_20210926T072035_T39RWJ",
+      "identifier_origin": "derived_from_declared_dataset_and_exported_index",
+      "source_sentinel2_id": "COPERNICUS/S2_HARMONIZED/20210926T070641_20210926T072035_T39RWJ",
+      "acquired_utc": "2021-09-26 07:22:35",
+      "independently_fetched": false
+    },
+    {
+      "year": 2026,
+      "raw_asset_id": "20260902T071321_20260902T072136_T39RWJ",
+      "canonical_asset_id": "GOOGLE/DYNAMICWORLD/V1/20260902T071321_20260902T072136_T39RWJ",
+      "identifier_origin": "derived_from_declared_dataset_and_exported_index",
+      "source_sentinel2_id": "COPERNICUS/S2_HARMONIZED/20260902T071321_20260902T072136_T39RWJ",
+      "acquired_utc": "2026-09-02 07:22:46",
+      "independently_fetched": false
+    },
+    {
+      "year": 2026,
+      "raw_asset_id": "20260905T070619_20260905T071117_T39RWJ",
+      "canonical_asset_id": "GOOGLE/DYNAMICWORLD/V1/20260905T070619_20260905T071117_T39RWJ",
+      "identifier_origin": "derived_from_declared_dataset_and_exported_index",
+      "source_sentinel2_id": "COPERNICUS/S2_HARMONIZED/20260905T070619_20260905T071117_T39RWJ",
+      "acquired_utc": "2026-09-05 07:22:28",
+      "independently_fetched": false
+    },
+    {
+      "year": 2026,
+      "raw_asset_id": "20260910T070621_20260910T071736_T39RWJ",
+      "canonical_asset_id": "GOOGLE/DYNAMICWORLD/V1/20260910T070621_20260910T071736_T39RWJ",
+      "identifier_origin": "derived_from_declared_dataset_and_exported_index",
+      "source_sentinel2_id": "COPERNICUS/S2_HARMONIZED/20260910T070621_20260910T071736_T39RWJ",
+      "acquired_utc": "2026-09-10 07:22:29",
+      "independently_fetched": false
+    },
+    {
+      "year": 2026,
+      "raw_asset_id": "20260915T070619_20260915T071117_T39RWJ",
+      "canonical_asset_id": "GOOGLE/DYNAMICWORLD/V1/20260915T070619_20260915T071117_T39RWJ",
+      "identifier_origin": "derived_from_declared_dataset_and_exported_index",
+      "source_sentinel2_id": "COPERNICUS/S2_HARMONIZED/20260915T070619_20260915T071117_T39RWJ",
+      "acquired_utc": "2026-09-15 07:22:29",
+      "independently_fetched": false
+    },
+    {
+      "year": 2026,
+      "raw_asset_id": "20260920T070621_20260920T071717_T39RWJ",
+      "canonical_asset_id": "GOOGLE/DYNAMICWORLD/V1/20260920T070621_20260920T071717_T39RWJ",
+      "identifier_origin": "derived_from_declared_dataset_and_exported_index",
+      "source_sentinel2_id": "COPERNICUS/S2_HARMONIZED/20260920T070621_20260920T071717_T39RWJ",
+      "acquired_utc": "2026-09-20 07:22:31",
+      "independently_fetched": false
+    },
+    {
+      "year": 2026,
+      "raw_asset_id": "20260922T071321_20260922T071331_T39RWJ",
+      "canonical_asset_id": "GOOGLE/DYNAMICWORLD/V1/20260922T071321_20260922T071331_T39RWJ",
+      "identifier_origin": "derived_from_declared_dataset_and_exported_index",
+      "source_sentinel2_id": "COPERNICUS/S2_HARMONIZED/20260922T071321_20260922T071331_T39RWJ",
+      "acquired_utc": "2026-09-22 07:22:45",
+      "independently_fetched": false
+    },
+    {
+      "year": 2026,
+      "raw_asset_id": "20260925T070619_20260925T071242_T39RWJ",
+      "canonical_asset_id": "GOOGLE/DYNAMICWORLD/V1/20260925T070619_20260925T071242_T39RWJ",
+      "identifier_origin": "derived_from_declared_dataset_and_exported_index",
+      "source_sentinel2_id": "COPERNICUS/S2_HARMONIZED/20260925T070619_20260925T071242_T39RWJ",
+      "acquired_utc": "2026-09-25 07:22:31",
+      "independently_fetched": false
+    },
+    {
+      "year": 2026,
+      "raw_asset_id": "20260930T070701_20260930T071800_T39RWJ",
+      "canonical_asset_id": "GOOGLE/DYNAMICWORLD/V1/20260930T070701_20260930T071800_T39RWJ",
+      "identifier_origin": "derived_from_declared_dataset_and_exported_index",
+      "source_sentinel2_id": "COPERNICUS/S2_HARMONIZED/20260930T070701_20260930T071800_T39RWJ",
+      "acquired_utc": "2026-09-30 07:22:32",
+      "independently_fetched": false
+    }
+  ],
+  "scene_counts": {
+    "2021": 6,
+    "2026": 8
+  },
+  "row_counts": {
+    "coverage": 6,
+    "whole_window_areas": 60,
+    "matched_changes": 27,
+    "transitions": 243,
+    "provenance": 14
+  },
+  "model_versions": [
+    "3.5"
+  ],
+  "qa_versions": [
+    "1"
+  ],
+  "coverage_suitability": [
+    {
+      "before_year": 2021,
+      "after_year": 2026,
+      "confidence_threshold": 0.5,
+      "common_support_m2": 84586894.73218735,
+      "window_fraction": 0.7278546305257512,
+      "minimum_window_fraction": 0.5,
+      "gate_passed": true,
+      "primary": false
+    },
+    {
+      "before_year": 2021,
+      "after_year": 2026,
+      "confidence_threshold": 0.6,
+      "common_support_m2": 35954878.06368993,
+      "window_fraction": 0.30938509530941777,
+      "minimum_window_fraction": 0.5,
+      "gate_passed": false,
+      "primary": true
+    },
+    {
+      "before_year": 2021,
+      "after_year": 2026,
+      "confidence_threshold": 0.7,
+      "common_support_m2": 5673699.217789746,
+      "window_fraction": 0.04882113548385381,
+      "minimum_window_fraction": 0.5,
+      "gate_passed": false,
+      "primary": false
+    }
+  ],
+  "primary_coverage_gate_passed": false,
+  "publication_ready": false,
+  "publication_blockers": [
+    "Independent dated-imagery classification review pending",
+    "Raster/source checks must be completed",
+    "Primary 0.60 common support fails unchanged provisional 50% coverage gate"
+  ],
+  "area_convention": "Unmodified Earth Engine pixelArea/reduceRegion CSV m2; not projected pixel count times 100",
+  "raster_grid_and_probabilities": "not checked by table validator",
+  "manual_imagery_validation": "pending; arithmetic alone does not establish accuracy"
+}

@@ -1,0 +1,54 @@
+{
+  "checked_at_utc": "2026-10-07T20:41:11.990424+00:00",
+  "status": "limited_coverage_experiment_primary_gate_failed_scientific_review_pending",
+  "baseline_live_commit": "14bd1e1e626cf71f667db4062fbbd4aea271e573",
+  "code_editor_execution_and_exports": "succeeded as recorded by Nasser supplied review and actual provenance/export files",
+  "managed_runtime_api_access": "still blocked; not the Code Editor execution status",
+  "raw_files_locally_checksum_verified": 6,
+  "raw_files_total_expected": 8,
+  "whole_external_archive_locally_verified": false,
+  "missing_annual_files": [
+    "AlKhor_DynamicWorld_September_2021.tif",
+    "AlKhor_DynamicWorld_September_2026.tif"
+  ],
+  "transfer_blocker": "32 MiB executor limit; authorized Drive streaming reference materialization CONNECT 403 under enforced proxy host policy",
+  "raw_files_original_bytes_preserved": true,
+  "table_integrity": "passed on five actual original CSVs",
+  "raster_integrity": "partial: actual primary transition checksum/grid/type verified; annual probability and finite-support comparison incomplete",
+  "scene_counts": {
+    "2021": 6,
+    "2026": 8
+  },
+  "primary_threshold": 0.6,
+  "common_window_coverage_fraction": 0.30938509530941777,
+  "unchanged_minimum_common_window_fraction": 0.5,
+  "primary_coverage_gate": "failed",
+  "publication_ready": false,
+  "general_change_result_adopted": false,
+  "display": "limited real coverage/Unknown demonstration only; no historical year map or general change claim",
+  "dated_imagery_review": "eight 2026-only stable/Unknown visual diagnostics; no paired 2021/2026 validation or accuracy estimate",
+  "scientific_review": "pending",
+  "teammate_reviews": "pending until individually confirmed",
+  "photographs_received": false,
+  "original_inputs_hashes_verified": 35,
+  "original_analytical_csv_hashes_verified": 7,
+  "protected_prior_files_unchanged": 112,
+  "original_thermal_ndvi_analysis_rerun": false,
+  "ranking_changes": false,
+  "synthetic_table_regression_tests": 10,
+  "synthetic_raster_regression_tests": 4,
+  "real_chromium_http_groups": {
+    "desktop": 29,
+    "mobile_emulation": 29
+  },
+  "offline_preview": "passed on desktop/mobile emulation; zero JS errors and zero network requests",
+  "presentation": "12-slide PPTX and 12-page PDF; changed pages 10/12 visually inspected",
+  "browser_test_repair": "Historical coverage introduced a second scroll container; comparison test selector scoped to #comparison. Initial selector failure retained externally; final full suite passed.",
+  "remaining": [
+    "Transfer two existing annual TIFFs, verify exact hashes and all finite-band/probability/transition checks",
+    "Retrieve and inspect suitably dated 2021 source RGB at changed/stable, built/bare, vegetation/coastal targets and document paired reference labels/disagreements/uncertainty",
+    "Complete independent scientific and member reviews; preserve failed primary coverage gate even after successful raster checks"
+  ],
+  "2023_SamGeo_other_models": "deferred",
+  "submission": "not performed; separate final approval required"
+}

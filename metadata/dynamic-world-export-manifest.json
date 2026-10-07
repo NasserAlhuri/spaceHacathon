@@ -1,0 +1,54 @@
+{
+  "review_date": "2026-10-07",
+  "archive": {
+    "name": "drive-download-20261007T201055Z-1-001.zip",
+    "bytes": 137120705,
+    "sha256": "b67a6eca5208f9ddc4dc03bd5b0b8e5fb338622a2e50d439dd7f86e136a700c6",
+    "verification": "reported_in_supplied_review; whole archive transfer blocked, not independently verified here"
+  },
+  "files": {
+    "AlKhor_DW_coverage.csv": {
+      "bytes": 1284,
+      "sha256": "1456a415ccc98867125e2112b21bc7d7218409746f43228f887a77e42610cf11",
+      "local_status": "bytes_verified_against_supplied_review"
+    },
+    "AlKhor_DW_matched_changes.csv": {
+      "bytes": 5816,
+      "sha256": "a6bc0d94401e0b2c26009b81735352bcedaded36af23990dd02e6a8c3467f8ba",
+      "local_status": "bytes_verified_against_supplied_review"
+    },
+    "AlKhor_DW_provenance.csv": {
+      "bytes": 3952,
+      "sha256": "71bdf717c21460c033838c07159c0b4b64da180a15cdd81577dcf2a49d55de79",
+      "local_status": "bytes_verified_against_supplied_review"
+    },
+    "AlKhor_DW_transition_2021_2026.tif": {
+      "bytes": 44826,
+      "sha256": "2e71882ebb2d950f3c0d5f0a2479b2e026be8b4d7674984bd139667625d8aa4d",
+      "local_status": "bytes_verified_against_supplied_review"
+    },
+    "AlKhor_DW_transitions.csv": {
+      "bytes": 22381,
+      "sha256": "9815e94fe7e361331d931257139b7ad0874016419f1c76490369c52232e7d4f6",
+      "local_status": "bytes_verified_against_supplied_review"
+    },
+    "AlKhor_DW_whole_window_areas.csv": {
+      "bytes": 6207,
+      "sha256": "e82fb6f84b544e327abaa6378e2c7cc4c46f4bc83baa0de712abcb31709cf68c",
+      "local_status": "bytes_verified_against_supplied_review"
+    },
+    "AlKhor_DynamicWorld_September_2021.tif": {
+      "bytes": 70946103,
+      "sha256": "dbd607e338d1feeafabace35b74d62836253412d85f270eacc8fde0aebbe3617",
+      "local_status": "transfer_blocked_32_MiB_limit"
+    },
+    "AlKhor_DynamicWorld_September_2026.tif": {
+      "bytes": 71045484,
+      "sha256": "7fe54821078d813fcb9b00baaea005eda8249260616901b40701457e8ce4fdf4",
+      "local_status": "transfer_blocked_32_MiB_limit"
+    }
+  },
+  "source_script_commit": "14bd1e1e626cf71f667db4062fbbd4aea271e573",
+  "retrieval": "Six authenticated Google Drive files; no sharing permissions changed; matching all six review hashes",
+  "raw_files_immutable": true
+}

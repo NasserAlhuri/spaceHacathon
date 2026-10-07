@@ -40,7 +40,7 @@ The package preserves thirty-five hashed inputs and seven original result tables
 
 ## Slide 10 — 2:30–2:45
 
-Next, measure use and shade and check access. We prepared a September 2021/2026 Dynamic World workflow, but access and validation are blocked. No historical-change result, health risk or causal cooling is claimed.
+Next, measure use and shade and check access. Our September 2021/2026 Dynamic World exports succeeded, but primary matched coverage is only 30.94 percent and scientific review is pending. No historical-change result, health risk or causal cooling is claimed.
 
 ## Slide 11 — 2:45–2:55
 

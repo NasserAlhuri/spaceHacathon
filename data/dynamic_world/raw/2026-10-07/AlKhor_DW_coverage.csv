@@ -1,0 +1,7 @@
+system:index,accepted_area_m2,accepted_fraction,confidence_threshold,minimum_observations,observed_area_m2,review_status,unknown_area_m2,window_area_m2,year,.geo
+0,8.98576319425628E7,0.7732083522459119,0.5,3,1.1621399546649542E8,manual validation pending,2.635636352393262E7,1.1621399546649542E8,2021,"{""type"":""MultiPoint"",""coordinates"":[]}"
+1,8.843416800374085E7,0.760959707552921,0.5,3,1.1621399546649542E8,manual validation pending,2.7779827462754577E7,1.1621399546649542E8,2026,"{""type"":""MultiPoint"",""coordinates"":[]}"
+2,4.104064100980544E7,0.3531471475966721,0.6,3,1.1621399546649542E8,manual validation pending,7.517335445668998E7,1.1621399546649542E8,2021,"{""type"":""MultiPoint"",""coordinates"":[]}"
+3,4.359542668918973E7,0.37513060724048786,0.6,3,1.1621399546649542E8,manual validation pending,7.261856877730569E7,1.1621399546649542E8,2026,"{""type"":""MultiPoint"",""coordinates"":[]}"
+4,5897662.670510388,0.05074829969347959,0.7,3,1.1621399546649542E8,manual validation pending,1.1031633279598504E8,1.1621399546649542E8,2021,"{""type"":""MultiPoint"",""coordinates"":[]}"
+5,7268277.179634396,0.06254218478986763,0.7,3,1.1621399546649542E8,manual validation pending,1.0894571828686103E8,1.1621399546649542E8,2026,"{""type"":""MultiPoint"",""coordinates"":[]}"

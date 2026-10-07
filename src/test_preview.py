@@ -65,7 +65,10 @@ def main():
                     rows = list(csv.DictReader(f))
                 assert len(rows) == 10
                 assert all('photo_status' in r and 'geometry_status' in r for r in rows)
-                assert 'comparison pending' in page.locator('.historical').inner_text()
+                assert 'primary coverage gate failed' in page.locator('.historical').inner_text()
+                assert '30.94%' in page.locator('.historical').inner_text()
+                assert '69.06%' in page.locator('.historical').inner_text()
+                assert 'scientific review is pending' in page.locator('.historical').inner_text()
                 record['csv_rows'] = len(rows)
                 page.locator('#reset').click()
                 initial = page.locator('#map').get_attribute('viewBox')

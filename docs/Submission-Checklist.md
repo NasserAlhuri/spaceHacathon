@@ -44,5 +44,6 @@ Presentation PDF: at most 50 MB. Optional ZIP: at most 200 MB. The portable map 
 - [x] Current public repository meets the organizer's supplied access instruction; no collaborator invitations needed.
 - [x] New Chromium HTTP map checks (28 per desktop/mobile profile), offline preview and temporary gallery-fixture checks.
 - [ ] Physical-device/member acceptance, Mohammed's presentation practice and Abdulrahman's project review/photo collection.
-- [ ] Earth Engine identity/project/network access, actual September 2021/2026 retrieval and local coverage/confidence/manual validation. 2023 remains deferred.
+- [x] Nasser completed authorized Code Editor setup, execution and export; five actual CSVs and primary transition TIFF match supplied hashes.
+- [ ] Transfer two existing annual TIFFs and complete finite-support/probability/source checks and paired dated-imagery scientific review. Primary 0.60 common coverage is 30.94%, below the unchanged 50% gate; general change claims remain blocked. 2023 remains deferred.
 - [ ] Final hackathon submission approval. Nothing submitted.

@@ -1,5 +1,7 @@
 # Improvement revision — 7 October 2026
 
+> Historical milestone before actual exports. Current status: Nasser completed Code Editor execution/export; primary coverage fails and paired scientific review is pending. See [Dynamic-World-Assessment.md](Dynamic-World-Assessment.md) and PROJECT_STATE.md. The blocked-data statements below describe the earlier revision.
+
 The user-requested priority is a truthful historical extension while preserving existing results. The live baseline was main/pilot commit d34a5b666609b70170687ef90048a85c4a603022; all 148 published file blobs matched the local source before editing. Both recorded backup heads were unchanged.
 
 ## Implemented independent improvements
