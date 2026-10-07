@@ -1,5 +1,5 @@
 # UrbanHeat AI — project state
-Updated: 6 October 2026. Team Al Zubarah. Repository: https://github.com/NasserAlhuri/spaceHacathon
+Updated: 7 October 2026. Team Al Zubarah. Repository: https://github.com/NasserAlhuri/spaceHacathon
 
 ## Completed publication
 The full prepared pending-update documentation/evidence refresh is published to public main and pilot/al-khor in commit 436f2c20ad65fe7f26b3650943d9fb02dd6bdcfa. Both branches were updated with force=false and an expected previous head of 5e7c540afdd9954363f73b9cde588d237291c388. No newer branch work was overwritten. This checkpoint and its package-manifest entry are a follow-up to that verified publication.
@@ -22,6 +22,13 @@ Real headless Chromium 151.0.7922.173 with Playwright 1.62.0 passed 24 groups of
 Fixed unreadably small map labels at full extent and oversized/clipped labels during zoom. Labels now stay near 13 screen pixels, use cell IDs in compact frames and retain full site names in the shortlist/details. Fixed the desktop map card stretching into a large blank white area. UI changes do not alter analysis or numerical data. See docs/Browser-Review.md and results/browser-review.json for exact tested UI hashes, before/after results, screenshots, reproduction command and limits.
 
 This is a technical Chromium check on a local HTTP copy, not a physical-device, Safari/Firefox, screen-reader, hosting or member acceptance test. Two-finger pinch was not tested. The comparison table intentionally scrolls horizontally on narrow screens. Teammate reviews remain pending until the members themselves confirm completion.
+
+## Complete single-file preview — ready
+Nasser reported an unstyled Web preview stuck at Loading satellite layers and confirmed opening Index.html. The original HTML requires the rest of app/; the previous cloud-local test server is not a user-facing preview endpoint. A complete standalone file is now in preview/UrbanHeat-AlKhor-Preview.html, with the original CSS/JavaScript, both JSON resources and all twelve images embedded. The builder and opening instructions are src/build_preview.py and docs/Preview-Guide.md. Downloadable HTML and ZIP copies were supplied in the chat.
+
+The exact standalone content passed real Chromium desktop/mobile-emulation checks with networking disabled: styling, JavaScript, 1,111 cells, all images, dates/layers, three sites, comparison, actual six-row CSV download and zoom/reset; zero JavaScript/console errors and zero HTTP/HTTPS requests. The original complete app also passed 24 HTTP-browser groups per viewport after a zero-size initial-layout guard and next-frame layout update. No analysis was rerun and the original inputs/results were checked unchanged.
+
+The ChatGPT preview UI itself could not be inspected, and no user-facing cloud forwarding endpoint was verified. Managed Chromium policy blocks file:// navigation; the exact generated content was tested with Playwright set_content. This limitation is recorded rather than claiming an embedded-platform preview pass. Use the downloadable complete file for opening, and keep physical-device and member reviews pending. No hackathon submission was performed.
 
 ## Environment and continuity
 The managed environment is running and local files are available. Direct Git networking failed because the configured proxy was unreachable; the connected GitHub API provides publication and remote verification. Chromium is now available at /usr/bin/chromium. The first local-server attempt was denied by the execution sandbox; approved execution allowed localhost sockets and the real browser to run. The original resume ZIP and pending-update overlay are preserved. Local publication files are in /workspace/urbanheat-publish; the updated resume checkpoint is in /workspace/urbanheat-resume/PROJECT_STATE.md.

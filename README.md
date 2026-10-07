@@ -77,7 +77,9 @@ For the portable interactive map, after generating assets:
 python -m http.server 8000 --directory app
 ```
 
-Open `http://localhost:8000`. The map keeps temperature, green signal, mapped buildings, investigation score and temperature uncertainty separate. It supports all observed cells, with urban candidates distinguished from context. Three named examples have local-review details, a comparison table and CSV download. A dashed boundary marks the analyst-defined study window. Local review does not change the satellite ranking.
+For a single-file preview or an offline copy, use [preview/UrbanHeat-AlKhor-Preview.html](preview/UrbanHeat-AlKhor-Preview.html). It embeds the full app resources. See [Preview-Guide.md](docs/Preview-Guide.md) for download/opening steps and test limits.
+
+Open `http://localhost:8000` on the same computer that runs the server. The map keeps temperature, green signal, mapped buildings, investigation score and temperature uncertainty separate. It supports all observed cells, with urban candidates distinguished from context. Three named examples have local-review details, a comparison table and CSV download. A dashed boundary marks the analyst-defined study window. Local review does not change the satellite ranking.
 
 Optional `src/fetch_sample.py` retrieves missing source crops. `src/fetch_osm.py` retrieves a new live snapshot; this changes inputs and must not be presented as exact reproduction. Preserve the packaged OSM data. `src/check_notebook.py` verifies hashes and executes an ordinary notebook kernel; its report must be read before claiming that check passed. GitHub Actions removes generated outputs before executing.
 

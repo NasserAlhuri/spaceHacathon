@@ -52,6 +52,7 @@ function updateView(){
  view.x=Math.max(-data.width*.1,Math.min(data.width*1.1-view.w,view.x));view.y=Math.max(-data.height*.1,Math.min(data.height*1.1-view.h,view.y));
  $('map').setAttribute('viewBox',`${view.x} ${view.y} ${view.w} ${view.h}`);
  const rect=$('map').getBoundingClientRect(),scale=Math.min(rect.width/view.w,rect.height/view.h);
+ if(!(scale>0))return;
  $('scale-line').style.width=`${300*scale}px`;
  // Keep labels readable in screen pixels as the map is resized or zoomed.
  const font=13/scale,margin=8/scale,compact=rect.width<600;
@@ -109,7 +110,7 @@ async function initialize(){
  for(const id of ['base','mask-image','layer-image']){$(id).setAttribute('width',data.width);$(id).setAttribute('height',data.height);}
  $('footprint-stat').textContent=data.planning.urban_candidate_sample_footprint_km2.toFixed(2)+' km² urban';$('cell-count').textContent=data.planning.reported_cells+' urban candidates · '+data.cells.length+' observed cells';
  const list=$('priority-list');for(const c of data.cells.filter(c=>c.urbanCandidate).sort((a,b)=>a.planning.investigation_rank-b.planning.investigation_rank).slice(0,3)){const button=document.createElement('button');button.textContent=`${c.planning.investigation_rank}. ${c.id}${reviewFor(c.id)?' · '+reviewFor(c.id).name:''} · rank ${c.planning.scenario_best_rank}–${c.planning.scenario_worst_rank}`;button.addEventListener('click',()=>selectCell(c.id));list.append(button);}
- render();updateView();
+ render();updateView();window.requestAnimationFrame?.(updateView);
  const context=document.modelContext;
  if(context?.registerTool){try{await context.registerTool({name:'configure_urbanheat_map',title:'Explore the UrbanHeat map',description:'Select an accepted observation date, map layer or reported comparison cell. Returns the visible selection and values.',inputSchema:{type:'object',properties:{date:{type:'string',enum:data.dates},layer:{type:'string',enum:Object.keys(info)},cell_id:{type:'string',enum:data.cells.map(c=>c.id)}},additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute:setMapView});}catch(e){console.warn('Map tool registration unavailable.');}}
  }catch(e){$('map-caption').textContent='The map data could not load.';$('map-status').textContent='Please reload the page.';document.querySelectorAll('select,input,.layer-buttons button').forEach(x=>x.disabled=true);}
