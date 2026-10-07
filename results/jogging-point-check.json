@@ -1,0 +1,89 @@
+{
+  "source": "User-supplied brief; redirect link could not be independently resolved",
+  "point_wgs84": {
+    "latitude": 25.681077,
+    "longitude": 51.524704
+  },
+  "point_within_cell": true,
+  "cell_geometry_wgs84": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          51.522537063194264,
+          25.68139729602335
+        ],
+        [
+          51.52552659104161,
+          25.68138655846154
+        ],
+        [
+          51.52551470845789,
+          25.678677595319108
+        ],
+        [
+          51.52252524819868,
+          25.678688331586386
+        ],
+        [
+          51.522537063194264,
+          25.68139729602335
+        ]
+      ]
+    ]
+  },
+  "entire_route_geometry": null,
+  "business_locations": null,
+  "reported_right_side_direction": null,
+  "values": {
+    "cell_id": "V18-26",
+    "common_30m_samples": 72,
+    "temp_c_2026-09-14": 48.022491455078125,
+    "vegetation_pct_2026-09-14": 0.07716049253940582,
+    "st_qa_k_2026-09-14": 1.8600000143051147,
+    "temp_c_2026-09-30": 46.921905517578125,
+    "vegetation_pct_2026-09-30": 0.0,
+    "st_qa_k_2026-09-30": 1.809999942779541,
+    "mapped_building_pct": 0.0,
+    "worldcover2021_built_pct": 69.40586853027344,
+    "retained_cell_pct": 72.0,
+    "mean_date_median_temp_c": 47.472198486328125,
+    "mean_date_green_pixel_pct": 0.03858024626970291,
+    "urban_candidate": true,
+    "investigation_score": 38.41823056300268,
+    "investigation_rank": 275,
+    "scenario_best_rank": 203,
+    "scenario_worst_rank": 336,
+    "scenarios_eligible": 13,
+    "scenario_top3_count": 0,
+    "recommendation": "Inspect pedestrian use, current shade and planting feasibility before choosing an intervention."
+  },
+  "unknowns": [
+    "route geometry",
+    "restaurant/laundry/supermarket coordinates",
+    "current mangrove geometry",
+    "photos and capture dates/times",
+    "use counts/times",
+    "detailed shade",
+    "ownership/access/permissions/cost/feasibility"
+  ],
+  "historical_worldcover_native_cell_counts": {
+    "20": 11,
+    "30": 32,
+    "50": 654,
+    "60": 451,
+    "80": 28,
+    "90": 12
+  },
+  "historical_worldcover_crs": "EPSG:4326",
+  "historical_point_class": 50,
+  "nearest_packaged_historical_mangrove_pixel": {
+    "longitude": 51.52654166666667,
+    "latitude": 25.680625,
+    "approx_distance_m": 191.082570483514,
+    "reported_cell_ids": [],
+    "is_current_ground_evidence": false
+  },
+  "point_retained_in_existing_thermal_mask": true,
+  "greenery_cause": "Not established: retained sample masks and historical classes do not locate the entire route or prove why greenery is low."
+}

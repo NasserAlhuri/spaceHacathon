@@ -1,4 +1,4 @@
-# Delivery review — 7 October 2026
+# Prior delivery review — 7 October 2026 (before improvement revision)
 
 The exact latest published baseline was 6471ef8dfd9a9f69169fc0250dcd0fbc45e2af99 on main and pilot/al-khor. All 143 local file blobs matched that published tree before this update. Both preserved backup heads match their recorded commits. Future publication uses re-read branch heads, expected previous heads and force=false.
 
@@ -23,3 +23,7 @@ The manifest-based packaging script verifies ZIP integrity, every archived file,
 Mohammed's assigned map review, Majed's slide review and Ali's demonstration rehearsal still require their own confirmations. Local boundary, detailed shade/use/access, ownership and planned-use checks remain pending. Team-Review.md is unchanged.
 
 No form was changed, no file was submitted and no organizer was contacted. Nasser's separate final submission approval remains required.
+
+## Current improvement revision
+
+The presentation and app were subsequently revised: jogging case replaces hospital land only in the deck, five reports and pending-photo galleries are available in the map, responsibilities are corrected, and historical comparison remains blocked. See Improvement-Revision.md, Delivery-Guide.md and results/improvement-revision-verification.json for the current checks. The sizes and unchanged-presentation statements above describe the prior delivery only.

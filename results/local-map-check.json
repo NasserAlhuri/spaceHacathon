@@ -1,14 +1,14 @@
 {
-  "checked_at": "2026-10-06",
+  "checked_at": "2026-10-07",
   "status": "passed",
   "method": "Node VM with DOM adapter; control/state checks, not a full browser visual or touch-device test",
   "checks": [
     "1111 observed cells and 373 candidates available",
-    "three examples across two dates and five layers",
+    "five local reports across two dates and five layers; original top three retained",
     "matching layer assets",
     "invalid-input state unchanged",
     "comparison updates with date",
-    "six CSV data rows with correct paired dates and confirmed-visit assessment status",
+    "ten CSV rows with paired dates and visit/photo/geometry statuses; original visits not extended to new sites",
     "selected-cell focus",
     "context cells remain accessible",
     "missing local-review metadata keeps satellite controls available",

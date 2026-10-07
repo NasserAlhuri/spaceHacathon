@@ -1,0 +1,46 @@
+{
+  "status": "passed_independent_improvements_historical_blocked",
+  "published_baseline": "d34a5b666609b70170687ef90048a85c4a603022",
+  "protected_existing_files_unchanged": 79,
+  "original_inputs_unchanged": 35,
+  "original_csv_tables_unchanged": 7,
+  "original_local_review_fields_unchanged": true,
+  "satellite_top3_unchanged": [
+    "V04-23",
+    "V28-17",
+    "V04-24"
+  ],
+  "presentation_cases": [
+    "V04-23",
+    "V28-17",
+    "V18-26"
+  ],
+  "real_photos_received": 0,
+  "historical_access": "blocked: no configured identity/project, SDK absent and API host not allowed; no authenticated collection query",
+  "historical_2021_2026_coverage": null,
+  "historical_results_shown": false,
+  "2023": "deferred",
+  "SamGeo_and_additional_models": "deferred",
+  "http_browser_check": "28 groups passed per desktop/mobile profile",
+  "offline_preview": "passed for both profiles; ten-row review CSV; original twelve map images",
+  "photo_integration_test": "passed; temporary synthetic fixture excluded from package",
+  "historical_arithmetic_tests": "5 synthetic tests passed; no actual Earth Engine exports validated",
+  "earthengine_server_execution": "not verified",
+  "presentation_pdf_pages": 12,
+  "presentation_pptx_slides": 12,
+  "pdf_bytes": 536196,
+  "pptx_bytes": 1722754,
+  "script_words": 383,
+  "presentation_visual_review": "actual PDF rendered; changed slides inspected; preserved slides inspected and content checked",
+  "relative_delivery_links": "passed",
+  "teammate_review_status": "pending until individually confirmed",
+  "analysis_rerun": false,
+  "submission": "not performed; separate final approval required",
+  "publication_verification": "record final commit/remote tree in external delivery report",
+  "limits": [
+    "Earth Engine data not queried or retrieved, no local historical coverage/confidence/imagery validation.",
+    "Shortened jogging link and competitor site unavailable to web research; coordinates attributed to supplied brief.",
+    "Chromium only; no physical-device, ChatGPT embedded-preview or member acceptance check.",
+    "Organizer deadline/file limits retained from supplied record, not newly verified."
+  ]
+}

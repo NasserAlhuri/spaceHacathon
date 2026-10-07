@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "recorded_date": "2026-10-06",
   "scope": "Separate local review; does not change satellite measurements or ranking.",
   "study_boundary_points": [
@@ -62,7 +62,16 @@
         "visit_date": null,
         "statement": "Nasser reports visiting the sites and confirms that the described physical situation is the same as in September 2026. Exact visit dates were not supplied.",
         "scope": "Physical site description; not measured temperature, NDVI, all-day shade, passenger counts, ownership or expansion plans."
-      }
+      },
+      "photos": [],
+      "photo_status": "Evidence pending; photographs not received",
+      "geometry_status": "Cell centre only; precise site or route geometry remains unverified",
+      "unknowns": [
+        "User counts and use times",
+        "Detailed shade across use times",
+        "Ownership, permissions, cost and feasibility"
+      ],
+      "visit_confirmation_status": "Confirmed by Nasser for the original reviewed sites; exact visit dates unspecified"
     },
     {
       "cell_id": "V28-17",
@@ -93,7 +102,16 @@
         "visit_date": null,
         "statement": "Nasser reports visiting the sites and confirms that the described physical situation is the same as in September 2026. Exact visit dates were not supplied.",
         "scope": "Physical site description; not measured temperature, NDVI, all-day shade, passenger counts, ownership or expansion plans."
-      }
+      },
+      "photos": [],
+      "photo_status": "Evidence pending; photographs not received",
+      "geometry_status": "Cell centre only; precise site or route geometry remains unverified",
+      "unknowns": [
+        "User counts and use times",
+        "Detailed shade across use times",
+        "Ownership, permissions, cost and feasibility"
+      ],
+      "visit_confirmation_status": "Confirmed by Nasser for the original reviewed sites; exact visit dates unspecified"
     },
     {
       "cell_id": "V04-24",
@@ -124,7 +142,105 @@
         "visit_date": null,
         "statement": "Nasser reports visiting the sites and confirms that the described physical situation is the same as in September 2026. Exact visit dates were not supplied.",
         "scope": "Physical site description; not measured temperature, NDVI, all-day shade, passenger counts, ownership or expansion plans."
-      }
+      },
+      "photos": [],
+      "photo_status": "Evidence pending; photographs not received",
+      "geometry_status": "Cell centre only; precise site or route geometry remains unverified",
+      "unknowns": [
+        "User counts and use times",
+        "Detailed shade across use times",
+        "Ownership, permissions, cost and feasibility"
+      ],
+      "visit_confirmation_status": "Confirmed by Nasser for the original reviewed sites; exact visit dates unspecified"
+    },
+    {
+      "cell_id": "V18-26",
+      "name": "Reported jogging route",
+      "map_label": "Jogging route",
+      "centre": {
+        "latitude": 25.680037445347594,
+        "longitude": 51.52402590272311
+      },
+      "label_offset": [
+        -2100,
+        -240
+      ],
+      "observation": "Abdulrahman identifies a jogging route, with a restaurant, laundry and supermarket across the road. He reports sand and mangroves on the right side of the path and says nearby mangroves do not shade the path. Viewing direction, route geometry, business locations, observation dates and photographs are not supplied. These are qualitative reports, not measured use or all-day shade.",
+      "usage_pattern": "Jogging use reported; counts, duration and use times unknown.",
+      "shade": "Abdulrahman reports no shade on the path from nearby mangroves; dated photographs and detailed shade measurements pending.",
+      "walking_access": "Route geometry, rest points, crossings and access safety unverified.",
+      "planned_use": "Ownership, permissions, cost and feasibility unknown. Preserve mangrove habitat when assessing options.",
+      "next_check": "Record the route and viewing direction, obtain dated photos, identify use times and rest points, and assess path shade without affecting mangroves.",
+      "observer": "Abdulrahman Almohannadi (local report supplied in Nasser's brief)",
+      "recorded_date": "2026-10-07",
+      "observation_date": null,
+      "evidence_type": "User-supplied attributed local report; dated evidence pending",
+      "field_status": "reported; detailed assessment and photographs pending",
+      "visit_confirmation_status": "Separate visit confirmation for this added location is not recorded",
+      "geometry_status": "Supplied reference point verified inside V18-26; it does not define the full route",
+      "reference_point": {
+        "latitude": 25.681077,
+        "longitude": 51.524704,
+        "url": "https://maps.app.goo.gl/gCZmV515FacSB4VK9",
+        "source": "User-supplied brief; shortened link not independently resolved",
+        "coordinate_status": "Point-in-cell geometry checked; route extent unknown"
+      },
+      "photos": [],
+      "photo_status": "Evidence pending; photographs not received",
+      "unknowns": [
+        "route geometry",
+        "restaurant/laundry/supermarket coordinates",
+        "current mangrove geometry",
+        "photos and capture dates/times",
+        "use counts/times",
+        "detailed shade",
+        "ownership/access/permissions/cost/feasibility"
+      ],
+      "satellite_summary_note": "47.47\u00b0C mean of date-level cell medians; mean green share 0.0386%; 72% retained coverage; rank 275/373, scenario range 203\u2013336. Low greenery does not establish the locations of nearby trees or why the signal is low."
+    },
+    {
+      "cell_id": "V24-07",
+      "name": "Reported unused land near a bus hub",
+      "map_label": "Reported unused land",
+      "centre": {
+        "latitude": 25.663976451045087,
+        "longitude": 51.46716185958338
+      },
+      "label_offset": [
+        100,
+        500
+      ],
+      "observation": "Abdulrahman identifies unused empty land next to a bus hub and reports no pedestrians walking or waiting there. The observation date/time, exact location within the cell and photographs are pending. A qualitative report at an unspecified time does not establish absence of use at other times. Satellite rank remains unchanged.",
+      "usage_pattern": "No pedestrians reported in the supplied observation; counts and use at other times unknown.",
+      "shade": "Current shade and detailed assessment unknown.",
+      "walking_access": "Exact site geometry, access and bus-hub pedestrian routes unverified.",
+      "planned_use": "Ownership, permissions and planned use unknown.",
+      "next_check": "Obtain dated location evidence and observe use at relevant bus-hub times before assessing suitability.",
+      "observer": "Abdulrahman Almohannadi (local report supplied in Nasser's brief)",
+      "recorded_date": "2026-10-07",
+      "observation_date": null,
+      "evidence_type": "User-supplied attributed local report; dated evidence pending",
+      "field_status": "reported; detailed assessment and photographs pending",
+      "visit_confirmation_status": "Separate visit confirmation for this added location is not recorded",
+      "geometry_status": "Cell-level reference only; exact empty-land and bus-hub positions pending",
+      "photos": [],
+      "photo_status": "Evidence pending; photographs not received",
+      "unknowns": [
+        "Exact site and bus-hub coordinates",
+        "Observation date/time and photos",
+        "Use counts and use at other times",
+        "Shade, ownership, permissions and feasibility"
+      ]
     }
+  ],
+  "presentation_examples": [
+    "V04-23",
+    "V28-17",
+    "V18-26"
+  ],
+  "satellite_top3_unchanged": [
+    "V04-23",
+    "V28-17",
+    "V04-24"
   ]
 }

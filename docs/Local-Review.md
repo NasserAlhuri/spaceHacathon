@@ -42,3 +42,7 @@ See `results/local-greenery-audit.json` and the unchanged original analysis. The
 ## Current site-check form
 
 Record observer, date, time, coordinates and evidence type. Photograph the stop, waiting area and route without unnecessary identifiable people. Record shelter visibility and shade at the observation time; do not generalise one photograph to the whole day. Passenger observations should identify duration and avoid extrapolating an unrepresentative interval. Leave unknowns unknown. Confirm ownership, permissions, available space, water/maintenance needs and relevant development plans before choosing an intervention.
+
+## Added attributed reports — 7 October 2026
+
+V18-26 and V24-07 reports are recorded in app/local-review.json and explained in [Site-Evidence-Guide.md](Site-Evidence-Guide.md). V18-26 is the presentation's third case instead of hospital land. Its supplied point is geometrically inside the cell; the full route and nearby features remain unverified. V24-07's reported absence of pedestrians at an unspecified time does not establish no use at other times. All new photos, capture dates/times and detailed measurements remain pending. Original visit confirmations are not extended to these added locations. All satellite ranks and the original top three are unchanged.

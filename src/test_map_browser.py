@@ -91,7 +91,8 @@ def main():
                             require(page.locator('#cell-badge').inner_text() == cid, 'Wrong selected cell')
                             require(page.locator('#selection polygon').count() == 1, 'Missing map selection outline')
                             values = cells[cid]['values'][date]
-                            expected = [f"{values['temperature']:.1f}°C", f"{values['greenery']:.1f}%", f"{values['uncertainty']:.2f} K"]
+                            green = f"{values['greenery']:.4f}%" if 0 < values['greenery'] < 0.1 else f"{values['greenery']:.1f}%"
+                            expected = [f"{values['temperature']:.1f}°C", green, f"{values['uncertainty']:.2f} K"]
                             actual = page.locator('#cell-details .metrics strong').all_inner_texts()
                             require(actual == expected, f'Metrics mismatch: {actual} / {expected}')
                             require(page.locator('.local-details h3').inner_text() == review['name'], 'Wrong local review')
@@ -99,10 +100,10 @@ def main():
                         check(f'select reviewed cell: {date} / {cid}', selection_check)
 
                 def shortlist():
-                    for index, review in enumerate(reviews):
+                    for index, review in enumerate(reviews[:3]):
                         click(f'#priority-list button:nth-child({index + 1})')
                         require(page.locator('#cell-badge').inner_text() == review['cell_id'], 'Shortlist selected the wrong site')
-                    return {'selected_cells': [r['cell_id'] for r in reviews]}
+                    return {'selected_cells': [r['cell_id'] for r in reviews[:3]]}
                 check('three shortlist buttons', shortlist)
 
                 def comparison():
@@ -112,7 +113,7 @@ def main():
                     for date in data['dates']:
                         page.locator('#date').select_option(date)
                         rows = page.locator('#comparison-body tr')
-                        require(rows.count() == 3, 'Wrong comparison row count')
+                        require(rows.count() == len(reviews), 'Wrong comparison row count')
                         for index, review in enumerate(reviews):
                             values = rows.nth(index).locator('td').all_inner_texts()
                             require(values[1] == review['cell_id'], 'Wrong comparison cell')
@@ -128,7 +129,7 @@ def main():
                     scroller.evaluate('(e) => e.scrollLeft = 0')
                     click('#comparison-toggle')
                     require(page.locator('#comparison').is_hidden(), 'Comparison did not close')
-                    return {'rows': 3, 'dates_checked': data['dates'], 'mobile_table_uses_horizontal_scroll': name == 'mobile'}
+                    return {'rows': len(reviews), 'dates_checked': data['dates'], 'mobile_table_uses_horizontal_scroll': name == 'mobile'}
                 check('comparison opens, follows date, scrolls and closes', comparison)
 
                 def download():
@@ -136,11 +137,11 @@ def main():
                         click('#download-review')
                     downloaded = event.value
                     require(downloaded.failure() is None, 'Download failed')
-                    require(downloaded.suggested_filename == 'AlKhor-Three-Location-Review.csv', 'Wrong CSV filename')
+                    require(downloaded.suggested_filename == 'AlKhor-Location-Review.csv', 'Wrong CSV filename')
                     path = args.output / f'{name}-download.csv'
                     downloaded.save_as(path)
                     rows = list(csv.DictReader(path.open(newline='')))
-                    require(len(rows) == 6, 'CSV should contain three sites times two dates')
+                    require(len(rows) == len(reviews)*len(data['dates']), 'CSV should contain all reviews across both dates')
                     for row in rows:
                         cell = cells[row['cell_id']]
                         require(float(row['surface_temperature_c']) == cell['values'][row['thermal_date']]['temperature'], 'CSV numerical value mismatch')

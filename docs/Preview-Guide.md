@@ -10,7 +10,7 @@ The previous test server was local to the cloud environment and temporary. Its l
 
 1. Download the updated `UrbanHeat-AlKhor-Project.zip` delivery package, or the standalone `UrbanHeat-AlKhor-Preview.html` supplied in the chat.
 2. Extract the ZIP. Use Open with → Chrome or Edge on `UrbanHeat-AlKhor/preview/UrbanHeat-AlKhor-Preview.html`, or on the separately downloaded standalone HTML.
-3. The formatted map should show 30 September 2026, the Priorities layer, and 1,111 observed cells. Switch dates/layers, select sites, compare them or download the six-row location review CSV.
+3. The formatted map should show 30 September 2026, the Priorities layer, and 1,111 observed cells. Switch dates/layers, select sites, compare them or download the ten-row location review CSV.
 
 The same standalone HTML is kept in `preview/UrbanHeat-AlKhor-Preview.html`. It embeds CSS, JavaScript, the existing satellite/local-review JSON and all twelve images (satellite, exclusion mask and ten date/layer images). It uses the same existing values and UI, with only preview resource delivery changed. External source/Street View links still need internet. The map itself needs no external requests.
 
@@ -35,7 +35,7 @@ python src/test_preview.py /tmp/UrbanHeat-AlKhor-Preview.html --output /tmp/urba
 
 The builder reads existing app files only. It does not invoke notebooks, fetch data, recompute figures or modify original results. It fails if source resource markers have changed instead of producing an incomplete package.
 
-The exact standalone content passed in real Chromium 151.0.7922.173 with network access disabled on desktop 1440 × 900 and mobile-emulated 390 × 844. CSS styling, JavaScript initialization, 1,111 cells, all twelve decoded images, both dates/all five layers, three site selections, comparison, CSV download and zoom/reset passed. There were zero JavaScript/console errors and zero HTTP/HTTPS requests. The original multi-file HTTP app also passed all 24 browser-check groups per viewport after the fix.
+The exact standalone content passed in real Chromium 151.0.7922.173 with network access disabled on desktop 1440 × 900 and mobile-emulated 390 × 844. CSS styling, JavaScript initialization, 1,111 cells, all twelve decoded images, both dates/all five layers, three site selections, comparison, CSV download and zoom/reset passed. The improvement revision adds five review locations, evidence-pending galleries and a blocked historical-status panel, with new tests in results/improvement-browser-review.json and results/photo-review-check.json. There were zero JavaScript/console errors and zero HTTP/HTTPS requests. The original multi-file HTTP app also passed all 28 browser-check groups per viewport in the improvement revision after the fix.
 
 Packaging exposed a separate initial-layout defect: when the preview's map rectangle initially had zero size, label calculations wrote Infinity SVG coordinates. `updateView` now skips zero-size layout and initialization schedules another layout update on the next animation frame. Source data, analysis, seven original CSV tables and backup branches are preserved.
 

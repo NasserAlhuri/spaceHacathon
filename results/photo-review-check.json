@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "method": "Real offline Chromium; temporary synthetic fixture only",
+  "real_photographs_received": 0,
+  "fixture_in_deliverables": false,
+  "checks": [
+    "Builder embeds a supplied local fixture photo; real project photos remain empty",
+    "desktop: embedded photo decodes offline; metadata unknowns, escaped captions, pending galleries, original top three and blocked history verified",
+    "mobile: embedded photo decodes offline; metadata unknowns, escaped captions, pending galleries, original top three and blocked history verified",
+    "Unsafe photo traversal path rejected"
+  ],
+  "member_acceptance": "pending",
+  "physical_device_check": false
+}

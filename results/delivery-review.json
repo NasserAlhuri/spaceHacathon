@@ -26,5 +26,6 @@
   "speech_words": 377,
   "speech_duration": "180-second rehearsal target; no member rehearsal claimed",
   "unknown_local_review_data": "Preserved byte for byte, including all unknown/unverified details",
-  "final_zip_report": "Generated outside repository as DELIVERY-VERIFICATION.json after remote snapshot verification"
+  "final_zip_report": "Generated outside repository as DELIVERY-VERIFICATION.json after remote snapshot verification",
+  "record_scope": "Prior delivery before the improvement revision; current status is results/improvement-revision-verification.json"
 }

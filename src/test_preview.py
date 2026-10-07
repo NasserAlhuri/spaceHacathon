@@ -42,16 +42,18 @@ def main():
                         page.locator(f'[data-layer="{layer}"]').click()
                         assert page.locator('#layer-image').get_attribute('href').startswith('data:image/png;base64,')
                         assert page.locator(f'[data-layer="{layer}"]').get_attribute('aria-pressed') == 'true'
-                for cid in ['V04-23', 'V28-17', 'V04-24']:
+                for cid in ['V04-23', 'V28-17', 'V04-24', 'V18-26', 'V24-07']:
                     page.locator('#cell-select').select_option(cid)
                     assert page.locator('#cell-badge').inner_text() == cid
                     assert page.locator('.local-details h3').inner_text()
                     evidence = page.locator('.evidence-status').inner_text()
-                    assert 'Nasser confirms site visits' in evidence
-                    assert 'user counts, use times and detailed shade assessment have not been measured' in evidence
+                    assert ('Nasser confirms site visits' in evidence) == (cid in ['V04-23','V28-17','V04-24'])
+                    assert 'Evidence pending' in page.locator('.photo-gallery').inner_text()
+                    assert page.locator('.photo-gallery img').count() == 0
+                    assert 'User counts, use times and detailed shade assessment have not been measured' in evidence
                 assert 'have not been measured' in page.locator('#review-status').inner_text()
                 page.locator('#comparison-toggle').click()
-                assert page.locator('#comparison-body tr').count() == 3
+                assert page.locator('#comparison-body tr').count() == 5
                 assert page.locator('#comparison').is_visible()
                 page.locator('#comparison-toggle').click()
                 with page.expect_download() as event:
@@ -61,7 +63,9 @@ def main():
                 downloaded.save_as(args.output / (name + '-review.csv'))
                 with (args.output / (name + '-review.csv')).open(newline='') as f:
                     rows = list(csv.DictReader(f))
-                assert len(rows) == 6
+                assert len(rows) == 10
+                assert all('photo_status' in r and 'geometry_status' in r for r in rows)
+                assert 'comparison pending' in page.locator('.historical').inner_text()
                 record['csv_rows'] = len(rows)
                 page.locator('#reset').click()
                 initial = page.locator('#map').get_attribute('viewBox')

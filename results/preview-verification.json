@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-10-07T04:58:54.608238+00:00",
-  "preview_sha256": "794bf039090a84cc379685bd7d71d43bffbe09972823d786f815354943c1149f",
+  "checked_at_utc": "2026-10-07T16:41:25.771266+00:00",
+  "preview_sha256": "906bd4b4d4d26dc965031768f8f70fa42983a336af4dc9b4745b47b904a275ba",
   "offline": true,
   "delivery": "HTML content loaded through Playwright set_content; managed Chromium policy blocks file:// navigation",
   "profiles": [
@@ -75,7 +75,7 @@
           "height": 352
         }
       ],
-      "csv_rows": 6,
+      "csv_rows": 10,
       "status": "passed"
     },
     {
@@ -149,48 +149,10 @@
           "height": 352
         }
       ],
-      "csv_rows": 6,
+      "csv_rows": 10,
       "status": "passed"
     }
   ],
   "status": "passed",
-  "browser": "151.0.7922.173",
-  "original_app_http_check": {
-    "status": "passed",
-    "report": "results/delivery-browser-review.json",
-    "profiles": [
-      {
-        "name": "desktop",
-        "passed_groups": 24,
-        "page_errors": [],
-        "console_errors": [],
-        "failed_requests": [],
-        "http_errors": []
-      },
-      {
-        "name": "mobile",
-        "passed_groups": 24,
-        "page_errors": [],
-        "console_errors": [],
-        "failed_requests": [],
-        "http_errors": []
-      }
-    ]
-  },
-  "source_app_sha256": {
-    "app/index.html": "2b1928b04c76e19ba3f333312ee3e9b9c1873503db7619760721e4061293844f",
-    "app/style.css": "2e9c476b4298b40cb94d3aa24cbe01c00d3fe4379d150e2b515c350a8464df3d",
-    "app/app.js": "9b41050100571fdce893807c7f456708c2e0c80d783e7c167f6d1f5eeeb38775",
-    "app/assets/data.json": "c98fd93325c4079a160ed25d3d5c9d1c95ac754aab30375ce5f52d4c46b09f2c",
-    "app/local-review.json": "55f204e8b08ed41ec4e1e4e957afffb85526fec7ccd6fa82d27ea23a716278d9"
-  },
-  "original_input_hashes_unchanged": 35,
-  "original_csv_tables_unchanged": 7,
-  "analysis_rerun": false,
-  "field_evidence_assertions": "Confirmed visits and explicitly unmeasured user counts, use times and detailed shade verified for all three sites and overview on both profiles",
-  "limits": [
-    "Managed Chromium blocks file://; exact generated HTML tested with set_content offline.",
-    "ChatGPT embedded preview, user-facing cloud forwarding, physical phones and other browsers not tested.",
-    "Automated checks do not complete member reviews."
-  ]
+  "browser": "151.0.7922.173"
 }

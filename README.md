@@ -4,13 +4,13 @@ Team **Al Zubarah (الزبارة)**, Qatar. Theme: **Urban Expansion, Land Use 
 
 This open-data PoC combines satellite surface temperature, green-pixel share, contributed building footprints and historical land cover to shortlist places for site investigation across the Al Khor area. It expands the earlier Pearl pilot, retained on `backup/pearl-2026-10-05`.
 
-**Status:** review draft published to public GitHub. [Expanded clean verification](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37505530323) passed on 6 October 2026: five notebook code cells, zero errors, 35 input hashes checked, numerical checks and all seven original CSV tables reproduced byte for byte. The greenery audit, review-figure rendering and map-control tests also passed. Local observations for three cells were supplied by Abdulrahman; Nasser confirms site visits and unchanged physical conditions relative to September 2026, with exact visit dates unspecified. Detailed site assessment and other teammate reviews remain pending. Final submission approval is required. Nothing has been submitted.
+**Status:** review draft published to public GitHub. [Expanded clean verification](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37505530323) passed on 6 October 2026: five notebook code cells, zero errors, 35 input hashes checked, numerical checks and all seven original CSV tables reproduced byte for byte. The greenery audit, review-figure rendering and map-control tests also passed. Local observations for five cells are attributed to Abdulrahman; Nasser confirms visits to the original three sites and unchanged physical conditions relative to September 2026, with exact visit dates unspecified. Detailed site assessment and other teammate reviews remain pending. Final submission approval is required. Nothing has been submitted.
 
 For current progress and the next unfinished task, start with [PROJECT_STATE.md](PROJECT_STATE.md).
 
 ## 1. Intended user and use case
 
-An urban planner can use the map to arrange site visits before proposing shade or planting improvements. Each candidate shows the contributing indicators, observed coverage and rank sensitivity. The three examples also show separate team-member local observations, reported use and next checks; unknown use and shade remain unknown. Visits must establish pedestrian activity, shade, walking access, ownership and feasibility before considering trees, shelters or route improvements. No user interview, measured time saving or cooling benefit is claimed.
+An urban planner can use the map to arrange site visits before proposing shade or planting improvements. Each candidate shows the contributing indicators, observed coverage and rank sensitivity. The review locations also show separate team-member local observations, reported use and next checks; unknown use and shade remain unknown. Visits must establish pedestrian activity, shade, walking access, ownership and feasibility before considering trees, shelters or route improvements. No user interview, measured time saving or cooling benefit is claimed.
 
 ## 2. Problem and study scope
 
@@ -133,17 +133,17 @@ The five notebook cell sources, original screening, input data and seven CSV out
 
 ## 9. Team members and roles
 
-Team responsibilities assigned on 5 October 2026:
+Team responsibilities corrected on 7 October 2026 (original assignment: 5 October):
 
 | Member | Responsibility |
 |---|---|
 | Nasser Alhuri | Team coordination and submission |
-| Abdulrahman Almohannadi | Check Al Khor locations against local knowledge |
-| Mohammed Almarri | Test the map and document issues |
+| Abdulrahman Almohannadi | Review the project; collect photographs and local observations |
+| Mohammed Almarri | Practise the presentation and project explanation |
 | Majed Alkuwari | Review slides and explain the limitations |
 | Ali Alkubaisi | Demonstrate the project and prepare judge questions |
 
-Abdulrahman has supplied local observations for three cells; Nasser confirms site visits; detailed shade/use/access assessment remains pending. Other members will complete their assigned checks before submission. Review completion is tracked in `docs/Team-Review.md`. All five platform registrations showed Signed in during the live check on 5 October 2026. Nasser Alhuri is the registered team leader.
+Abdulrahman has supplied attributed reports for five cells; Nasser confirms visits to the original three sites; detailed shade/use/access assessment remains pending. Other members will complete their assigned checks before submission. Review completion is tracked in `docs/Team-Review.md`. All five platform registrations showed Signed in during the live check on 5 October 2026. Nasser Alhuri is the registered team leader.
 
 ## 10. Licences and sources
 
@@ -165,3 +165,11 @@ Contains modified Copernicus Sentinel data (2026). Landsat imagery courtesy of U
 [Expanded GitHub run](https://github.com/NasserAlhuri/spaceHacathon/actions/runs/37505530323) passed on source `5e7c540afdd9954363f73b9cde588d237291c388`. The actual artifact 11431542823 was retrieved and verified; the package contains its executed notebook and result evidence. All seven original CSV tables are unchanged. See `docs/Verification-Report.md` and `results/expanded-workflow-verification.json`.
 
 The improved package is published to main and pilot/al-khor. Pearl and the Al Khor baseline backups remain unchanged. The organizer message supplied by Nasser accepts a public repository and confirms 11 October; the team plans to finish before the date. See `docs/Organizer-Access-and-Deadline.md`. Technical Chromium desktop/mobile-emulation checks passed after readability repairs; see [Browser-Review.md](docs/Browser-Review.md). Physical-device and other-browser checks, assigned teammate reviews and final submission approval remain pending. Nothing has been submitted.
+
+## Improvement revision — access and evidence status
+
+[Earth Engine access](docs/Earth-Engine-Access.md) is blocked: no configured Google identity/project and its API host is outside the enforced allowlist. A separate September 2021/2026 Dynamic World comparison script and arithmetic validator are prepared, but local scene coverage, confidence, imagery review and change results have **not** been verified. No historical year maps or land-change numbers are displayed; 2023 is deferred. Dynamic World is planned upstream AI, not retrieved data or a team-trained model. SamGeo and additional models are deferred.
+
+The unchanged satellite top three are V04-23, V28-17 and V04-24. Presentation examples use V04-23, V28-17 and the reported jogging route V18-26; hospital land stays in all results and in the map. The supplied jogging point is inside V18-26; its original values are 48.02/46.92°C, mean 47.47°C, 72% coverage and rank 275/373 (203–336). Route/business/current mangrove geometry and photos remain pending. V24-07 has an attributed unused-land report; rank 4 remains unchanged. See [site evidence](docs/Site-Evidence-Guide.md).
+
+The existing review interface supports local photograph galleries, capture metadata, evidence statuses and Unknowns. No real photographs have been received. The downloadable review CSV has ten rows across five sites/two dates and adds evidence fields; the seven analytical CSVs are unchanged. New technical checks apply to this changed UI, separately from the retained successful analysis run. Mohammed practises the presentation; Abdulrahman reviews the project and collects photos/observations. These tasks remain pending until confirmed by the members.

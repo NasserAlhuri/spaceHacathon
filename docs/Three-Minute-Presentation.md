@@ -1,6 +1,6 @@
 # Three-minute presentation script
 
-Team Al Zubarah — UrbanHeat AI, Al Khor. Use the existing twelve-slide PDF or PowerPoint. Target: 180 seconds. Timing is a rehearsal target, not a completed team rehearsal. Speak the script below; headings and timing cues are not spoken. Avoid live map interaction within the three-minute slot; keep the offline preview ready for questions.
+Team Al Zubarah — UrbanHeat AI, Al Khor. Use the revised twelve-slide PDF or PowerPoint. Target: 180 seconds. Timing is a rehearsal target, not a completed team rehearsal. Speak the script below; headings and timing cues are not spoken. Avoid live map interaction within the three-minute slot; keep the offline preview ready for questions.
 
 ## Slide 1 — 0:00–0:10
 
@@ -24,7 +24,7 @@ We remove unsuitable or uncertain pixels, compare common inland support, then su
 
 ## Slide 6 — 1:25–1:35
 
-The analyst-defined window contains 1,111 observed cells and 373 screened urban candidates. It is not an official city boundary.
+Our three presentation cases illustrate different uses. All 1,111 observed cells and 373 screened urban candidates remain; the satellite top three are unchanged.
 
 ## Slide 7 — 1:35–1:45
 
@@ -32,7 +32,7 @@ The accepted dates share about 94.4 square kilometres of inland thermal support.
 
 ## Slide 8 — 1:45–2:10
 
-We highlight a bus-stop cell, a parking-area cell and a hospital-adjacent cell. Their two-date summaries are around 50 degrees. Their ranks vary across settings, so we do not claim one proven best site. Zero detected green pixels does not mean no trees. Each location needs a different use, shade or access check.
+Our third case is the reported jogging route, V18-26: a 47.47-degree cell summary, 72-percent coverage and rank 275. Abdulrahman reports nearby mangroves do not shade the path; dated photos are pending. This is a use example, not a top-three rank. Hospital land stays in the results. Zero detected greenery does not mean no trees.
 
 ## Slide 9 — 2:10–2:30
 
@@ -40,11 +40,11 @@ The package preserves thirty-five hashed inputs and seven original result tables
 
 ## Slide 10 — 2:30–2:45
 
-Next, measure use and shade, check ownership and access, and review options with planners. Trees, shelters and safer routes are possibilities to assess. We have not measured health risk, long-term warming or causal cooling.
+Next, measure use and shade and check access. We prepared a September 2021/2026 Dynamic World workflow, but access and validation are blocked. No historical-change result, health risk or causal cooling is claimed.
 
 ## Slide 11 — 2:45–2:55
 
-Abdulrahman supplied local observations; Nasser confirmed visits. Members' assigned reviews and demonstration rehearsal remain pending until they confirm completion themselves.
+Abdulrahman reviews the project and collects photographs. Mohammed practises the presentation. These tasks and other members' reviews remain pending until individually confirmed.
 
 ## Slide 12 — 2:55–3:00
 
@@ -53,6 +53,6 @@ Our public package includes sources, licences and reproducible evidence. Thank y
 ## Rehearsal and demonstration cues
 
 - Rehearse aloud with a timer. Shorten transitions if needed; do not drop the visits-versus-measurements or temperature limitations.
-- For questions, open `preview/UrbanHeat-AlKhor-Preview.html` in a browser. Select V04-23, V28-17 and V04-24; compare them and show the two dates. CSV export has six rows: three cells × two dates.
+- For questions, open `preview/UrbanHeat-AlKhor-Preview.html` in a browser. Select V04-23, V28-17 and V18-26 for presentation cases; V04-24 remains available. Compare all five reviewed sites and show the two dates. Review CSV export has ten rows: five sites × two dates.
 - Treat quoted temperatures as cell summaries, not surveyed point measurements. Keep Unknown values visible and distinguish reported conditions from quantitative measurements.
-- This script is prepared material. It does not certify Ali's rehearsal, Majed's slide review, Mohammed's review or final submission approval.
+- This script is prepared material. It does not certify Ali's rehearsal, Abdulrahman's project review/photo collection, Majed's slide review, Mohammed's presentation practice or final submission approval.

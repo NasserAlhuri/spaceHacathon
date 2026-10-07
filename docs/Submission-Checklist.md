@@ -1,6 +1,6 @@
 # Al Khor submission checklist
 
-Updated 6 October 2026. Review package only; nothing submitted.
+Updated 7 October 2026. Review package only; nothing submitted.
 
 ## Prepared
 
@@ -42,5 +42,7 @@ Presentation PDF: at most 50 MB. Optional ZIP: at most 200 MB. The portable map 
 - [x] Actual artifact 11431542823 retrieved and verified; executed notebook and reports saved.
 - [x] Both backup branches preserved unchanged.
 - [x] Current public repository meets the organizer's supplied access instruction; no collaborator invitations needed.
-- [ ] Complete full browser/device review and other assigned teammate checks.
+- [x] New Chromium HTTP map checks (28 per desktop/mobile profile), offline preview and temporary gallery-fixture checks.
+- [ ] Physical-device/member acceptance, Mohammed's presentation practice and Abdulrahman's project review/photo collection.
+- [ ] Earth Engine identity/project/network access, actual September 2021/2026 retrieval and local coverage/confidence/manual validation. 2023 remains deferred.
 - [ ] Final hackathon submission approval. Nothing submitted.

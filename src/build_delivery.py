@@ -63,8 +63,11 @@ def build(root, output, source_commit):
                       'Extract the ZIP for the full source, original inputs/results, complete app, '
                       'preview, licences and docs/Delivery-Guide.md. The standalone map embeds its '
                       'resources; external source and Street View links need internet.\n\n'
-                      'Visits are confirmed. User counts, use times and detailed shade assessment '
-                      'were not measured; Unknown values remain. Physical-device, teammate reviews '
+                      'Visits to the original three reviewed sites are confirmed. Added reports '
+                      'have no separate visit confirmation. User counts, use times and detailed shade '
+                      'assessment were not measured; photographs are pending and Unknown values remain. '
+                      'Mohammed practises the presentation; Abdulrahman reviews the project and collects '
+                      'photos/observations. Their tasks remain pending. Physical-device, teammate reviews '
                       'and rehearsal are pending. Chromium desktop/mobile-emulation checks are '
                       'technical evidence only. Separate final approval is required to submit.\n')
     names = sorted([*manifest, 'PACKAGE-SHA256.json'])
@@ -92,6 +95,15 @@ def build(root, output, source_commit):
               'analysis_rerun': False, 'pdf_limit_bytes': 50_000_000, 'zip_limit_bytes': 200_000_000,
               'member_reviews': 'pending until individually confirmed',
               'submission': 'not performed; separate final approval required'}
+    improvement = root / 'results/improvement-revision-verification.json'
+    if improvement.exists():
+        report['improvement_status'] = json.loads(improvement.read_text())
+        with readme.open('a') as handle:
+            handle.write('\nHistorical comparison status is recorded in '
+                         'UrbanHeat-AlKhor/results/improvement-revision-verification.json inside the ZIP. '
+                         'Prepared Earth Engine code and synthetic tests do not prove actual local '
+                         'historical data access, coverage or scientifically validated changes.\n')
+        checksums[readme.name] = {'bytes': readme.stat().st_size, 'sha256': digest(readme.read_bytes())}
     (output / 'DELIVERY-VERIFICATION.json').write_text(json.dumps(report, indent=2) + '\n')
     (output / 'SHA256SUMS.json').write_text(json.dumps(checksums, indent=2) + '\n')
     return report

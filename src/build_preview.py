@@ -4,6 +4,7 @@ import base64
 import hashlib
 import json
 import mimetypes
+import re
 from pathlib import Path
 
 
@@ -24,6 +25,13 @@ def build(app, destination):
     review = json.loads((app / 'local-review.json').read_text())
     image_names = ['assets/satellite.jpg', 'assets/excluded.png']
     image_names += [f'assets/{layer}-{date}.png' for layer in ['temperature', 'greenery', 'buildings', 'priority', 'uncertainty'] for date in data['dates']]
+    for cell in review.get('cells', []):
+        for photo in cell.get('photos', []):
+            name = photo.get('src', '')
+            if not re.fullmatch(r'assets/site-photos/[a-zA-Z0-9_/-]+\.(?:jpe?g|png|webp)', name):
+                raise ValueError(f'Unsafe site-photo path: {name}')
+            image_names.append(name)
+    image_names = list(dict.fromkeys(image_names))
     images = {}
     for name in image_names:
         mime = mimetypes.guess_type(name)[0]
@@ -38,6 +46,7 @@ def build(app, destination):
     javascript = replace_once(javascript, "fetch('assets/data.json')", "Promise.resolve({ok:true,json:async()=>JSON.parse(document.getElementById('preview-data').textContent)})")
     javascript = replace_once(javascript, "fetch('local-review.json')", "Promise.resolve({ok:true,json:async()=>JSON.parse(document.getElementById('preview-review').textContent)})")
     javascript = replace_once(javascript, '`assets/${state.layer}-${state.date}.png`', 'previewImages[`assets/${state.layer}-${state.date}.png`]')
+    javascript = replace_once(javascript, 'const reviewPhotoSource=src=>src;', 'const reviewPhotoSource=src=>previewImages[src]||"";')
     scripts = json_script('preview-data', data) + json_script('preview-review', review) + json_script('preview-images', images)
     scripts += '<script>const previewImages=JSON.parse(document.getElementById("preview-images").textContent);\n' + javascript + '</script>'
     html = replace_once(html, '<script src="app.js"></script>', scripts)
