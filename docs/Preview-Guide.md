@@ -8,8 +8,8 @@ The previous test server was local to the cloud environment and temporary. Its l
 
 ## Recommended: the standalone file
 
-1. Download `UrbanHeat-AlKhor-Preview.zip` supplied in the chat.
-2. Extract it. Use Open with → Chrome or Edge on `UrbanHeat-AlKhor-Preview.html`.
+1. Download the updated `UrbanHeat-AlKhor-Project.zip` delivery package, or the standalone `UrbanHeat-AlKhor-Preview.html` supplied in the chat.
+2. Extract the ZIP. Use Open with → Chrome or Edge on `UrbanHeat-AlKhor/preview/UrbanHeat-AlKhor-Preview.html`, or on the separately downloaded standalone HTML.
 3. The formatted map should show 30 September 2026, the Priorities layer, and 1,111 observed cells. Switch dates/layers, select sites, compare them or download the six-row location review CSV.
 
 The same standalone HTML is kept in `preview/UrbanHeat-AlKhor-Preview.html`. It embeds CSS, JavaScript, the existing satellite/local-review JSON and all twelve images (satellite, exclusion mask and ten date/layer images). It uses the same existing values and UI, with only preview resource delivery changed. External source/Street View links still need internet. The map itself needs no external requests.

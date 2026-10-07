@@ -30,13 +30,26 @@ The exact standalone content passed real Chromium desktop/mobile-emulation check
 
 The ChatGPT preview UI itself could not be inspected, and no user-facing cloud forwarding endpoint was verified. Managed Chromium policy blocks file:// navigation; the exact generated content was tested with Playwright set_content. This limitation is recorded rather than claiming an embedded-platform preview pass. Use the downloadable complete file for opening, and keep physical-device and member reviews pending. No hackathon submission was performed.
 
+## Delivery preparation — 7 October 2026
+The published baseline was re-read at 6471ef8dfd9a9f69169fc0250dcd0fbc45e2af99 on both main and pilot/al-khor. All 143 published file blobs matched the local source before editing. Both recorded backup heads remain unchanged. This update adds delivery preparation and clearer evidence wording; the final packaged published commit is identified in ZIP SOURCE-COMMIT.txt and the external DELIVERY-VERIFICATION.json rather than a self-referential archive checksum here.
+
+The map overview, reviewed-site details and comparison now explicitly state that Nasser confirms visits while user counts, use times and detailed shade assessment have not been measured. The original local-review JSON, including unknown/unverified values and unspecified visit dates, is unchanged. No satellite ranking, original input, original CSV table, notebook source or analysis result was changed or recomputed.
+
+The twelve-page PDF (2,917,430 bytes) and twelve-slide PowerPoint (1,574,000 bytes) are unchanged from the published baseline. PDF page renders were visually reviewed and PowerPoint text/limitations checked. The standalone preview was rebuilt from the complete current app: 2,218,848 bytes, twelve embedded images and 1,111 cells. Real Chromium HTTP tests passed 24 groups for desktop and 24 for mobile emulation; offline standalone tests passed including explicit confirmed-visit/unmeasured-field assertions for all three sites and the overview. No JavaScript/console errors or failed requests were reported. Results are in results/delivery-browser-review.json, results/preview-verification.json and results/delivery-review.json. Managed file:// restrictions and untested ChatGPT preview/physical-device/member acceptance remain recorded.
+
+English preparation material is in docs/Three-Minute-Presentation.md (377 spoken words, a 180-second target across twelve slides) and docs/Judge-Questions.md. These are prepared notes, not a completed Ali rehearsal, Majed slide review or Mohammed map review. Team-Review.md is unchanged and pending reviews remain pending until each member confirms them.
+
+The full delivery ZIP includes the manifest-listed project, presentations, complete app, standalone preview, notebook, source data/results and notes. src/build_delivery.py checks file hashes, original input/table hashes, PDF/PowerPoint page/slide counts, ZIP integrity and PDF ≤50 MB / ZIP ≤200 MB limits without running analysis. The final bundle is generated outside the repository from the remotely verified snapshot; its exact archive size, file checksums and source commit are recorded in the external verification report. Relative delivery links and public GitHub file references are checked; third-party links and organizer-form acceptance are not certified. See docs/Delivery-Guide.md for opening and rebuild steps.
+
+No hackathon form attachment, submission or organizer message was performed. The public GitHub publication approval is separate from Nasser's still-required final submission approval.
+
 ## Environment and continuity
 The managed environment is running and local files are available. Direct Git networking failed because the configured proxy was unreachable; the connected GitHub API provides publication and remote verification. Chromium is now available at /usr/bin/chromium. The first local-server attempt was denied by the execution sandbox; approved execution allowed localhost sockets and the real browser to run. The original resume ZIP and pending-update overlay are preserved. Local publication files are in /workspace/urbanheat-publish; the updated resume checkpoint is in /workspace/urbanheat-resume/PROJECT_STATE.md.
 
 ## Remaining
 1. Complete the assigned teammate reviews in docs/Team-Review.md. Automated DOM and real Chromium technical checks passed; physical-device and member reviews, slide review and demonstration rehearsal remain pending. Do not infer member completion.
 2. Keep detailed shade/use/access, exact bus-stop location, ownership/land plans and independent scientific validation marked pending. Site visits were confirmed, but exact dates are unspecified.
-3. Review final PDF/ZIP attachments, sizes, public links and platform declarations. The organizer message supplied by Nasser accepts public access and names 11 October 2026; hour/timezone are unspecified. Finish before that date.
+3. Delivery files, package integrity and supplied size limits are technically checked; members must review final attachments and platform declarations before any separately authorized form upload. The organizer message supplied by Nasser accepts public access and names 11 October 2026; hour/timezone are unspecified. Finish before that date.
 4. Obtain Nasser's separate final approval before submitting to the hackathon.
 
 ## Working rules

@@ -46,6 +46,10 @@ def main():
                     page.locator('#cell-select').select_option(cid)
                     assert page.locator('#cell-badge').inner_text() == cid
                     assert page.locator('.local-details h3').inner_text()
+                    evidence = page.locator('.evidence-status').inner_text()
+                    assert 'Nasser confirms site visits' in evidence
+                    assert 'user counts, use times and detailed shade assessment have not been measured' in evidence
+                assert 'have not been measured' in page.locator('#review-status').inner_text()
                 page.locator('#comparison-toggle').click()
                 assert page.locator('#comparison-body tr').count() == 3
                 assert page.locator('#comparison').is_visible()
