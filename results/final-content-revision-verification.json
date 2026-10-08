@@ -1,0 +1,227 @@
+{
+  "checked_at_utc": "2026-10-08T06:47:12.785002+00:00",
+  "status": "final_content_corrections_and_artifact_checks_passed_independent_science_member_rehearsal_pending",
+  "baseline_source": "865c7f2d8465e77b6451dbf16dda1149b17237d7",
+  "supplied_report": "docs/Final-Content-External-Review-2026-10-08.md",
+  "corrections_applied": [
+    "External AI: WorldCover in heat screening, Dynamic World separate historical experiment; QA/ranking rule based; no new model trained.",
+    "NDVI >=0.30 at 24/25 grass and 0/30 building references; 0/30 is not building-detection accuracy; separate WorldCover class-50 agreement 25/30.",
+    "Assistant review: 18 sites/four dates complete; independent science remains pending; current checklist splits completed retrieval/review from pending validation."
+  ],
+  "pdf_pages": 12,
+  "pptx_slides": 12,
+  "slide_parts_changed": [
+    5,
+    9,
+    10
+  ],
+  "text_nodes_changed": 4,
+  "pptx_design_fonts_geometry_theme_media_other_parts": "unchanged; exact component/canonical XML comparisons passed",
+  "pdf_pptx_paragraph_and_table_cell_matches": 89,
+  "pdf_text_span_boundary_checks": 117,
+  "pdf_pixel_checks": [
+    {
+      "slide": 1,
+      "unchanged_rendered_pixels": "identical"
+    },
+    {
+      "slide": 2,
+      "unchanged_rendered_pixels": "identical"
+    },
+    {
+      "slide": 3,
+      "unchanged_rendered_pixels": "identical"
+    },
+    {
+      "slide": 4,
+      "unchanged_rendered_pixels": "identical"
+    },
+    {
+      "slide": 5,
+      "pixels_outside_changed_text_regions": "identical"
+    },
+    {
+      "slide": 6,
+      "unchanged_rendered_pixels": "identical"
+    },
+    {
+      "slide": 7,
+      "unchanged_rendered_pixels": "identical"
+    },
+    {
+      "slide": 8,
+      "unchanged_rendered_pixels": "identical"
+    },
+    {
+      "slide": 9,
+      "pixels_outside_changed_text_regions": "identical"
+    },
+    {
+      "slide": 10,
+      "pixels_outside_changed_text_regions": "identical"
+    },
+    {
+      "slide": 11,
+      "unchanged_rendered_pixels": "identical"
+    },
+    {
+      "slide": 12,
+      "unchanged_rendered_pixels": "identical"
+    }
+  ],
+  "visual_review": "Changed PDF slides 5/9/10 rendered and inspected. Initial missing non-ASCII glyph repaired with ASCII >= in both formats. No overlap/clipping in final renders.",
+  "desktop_powerpoint_opened": false,
+  "pdf_method": "Original PDF pages retained; only reviewed paragraphs redrawn with existing Noto Sans font size/colour/baseline. No claim of native PowerPoint export/render.",
+  "reference_counts": {
+    "grass_ndvi": {
+      "positive": 24,
+      "total": 25
+    },
+    "building_ndvi": {
+      "positive": 0,
+      "total": 30
+    },
+    "building_worldcover_class_50": {
+      "agreement": 25,
+      "total": 30
+    },
+    "coastal_excluded": 30,
+    "interpretation": "diagnostics; not independently measured accuracy"
+  },
+  "protected_original_files_verified_unchanged": 170,
+  "original_input_hashes_verified": 35,
+  "original_csv_hashes_verified": 7,
+  "original_exports_references_target_predictions_app_preview_analysis_ranking": "unchanged",
+  "script_timing": {
+    "word_count": 386,
+    "target_seconds": 180,
+    "planned_speaking_seconds": 171,
+    "planned_transition_seconds": 9,
+    "planned_words_per_minute": 135.43859649122805,
+    "actual_rehearsal_seconds": null,
+    "Mohammed_rehearsal": "pending until he confirms",
+    "sections": [
+      {
+        "slide": 1,
+        "words": 23,
+        "start_seconds": 0,
+        "end_seconds": 11
+      },
+      {
+        "slide": 2,
+        "words": 31,
+        "start_seconds": 11,
+        "end_seconds": 25
+      },
+      {
+        "slide": 3,
+        "words": 40,
+        "start_seconds": 25,
+        "end_seconds": 44
+      },
+      {
+        "slide": 4,
+        "words": 41,
+        "start_seconds": 44,
+        "end_seconds": 63
+      },
+      {
+        "slide": 5,
+        "words": 40,
+        "start_seconds": 63,
+        "end_seconds": 81
+      },
+      {
+        "slide": 6,
+        "words": 23,
+        "start_seconds": 81,
+        "end_seconds": 92
+      },
+      {
+        "slide": 7,
+        "words": 22,
+        "start_seconds": 92,
+        "end_seconds": 103
+      },
+      {
+        "slide": 8,
+        "words": 54,
+        "start_seconds": 103,
+        "end_seconds": 127
+      },
+      {
+        "slide": 9,
+        "words": 38,
+        "start_seconds": 127,
+        "end_seconds": 145
+      },
+      {
+        "slide": 10,
+        "words": 41,
+        "start_seconds": 145,
+        "end_seconds": 164
+      },
+      {
+        "slide": 11,
+        "words": 22,
+        "start_seconds": 164,
+        "end_seconds": 174
+      },
+      {
+        "slide": 12,
+        "words": 11,
+        "start_seconds": 174,
+        "end_seconds": 180
+      }
+    ]
+  },
+  "actual_rehearsal": "pending; record Mohammed actual duration",
+  "current_artifact_proofs": {
+    "revised_pdf_pptx_script_status": "results/final-content-revision-verification.json",
+    "unchanged_app_preview": "results/dynamic-world-paired-review-verification.json",
+    "analysis": "retained results/expanded-workflow-verification.json and original hash manifests"
+  },
+  "browser_rerun": false,
+  "browser_rerun_reason": "App/preview bytes are unchanged; latest matching technical Chromium evidence retained, not a new browser run.",
+  "primary_coverage_percent": 30.938509530941776,
+  "primary_threshold": 0.6,
+  "coverage_gate_percent": 50,
+  "primary_gate": "failed",
+  "Unknown_excluded_common_percent": 69.06149046905821,
+  "scientific_release_ready": false,
+  "independent_scientific_review": "pending",
+  "member_reviews": "pending until personally confirmed",
+  "analysis_rerun": false,
+  "new_model": false,
+  "imagery_export": false,
+  "submission": "not performed",
+  "files": {
+    "docs/UrbanHeat-AlKhor-Pitch.pdf": {
+      "bytes": 814073,
+      "sha256": "029ac4e873d25590035b4cef545004bc0d7a76351e02732876a1e7bd6a3a7d29"
+    },
+    "docs/UrbanHeat-AlKhor-Pitch.pptx": {
+      "bytes": 1722800,
+      "sha256": "c094e8086dee77f9641f18749a3d3e4af8c35954495b8be02121b35215c1cc65"
+    },
+    "docs/Three-Minute-Presentation.md": {
+      "bytes": 4732,
+      "sha256": "1a5a258b5432d68d170269d2d009aa3413771cc71be5a98811331a93fe559462"
+    },
+    "docs/Judge-Questions.md": {
+      "bytes": 8859,
+      "sha256": "a9cf72787b66fba62f7bbc2b2d717a78247bffec8ff6050560f1791a903857db"
+    },
+    "docs/Submission-Draft.md": {
+      "bytes": 2517,
+      "sha256": "a197afb4aace6006643ea3051e755d9611dd67e5f2910a9f07a7237774f74b37"
+    },
+    "docs/Submission-Checklist.md": {
+      "bytes": 6234,
+      "sha256": "36270c3572b04d3f847d503786154ca59c8f4b28cb6baf35e83727e06fa28de7"
+    }
+  },
+  "affected_local_links_checked": 40,
+  "affected_local_links_status": "passed",
+  "supplied_report_original_bytes_preserved": true
+}

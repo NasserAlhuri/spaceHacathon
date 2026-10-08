@@ -1,6 +1,6 @@
 # Al Khor submission checklist
 
-Updated 7 October 2026. Review package only; nothing submitted.
+Updated 8 October 2026. Revised review package only; nothing submitted. Current content/design evidence is [Final-Content-Revision.md](Final-Content-Revision.md). Earlier verification records remain historical.
 
 ## Prepared
 
@@ -10,7 +10,7 @@ Updated 7 October 2026. Review package only; nothing submitted.
 - [x] Executed notebook and regenerated results retrieved from artifact 11431542823.
 - [x] Portable Al Khor map: 1,111 observed cells and 373 urban candidates.
 - [x] Twelve-slide PDF and editable PowerPoint: official theme/country, problem, use case, data disclosures, editable workflow, actual outputs, sensitivity, verification, limitations, impact and incubation next steps.
-- [x] Team responsibilities assigned: coordination, local knowledge, map testing, slides/limitations and demonstration/judge questions.
+- [x] Responsibilities assigned: Nasser coordinates/confirms visits; Abdulrahman reviews the project and collects dated photos/observations; Mohammed practises the presentation; Majed reviews slides/limitations; Ali prepares the demonstration/judge questions. Assignment is not task completion.
 - [x] All five members shown Signed in on the live Cockpit.
 - [x] Project title, summary and repository link prepared in the platform draft form.
 
@@ -18,7 +18,7 @@ Updated 7 October 2026. Review package only; nothing submitted.
 - [x] March 2023 Street View camera reference located inside V04-23; exact stop coordinate remains unverified.
 - [x] Separate greenery audit reproduces V04-23's 0% result without changing the threshold or ranking.
 - [x] Named map examples, study boundary, comparison and review CSV added.
-- [x] Clean regeneration, numerical checks, separate audit and map-control tests passed; original seven CSV tables unchanged. Twelve slide renders inspected; full browser/device review remains with the team.
+- [x] Clean regeneration, numerical checks, separate audit and map-control tests passed; original seven CSV tables unchanged. Changed slides 5/9/10 rendered and inspected after this content revision; the nine other page renders are unchanged. Technical Chromium desktop/mobile-emulation checks are complete; physical-device/member acceptance remains pending.
 
 ## Final gates
 
@@ -42,9 +42,13 @@ Presentation PDF: at most 50 MB. Optional ZIP: at most 200 MB. The portable map 
 - [x] Actual artifact 11431542823 retrieved and verified; executed notebook and reports saved.
 - [x] Both backup branches preserved unchanged.
 - [x] Current public repository meets the organizer's supplied access instruction; no collaborator invitations needed.
-- [x] New Chromium HTTP map checks (28 per desktop/mobile profile), offline preview and temporary gallery-fixture checks.
+- [x] Latest retained Chromium HTTP checks (29 groups per desktop/mobile profile) and offline preview pass. Exact current app/preview bytes are unchanged; results/dynamic-world-paired-review-verification.json is the latest matching evidence. Earlier browser/gallery reports remain historical.
 - [ ] Physical-device/member acceptance, Mohammed's presentation practice and Abdulrahman's project review/photo collection.
 - [x] Nasser completed authorized Code Editor setup, execution and export; five actual CSVs and primary transition TIFF match supplied hashes.
 - [x] Reassemble six supplied parts and verify both exact annual TIFFs; all eight export hashes and actual finite-band/probability/grid/transition checks passed.
-- [ ] Obtain dated 2021 RGB and complete paired reference/source interpretation and independent scientific review. Primary 0.60 common coverage is 30.94%, below the unchanged 50% gate; general change claims remain blocked. 2023 remains deferred.
+- [x] Receive and verify both unique dated 2021 RGB/QA60 references and original provenance; byte-identical duplicate ignored. See metadata/dynamic-world-reference-manifest.json and results/dynamic-world-reference-verification.json.
+- [x] Assistant paired review of 18 target locations across four dates is complete (72 dated views, not 72 independent sites). All 18 rows and ambiguities are recorded in metadata/dynamic-world-manual-review.csv. This is not independent exact-class validation or member confirmation.
+- [ ] Complete independent scientific validation. Eight broad clear patterns are not eight confirmed correct classes or 8/18 accuracy; the three potential disagreement flags overlap ambiguous cases and are not confirmed model errors. Primary 0.60 common coverage stays 30.94%, below the unchanged 50% gate; Unknown/excluded common support stays 69.06%. General change claims remain blocked; 2023 is deferred.
+- [x] Correct external-AI explanation, NDVI-reference wording and assistant-versus-independent-review status across the twelve-slide PDF/PPTX, script, judge answers and draft. Current evidence: results/final-content-revision-verification.json.
+- [ ] Mohammed records an actual timed rehearsal; the script's 180-second cues are estimates, not completed rehearsal evidence.
 - [ ] Final hackathon submission approval. Nothing submitted.

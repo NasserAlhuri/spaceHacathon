@@ -1,6 +1,6 @@
-# Al Khor handover, 6 October 2026
+# Al Khor handover, updated 8 October 2026
 
-Start with [PROJECT_STATE.md](../PROJECT_STATE.md), the concise checkpoint updated at each milestone. This document provides supporting detail.
+Start with [PROJECT_STATE.md](../PROJECT_STATE.md), the concise checkpoint updated at each milestone. This document provides supporting detail. The [final content revision](Final-Content-Revision.md) identifies the latest revised presentation/script checks; browser evidence still validates the unchanged app/preview.
 
 Team Al Zubarah. Communicate with Nasser in simple Arabic; project and presentation files remain English.
 

@@ -39,7 +39,7 @@
     "mobile_emulation": 29
   },
   "offline_preview": "passed on desktop/mobile emulation; zero JS/console errors and zero HTTP/HTTPS requests",
-  "presentation": "12-slide PPTX and 12-page PDF wording revised per final content report: external AI roles, NDVI vegetation diagnostic and completed assistant versus pending independent scientific review; design/results unchanged. See results/final-content-revision-verification.json.",
+  "presentation": "12-slide PPTX/12-page PDF unchanged; already states successful exports, failed coverage and pending scientific review",
   "browser_test_repair": "Historical coverage introduced a second scroll container; comparison test selector scoped to #comparison. Initial selector failure retained externally; final full suite passed.",
   "remaining": [
     "Independent reviewer to assess the 18 paired interpretations and potential disagreement flags; do not record member confirmation without their own response.",

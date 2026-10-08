@@ -1,13 +1,13 @@
-# UrbanHeat Al Khor improvement delivery
+# UrbanHeat Al Khor reviewed delivery
 
-Prepared 7 October 2026 for Team Al Zubarah. Review-ready independent improvements; actual Code Editor exports succeeded, but primary coverage fails and paired scientific validation remains pending. Nothing has been submitted or sent to organizers.
+Revised 8 October 2026 for Team Al Zubarah. The three final content corrections are applied; the twelve-slide design is preserved. Actual Code Editor exports and paired assistant review are complete, but primary coverage fails and independent scientific validation remains pending. Nothing has been submitted or sent to organizers.
 
 ## Files
 
-- [Twelve-page PDF](UrbanHeat-AlKhor-Pitch.pdf) and [editable twelve-slide PowerPoint](UrbanHeat-AlKhor-Pitch.pptx): revised presentation examples, corrected responsibilities and truthful historical-access status.
+- [Twelve-page PDF](UrbanHeat-AlKhor-Pitch.pdf) and [editable twelve-slide PowerPoint](UrbanHeat-AlKhor-Pitch.pptx): preserved examples/design, explicit external-AI roles, NDVI-reference interpretation and completed assistant versus pending independent review status.
 - Full `UrbanHeat-AlKhor-Project.zip`: manifest-listed project, original inputs/tables/notebook, complete app, standalone preview, preparation notes, historical plan/prepared code and current technical evidence.
 - [Standalone preview](../preview/UrbanHeat-AlKhor-Preview.html): embeds the complete map resources. No actual site photographs have been received.
-- [Three-minute script](Three-Minute-Presentation.md): 383 spoken words with a 180-second rehearsal target; [judge questions](Judge-Questions.md).
+- [Three-minute script](Three-Minute-Presentation.md): 386 spoken words with a 180-second rehearsal target; actual Mohammed rehearsal is pending; [judge questions](Judge-Questions.md).
 - [Earth Engine execution and runtime limitations](Earth-Engine-Access.md), [site evidence and photographs](Site-Evidence-Guide.md), [team status](Team-Review.md), [project checkpoint](../PROJECT_STATE.md).
 
 Final sizes and hashes are recorded in the external `DELIVERY-VERIFICATION.json` and `SHA256SUMS.json`. The ZIP contains `UrbanHeat-AlKhor/SOURCE-COMMIT.txt`. The archive and checksum reports are generated outside the repository to avoid containing themselves.
@@ -18,7 +18,7 @@ Extract the ZIP and open `UrbanHeat-AlKhor/preview/UrbanHeat-AlKhor-Preview.html
 
 The satellite top three remain V04-23, V28-17 and V04-24. For the deck, show V04-23, V28-17 and V18-26 as team-selected use examples. The hospital cell remains available. Review comparison/export includes five sites and ten date/site rows. Every photo gallery currently says Evidence pending. The historical panel displays real experimental coverage and Unknown, while general change results/year maps are withheld because primary coverage fails and scientific validation is pending.
 
-The exact current app passed 28 real Chromium HTTP groups per desktop/mobile profile; the standalone content passed offline tests. A temporary synthetic gallery fixture tested image embedding/decoding, missing metadata, escaped captions and unsafe-path rejection. It is not site evidence and is excluded from deliverables. Managed Chromium blocks file://, so standalone checks used set_content. ChatGPT's embedded preview, other browsers and physical phones were not verified.
+The exact unchanged app passed 29 real Chromium HTTP groups per desktop/mobile profile; the unchanged standalone content passed offline tests. The latest matching reports are embedded in results/dynamic-world-paired-review-verification.json. No new browser run was needed for these presentation/documentation-only changes; older browser reports remain historical. The revised PDF/PPTX, script and statuses are checked separately in results/final-content-revision-verification.json and [Final-Content-Revision.md](Final-Content-Revision.md). A temporary synthetic gallery fixture tested image embedding/decoding, missing metadata, escaped captions and unsafe-path rejection. It is not site evidence and is excluded from deliverables. Managed Chromium blocks file://, so standalone checks used set_content. ChatGPT's embedded preview, other browsers and physical phones were not verified.
 
 ## Scientific and team limits
 

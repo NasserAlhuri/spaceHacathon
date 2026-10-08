@@ -123,6 +123,18 @@ def build(root, output, source_commit):
                          'It supersedes the retained earlier improvement milestone. Technical '
                          'export/raster checks do not establish scientifically validated change.\n')
         checksums[readme.name] = {'bytes': readme.stat().st_size, 'sha256': digest(readme.read_bytes())}
+    final_content = root / 'results/final-content-revision-verification.json'
+    if final_content.exists():
+        report['final_content_revision'] = json.loads(final_content.read_text())
+        with readme.open('a') as handle:
+            handle.write('\nThe revised twelve-slide PDF/PPTX, 386-word spoken script, judge answers and '
+                         'checklist include the three final AI/NDVI/review-status corrections. Latest '
+                         'presentation/script evidence: results/final-content-revision-verification.json '
+                         'and docs/Final-Content-Revision.md inside the ZIP. The unchanged app/preview '
+                         'uses retained results/dynamic-world-paired-review-verification.json. Older '
+                         'artifact reports remain historical. Actual member rehearsal/acceptance, '
+                         'independent scientific validation and final submission approval are pending.\n')
+        checksums[readme.name] = {'bytes': readme.stat().st_size, 'sha256': digest(readme.read_bytes())}
     (output / 'DELIVERY-VERIFICATION.json').write_text(json.dumps(report, indent=2) + '\n')
     (output / 'SHA256SUMS.json').write_text(json.dumps(checksums, indent=2) + '\n')
     return report

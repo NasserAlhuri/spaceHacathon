@@ -16,7 +16,7 @@ An urban planner can use the map to arrange site visits before proposing shade o
 
 The analyst-defined WGS84 window is **51.445–51.555°E, 25.635–25.730°N**, around Al Khor, its northern urban edge, Al Bayt Stadium and surrounding desert/coastal context. It is a broad city-area study window, approximately 116 km², **not an official administrative boundary or the whole municipality**. It does not imply complete observation of every property. Review the boundary on the satellite image before interpreting coverage.
 
-The submitted idea proposed VHR pretrained AI segmentation of buildings, paving, vegetation and open land. This first-stage implementation uses open imagery, contributed building geometry and an upstream ML-derived land-cover product. It does not run our own AI segmentation, separate paved surfaces, map current shade, estimate health risk or measure urban expansion. Suitable VHR data and those indicators remain extensions.
+The submitted idea proposed VHR pretrained AI segmentation of buildings, paving, vegetation and open land. This first-stage implementation uses open imagery and contributed building geometry. We use externally produced AI land-cover data: WorldCover in the heat-screening workflow and Dynamic World in a separate historical experiment. Our quality checks and ranking are rule based. We trained no new model; Dynamic World does not feed the original score. It does not run our own AI segmentation, separate paved surfaces, map current shade, estimate health risk or measure urban expansion. Suitable VHR data and those indicators remain extensions.
 
 ## 3. Data and provenance
 
@@ -129,7 +129,7 @@ python src/audit_local_greenery.py
 python src/render_review_figures.py
 ```
 
-The five notebook cell sources, original screening, input data and seven CSV outputs are unchanged. The expanded GitHub workflow now verifies the notebook, numerical results, seven CSV comparisons, separate greenery audit, review figures and map controls in one clean run. Actual executed/generated outputs are retained. Map-control tests use a DOM adapter; full browser/device review remains pending. Optional interface check: `node src/test_map_review.mjs` (Node.js required for this check only).
+The five notebook cell sources, original screening, input data and seven CSV outputs are unchanged. The expanded GitHub workflow now verifies the notebook, numerical results, seven CSV comparisons, separate greenery audit, review figures and map controls in one clean run. Actual executed/generated outputs are retained. The earlier map-control tests use a DOM adapter. Later real Chromium checks passed 29 HTTP groups on desktop and mobile emulation, plus offline preview checks; the latest evidence is results/dynamic-world-paired-review-verification.json. Physical-device/member acceptance, other browsers and the embedded ChatGPT preview remain unverified. These technical checks do not establish scientific accuracy or a completed member review. Optional interface check: `node src/test_map_review.mjs` (Node.js required for this check only).
 
 ## 9. Team members and roles
 
