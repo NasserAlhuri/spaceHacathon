@@ -1,0 +1,1945 @@
+{
+  "checked_at_utc": "2026-10-08T16:14:11.901071+00:00",
+  "status": "passed",
+  "baseline_public_commit": "c4177e56901abd1fac8cd7228e4a79cf523d10fb",
+  "baseline_public_files": 253,
+  "capture_confirmation": {
+    "id": "nasser-site-media-confirmation-2026-10-08",
+    "confirmed_by": "Nasser Alhuri",
+    "confirmation_source": "Explicit user confirmation in Codex conversation; not EXIF or extracted file metadata",
+    "confirmation_recorded_date": "2026-10-08",
+    "photographer": "Abdulrahman Almohannadi",
+    "visit_date": "2026-10-08",
+    "photographed_sites": [
+      "V04-23",
+      "V28-17",
+      "V18-26"
+    ],
+    "photographs": 11,
+    "videos": 1,
+    "capture_window": {
+      "date": "2026-10-08",
+      "start": "13:00",
+      "end": "14:00",
+      "timezone": "Asia/Qatar",
+      "utc_offset": "+03:00",
+      "start_iso8601": "2026-10-08T13:00:00+03:00",
+      "end_iso8601": "2026-10-08T14:00:00+03:00",
+      "precision": "Shared batch window; not an exact timestamp for any individual file"
+    },
+    "exact_per_file_capture_time": "Unknown",
+    "batch_collection_status": "Complete, confirmed by Nasser",
+    "project_review_status": "Pending; no completed project review confirmed",
+    "scope": "The 11 received photographs and one video; no new confirmation inferred for unphotographed V04-24/V24-07 or for earlier report dates. No measurements, geometry, historical class validity or ranking change."
+  },
+  "media_files_verified": 12,
+  "media_binary_bytes_changed": false,
+  "all_12_media_share_confirmed_window": true,
+  "no_individual_capture_timestamp_assigned": true,
+  "confirmation_source": "Nasser explicit user confirmation; not EXIF",
+  "exact_per_file_time": "Unknown",
+  "collection_status": "Complete for supplied 11-photograph/one-video batch, confirmed by Nasser",
+  "project_review_status": "Pending",
+  "original_reports_dates_and_original_nasser_visit_confirmations_preserved": true,
+  "unphotographed_site_records_unchanged": true,
+  "original_input_hashes_verified": 35,
+  "original_csv_hashes_verified": 7,
+  "protected_prior_public_files": 230,
+  "protected_files": {
+    ".github/workflows/notebook-check.yml": "0f4d6fbe57c675f154c35cf2ecb7af259095bf58",
+    ".gitignore": "7212740367a4ad54ccd2c0727d55655918b07de7",
+    "DATA-LICENSES.md": "67081b2fbbb8d572bad542269c14b4cb2d12b477",
+    "LICENSE": "de1a9c24ca182f21495fa172901962f887baa16b",
+    "analysis-config.json": "c71db5be1271c47e2562fae841413eb150c79229",
+    "aoi.geojson": "46622b78c62234dc193238c23151104de1303b8e",
+    "app/assets/buildings-2026-09-14.png": "e5d510bb55d4fdd63aa98130ec83bca4d0c3d2e2",
+    "app/assets/buildings-2026-09-30.png": "e5d510bb55d4fdd63aa98130ec83bca4d0c3d2e2",
+    "app/assets/data.json": "4a21e29d79d17ee2c5e97eafa03afdf2c1a72f52",
+    "app/assets/excluded.png": "bf181dbdccc8ea84b494ad9b4e7372f5676226ac",
+    "app/assets/greenery-2026-09-14.png": "8fe3798a11749a47ad6905fe3df24a4495c829c2",
+    "app/assets/greenery-2026-09-30.png": "1b6e9c675453a3075610fb8055917a473f777619",
+    "app/assets/priority-2026-09-14.png": "914c083d32afecff28cda1584f646a1d79e19374",
+    "app/assets/priority-2026-09-30.png": "914c083d32afecff28cda1584f646a1d79e19374",
+    "app/assets/satellite.jpg": "419e1fe3bd7eea42019759d2dccf61324ec7f8b0",
+    "app/assets/site-photos/V04-23-01.jpeg": "b8d22a43cdc411f44317a470e246c0d6d9d826c8",
+    "app/assets/site-photos/V04-23-02.jpeg": "e2159f16ff213dcc10b51ce3dd41f77791b35392",
+    "app/assets/site-photos/V04-23-03.jpeg": "dbacf124f174e670f3adcdd37203870c68e58a5d",
+    "app/assets/site-photos/V04-23-04.jpeg": "62c4d90798602a0d453fdf67ce3883b51923996e",
+    "app/assets/site-photos/V04-23-05.jpeg": "4077005ba23763bf77850271673264b55d370d66",
+    "app/assets/site-photos/V18-26-01.jpeg": "6700b1fc1579c7c14ae17256a49d147fc1ec741a",
+    "app/assets/site-photos/V18-26-02.jpeg": "8368e77037d59ea27c7f1d38927ccf19eb8e43da",
+    "app/assets/site-photos/V18-26-03.mp4": "fe6bf91d982dec6fd8390e712bdc54f8d5c3b339",
+    "app/assets/site-photos/V28-17-01.jpeg": "f88aa51d67d9ea94c01f9eb747c8acad945831cd",
+    "app/assets/site-photos/V28-17-02.jpeg": "253c15c1fc72c58140553bad6275717732817ebf",
+    "app/assets/site-photos/V28-17-03.jpeg": "8e3c63463c9ba0790f407a923e99ba1ea1c31582",
+    "app/assets/site-photos/V28-17-04.jpeg": "ac35cc29bb85363dbb7030572b5771f3fd9dca76",
+    "app/assets/temperature-2026-09-14.png": "d5b6e7bde264e729bb91757aab37742d1a7f6ac4",
+    "app/assets/temperature-2026-09-30.png": "352f7ff4ee558fd86377572e6fe9b8fbfa9bfaa6",
+    "app/assets/uncertainty-2026-09-14.png": "cfecc95b097db0d4039fe19331afd604ac14cc77",
+    "app/assets/uncertainty-2026-09-30.png": "051704b73dcb442b8a441908803a0ec4b1e140ac",
+    "app/style.css": "0941eea7de01fe1011235fb44e08e40adbf6d52f",
+    "data/dynamic_world/raw/2026-10-07/AlKhor_DW_coverage.csv": "7ad3998450beaaed645392523f1fee116251e62c",
+    "data/dynamic_world/raw/2026-10-07/AlKhor_DW_matched_changes.csv": "db6099a7cc3c20a6b62e046195ecb075aa5fe045",
+    "data/dynamic_world/raw/2026-10-07/AlKhor_DW_provenance.csv": "e6e6f5451b44e5405798d5958c80d61f9559b39c",
+    "data/dynamic_world/raw/2026-10-07/AlKhor_DW_transition_2021_2026.tif": "f9ba24ad92890a6f44007d5b19e9d1a7e8d0a10a",
+    "data/dynamic_world/raw/2026-10-07/AlKhor_DW_transitions.csv": "bf7d8f343cc7fae108035850730ee9fb167a3db7",
+    "data/dynamic_world/raw/2026-10-07/AlKhor_DW_whole_window_areas.csv": "8f7c2ab455a06c9238fb287d5abbaa7e61d5c512",
+    "data/dynamic_world/raw/2026-10-07/AlKhor_DynamicWorld_September_2021.tif": "4afc4f078e0fb87acb0db615de712622aa2fb8f6",
+    "data/dynamic_world/raw/2026-10-07/AlKhor_DynamicWorld_September_2026.tif": "516616c39886f5eec288a1db6a8abb54200d084d",
+    "data/dynamic_world/reference/2026-10-08/AlKhor_Sentinel2_Reference_20210901.tif": "eaa69281373233274d5428a328ce933b94cc713f",
+    "data/dynamic_world/reference/2026-10-08/AlKhor_Sentinel2_Reference_20210926.tif": "704ac57a62a12da069ae6604bf4545ac2d15db77",
+    "data/dynamic_world/reference/2026-10-08/AlKhor_Sentinel2_Reference_provenance.csv": "37a74038ccb7bce23d2b766a0f467dce362ebd0b",
+    "data/sample_input/SHA256.json": "4654a5150b552d0ea793e2e8551a5f2dbd94cee8",
+    "data/sample_input/blue.tif": "4e7cdd5d4acdfb98b7b411c77faffd4c84ab117c",
+    "data/sample_input/green.tif": "da1c53609c09703af5aa523a358c78588eb51c65",
+    "data/sample_input/landsat/cdist.tif": "7ce751c806035e406c58eb0d11b451eb560b2178",
+    "data/sample_input/landsat/lwir11.tif": "f139520da32cee5c46b51ae440fd784d3a679a3d",
+    "data/sample_input/landsat/qa.tif": "b76e3fe46483022e2ae3f7441978d9d399d63389",
+    "data/sample_input/landsat/qa_pixel.tif": "fdc9e612029e485259d752a1a62af0773fb02d4c",
+    "data/sample_input/landsat/qa_radsat.tif": "f93cfb6109506b64b880f6cdb24c1bdb3674842e",
+    "data/sample_input/multidate/LC08_L2SP_162042_20260906_02_T1/cdist.tif": "1825e42861aa5c63e038bf2742b729879645a997",
+    "data/sample_input/multidate/LC08_L2SP_162042_20260906_02_T1/lwir11.tif": "4e425bd897f992972b269957d72f1ae1c1ed4d85",
+    "data/sample_input/multidate/LC08_L2SP_162042_20260906_02_T1/qa.tif": "4b3e57c0fd6c5562fc31a35699b0575bbf1ed950",
+    "data/sample_input/multidate/LC08_L2SP_162042_20260906_02_T1/qa_pixel.tif": "52080c1ebf0fdd1b9194849edb5f8ceb0cb51abd",
+    "data/sample_input/multidate/LC08_L2SP_162042_20260906_02_T1/qa_radsat.tif": "f93cfb6109506b64b880f6cdb24c1bdb3674842e",
+    "data/sample_input/multidate/LC09_L2SP_162042_20260914_02_T1/cdist.tif": "f3f2e6f6f5ec4285206befa60214931fc742c049",
+    "data/sample_input/multidate/LC09_L2SP_162042_20260914_02_T1/lwir11.tif": "a626df7b5d7fbdec3e8023707b397d78d795ce1b",
+    "data/sample_input/multidate/LC09_L2SP_162042_20260914_02_T1/qa.tif": "0f30e35e09be9e92f4e227fe3065af193140dfe2",
+    "data/sample_input/multidate/LC09_L2SP_162042_20260914_02_T1/qa_pixel.tif": "e024cc69e1d4e8c7f1de1bf49bb4560c354ddee9",
+    "data/sample_input/multidate/LC09_L2SP_162042_20260914_02_T1/qa_radsat.tif": "f93cfb6109506b64b880f6cdb24c1bdb3674842e",
+    "data/sample_input/multidate/S2B_39RWJ_20260905_0_L2A/blue.tif": "c9f519c65f3ff41fa7ea4e1260825dedde0ac327",
+    "data/sample_input/multidate/S2B_39RWJ_20260905_0_L2A/green.tif": "a55f643d490b97eb5eccaad9593be3ed923b6a2d",
+    "data/sample_input/multidate/S2B_39RWJ_20260905_0_L2A/nir.tif": "181aef08d40e69c43679b525aaa8c3477ad307fe",
+    "data/sample_input/multidate/S2B_39RWJ_20260905_0_L2A/red.tif": "c764d83ae2d2c7a7ce1ee525006f203935d0fe8c",
+    "data/sample_input/multidate/S2B_39RWJ_20260905_0_L2A/scl.tif": "917fad70fc7b12c4dc176b7a5be2b6cbc2f6f1d1",
+    "data/sample_input/multidate/S2B_39RWJ_20260905_0_L2A/swir16.tif": "95a94a5d521ff52a5bee2cb2e2b90ce4c81bcddc",
+    "data/sample_input/multidate/S2B_39RWJ_20260915_0_L2A/blue.tif": "28f6ce28413925c2b440559756e1d9685b50a624",
+    "data/sample_input/multidate/S2B_39RWJ_20260915_0_L2A/green.tif": "31926fecb7302a0a2692fcfa7d6164138ee09663",
+    "data/sample_input/multidate/S2B_39RWJ_20260915_0_L2A/nir.tif": "4bff0b6c7182957e2f137c42767b5f53834530cf",
+    "data/sample_input/multidate/S2B_39RWJ_20260915_0_L2A/red.tif": "bfdf84e94107c5c54fafcd9cbc8f57ff2fcc4d35",
+    "data/sample_input/multidate/S2B_39RWJ_20260915_0_L2A/scl.tif": "fe2b48852f9904bf2dc11afeeb7eabee155fb271",
+    "data/sample_input/multidate/S2B_39RWJ_20260915_0_L2A/swir16.tif": "4a3c40399dba62ec16b2edadc4d12d6b6258fc22",
+    "data/sample_input/nir.tif": "dc46a57c5dee16d4c196f813c39fc4ee0719ba1e",
+    "data/sample_input/red.tif": "7bc7d23c21819b1b915a2342febdb10c0e0b2215",
+    "data/sample_input/reference/osm-map.osm": "2b1f1b52dae592bbc49872fd6025840e0cebad77",
+    "data/sample_input/reference/worldcover2021.tif": "71ea10cead3e365b86cd37f086494f21ad7b77a5",
+    "data/sample_input/scl.tif": "f7d513b0589be107a30f61640594a31eac8b5c79",
+    "data/sample_input/swir16.tif": "3d662e1e9293c89a6a6a1318a8eea5ea146379a8",
+    "docs/Browser-Review.md": "63a3798b7166d9e236958c70a0ba0791d3584c9e",
+    "docs/Delivery-Review.md": "2a79fe50f05f2d5716fec2a0af93f3a693d5177b",
+    "docs/Discovery-Resources.md": "a5fa7aeeb7227818315142f5a9a561ce94efd7f5",
+    "docs/Dynamic-World-Assessment.md": "5ff145562bb691b59b4250d2101d036efd473a80",
+    "docs/Dynamic-World-External-Export-Review.md": "176768a833049dddbbd7c40c0d58cb564b857836",
+    "docs/Dynamic-World-Paired-Reference-Review.md": "9083ffa5ee6bd6a11739c2926c014c51f0856241",
+    "docs/Dynamic-World-Reassembly-and-Scientific-Review.md": "d3cf5cd11723fd06eeab36e280e9a6fc5bf9354d",
+    "docs/Earth-Engine-Access.md": "f23998bf4d870747f0edbb7f5b8fd66bda2962d3",
+    "docs/Final-Content-External-Review-2026-10-08.md": "9eb71069fcfa6b9b2652e8c23302af8c645e8362",
+    "docs/Final-Content-Revision.md": "0924ea8d277ddf72eaec1255f3932dbd7cc39b41",
+    "docs/Improvement-Change-Log.md": "17445a55e3a302a2c726f9acc2cbb2e2a0363c14",
+    "docs/Improvement-Revision.md": "ec61c62a84963f900a248af19dc7b813d769ff0e",
+    "docs/Latest-Handover.md": "cf490a4bfc86c8bcdc7b3fb7307f44ca159f9b1d",
+    "docs/Organizer-Access-and-Deadline.md": "7c9aff12df96a48f509bea3ab850d51ee4ef087b",
+    "docs/Publication-Review.md": "836218e276f2a1b629367dfdc61969bf9be5ad61",
+    "docs/UrbanHeat-AlKhor-Pitch.pdf": "f5002388f4217cb95db6517aa4f13336f49f7e18",
+    "docs/UrbanHeat-AlKhor-Pitch.pptx": "2221318e3a331f927c0029500953cd8d80642de8",
+    "docs/Verification-Report.md": "9d2655f8048cae3da16d49709fe5a485b7acc550",
+    "docs/history/Dynamic-World-Assessment-2026-10-07.md": "35520e706482289c034a632ac3d27d97f3277707",
+    "docs/history/Dynamic-World-Assessment-2026-10-08-before-paired.md": "e0c700c6dd295881d2cb8ea210a52d60f3243251",
+    "docs/history/Dynamic-World-Reassembly-and-Scientific-Review-2026-10-08-before-paired.md": "c52be2e2b705d96315c4afcc83a14e17a7614df2",
+    "docs/history/Earth-Engine-Access-2026-10-07.md": "b536675ae521465e923b0837103c9450b3219bbe",
+    "docs/history/Earth-Engine-Access-2026-10-08-before-paired.md": "48b131d5dc84612aaec27f8932512061de1af51a",
+    "landsat-scene.json": "7c8779bec32d6115f98e369d36a1ab43700890e9",
+    "metadata/dynamic-world-export-manifest.json": "1584bc7a632b468f8e11b46d65200bc1d9204f68",
+    "metadata/dynamic-world-manual-review.csv": "35d5064a74970016b4263d46863ba4b70069e0ce",
+    "metadata/dynamic-world-plan.json": "4994433c505cc467f41289396fc3f81208d5b5a0",
+    "metadata/dynamic-world-reference-manifest.json": "2e6213d3c2c324bb7b500e039600172939ea0dbf",
+    "metadata/dynamic-world-review-candidates.csv": "09bda1d1e9cbfdd4c3cf143173ecc9ad9ba1d9e0",
+    "metadata/dynamic-world-scientific-samples.csv": "da240991ba1ea646eaf7e8471d9510ad748f6aa3",
+    "metadata/dynamic-world-transfer/README-TRANSFER.md": "fba6d0ff1abe62524870152914c59172153c4b14",
+    "metadata/dynamic-world-transfer/REASSEMBLY.json": "ff22b9029776cbb77ecbdc53db98b2a531af6785",
+    "metadata/dynamic-world-transfer/reassemble.py": "8f702d187855e76e14870d7c8dd8852e8a9bd803",
+    "metadata/multidate/LC08_L2SP_162042_20260906_02_T1.json": "6614606c756efe90b2b879a19463598268e700fd",
+    "metadata/multidate/LC09_L2SP_162042_20260914_02_T1.json": "7bc385b40d12c23347bbd1baf00fbcf63c1f33ba",
+    "metadata/multidate/S2B_39RWJ_20260905_0_L2A.json": "64a9ae5adf11889ae8866f28160cc49a85d0c5f4",
+    "metadata/multidate/S2B_39RWJ_20260915_0_L2A.json": "efdd2c543476178fdde47d1db115a8b742d3f332",
+    "metadata/original-results-sha256.json": "6e3b2cefc4c87957eeb762e00496df6b721c49eb",
+    "metadata/reference-provenance.json": "0063e62c96a8a5c6c8bd49842d114180690027a8",
+    "metadata/worldcover.json": "55b3abc65dcf38314af50bca69ea07b82c2dbb2c",
+    "pilot.ipynb": "df1a5d70247e1974f53184a66b6c5a7e27f303bf",
+    "requirements-lock.txt": "402f885b4d336bbb528a61b985131ce595f72e51",
+    "requirements.txt": "10bf4f71ba7f53097bbf40c2a3547d76992ad4c2",
+    "results/accepted-temperature-review.png": "bcf9db2f9af0b0130d356ad488dddebbcf0561a5",
+    "results/browser-review.json": "209641b8a769eb435fd2d304f5d4bdae14c8bf2a",
+    "results/browser-review/before.json": "7d897f691bd317936c3dc399964a1955de001687",
+    "results/browser-review/desktop.png": "e3f2edd3031d6c79fef8297216a18f5f6cb8e074",
+    "results/browser-review/mobile-comparison.png": "eb2637899f8f64e6d151421a37f5129837f41650",
+    "results/browser-review/mobile-focused.png": "8c7af7b3fb51ac2c97d47cf01301ff8d4f45d129",
+    "results/browser-review/mobile.png": "1bef616e0ec0d6f3dd6c7427028404dda472a517",
+    "results/coastal-audit.png": "517967e2ef745cf7ec5c7ae5958e58236582bb66",
+    "results/coastal-date-audit.csv": "502519f3d48f47a66d51a69fd2bb081bbf906ee7",
+    "results/coastal-multidate-summary.json": "32237c0e728d48540714aa848e798980801c3a1f",
+    "results/coastal-sensitivity.csv": "31d8e9e0d2486cd5de8c22712ce033b83da19673",
+    "results/common-inland-mask.tif": "a5146ccbaa7d0f7ea2b57cce2ab34e78f095faf0",
+    "results/common-temp-2026-09-06.tif": "aad0a7581b12c1bc0b39b7af836bc2aece6d2f7e",
+    "results/common-temp-2026-09-14.tif": "a38968b9652785b6ac90ece7f73d9c11137a429f",
+    "results/common-temp-2026-09-30.tif": "fe63bcadc642aebf064657ec36e4118550ddac8c",
+    "results/context-cells.csv": "6b159cec8606cb5f3b983a6394526f362a8954ba",
+    "results/delivery-browser-review.json": "989eeb07a66f81ca308ca977e172f7bf7456e2ae",
+    "results/delivery-review.json": "efa61497da7b37943e495a19365c3e05c17ac421",
+    "results/dynamic-world-2026-diagnostic-context.png": "909d8bde7f0120b85a17c9c640a92f13ad0f93b7",
+    "results/dynamic-world-browser-review.json": "d25d6d504a6e25931fe884abcb9ae4db71f705dd",
+    "results/dynamic-world-browser-review/desktop-final.png": "97345477babfb0d3e7bd9d3935a382c33883b50e",
+    "results/dynamic-world-browser-review/mobile-final.png": "fa18cca3061994dd3779a738cce1faf0005a9a26",
+    "results/dynamic-world-dated-imagery-diagnostic.json": "ea4485607313691e5780fe5699e63c4f979255b7",
+    "results/dynamic-world-export-status.json": "1aa7ede440527d4c41335857e373dfa4bcd4e80c",
+    "results/dynamic-world-paired-context/page-1.png": "97bd3588308bc54ca0c998f6bb297540b02bec9d",
+    "results/dynamic-world-paired-context/page-2.png": "ee6bc38d570c8c1d6769406ce9ef949c19f4629c",
+    "results/dynamic-world-paired-context/page-3.png": "84b10e97dd966b667a73f5f731d7bdbdc8b32cfc",
+    "results/dynamic-world-paired-context/page-4.png": "28e4914881a485ffc4788d607b19da8737549f53",
+    "results/dynamic-world-paired-context/page-5.png": "f57601ff2893e2f069f4bcf6821093b0251ec393",
+    "results/dynamic-world-paired-context/page-6.png": "b9580e2fef3778cc9b9192a04bd44dbf67badbe0",
+    "results/dynamic-world-paired-render-verification.json": "8830500dc303db32f2a56c906976a3b534e85f6b",
+    "results/dynamic-world-paired-review-verification.json": "7dc88acbb5ed012e24db0c74d08f6fef82d47499",
+    "results/dynamic-world-raster-verification.json": "486eb1984ca85ada0c663b8428b5cfff58eacb5f",
+    "results/dynamic-world-raw-label-diagnostic.json": "37ad0306f7fb2e5f897264f8f29a6f0c8e078c36",
+    "results/dynamic-world-reassembly-verification.json": "10e08ceae6b4fa3672b67f4d1dc278ddda942f5f",
+    "results/dynamic-world-reference-verification.json": "6753681828cbab7923bf271be54a1383d976038e",
+    "results/dynamic-world-review-selection.json": "49cac225c9f05a9e2e0782be48871f7faefe0bd8",
+    "results/dynamic-world-scientific-context/page-1.png": "5b83de91dbeb272c22113905111d3909264046d8",
+    "results/dynamic-world-scientific-context/page-2.png": "e4fbb2d7bb7cd50b658a1ef6624092ad37dc8e04",
+    "results/dynamic-world-scientific-context/page-3.png": "74c4fc2ddfd0f3f80d435bcd03b61144afd3b0f4",
+    "results/dynamic-world-scientific-context/page-4.png": "34619b72ec25851873dd0f11eab19721452cfcf1",
+    "results/dynamic-world-scientific-review.json": "6898e8dc5d17b61644eb66b257e99d74c8480ecf",
+    "results/dynamic-world-scientific-sample-selection.json": "87b3567cc48efbbaff7af83fe1f7807c38bac86c",
+    "results/dynamic-world-table-verification.json": "5db8e9f47de90a8f81caa7566a5789cb49d6585e",
+    "results/earthengine-access-check.json": "a479fb18c96c3fde0cc3591c1410aef73c812605",
+    "results/expanded-workflow-verification.json": "c69a143e0c8b8fb388f60617c114581182705752",
+    "results/final-content-revision-verification.json": "ecd539914ed6f8d06d6b630a05060440d979891f",
+    "results/final-content-slide-review/slide-10.png": "285bf759d4e134548d305b8263b9e2eae0ba7c01",
+    "results/final-content-slide-review/slide-5.png": "6e94aca9a42a2d75e551790ad875e0b078cfa471",
+    "results/final-content-slide-review/slide-9.png": "f80fa4daf99d7cefec486c4f910e3e6ef12c0b4c",
+    "results/fresh-run-evidence.json": "ae1e960f4d465e30d4e45cfaf5690a50fae86c7b",
+    "results/history/dynamic-world-export-status-2026-10-08-before-paired.json": "03a7b5771890de6ac3df05c73b8b5b88ad100dfd",
+    "results/history/dynamic-world-export-status-before-final-content-2026-10-08.json": "d68da65ad64ff1406ebd77f49e5ab4ce9ba2fecd",
+    "results/history/dynamic-world-manual-review-before-paired.csv": "ef3539dfded1e23af44eea338efc548a644bf599",
+    "results/history/dynamic-world-scientific-review-2026-10-08-before-paired.json": "c8510e3d60029955ada53fd91914b9d24dda78bb",
+    "results/history/dynamic-world-scientific-samples-before-paired.csv": "59cbc4e144e91842fa1a5b289683c6b70ba49019",
+    "results/improvement-browser-review.json": "2bf62d705746ac44a311d63650c38e70f1d91a40",
+    "results/improvement-revision-verification.json": "414fd8a7dca049499d9e1984e6bc648a2ddc5447",
+    "results/improvement-verification.json": "232ebb405f6be2c0dbcd9f467cff84e24bcf49c5",
+    "results/jogging-point-check.json": "91dec61c2c845668cbaffa3cba4de04b76606955",
+    "results/local-greenery-audit.json": "7734b3f0ee894bb9697c6475d111e76841e8bc93",
+    "results/local-map-check.json": "e9463fb86e811ef2e21206efe60fe7ec85b3da53",
+    "results/local-review-map.png": "3ad46845ed032b5dd33a7934772cd5bebcbca42b",
+    "results/multidate-grid.csv": "03d4640698f91ea67f345a2f0710a5e7ee91a8ef",
+    "results/multidate-grid.geojson": "da76ea8cb2425f7027d3423012648ee0a46d76af",
+    "results/multidate-temperature.png": "6ad0559480bac80ea33ef3767fd42acbad5c7c32",
+    "results/notebook-verification-inprocess.json": "1cf51580d6d819274a0e18e88c9dbf46454b3153",
+    "results/notebook-verification.json": "ee663ef2aa4ead9756ada5e72ffeff13a46d597d",
+    "results/original-results-comparison.json": "bbd2c0c30b458b0ad912b126add8cfb92c050322",
+    "results/osm-reference.geojson": "f1604746da7fe6c66c17928ddbc98ac4124b9012",
+    "results/photo-review-check.json": "918996a085e513b5ae83575f9178e100f3f29d12",
+    "results/planning-cells.csv": "32dcf61ea6f19b058598c4f067cf51db2af067ac",
+    "results/planning-cells.geojson": "cce08f4883dbfe7195e30c067320f46d1e6a9971",
+    "results/planning-map.png": "f65408d5d62415d5676152ffafacaf42ef0f9774",
+    "results/planning-sensitivity.csv": "73f27f84766fa071c124c85a9be2b85e0c6ddec0",
+    "results/planning-summary.json": "f561a660371245842a327bf3d390dcc47e0054f9",
+    "results/presentation-case-map.png": "5baf7b69f0f37c15d71c4cd40fa4ea85f817b1cc",
+    "results/preview-verification.json": "9d6d15333a7a52491b412cff47d422a810e8493e",
+    "results/reference-review.png": "728b1e9547815f69796a3ed17be8fe7ceafe6d18",
+    "results/reference-samples.csv": "122842d76bc8114a157b4cc713f09341ca951f13",
+    "results/site-media-verification-2026-10-08.json": "cdfc9198187d3aeb77ef2da02d800e7e9cc0b518",
+    "scene.json": "f962671a9bc62017d0e70820c705fcd9d5aa676e",
+    "src/audit_local_greenery.py": "4d7f93782ad25bbe9d65cac4b56347a8badf9f15",
+    "src/build_preview.py": "7936e323466f84bf95b2e86ec3363a0a6d83b6f5",
+    "src/check_notebook.py": "ee12898530634ea3aed5aee7f7f59c0166bbc9ac",
+    "src/coastal_multidate.py": "ce6a556eba00bc78b6877455629e98437d3099fd",
+    "src/dynamic_world_earthengine.js": "20bdf7c0d3533cad17b9c72ad399f7bead890be2",
+    "src/export_dynamic_world_2021_reference_rgb.js": "18814d972de0423ccf7077ad49920bb9ff091308",
+    "src/export_map.py": "63e86faf9714882c619753d98d26ad49bcfc2c80",
+    "src/fetch_osm.py": "46cf303821aeff922d8fcf986215c05f0625054c",
+    "src/fetch_sample.py": "79272d2087162f405eeaf9d9f1056cfd77235be0",
+    "src/planning.py": "f9da67ea67cb17742c41450c9f93640483b03b7d",
+    "src/prepare_dynamic_world_review.py": "353d205cd7cc62eefc7a84d34710eb87ec1570cd",
+    "src/render_dynamic_world_paired_review.py": "6e6098be25f780bcdd0a0b035ccc45e98a7add30",
+    "src/render_presentation_cases.py": "b83ad7c87ecea7d33c734485b501618262cfc561",
+    "src/render_review_figures.py": "caf127c1d6c8e12f566bbcd665245dfe64770cb1",
+    "src/review_dynamic_world_exports.py": "02cb8430d25e057d111d5cdc4e072b34271d614c",
+    "src/review_dynamic_world_imagery.js": "53377c7ae4bb817e84d6117afeff4f099222b192",
+    "src/revise_final_presentation.py": "8544403177ff9ad1d03c7b69b9a6afdb00516609",
+    "src/test_dynamic_world_rasters.py": "68b00cd4556a2db20f4bcf7fd012aed58eb63a90",
+    "src/test_dynamic_world_validation.py": "f604ae3d646c4869823385a825a13ec09b480636",
+    "src/test_map_review.mjs": "88e3bddd1430f3f17b400dba48ec99f89253cc27",
+    "src/test_preview.py": "39227b7470c94ddcfdf3b00d7d89a3481ecfb785",
+    "src/validate_dynamic_world.py": "1a4a683b91a82c405df270f40789919b5c84cf7b",
+    "src/validate_dynamic_world_rasters.py": "8b1d3dcbacbe993371041c110dbec0a4d44a01de",
+    "src/validate_dynamic_world_references.py": "c754eaa4f609793246c8a22875faa77284350df9",
+    "src/verify.py": "f9fddb0fcc79ae2e4cd221f6f4ed41c52ae91f3d",
+    "src/verify_reproduction.py": "0b2a919517541fd3dd7716d7a791ede93f2e1661"
+  },
+  "preview_bytes": 9578733,
+  "preview_sha256": "73bc8f8b9f4a2cf0e48e9ae3636226fdafd56b87ca1d880502370ca2d466e9b7",
+  "embedded_images": 23,
+  "embedded_videos": 1,
+  "embedded_resource_bytes_verified": 24,
+  "unchanged_pdf_sha256": "029ac4e873d25590035b4cef545004bc0d7a76351e02732876a1e7bd6a3a7d29",
+  "unchanged_pptx_sha256": "c094e8086dee77f9641f18749a3d3e4af8c35954495b8be02121b35215c1cc65",
+  "spoken_script": {
+    "changed_sections": [
+      8,
+      11
+    ],
+    "words": 388,
+    "cue_duration_seconds": 180,
+    "estimated_speech_seconds_at_135_wpm": 172.44,
+    "actual_rehearsal": "pending",
+    "scientific_narration_and_cue_order_unchanged": true
+  },
+  "http_browser": {
+    "checked_at_utc": "2026-10-08T16:08:37.561499+00:00",
+    "method": "Real headless Chromium via Playwright, local HTTP server, actual clicks/taps and download",
+    "profiles": [
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "touch_emulation": false,
+        "checks": [
+          {
+            "name": "historical experiment matches actual CSV and retains failed gate/Unknown",
+            "status": "passed",
+            "detail": {
+              "source": "immutable actual CSV",
+              "primary_gate": "failed",
+              "scientific_review": "pending"
+            }
+          },
+          {
+            "name": "all received site photographs decode, video plays to end, metadata remains Unknown",
+            "status": "passed",
+            "detail": [
+              {
+                "cell_id": "V04-23",
+                "photographs": 5,
+                "videos": 0,
+                "capture_date_time": "2026-10-08; shared 13:00\u201314:00 Qatar (UTC+3) window",
+                "capture_metadata_source": "Nasser confirmation, not EXIF",
+                "exact_per_file_time": "Unknown",
+                "decoded_media": [
+                  {
+                    "width": 2048,
+                    "height": 1152
+                  },
+                  {
+                    "width": 2048,
+                    "height": 1152
+                  },
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  },
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  },
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  }
+                ],
+                "original_media_download_hashes": "all matched received bytes"
+              },
+              {
+                "cell_id": "V28-17",
+                "photographs": 4,
+                "videos": 0,
+                "capture_date_time": "2026-10-08; shared 13:00\u201314:00 Qatar (UTC+3) window",
+                "capture_metadata_source": "Nasser confirmation, not EXIF",
+                "exact_per_file_time": "Unknown",
+                "decoded_media": [
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  },
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  },
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  },
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  }
+                ],
+                "original_media_download_hashes": "all matched received bytes"
+              },
+              {
+                "cell_id": "V04-24",
+                "photographs": 0,
+                "videos": 0,
+                "capture_date_time": "Unknown",
+                "capture_metadata_source": "Unknown",
+                "exact_per_file_time": "Unknown",
+                "decoded_media": [],
+                "original_media_download_hashes": "all matched received bytes"
+              },
+              {
+                "cell_id": "V18-26",
+                "photographs": 2,
+                "videos": 1,
+                "capture_date_time": "2026-10-08; shared 13:00\u201314:00 Qatar (UTC+3) window",
+                "capture_metadata_source": "Nasser confirmation, not EXIF",
+                "exact_per_file_time": "Unknown",
+                "decoded_media": [
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  },
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  },
+                  {
+                    "duration": 6.033333,
+                    "end": 6.033333,
+                    "width": 576,
+                    "height": 1024,
+                    "ended": true
+                  }
+                ],
+                "original_media_download_hashes": "all matched received bytes"
+              },
+              {
+                "cell_id": "V24-07",
+                "photographs": 0,
+                "videos": 0,
+                "capture_date_time": "Unknown",
+                "capture_metadata_source": "Unknown",
+                "exact_per_file_time": "Unknown",
+                "decoded_media": [],
+                "original_media_download_hashes": "all matched received bytes"
+              }
+            ]
+          },
+          {
+            "name": "date and layer: 2026-09-14 / temperature",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-14",
+              "layer": "temperature",
+              "image_decoded": true,
+              "legend": "Surface temperature"
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-14 / greenery",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-14",
+              "layer": "greenery",
+              "image_decoded": true,
+              "legend": "Green pixel share"
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-14 / buildings",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-14",
+              "layer": "buildings",
+              "image_decoded": true,
+              "legend": "Mapped building footprint"
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-14 / priority",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-14",
+              "layer": "priority",
+              "image_decoded": true,
+              "legend": "Investigation priority"
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-14 / uncertainty",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-14",
+              "layer": "uncertainty",
+              "image_decoded": true,
+              "legend": "Temperature uncertainty"
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-14 / V04-23",
+            "status": "passed",
+            "detail": {
+              "cell": "V04-23",
+              "date": "2026-09-14",
+              "metrics": [
+                "51.4\u00b0C",
+                "0.0%",
+                "1.85 K"
+              ]
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-14 / V28-17",
+            "status": "passed",
+            "detail": {
+              "cell": "V28-17",
+              "date": "2026-09-14",
+              "metrics": [
+                "50.6\u00b0C",
+                "0.0%",
+                "1.82 K"
+              ]
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-14 / V04-24",
+            "status": "passed",
+            "detail": {
+              "cell": "V04-24",
+              "date": "2026-09-14",
+              "metrics": [
+                "51.3\u00b0C",
+                "0.1%",
+                "1.85 K"
+              ]
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-14 / V18-26",
+            "status": "passed",
+            "detail": {
+              "cell": "V18-26",
+              "date": "2026-09-14",
+              "metrics": [
+                "48.0\u00b0C",
+                "0.0772%",
+                "1.86 K"
+              ]
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-14 / V24-07",
+            "status": "passed",
+            "detail": {
+              "cell": "V24-07",
+              "date": "2026-09-14",
+              "metrics": [
+                "50.5\u00b0C",
+                "0.0%",
+                "1.82 K"
+              ]
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-30 / temperature",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-30",
+              "layer": "temperature",
+              "image_decoded": true,
+              "legend": "Surface temperature"
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-30 / greenery",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-30",
+              "layer": "greenery",
+              "image_decoded": true,
+              "legend": "Green pixel share"
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-30 / buildings",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-30",
+              "layer": "buildings",
+              "image_decoded": true,
+              "legend": "Mapped building footprint"
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-30 / priority",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-30",
+              "layer": "priority",
+              "image_decoded": true,
+              "legend": "Investigation priority"
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-30 / uncertainty",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-30",
+              "layer": "uncertainty",
+              "image_decoded": true,
+              "legend": "Temperature uncertainty"
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-30 / V04-23",
+            "status": "passed",
+            "detail": {
+              "cell": "V04-23",
+              "date": "2026-09-30",
+              "metrics": [
+                "49.4\u00b0C",
+                "0.0%",
+                "1.80 K"
+              ]
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-30 / V28-17",
+            "status": "passed",
+            "detail": {
+              "cell": "V28-17",
+              "date": "2026-09-30",
+              "metrics": [
+                "49.4\u00b0C",
+                "0.0%",
+                "1.79 K"
+              ]
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-30 / V04-24",
+            "status": "passed",
+            "detail": {
+              "cell": "V04-24",
+              "date": "2026-09-30",
+              "metrics": [
+                "49.1\u00b0C",
+                "0.0%",
+                "1.79 K"
+              ]
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-30 / V18-26",
+            "status": "passed",
+            "detail": {
+              "cell": "V18-26",
+              "date": "2026-09-30",
+              "metrics": [
+                "46.9\u00b0C",
+                "0.0%",
+                "1.81 K"
+              ]
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-30 / V24-07",
+            "status": "passed",
+            "detail": {
+              "cell": "V24-07",
+              "date": "2026-09-30",
+              "metrics": [
+                "48.0\u00b0C",
+                "0.0%",
+                "1.78 K"
+              ]
+            }
+          },
+          {
+            "name": "three shortlist buttons",
+            "status": "passed",
+            "detail": {
+              "selected_cells": [
+                "V04-23",
+                "V28-17",
+                "V04-24"
+              ]
+            }
+          },
+          {
+            "name": "comparison opens, follows date, scrolls and closes",
+            "status": "passed",
+            "detail": {
+              "rows": 5,
+              "dates_checked": [
+                "2026-09-14",
+                "2026-09-30"
+              ],
+              "mobile_table_uses_horizontal_scroll": false
+            }
+          },
+          {
+            "name": "actual CSV download and content",
+            "status": "passed",
+            "detail": {
+              "filename": "AlKhor-Location-Review.csv",
+              "rows": 10,
+              "sha256": "2c2d5d523b4f62cb9e96b6ccef93104af5947b52a59c67ffdcb9f682fa86a447"
+            }
+          },
+          {
+            "name": "zoom in, zoom out, selected-site focus and reset",
+            "status": "passed",
+            "detail": {
+              "initial_view_box": [
+                0.0,
+                0.0,
+                11070.0,
+                10560.0
+              ],
+              "selection_focus_width": 2214.0,
+              "zoomed_label_bounds": [
+                {
+                  "text": "V04-23 \u00b7 Bus-stop road",
+                  "font": 13.000004545454544,
+                  "inside": true
+                },
+                {
+                  "text": "V04-24 \u00b7 Hospital land",
+                  "font": 13.000004545454544,
+                  "inside": true
+                }
+              ]
+            }
+          },
+          {
+            "name": "actual map clicks or touch taps on all three sites",
+            "status": "passed",
+            "detail": {
+              "selected_via_real_pointer": [
+                "V04-23",
+                "V28-17",
+                "V04-24",
+                "V18-26",
+                "V24-07"
+              ]
+            }
+          },
+          {
+            "name": "map pan",
+            "status": "passed",
+            "detail": {
+              "method": "mouse drag"
+            }
+          },
+          {
+            "name": "layer opacity",
+            "status": "passed",
+            "detail": {
+              "range": "0% to 100%"
+            }
+          },
+          {
+            "name": "layout and readable map labels at normal and narrow widths",
+            "status": "passed",
+            "detail": [
+              {
+                "viewport": 1440,
+                "page": 1440,
+                "labels": [
+                  {
+                    "text": "V04-23 \u00b7 Bus-stop road",
+                    "screen_font_px": 13.000004545454546
+                  },
+                  {
+                    "text": "V28-17 \u00b7 Stadium parking",
+                    "screen_font_px": 13.000004545454546
+                  },
+                  {
+                    "text": "V04-24 \u00b7 Hospital land",
+                    "screen_font_px": 13.000004545454546
+                  },
+                  {
+                    "text": "V18-26 \u00b7 Jogging route",
+                    "screen_font_px": 13.000004545454546
+                  },
+                  {
+                    "text": "V24-07 \u00b7 Reported unused land",
+                    "screen_font_px": 13.000004545454546
+                  }
+                ],
+                "metrics": [
+                  {
+                    "text": "Surface temperature\n49.4\u00b0C",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Green pixel share\n0.0%",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Temperature uncertainty\n1.80 K",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Mapped building footprint\n2.3%",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Historical built-up land (2021)\n25.2%",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Investigation rank\n1 of 373",
+                    "overflow": 0
+                  }
+                ]
+              },
+              {
+                "viewport": 1024,
+                "page": 1024,
+                "labels": [
+                  {
+                    "text": "V04-23",
+                    "screen_font_px": 13.000024390243905
+                  },
+                  {
+                    "text": "V28-17",
+                    "screen_font_px": 13.000024390243905
+                  },
+                  {
+                    "text": "V04-24",
+                    "screen_font_px": 13.000024390243905
+                  },
+                  {
+                    "text": "V18-26",
+                    "screen_font_px": 13.000024390243905
+                  },
+                  {
+                    "text": "V24-07",
+                    "screen_font_px": 13.000024390243905
+                  }
+                ],
+                "metrics": [
+                  {
+                    "text": "Surface temperature\n49.4\u00b0C",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Green pixel share\n0.0%",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Temperature uncertainty\n1.80 K",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Mapped building footprint\n2.3%",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Historical built-up land (2021)\n25.2%",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Investigation rank\n1 of 373",
+                    "overflow": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "page_errors": [],
+        "console_errors": [],
+        "failed_requests": [],
+        "media_request_cancellations": [
+          {
+            "url": "http://127.0.0.1:46575/assets/site-photos/V18-26-03.mp4",
+            "failure": "net::ERR_ABORTED"
+          }
+        ],
+        "http_errors": [],
+        "status": "passed"
+      },
+      {
+        "name": "mobile",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "touch_emulation": true,
+        "checks": [
+          {
+            "name": "historical experiment matches actual CSV and retains failed gate/Unknown",
+            "status": "passed",
+            "detail": {
+              "source": "immutable actual CSV",
+              "primary_gate": "failed",
+              "scientific_review": "pending"
+            }
+          },
+          {
+            "name": "all received site photographs decode, video plays to end, metadata remains Unknown",
+            "status": "passed",
+            "detail": [
+              {
+                "cell_id": "V04-23",
+                "photographs": 5,
+                "videos": 0,
+                "capture_date_time": "2026-10-08; shared 13:00\u201314:00 Qatar (UTC+3) window",
+                "capture_metadata_source": "Nasser confirmation, not EXIF",
+                "exact_per_file_time": "Unknown",
+                "decoded_media": [
+                  {
+                    "width": 2048,
+                    "height": 1152
+                  },
+                  {
+                    "width": 2048,
+                    "height": 1152
+                  },
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  },
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  },
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  }
+                ],
+                "original_media_download_hashes": "all matched received bytes"
+              },
+              {
+                "cell_id": "V28-17",
+                "photographs": 4,
+                "videos": 0,
+                "capture_date_time": "2026-10-08; shared 13:00\u201314:00 Qatar (UTC+3) window",
+                "capture_metadata_source": "Nasser confirmation, not EXIF",
+                "exact_per_file_time": "Unknown",
+                "decoded_media": [
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  },
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  },
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  },
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  }
+                ],
+                "original_media_download_hashes": "all matched received bytes"
+              },
+              {
+                "cell_id": "V04-24",
+                "photographs": 0,
+                "videos": 0,
+                "capture_date_time": "Unknown",
+                "capture_metadata_source": "Unknown",
+                "exact_per_file_time": "Unknown",
+                "decoded_media": [],
+                "original_media_download_hashes": "all matched received bytes"
+              },
+              {
+                "cell_id": "V18-26",
+                "photographs": 2,
+                "videos": 1,
+                "capture_date_time": "2026-10-08; shared 13:00\u201314:00 Qatar (UTC+3) window",
+                "capture_metadata_source": "Nasser confirmation, not EXIF",
+                "exact_per_file_time": "Unknown",
+                "decoded_media": [
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  },
+                  {
+                    "width": 1152,
+                    "height": 2048
+                  },
+                  {
+                    "duration": 6.033333,
+                    "end": 6.033333,
+                    "width": 576,
+                    "height": 1024,
+                    "ended": true
+                  }
+                ],
+                "original_media_download_hashes": "all matched received bytes"
+              },
+              {
+                "cell_id": "V24-07",
+                "photographs": 0,
+                "videos": 0,
+                "capture_date_time": "Unknown",
+                "capture_metadata_source": "Unknown",
+                "exact_per_file_time": "Unknown",
+                "decoded_media": [],
+                "original_media_download_hashes": "all matched received bytes"
+              }
+            ]
+          },
+          {
+            "name": "date and layer: 2026-09-14 / temperature",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-14",
+              "layer": "temperature",
+              "image_decoded": true,
+              "legend": "Surface temperature"
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-14 / greenery",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-14",
+              "layer": "greenery",
+              "image_decoded": true,
+              "legend": "Green pixel share"
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-14 / buildings",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-14",
+              "layer": "buildings",
+              "image_decoded": true,
+              "legend": "Mapped building footprint"
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-14 / priority",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-14",
+              "layer": "priority",
+              "image_decoded": true,
+              "legend": "Investigation priority"
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-14 / uncertainty",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-14",
+              "layer": "uncertainty",
+              "image_decoded": true,
+              "legend": "Temperature uncertainty"
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-14 / V04-23",
+            "status": "passed",
+            "detail": {
+              "cell": "V04-23",
+              "date": "2026-09-14",
+              "metrics": [
+                "51.4\u00b0C",
+                "0.0%",
+                "1.85 K"
+              ]
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-14 / V28-17",
+            "status": "passed",
+            "detail": {
+              "cell": "V28-17",
+              "date": "2026-09-14",
+              "metrics": [
+                "50.6\u00b0C",
+                "0.0%",
+                "1.82 K"
+              ]
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-14 / V04-24",
+            "status": "passed",
+            "detail": {
+              "cell": "V04-24",
+              "date": "2026-09-14",
+              "metrics": [
+                "51.3\u00b0C",
+                "0.1%",
+                "1.85 K"
+              ]
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-14 / V18-26",
+            "status": "passed",
+            "detail": {
+              "cell": "V18-26",
+              "date": "2026-09-14",
+              "metrics": [
+                "48.0\u00b0C",
+                "0.0772%",
+                "1.86 K"
+              ]
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-14 / V24-07",
+            "status": "passed",
+            "detail": {
+              "cell": "V24-07",
+              "date": "2026-09-14",
+              "metrics": [
+                "50.5\u00b0C",
+                "0.0%",
+                "1.82 K"
+              ]
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-30 / temperature",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-30",
+              "layer": "temperature",
+              "image_decoded": true,
+              "legend": "Surface temperature"
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-30 / greenery",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-30",
+              "layer": "greenery",
+              "image_decoded": true,
+              "legend": "Green pixel share"
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-30 / buildings",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-30",
+              "layer": "buildings",
+              "image_decoded": true,
+              "legend": "Mapped building footprint"
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-30 / priority",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-30",
+              "layer": "priority",
+              "image_decoded": true,
+              "legend": "Investigation priority"
+            }
+          },
+          {
+            "name": "date and layer: 2026-09-30 / uncertainty",
+            "status": "passed",
+            "detail": {
+              "date": "2026-09-30",
+              "layer": "uncertainty",
+              "image_decoded": true,
+              "legend": "Temperature uncertainty"
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-30 / V04-23",
+            "status": "passed",
+            "detail": {
+              "cell": "V04-23",
+              "date": "2026-09-30",
+              "metrics": [
+                "49.4\u00b0C",
+                "0.0%",
+                "1.80 K"
+              ]
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-30 / V28-17",
+            "status": "passed",
+            "detail": {
+              "cell": "V28-17",
+              "date": "2026-09-30",
+              "metrics": [
+                "49.4\u00b0C",
+                "0.0%",
+                "1.79 K"
+              ]
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-30 / V04-24",
+            "status": "passed",
+            "detail": {
+              "cell": "V04-24",
+              "date": "2026-09-30",
+              "metrics": [
+                "49.1\u00b0C",
+                "0.0%",
+                "1.79 K"
+              ]
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-30 / V18-26",
+            "status": "passed",
+            "detail": {
+              "cell": "V18-26",
+              "date": "2026-09-30",
+              "metrics": [
+                "46.9\u00b0C",
+                "0.0%",
+                "1.81 K"
+              ]
+            }
+          },
+          {
+            "name": "select reviewed cell: 2026-09-30 / V24-07",
+            "status": "passed",
+            "detail": {
+              "cell": "V24-07",
+              "date": "2026-09-30",
+              "metrics": [
+                "48.0\u00b0C",
+                "0.0%",
+                "1.78 K"
+              ]
+            }
+          },
+          {
+            "name": "three shortlist buttons",
+            "status": "passed",
+            "detail": {
+              "selected_cells": [
+                "V04-23",
+                "V28-17",
+                "V04-24"
+              ]
+            }
+          },
+          {
+            "name": "comparison opens, follows date, scrolls and closes",
+            "status": "passed",
+            "detail": {
+              "rows": 5,
+              "dates_checked": [
+                "2026-09-14",
+                "2026-09-30"
+              ],
+              "mobile_table_uses_horizontal_scroll": true
+            }
+          },
+          {
+            "name": "actual CSV download and content",
+            "status": "passed",
+            "detail": {
+              "filename": "AlKhor-Location-Review.csv",
+              "rows": 10,
+              "sha256": "2c2d5d523b4f62cb9e96b6ccef93104af5947b52a59c67ffdcb9f682fa86a447"
+            }
+          },
+          {
+            "name": "zoom in, zoom out, selected-site focus and reset",
+            "status": "passed",
+            "detail": {
+              "initial_view_box": [
+                0.0,
+                0.0,
+                11070.0,
+                10560.0
+              ],
+              "selection_focus_width": 2214.0,
+              "zoomed_label_bounds": [
+                {
+                  "text": "V04-23",
+                  "font": 13,
+                  "inside": true
+                },
+                {
+                  "text": "V04-24",
+                  "font": 13,
+                  "inside": true
+                }
+              ]
+            }
+          },
+          {
+            "name": "actual map clicks or touch taps on all three sites",
+            "status": "passed",
+            "detail": {
+              "selected_via_real_pointer": [
+                "V04-23",
+                "V28-17",
+                "V04-24",
+                "V18-26",
+                "V24-07"
+              ]
+            }
+          },
+          {
+            "name": "map pan",
+            "status": "passed",
+            "detail": {
+              "method": "emulated touch drag"
+            }
+          },
+          {
+            "name": "layer opacity",
+            "status": "passed",
+            "detail": {
+              "range": "0% to 100%"
+            }
+          },
+          {
+            "name": "layout and readable map labels at normal and narrow widths",
+            "status": "passed",
+            "detail": [
+              {
+                "viewport": 390,
+                "page": 390,
+                "labels": [
+                  {
+                    "text": "V04-23",
+                    "screen_font_px": 13.000000000000002
+                  },
+                  {
+                    "text": "V28-17",
+                    "screen_font_px": 13.000000000000002
+                  },
+                  {
+                    "text": "V04-24",
+                    "screen_font_px": 13.000000000000002
+                  },
+                  {
+                    "text": "V18-26",
+                    "screen_font_px": 13.000000000000002
+                  },
+                  {
+                    "text": "V24-07",
+                    "screen_font_px": 13.000000000000002
+                  }
+                ],
+                "metrics": [
+                  {
+                    "text": "Surface temperature\n49.4\u00b0C",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Green pixel share\n0.0%",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Temperature uncertainty\n1.80 K",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Mapped building footprint\n2.3%",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Historical built-up land (2021)\n25.2%",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Investigation rank\n1 of 373",
+                    "overflow": 0
+                  }
+                ]
+              },
+              {
+                "viewport": 320,
+                "page": 320,
+                "labels": [
+                  {
+                    "text": "V04-23",
+                    "screen_font_px": 12.999990063233966
+                  },
+                  {
+                    "text": "V28-17",
+                    "screen_font_px": 12.999990063233966
+                  },
+                  {
+                    "text": "V04-24",
+                    "screen_font_px": 12.999990063233966
+                  },
+                  {
+                    "text": "V18-26",
+                    "screen_font_px": 12.999990063233966
+                  },
+                  {
+                    "text": "V24-07",
+                    "screen_font_px": 12.999990063233966
+                  }
+                ],
+                "metrics": [
+                  {
+                    "text": "Surface temperature\n49.4\u00b0C",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Green pixel share\n0.0%",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Temperature uncertainty\n1.80 K",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Mapped building footprint\n2.3%",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Historical built-up land (2021)\n25.2%",
+                    "overflow": 0
+                  },
+                  {
+                    "text": "Investigation rank\n1 of 373",
+                    "overflow": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "page_errors": [],
+        "console_errors": [],
+        "failed_requests": [],
+        "media_request_cancellations": [
+          {
+            "url": "http://127.0.0.1:46575/assets/site-photos/V18-26-03.mp4",
+            "failure": "net::ERR_ABORTED"
+          }
+        ],
+        "http_errors": [],
+        "status": "passed"
+      }
+    ],
+    "browser": {
+      "engine": "Chromium",
+      "version": "151.0.7922.173"
+    },
+    "status": "passed"
+  },
+  "offline_browser": {
+    "checked_at_utc": "2026-10-08T16:08:40.478674+00:00",
+    "preview_sha256": "73bc8f8b9f4a2cf0e48e9ae3636226fdafd56b87ca1d880502370ca2d466e9b7",
+    "offline": true,
+    "delivery": "HTML content loaded through Playwright set_content; managed Chromium policy blocks file:// navigation",
+    "profiles": [
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "page_errors": [],
+        "console_errors": [],
+        "network_requests": [],
+        "decoded_images": [
+          {
+            "name": "assets/satellite.jpg",
+            "width": 1107,
+            "height": 1056
+          },
+          {
+            "name": "assets/excluded.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/temperature-2026-09-14.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/temperature-2026-09-30.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/greenery-2026-09-14.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/greenery-2026-09-30.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/buildings-2026-09-14.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/buildings-2026-09-30.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/priority-2026-09-14.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/priority-2026-09-30.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/uncertainty-2026-09-14.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/uncertainty-2026-09-30.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/site-photos/V04-23-01.jpeg",
+            "width": 2048,
+            "height": 1152
+          },
+          {
+            "name": "assets/site-photos/V04-23-02.jpeg",
+            "width": 2048,
+            "height": 1152
+          },
+          {
+            "name": "assets/site-photos/V04-23-03.jpeg",
+            "width": 1152,
+            "height": 2048
+          },
+          {
+            "name": "assets/site-photos/V04-23-04.jpeg",
+            "width": 1152,
+            "height": 2048
+          },
+          {
+            "name": "assets/site-photos/V04-23-05.jpeg",
+            "width": 1152,
+            "height": 2048
+          },
+          {
+            "name": "assets/site-photos/V28-17-01.jpeg",
+            "width": 1152,
+            "height": 2048
+          },
+          {
+            "name": "assets/site-photos/V28-17-02.jpeg",
+            "width": 1152,
+            "height": 2048
+          },
+          {
+            "name": "assets/site-photos/V28-17-03.jpeg",
+            "width": 1152,
+            "height": 2048
+          },
+          {
+            "name": "assets/site-photos/V28-17-04.jpeg",
+            "width": 1152,
+            "height": 2048
+          },
+          {
+            "name": "assets/site-photos/V18-26-01.jpeg",
+            "width": 1152,
+            "height": 2048
+          },
+          {
+            "name": "assets/site-photos/V18-26-02.jpeg",
+            "width": 1152,
+            "height": 2048
+          }
+        ],
+        "received_site_media": [
+          {
+            "cell_id": "V04-23",
+            "photographs": 5,
+            "videos": 0,
+            "capture_date_time": "2026-10-08; shared 13:00\u201314:00 Qatar (UTC+3) window",
+            "capture_metadata_source": "Nasser confirmation, not EXIF",
+            "exact_per_file_time": "Unknown",
+            "decoded_media": [
+              {
+                "width": 2048,
+                "height": 1152
+              },
+              {
+                "width": 2048,
+                "height": 1152
+              },
+              {
+                "width": 1152,
+                "height": 2048
+              },
+              {
+                "width": 1152,
+                "height": 2048
+              },
+              {
+                "width": 1152,
+                "height": 2048
+              }
+            ],
+            "original_media_download_hashes": "all matched received bytes"
+          },
+          {
+            "cell_id": "V28-17",
+            "photographs": 4,
+            "videos": 0,
+            "capture_date_time": "2026-10-08; shared 13:00\u201314:00 Qatar (UTC+3) window",
+            "capture_metadata_source": "Nasser confirmation, not EXIF",
+            "exact_per_file_time": "Unknown",
+            "decoded_media": [
+              {
+                "width": 1152,
+                "height": 2048
+              },
+              {
+                "width": 1152,
+                "height": 2048
+              },
+              {
+                "width": 1152,
+                "height": 2048
+              },
+              {
+                "width": 1152,
+                "height": 2048
+              }
+            ],
+            "original_media_download_hashes": "all matched received bytes"
+          },
+          {
+            "cell_id": "V04-24",
+            "photographs": 0,
+            "videos": 0,
+            "capture_date_time": "Unknown",
+            "capture_metadata_source": "Unknown",
+            "exact_per_file_time": "Unknown",
+            "decoded_media": [],
+            "original_media_download_hashes": "all matched received bytes"
+          },
+          {
+            "cell_id": "V18-26",
+            "photographs": 2,
+            "videos": 1,
+            "capture_date_time": "2026-10-08; shared 13:00\u201314:00 Qatar (UTC+3) window",
+            "capture_metadata_source": "Nasser confirmation, not EXIF",
+            "exact_per_file_time": "Unknown",
+            "decoded_media": [
+              {
+                "width": 1152,
+                "height": 2048
+              },
+              {
+                "width": 1152,
+                "height": 2048
+              },
+              {
+                "duration": 6.033333,
+                "end": 6.033333,
+                "width": 576,
+                "height": 1024,
+                "ended": true
+              }
+            ],
+            "original_media_download_hashes": "all matched received bytes"
+          },
+          {
+            "cell_id": "V24-07",
+            "photographs": 0,
+            "videos": 0,
+            "capture_date_time": "Unknown",
+            "capture_metadata_source": "Unknown",
+            "exact_per_file_time": "Unknown",
+            "decoded_media": [],
+            "original_media_download_hashes": "all matched received bytes"
+          }
+        ],
+        "csv_rows": 10,
+        "status": "passed"
+      },
+      {
+        "name": "mobile",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "page_errors": [],
+        "console_errors": [],
+        "network_requests": [],
+        "decoded_images": [
+          {
+            "name": "assets/satellite.jpg",
+            "width": 1107,
+            "height": 1056
+          },
+          {
+            "name": "assets/excluded.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/temperature-2026-09-14.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/temperature-2026-09-30.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/greenery-2026-09-14.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/greenery-2026-09-30.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/buildings-2026-09-14.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/buildings-2026-09-30.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/priority-2026-09-14.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/priority-2026-09-30.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/uncertainty-2026-09-14.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/uncertainty-2026-09-30.png",
+            "width": 369,
+            "height": 352
+          },
+          {
+            "name": "assets/site-photos/V04-23-01.jpeg",
+            "width": 2048,
+            "height": 1152
+          },
+          {
+            "name": "assets/site-photos/V04-23-02.jpeg",
+            "width": 2048,
+            "height": 1152
+          },
+          {
+            "name": "assets/site-photos/V04-23-03.jpeg",
+            "width": 1152,
+            "height": 2048
+          },
+          {
+            "name": "assets/site-photos/V04-23-04.jpeg",
+            "width": 1152,
+            "height": 2048
+          },
+          {
+            "name": "assets/site-photos/V04-23-05.jpeg",
+            "width": 1152,
+            "height": 2048
+          },
+          {
+            "name": "assets/site-photos/V28-17-01.jpeg",
+            "width": 1152,
+            "height": 2048
+          },
+          {
+            "name": "assets/site-photos/V28-17-02.jpeg",
+            "width": 1152,
+            "height": 2048
+          },
+          {
+            "name": "assets/site-photos/V28-17-03.jpeg",
+            "width": 1152,
+            "height": 2048
+          },
+          {
+            "name": "assets/site-photos/V28-17-04.jpeg",
+            "width": 1152,
+            "height": 2048
+          },
+          {
+            "name": "assets/site-photos/V18-26-01.jpeg",
+            "width": 1152,
+            "height": 2048
+          },
+          {
+            "name": "assets/site-photos/V18-26-02.jpeg",
+            "width": 1152,
+            "height": 2048
+          }
+        ],
+        "received_site_media": [
+          {
+            "cell_id": "V04-23",
+            "photographs": 5,
+            "videos": 0,
+            "capture_date_time": "2026-10-08; shared 13:00\u201314:00 Qatar (UTC+3) window",
+            "capture_metadata_source": "Nasser confirmation, not EXIF",
+            "exact_per_file_time": "Unknown",
+            "decoded_media": [
+              {
+                "width": 2048,
+                "height": 1152
+              },
+              {
+                "width": 2048,
+                "height": 1152
+              },
+              {
+                "width": 1152,
+                "height": 2048
+              },
+              {
+                "width": 1152,
+                "height": 2048
+              },
+              {
+                "width": 1152,
+                "height": 2048
+              }
+            ],
+            "original_media_download_hashes": "all matched received bytes"
+          },
+          {
+            "cell_id": "V28-17",
+            "photographs": 4,
+            "videos": 0,
+            "capture_date_time": "2026-10-08; shared 13:00\u201314:00 Qatar (UTC+3) window",
+            "capture_metadata_source": "Nasser confirmation, not EXIF",
+            "exact_per_file_time": "Unknown",
+            "decoded_media": [
+              {
+                "width": 1152,
+                "height": 2048
+              },
+              {
+                "width": 1152,
+                "height": 2048
+              },
+              {
+                "width": 1152,
+                "height": 2048
+              },
+              {
+                "width": 1152,
+                "height": 2048
+              }
+            ],
+            "original_media_download_hashes": "all matched received bytes"
+          },
+          {
+            "cell_id": "V04-24",
+            "photographs": 0,
+            "videos": 0,
+            "capture_date_time": "Unknown",
+            "capture_metadata_source": "Unknown",
+            "exact_per_file_time": "Unknown",
+            "decoded_media": [],
+            "original_media_download_hashes": "all matched received bytes"
+          },
+          {
+            "cell_id": "V18-26",
+            "photographs": 2,
+            "videos": 1,
+            "capture_date_time": "2026-10-08; shared 13:00\u201314:00 Qatar (UTC+3) window",
+            "capture_metadata_source": "Nasser confirmation, not EXIF",
+            "exact_per_file_time": "Unknown",
+            "decoded_media": [
+              {
+                "width": 1152,
+                "height": 2048
+              },
+              {
+                "width": 1152,
+                "height": 2048
+              },
+              {
+                "duration": 6.033333,
+                "end": 6.033333,
+                "width": 576,
+                "height": 1024,
+                "ended": true
+              }
+            ],
+            "original_media_download_hashes": "all matched received bytes"
+          },
+          {
+            "cell_id": "V24-07",
+            "photographs": 0,
+            "videos": 0,
+            "capture_date_time": "Unknown",
+            "capture_metadata_source": "Unknown",
+            "exact_per_file_time": "Unknown",
+            "decoded_media": [],
+            "original_media_download_hashes": "all matched received bytes"
+          }
+        ],
+        "csv_rows": 10,
+        "status": "passed"
+      }
+    ],
+    "status": "passed",
+    "browser": "151.0.7922.173"
+  },
+  "temporary_fixture_check": {
+    "status": "passed",
+    "method": "Real offline Chromium; temporary synthetic fixture only",
+    "real_photographs_received": 11,
+    "real_videos_received": 1,
+    "fixture_in_deliverables": false,
+    "checks": [
+      "Builder embeds a temporary fixture photo; original 11 photos and one video remain untouched",
+      "desktop: embedded photo decodes offline; metadata unknowns, escaped captions, pending galleries, original top three and failed historical coverage gate verified",
+      "mobile: embedded photo decodes offline; metadata unknowns, escaped captions, pending galleries, original top three and failed historical coverage gate verified",
+      "Unsafe photo traversal path rejected"
+    ],
+    "member_acceptance": "pending",
+    "physical_device_check": false
+  },
+  "analysis_rerun": false,
+  "ranking_changed": false,
+  "raw_exports_references_changed": false,
+  "limits": [
+    "Window endpoints describe one common batch interval, not exact per-file timestamps.",
+    "Precise camera locations, viewing bearings, route geometry, counts/use times and detailed shade remain unmeasured/Unknown.",
+    "Capture confirmation applies to 8 October photography; does not date earlier reports or Nasser's own visits.",
+    "Primary DW coverage gate still fails; this field evidence does not validate September historical classes.",
+    "Managed file:// policy: exact standalone HTML tested by set_content offline; physical devices/other browsers/ChatGPT embedded preview not verified.",
+    "Static PDF/PPTX preserved from their previous content checkpoint; current shared-window/collection confirmation is in gallery and updated documents/spoken notes."
+  ],
+  "independent_scientific_and_other_member_reviews": "pending",
+  "submission": "not performed; separate final approval required"
+}

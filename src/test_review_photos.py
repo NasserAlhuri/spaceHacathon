@@ -52,7 +52,8 @@ def main():
                 caption=page.locator('figcaption').inner_text()
                 assert '<img onerror=alert(1)>' in caption and 'Capture: Unknown' in caption and 'Location: Unknown' in caption
                 assert page.locator('figcaption img').count()==0
-                assert 'separate visit confirmation is not recorded' in page.locator('.evidence-status').inner_text()
+                assert 'Nasser confirms Abdulrahman Almohannadi visited' in page.locator('.evidence-status').inner_text()
+                assert 'Metadata source: Unknown' in caption  # Fixture does not inherit real capture metadata.
                 for cid in ['V04-24','V24-07']:
                     page.locator('#cell-select').select_option(cid)
                     assert page.locator('.photo-gallery img').count()==0

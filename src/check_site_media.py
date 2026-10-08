@@ -21,7 +21,12 @@ def check_site_media(page, reviews, output=None):
             figure = gallery.locator('figure').nth(index)
             caption = figure.locator('figcaption').inner_text()
             assert item['original_filename'] in caption
-            assert 'Capture: Unknown' in caption and 'Photographer: Unknown' in caption
+            assert 'Photographer: Abdulrahman Almohannadi' in caption
+            assert '2026-10-08, 13:00–14:00 Qatar (UTC+3); shared batch window' in caption
+            assert 'Exact per-file time: Unknown' in caption
+            assert 'Metadata source: Nasser Alhuri user confirmation; not EXIF' in caption
+            assert item['capture_window']['precision'] == 'Shared batch window; not an exact timestamp for any individual file'
+            assert item['exact_capture_time'] == 'Unknown'
             assert 'Location: Unknown' in caption and 'Viewing direction: Unknown' in caption
             assert item['site_association'] == cid
             if index < len(photos):
@@ -62,13 +67,20 @@ def check_site_media(page, reviews, output=None):
             assert hashlib.sha256(Path(downloaded.path()).read_bytes()).hexdigest() == item['sha256']
         evidence = page.locator('.evidence-status').inner_text()
         assert ('Nasser confirms site visits' in evidence) == bool(review.get('site_confirmation'))
+        assert ('Nasser confirms Abdulrahman Almohannadi visited' in evidence) == bool(review.get('media_visit_confirmation'))
+        if photos or videos:
+            assert 'project review pending' in gallery.inner_text()
+            assert 'shared 13:00–14:00 Qatar (UTC+3) window' in evidence
+            assert review['media_visit_confirmation']['visit_date'] == '2026-10-08'
         assert 'have not been measured' in evidence
         if output and photos:
             gallery.locator('figure').first.screenshot(path=str(output / (cid + '-first-photo.png')))
         if output and videos:
             gallery.locator('video').screenshot(path=str(output / (cid + '-video.png')))
         checked.append({'cell_id': cid, 'photographs': len(photos), 'videos': len(videos),
-                        'capture_date_time': 'Unknown', 'decoded_media': dimensions,
+                        'capture_date_time': '2026-10-08; shared 13:00–14:00 Qatar (UTC+3) window' if photos or videos else 'Unknown',
+                        'capture_metadata_source': 'Nasser confirmation, not EXIF' if photos or videos else 'Unknown',
+                        'exact_per_file_time': 'Unknown', 'decoded_media': dimensions,
                         'original_media_download_hashes': 'all matched received bytes'})
     assert sum(r['photographs'] for r in checked) == 11
     assert sum(r['videos'] for r in checked) == 1

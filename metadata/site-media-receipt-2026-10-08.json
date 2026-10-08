@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "receipt_date": "2026-10-08",
   "source_archive_filename": "\u0635\u0648\u0631 \u0627\u0644\u0645\u0648\u0642\u0639.zip",
   "source_archive_bytes": 5452734,
@@ -26,15 +26,28 @@
       "kind": "photograph",
       "visual_inspection": "completed",
       "caption": "Bus-stop sign beside a paved sidewalk, roadway and dense roadside trees. No shelter is visible in this view; shade at other times is not established.",
-      "capture_date_time": "Unknown",
-      "photographer": "Unknown",
+      "capture_date_time": "2026-10-08, 13:00\u201314:00 Qatar (UTC+3); shared batch window",
+      "photographer": "Abdulrahman Almohannadi",
       "precise_camera_coordinates": "Unknown",
       "viewing_bearing": "Unknown",
       "public_asset_path": "app/assets/site-photos/V04-23-01.jpeg",
       "original_bytes_preserved": true,
       "width": 2048,
       "height": 1152,
-      "EXIF": "No EXIF metadata supplied"
+      "EXIF": "No EXIF metadata supplied",
+      "capture_window": {
+        "date": "2026-10-08",
+        "start": "13:00",
+        "end": "14:00",
+        "timezone": "Asia/Qatar",
+        "utc_offset": "+03:00",
+        "start_iso8601": "2026-10-08T13:00:00+03:00",
+        "end_iso8601": "2026-10-08T14:00:00+03:00",
+        "precision": "Shared batch window; not an exact timestamp for any individual file"
+      },
+      "exact_capture_time": "Unknown",
+      "metadata_source": "Nasser Alhuri user confirmation; not EXIF",
+      "capture_confirmation_id": "nasser-site-media-confirmation-2026-10-08"
     },
     {
       "filename": "V04-23-02.jpeg",
@@ -47,15 +60,28 @@
       "kind": "photograph",
       "visual_inspection": "completed",
       "caption": "Sidewalk ending beside a sandy roadside shoulder and a row of trees, with vehicles on and beside the road. Route continuity and safe access are not established.",
-      "capture_date_time": "Unknown",
-      "photographer": "Unknown",
+      "capture_date_time": "2026-10-08, 13:00\u201314:00 Qatar (UTC+3); shared batch window",
+      "photographer": "Abdulrahman Almohannadi",
       "precise_camera_coordinates": "Unknown",
       "viewing_bearing": "Unknown",
       "public_asset_path": "app/assets/site-photos/V04-23-02.jpeg",
       "original_bytes_preserved": true,
       "width": 2048,
       "height": 1152,
-      "EXIF": "No EXIF metadata supplied"
+      "EXIF": "No EXIF metadata supplied",
+      "capture_window": {
+        "date": "2026-10-08",
+        "start": "13:00",
+        "end": "14:00",
+        "timezone": "Asia/Qatar",
+        "utc_offset": "+03:00",
+        "start_iso8601": "2026-10-08T13:00:00+03:00",
+        "end_iso8601": "2026-10-08T14:00:00+03:00",
+        "precision": "Shared batch window; not an exact timestamp for any individual file"
+      },
+      "exact_capture_time": "Unknown",
+      "metadata_source": "Nasser Alhuri user confirmation; not EXIF",
+      "capture_confirmation_id": "nasser-site-media-confirmation-2026-10-08"
     },
     {
       "filename": "V04-23-03.jpeg",
@@ -68,15 +94,28 @@
       "kind": "photograph",
       "visual_inspection": "completed",
       "caption": "Portrait view along the paved sidewalk and sandy shoulder beside the road, with trees and vehicles. This view is not a user-count or safety measurement.",
-      "capture_date_time": "Unknown",
-      "photographer": "Unknown",
+      "capture_date_time": "2026-10-08, 13:00\u201314:00 Qatar (UTC+3); shared batch window",
+      "photographer": "Abdulrahman Almohannadi",
       "precise_camera_coordinates": "Unknown",
       "viewing_bearing": "Unknown",
       "public_asset_path": "app/assets/site-photos/V04-23-03.jpeg",
       "original_bytes_preserved": true,
       "width": 1152,
       "height": 2048,
-      "EXIF": "No EXIF metadata supplied"
+      "EXIF": "No EXIF metadata supplied",
+      "capture_window": {
+        "date": "2026-10-08",
+        "start": "13:00",
+        "end": "14:00",
+        "timezone": "Asia/Qatar",
+        "utc_offset": "+03:00",
+        "start_iso8601": "2026-10-08T13:00:00+03:00",
+        "end_iso8601": "2026-10-08T14:00:00+03:00",
+        "precision": "Shared batch window; not an exact timestamp for any individual file"
+      },
+      "exact_capture_time": "Unknown",
+      "metadata_source": "Nasser Alhuri user confirmation; not EXIF",
+      "capture_confirmation_id": "nasser-site-media-confirmation-2026-10-08"
     },
     {
       "filename": "V04-23-04.jpeg",
@@ -89,15 +128,28 @@
       "kind": "photograph",
       "visual_inspection": "completed",
       "caption": "Paved sidewalk approaching a bus-stop sign, with trees alongside the road. No shelter is visible in this frame; all-day waiting-area shade is unknown.",
-      "capture_date_time": "Unknown",
-      "photographer": "Unknown",
+      "capture_date_time": "2026-10-08, 13:00\u201314:00 Qatar (UTC+3); shared batch window",
+      "photographer": "Abdulrahman Almohannadi",
       "precise_camera_coordinates": "Unknown",
       "viewing_bearing": "Unknown",
       "public_asset_path": "app/assets/site-photos/V04-23-04.jpeg",
       "original_bytes_preserved": true,
       "width": 1152,
       "height": 2048,
-      "EXIF": "No EXIF metadata supplied"
+      "EXIF": "No EXIF metadata supplied",
+      "capture_window": {
+        "date": "2026-10-08",
+        "start": "13:00",
+        "end": "14:00",
+        "timezone": "Asia/Qatar",
+        "utc_offset": "+03:00",
+        "start_iso8601": "2026-10-08T13:00:00+03:00",
+        "end_iso8601": "2026-10-08T14:00:00+03:00",
+        "precision": "Shared batch window; not an exact timestamp for any individual file"
+      },
+      "exact_capture_time": "Unknown",
+      "metadata_source": "Nasser Alhuri user confirmation; not EXIF",
+      "capture_confirmation_id": "nasser-site-media-confirmation-2026-10-08"
     },
     {
       "filename": "V04-23-05.jpeg",
@@ -110,15 +162,28 @@
       "kind": "photograph",
       "visual_inspection": "completed",
       "caption": "Wider view of the sidewalk, road, bus-stop sign and roadside tree row. Coverage and use outside this view are unknown.",
-      "capture_date_time": "Unknown",
-      "photographer": "Unknown",
+      "capture_date_time": "2026-10-08, 13:00\u201314:00 Qatar (UTC+3); shared batch window",
+      "photographer": "Abdulrahman Almohannadi",
       "precise_camera_coordinates": "Unknown",
       "viewing_bearing": "Unknown",
       "public_asset_path": "app/assets/site-photos/V04-23-05.jpeg",
       "original_bytes_preserved": true,
       "width": 1152,
       "height": 2048,
-      "EXIF": "No EXIF metadata supplied"
+      "EXIF": "No EXIF metadata supplied",
+      "capture_window": {
+        "date": "2026-10-08",
+        "start": "13:00",
+        "end": "14:00",
+        "timezone": "Asia/Qatar",
+        "utc_offset": "+03:00",
+        "start_iso8601": "2026-10-08T13:00:00+03:00",
+        "end_iso8601": "2026-10-08T14:00:00+03:00",
+        "precision": "Shared batch window; not an exact timestamp for any individual file"
+      },
+      "exact_capture_time": "Unknown",
+      "metadata_source": "Nasser Alhuri user confirmation; not EXIF",
+      "capture_confirmation_id": "nasser-site-media-confirmation-2026-10-08"
     },
     {
       "filename": "V18-26-01.jpeg",
@@ -131,15 +196,28 @@
       "kind": "photograph",
       "visual_inspection": "completed",
       "caption": "Marked paved path beside a road and sandy open ground, with buildings, boats and vegetation in the background. Exact route extent and plant species are unverified.",
-      "capture_date_time": "Unknown",
-      "photographer": "Unknown",
+      "capture_date_time": "2026-10-08, 13:00\u201314:00 Qatar (UTC+3); shared batch window",
+      "photographer": "Abdulrahman Almohannadi",
       "precise_camera_coordinates": "Unknown",
       "viewing_bearing": "Unknown",
       "public_asset_path": "app/assets/site-photos/V18-26-01.jpeg",
       "original_bytes_preserved": true,
       "width": 1152,
       "height": 2048,
-      "EXIF": "No EXIF metadata supplied"
+      "EXIF": "No EXIF metadata supplied",
+      "capture_window": {
+        "date": "2026-10-08",
+        "start": "13:00",
+        "end": "14:00",
+        "timezone": "Asia/Qatar",
+        "utc_offset": "+03:00",
+        "start_iso8601": "2026-10-08T13:00:00+03:00",
+        "end_iso8601": "2026-10-08T14:00:00+03:00",
+        "precision": "Shared batch window; not an exact timestamp for any individual file"
+      },
+      "exact_capture_time": "Unknown",
+      "metadata_source": "Nasser Alhuri user confirmation; not EXIF",
+      "capture_confirmation_id": "nasser-site-media-confirmation-2026-10-08"
     },
     {
       "filename": "V18-26-02.jpeg",
@@ -152,15 +230,28 @@
       "kind": "photograph",
       "visual_inspection": "completed",
       "caption": "View along the marked path with sandy ground on one side and a road and buildings on the other. Palms are visible farther along; all-day path shade is unmeasured.",
-      "capture_date_time": "Unknown",
-      "photographer": "Unknown",
+      "capture_date_time": "2026-10-08, 13:00\u201314:00 Qatar (UTC+3); shared batch window",
+      "photographer": "Abdulrahman Almohannadi",
       "precise_camera_coordinates": "Unknown",
       "viewing_bearing": "Unknown",
       "public_asset_path": "app/assets/site-photos/V18-26-02.jpeg",
       "original_bytes_preserved": true,
       "width": 1152,
       "height": 2048,
-      "EXIF": "No EXIF metadata supplied"
+      "EXIF": "No EXIF metadata supplied",
+      "capture_window": {
+        "date": "2026-10-08",
+        "start": "13:00",
+        "end": "14:00",
+        "timezone": "Asia/Qatar",
+        "utc_offset": "+03:00",
+        "start_iso8601": "2026-10-08T13:00:00+03:00",
+        "end_iso8601": "2026-10-08T14:00:00+03:00",
+        "precision": "Shared batch window; not an exact timestamp for any individual file"
+      },
+      "exact_capture_time": "Unknown",
+      "metadata_source": "Nasser Alhuri user confirmation; not EXIF",
+      "capture_confirmation_id": "nasser-site-media-confirmation-2026-10-08"
     },
     {
       "filename": "V18-26-03.mp4",
@@ -172,9 +263,9 @@
       "mapping": "Exact filename site ID; unambiguous",
       "kind": "video",
       "visual_inspection": "completed",
-      "caption": "Short pan from a marked path across sandy ground, scattered vegetation and boats, returning to the path and road. This does not verify mangrove boundaries, use counts or capture time.",
-      "capture_date_time": "Unknown",
-      "photographer": "Unknown",
+      "caption": "Short pan from a marked path across sandy ground, scattered vegetation and boats, returning to the path and road. This does not verify mangrove boundaries, use counts or an exact per-file capture time.",
+      "capture_date_time": "2026-10-08, 13:00\u201314:00 Qatar (UTC+3); shared batch window",
+      "photographer": "Abdulrahman Almohannadi",
       "precise_camera_coordinates": "Unknown",
       "viewing_bearing": "Unknown",
       "public_asset_path": "app/assets/site-photos/V18-26-03.mp4",
@@ -195,7 +286,20 @@
         5.9
       ],
       "full_stream_decode": "passed; video and audio decoded without ffmpeg errors",
-      "audio_content_review": "not interpreted; no audio-derived factual claims"
+      "audio_content_review": "not interpreted; no audio-derived factual claims",
+      "capture_window": {
+        "date": "2026-10-08",
+        "start": "13:00",
+        "end": "14:00",
+        "timezone": "Asia/Qatar",
+        "utc_offset": "+03:00",
+        "start_iso8601": "2026-10-08T13:00:00+03:00",
+        "end_iso8601": "2026-10-08T14:00:00+03:00",
+        "precision": "Shared batch window; not an exact timestamp for any individual file"
+      },
+      "exact_capture_time": "Unknown",
+      "metadata_source": "Nasser Alhuri user confirmation; not EXIF",
+      "capture_confirmation_id": "nasser-site-media-confirmation-2026-10-08"
     },
     {
       "filename": "V28-17-01.jpeg",
@@ -207,16 +311,29 @@
       "mapping": "Exact filename site ID; unambiguous",
       "kind": "photograph",
       "visual_inspection": "completed",
-      "caption": "Marked paved path lined with trees and lights, with a fence alongside. Some tree shadows are visible at this unknown capture time; shade through the day is unmeasured.",
-      "capture_date_time": "Unknown",
-      "photographer": "Unknown",
+      "caption": "Marked paved path lined with trees and lights, with a fence alongside. Some tree shadows are visible in this view; shade through the day is unmeasured.",
+      "capture_date_time": "2026-10-08, 13:00\u201314:00 Qatar (UTC+3); shared batch window",
+      "photographer": "Abdulrahman Almohannadi",
       "precise_camera_coordinates": "Unknown",
       "viewing_bearing": "Unknown",
       "public_asset_path": "app/assets/site-photos/V28-17-01.jpeg",
       "original_bytes_preserved": true,
       "width": 1152,
       "height": 2048,
-      "EXIF": "No EXIF metadata supplied"
+      "EXIF": "No EXIF metadata supplied",
+      "capture_window": {
+        "date": "2026-10-08",
+        "start": "13:00",
+        "end": "14:00",
+        "timezone": "Asia/Qatar",
+        "utc_offset": "+03:00",
+        "start_iso8601": "2026-10-08T13:00:00+03:00",
+        "end_iso8601": "2026-10-08T14:00:00+03:00",
+        "precision": "Shared batch window; not an exact timestamp for any individual file"
+      },
+      "exact_capture_time": "Unknown",
+      "metadata_source": "Nasser Alhuri user confirmation; not EXIF",
+      "capture_confirmation_id": "nasser-site-media-confirmation-2026-10-08"
     },
     {
       "filename": "V28-17-02.jpeg",
@@ -229,15 +346,28 @@
       "kind": "photograph",
       "visual_inspection": "completed",
       "caption": "Tree and fence beside the path, with a road, vehicles and palms beyond. This view does not establish parking use or pedestrian counts.",
-      "capture_date_time": "Unknown",
-      "photographer": "Unknown",
+      "capture_date_time": "2026-10-08, 13:00\u201314:00 Qatar (UTC+3); shared batch window",
+      "photographer": "Abdulrahman Almohannadi",
       "precise_camera_coordinates": "Unknown",
       "viewing_bearing": "Unknown",
       "public_asset_path": "app/assets/site-photos/V28-17-02.jpeg",
       "original_bytes_preserved": true,
       "width": 1152,
       "height": 2048,
-      "EXIF": "No EXIF metadata supplied"
+      "EXIF": "No EXIF metadata supplied",
+      "capture_window": {
+        "date": "2026-10-08",
+        "start": "13:00",
+        "end": "14:00",
+        "timezone": "Asia/Qatar",
+        "utc_offset": "+03:00",
+        "start_iso8601": "2026-10-08T13:00:00+03:00",
+        "end_iso8601": "2026-10-08T14:00:00+03:00",
+        "precision": "Shared batch window; not an exact timestamp for any individual file"
+      },
+      "exact_capture_time": "Unknown",
+      "metadata_source": "Nasser Alhuri user confirmation; not EXIF",
+      "capture_confirmation_id": "nasser-site-media-confirmation-2026-10-08"
     },
     {
       "filename": "V28-17-03.jpeg",
@@ -250,15 +380,28 @@
       "kind": "photograph",
       "visual_inspection": "completed",
       "caption": "Curved marked path with trees, lights and a fence beside the stadium area. Precise camera position and route connections are unknown.",
-      "capture_date_time": "Unknown",
-      "photographer": "Unknown",
+      "capture_date_time": "2026-10-08, 13:00\u201314:00 Qatar (UTC+3); shared batch window",
+      "photographer": "Abdulrahman Almohannadi",
       "precise_camera_coordinates": "Unknown",
       "viewing_bearing": "Unknown",
       "public_asset_path": "app/assets/site-photos/V28-17-03.jpeg",
       "original_bytes_preserved": true,
       "width": 1152,
       "height": 2048,
-      "EXIF": "No EXIF metadata supplied"
+      "EXIF": "No EXIF metadata supplied",
+      "capture_window": {
+        "date": "2026-10-08",
+        "start": "13:00",
+        "end": "14:00",
+        "timezone": "Asia/Qatar",
+        "utc_offset": "+03:00",
+        "start_iso8601": "2026-10-08T13:00:00+03:00",
+        "end_iso8601": "2026-10-08T14:00:00+03:00",
+        "precision": "Shared batch window; not an exact timestamp for any individual file"
+      },
+      "exact_capture_time": "Unknown",
+      "metadata_source": "Nasser Alhuri user confirmation; not EXIF",
+      "capture_confirmation_id": "nasser-site-media-confirmation-2026-10-08"
     },
     {
       "filename": "V28-17-04.jpeg",
@@ -271,26 +414,70 @@
       "kind": "photograph",
       "visual_inspection": "completed",
       "caption": "Al Bayt Stadium visible beyond paved parking and sandy ground, with foreground trees. Event-day use and shade coverage are not established.",
-      "capture_date_time": "Unknown",
-      "photographer": "Unknown",
+      "capture_date_time": "2026-10-08, 13:00\u201314:00 Qatar (UTC+3); shared batch window",
+      "photographer": "Abdulrahman Almohannadi",
       "precise_camera_coordinates": "Unknown",
       "viewing_bearing": "Unknown",
       "public_asset_path": "app/assets/site-photos/V28-17-04.jpeg",
       "original_bytes_preserved": true,
       "width": 1152,
       "height": 2048,
-      "EXIF": "No EXIF metadata supplied"
+      "EXIF": "No EXIF metadata supplied",
+      "capture_window": {
+        "date": "2026-10-08",
+        "start": "13:00",
+        "end": "14:00",
+        "timezone": "Asia/Qatar",
+        "utc_offset": "+03:00",
+        "start_iso8601": "2026-10-08T13:00:00+03:00",
+        "end_iso8601": "2026-10-08T14:00:00+03:00",
+        "precision": "Shared batch window; not an exact timestamp for any individual file"
+      },
+      "exact_capture_time": "Unknown",
+      "metadata_source": "Nasser Alhuri user confirmation; not EXIF",
+      "capture_confirmation_id": "nasser-site-media-confirmation-2026-10-08"
     }
   ],
   "limits": [
-    "Capture date/time and photographer Unknown for every item; ZIP timestamps are not capture dates.",
-    "All photographs viewed individually; video visually reviewed at six sampled timestamps and fully decoded, not audio-interpreted.",
-    "V28-17 images include paths/fences and a stadium/parking view; the cell name is not the precise camera location.",
+    "Nasser confirms Abdulrahman visited and photographed the three filename-associated sites on 8 October 2026 within the shared 13:00\u201314:00 Qatar (UTC+3) window. This is user confirmation, not EXIF.",
+    "No individual file is assigned an exact time/minute; exact per-file time, precise camera coordinates and compass bearing remain Unknown.",
+    "Original images have no EXIF and video no capture timestamp; original media bytes are unchanged.",
+    "V28-17 views include paths/fences and stadium/parking; filenames do not identify exact camera positions.",
     "Plant species, current mangrove geometry, full route extent and service coordinates remain unverified.",
     "No measured user counts, use times, all-day shade, temperature or independent historical class truth.",
-    "Media receipt does not complete teammate review, rehearsal or new-site visit confirmation."
+    "Collection of the supplied 11 photographs and one video is complete by Nasser confirmation; project review and other member tasks remain pending.",
+    "V04-24 and V24-07 still have no supplied photos/video; this dated confirmation is not extended to them or to original report observation dates."
   ],
   "analysis_rerun": false,
   "ranking_changed": false,
-  "submission": "not performed"
+  "submission": "not performed",
+  "capture_confirmation": {
+    "id": "nasser-site-media-confirmation-2026-10-08",
+    "confirmed_by": "Nasser Alhuri",
+    "confirmation_source": "Explicit user confirmation in Codex conversation; not EXIF or extracted file metadata",
+    "confirmation_recorded_date": "2026-10-08",
+    "photographer": "Abdulrahman Almohannadi",
+    "visit_date": "2026-10-08",
+    "photographed_sites": [
+      "V04-23",
+      "V28-17",
+      "V18-26"
+    ],
+    "photographs": 11,
+    "videos": 1,
+    "capture_window": {
+      "date": "2026-10-08",
+      "start": "13:00",
+      "end": "14:00",
+      "timezone": "Asia/Qatar",
+      "utc_offset": "+03:00",
+      "start_iso8601": "2026-10-08T13:00:00+03:00",
+      "end_iso8601": "2026-10-08T14:00:00+03:00",
+      "precision": "Shared batch window; not an exact timestamp for any individual file"
+    },
+    "exact_per_file_capture_time": "Unknown",
+    "batch_collection_status": "Complete, confirmed by Nasser",
+    "project_review_status": "Pending; no completed project review confirmed",
+    "scope": "The 11 received photographs and one video; no new confirmation inferred for unphotographed V04-24/V24-07 or for earlier report dates. No measurements, geometry, historical class validity or ranking change."
+  }
 }

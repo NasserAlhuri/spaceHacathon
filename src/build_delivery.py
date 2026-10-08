@@ -63,12 +63,15 @@ def build(root, output, source_commit):
                       'Extract the ZIP for the full source, original inputs/results, complete app, '
                       'preview, licences and docs/Delivery-Guide.md. The standalone map embeds its '
                       'resources; external source and Street View links need internet.\n\n'
-                      'Visits to the original three reviewed sites are confirmed. Added reports '
-                      'have no separate visit confirmation. User counts, use times and detailed shade '
+                      'Original Nasser visits are retained. Nasser now confirms Abdulrahman visited '
+                      'the three photographed sites on 8 October 2026. User counts, use times and detailed shade '
                       'assessment were not measured; eleven photographs and one video are received '
-                      'for three sites, capture dates/times are Unknown and two sites still lack media. '
+                      'for three sites, captured by Abdulrahman within a shared 13:00-14:00 Qatar '
+                      '(UTC+3) window on 8 October, confirmed by Nasser, not EXIF. Exact per-file '
+                      'times remain Unknown and two sites still lack media. '
                       'Mohammed practises the presentation; Abdulrahman reviews the project and collects '
-                      'photos/observations. Their tasks remain pending. Physical-device, teammate reviews '
+                      'photos/observations. Collection of this supplied batch is complete; project review '
+                      'and other tasks remain pending. Physical-device, teammate reviews '
                       'and rehearsal are pending. Chromium desktop/mobile-emulation checks are '
                       'technical evidence only. Separate final approval is required to submit.\n')
     dynamic_world = root / 'results/dynamic-world-export-status.json'
@@ -128,22 +131,24 @@ def build(root, output, source_commit):
     if final_content.exists():
         report['final_content_revision'] = json.loads(final_content.read_text())
         with readme.open('a') as handle:
-            handle.write('\nThe revised twelve-slide PDF/PPTX, 386-word spoken script, judge answers and '
-                         'checklist include the three final AI/NDVI/review-status corrections. Latest '
+            handle.write('\nThe revised twelve-slide PDF/PPTX, 388-word spoken script, judge answers and '
+                         'checklist include the three final AI/NDVI/review-status corrections. Earlier '
                          'presentation/script evidence: results/final-content-revision-verification.json '
                          'and docs/Final-Content-Revision.md inside the ZIP. The gallery revision '
-                         'uses results/site-media-verification-2026-10-08.json. Older '
+                         'uses results/site-media-capture-verification-2026-10-08.json. Older '
                          'artifact reports remain historical. Actual member rehearsal/acceptance, '
                          'independent scientific validation and final submission approval are pending.\n')
         checksums[readme.name] = {'bytes': readme.stat().st_size, 'sha256': digest(readme.read_bytes())}
-    site_media = root / 'results/site-media-verification-2026-10-08.json'
+    site_media = root / 'results/site-media-capture-verification-2026-10-08.json'
     if site_media.exists():
         report['site_media_current_verification'] = json.loads(site_media.read_text())
         with readme.open('a') as handle:
             handle.write('\nThe gallery and offline preview include original received media: '
                          'V04-23 five photographs, V28-17 four, V18-26 two and one video. '
-                         'Capture date/time, photographer and precise camera positions are Unknown. '
-                         'Media receipt does not complete teammate reviews or historical class validation. '
+                         'Nasser confirms Abdulrahman captured all files in the shared 8 October '
+                         '13:00-14:00 Qatar (UTC+3) window, not EXIF. Exact per-file times, bearings '
+                         'and precise camera positions remain Unknown. Collection of this supplied '
+                         'batch is complete; project review and historical class validation remain pending. '
                          'See docs/Site-Media-Receipt-2026-10-08.md inside the ZIP.\n')
         checksums[readme.name] = {'bytes': readme.stat().st_size, 'sha256': digest(readme.read_bytes())}
     (output / 'DELIVERY-VERIFICATION.json').write_text(json.dumps(report, indent=2) + '\n')

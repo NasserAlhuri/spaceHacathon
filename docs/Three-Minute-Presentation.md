@@ -1,6 +1,6 @@
 # Three-minute presentation script
 
-Team Al Zubarah — UrbanHeat AI, Al Khor. Use the revised twelve-slide PDF or PowerPoint. Target: 180 seconds. The spoken sections contain **386 whitespace-separated words**. At approximately 135 words per minute, speech takes about 171 seconds, leaving about nine seconds for short transitions. These are planning estimates; actual timing must come from Mohammed's rehearsal, which remains pending. Headings and timing cues are not spoken. Avoid live map interaction within the three-minute slot; keep the offline preview ready for questions.
+Team Al Zubarah — UrbanHeat AI, Al Khor. Use the revised twelve-slide PDF or PowerPoint. Target: 180 seconds. The spoken sections contain **388 whitespace-separated words**. At approximately 135 words per minute, speech takes about 172 seconds, leaving about 8 seconds for short transitions. These are planning estimates; actual timing must come from Mohammed's rehearsal, which remains pending. Headings and timing cues are not spoken. Avoid live map interaction within the three-minute slot; keep the offline preview ready for questions.
 
 ## Slide 1 — 0:00–0:11
 
@@ -32,7 +32,7 @@ The accepted dates share about 94.4 square kilometres of inland thermal support.
 
 ## Slide 8 — 1:43–2:07
 
-Our third case is the reported jogging route, V18-26: a 47.47-degree cell summary, 72-percent coverage and rank 275. Abdulrahman reports nearby mangroves do not shade the path; dated photos are pending. This is a use example, not a top-three rank. Hospital land stays in the results. Zero detected greenery does not mean no trees.
+Our third case is the reported jogging route, V18-26: a 47.47-degree cell summary, 72-percent coverage and rank 275. Abdulrahman reports nearby mangroves do not shade the path; photography completed; review pending. This is a use example, not a top-three rank. Hospital land stays in the results. Zero detected greenery does not mean no trees.
 
 ## Slide 9 — 2:07–2:25
 
@@ -44,7 +44,7 @@ Assistant review of eighteen sites across four dates is complete; independent sc
 
 ## Slide 11 — 2:44–2:54
 
-Abdulrahman reviews the project and collects photographs. Mohammed practises the presentation. These tasks and other members' reviews remain pending until individually confirmed.
+Abdulrahman collected the photographs, confirmed by Nasser. His project review remains pending. Mohammed practises the presentation. Other members' reviews remain pending until individually confirmed.
 
 ## Slide 12 — 2:54–3:00
 
@@ -55,6 +55,8 @@ Our public package includes sources, licences and reproducible evidence. Thank y
 - Mohammed should rehearse the complete spoken text aloud with a timer and record the actual duration; no rehearsal is certified here. Shorten transitions if needed; do not drop the visits-versus-measurements or temperature limitations.
 - For questions, open `preview/UrbanHeat-AlKhor-Preview.html` in a browser. Select V04-23, V28-17 and V18-26 for presentation cases; V04-24 remains available. Compare all five reviewed sites and show the two dates. Review CSV export has ten rows: five sites × two dates.
 - Treat quoted temperatures as cell summaries, not surveyed point measurements. Keep Unknown values visible and distinguish reported conditions from quantitative measurements.
-- This script is prepared material. It does not certify Ali's rehearsal, Abdulrahman's project review/photo collection, Majed's slide review, Mohammed's presentation practice or final submission approval.
+- This script is prepared material. It does not certify Ali's rehearsal, Abdulrahman's project review, Majed's slide review, Mohammed's presentation practice or final submission approval.
 
-Content/status verification for this revision: [Final content revision](Final-Content-Revision.md). Existing browser evidence applies to the unchanged app/preview, not to presentation rendering or actual speaking time.
+Earlier content verification: [Final content revision](Final-Content-Revision.md). Current capture/collection status verification: results/site-media-capture-verification-2026-10-08.json. Current gallery/capture confirmation checks are recorded in results/site-media-capture-verification-2026-10-08.json. Previous final-content checks are historical; no actual speaking time is certified.
+
+Capture note: Nasser confirms all supplied media were collected by Abdulrahman on 8 October 2026 within a shared 13:00–14:00 Qatar (UTC+3) window, not EXIF. Exact individual capture times remain Unknown. This note is not part of the timed spoken script; project review remains pending.

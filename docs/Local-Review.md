@@ -46,3 +46,7 @@ Record observer, date, time, coordinates and evidence type. Photograph the stop,
 ## Added attributed reports — 7 October 2026
 
 V18-26 and V24-07 reports are recorded in app/local-review.json and explained in [Site-Evidence-Guide.md](Site-Evidence-Guide.md). V18-26 is the presentation's third case instead of hospital land. Its supplied point is geometrically inside the cell; the full route and nearby features remain unverified. V24-07's reported absence of pedestrians at an unspecified time does not establish no use at other times. All new photos, capture dates/times and detailed measurements remain pending. Original visit confirmations are not extended to these added locations. All satellite ranks and the original top three are unchanged.
+
+## 8 October 2026 media capture confirmation
+
+Nasser explicitly confirms Abdulrahman Almohannadi visited V04-23, V28-17 and V18-26 and captured all 11 supplied photographs and one video on 8 October 2026 within a shared 13:00–14:00 Qatar (UTC+3) window. This is user confirmation, not EXIF. It does not assign an individual capture minute, precise camera coordinates or viewing bearing, and does not backfill the dates of earlier local reports or Nasser's own visits. Collection of this supplied batch is complete; Abdulrahman's project review remains separate and pending. V04-24 and V24-07 media remain pending. Original measurements, ranking and all unmeasured use/shade/geometry limits are unchanged. See Site-Media-Receipt-2026-10-08.md and metadata/site-media-capture-confirmation-2026-10-08.json.

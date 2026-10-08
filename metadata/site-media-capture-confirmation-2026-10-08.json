@@ -1,0 +1,29 @@
+{
+  "id": "nasser-site-media-confirmation-2026-10-08",
+  "confirmed_by": "Nasser Alhuri",
+  "confirmation_source": "Explicit user confirmation in Codex conversation; not EXIF or extracted file metadata",
+  "confirmation_recorded_date": "2026-10-08",
+  "photographer": "Abdulrahman Almohannadi",
+  "visit_date": "2026-10-08",
+  "photographed_sites": [
+    "V04-23",
+    "V28-17",
+    "V18-26"
+  ],
+  "photographs": 11,
+  "videos": 1,
+  "capture_window": {
+    "date": "2026-10-08",
+    "start": "13:00",
+    "end": "14:00",
+    "timezone": "Asia/Qatar",
+    "utc_offset": "+03:00",
+    "start_iso8601": "2026-10-08T13:00:00+03:00",
+    "end_iso8601": "2026-10-08T14:00:00+03:00",
+    "precision": "Shared batch window; not an exact timestamp for any individual file"
+  },
+  "exact_per_file_capture_time": "Unknown",
+  "batch_collection_status": "Complete, confirmed by Nasser",
+  "project_review_status": "Pending; no completed project review confirmed",
+  "scope": "The 11 received photographs and one video; no new confirmation inferred for unphotographed V04-24/V24-07 or for earlier report dates. No measurements, geometry, historical class validity or ranking change."
+}

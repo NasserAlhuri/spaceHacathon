@@ -174,6 +174,16 @@ def main():
                         cell = cells[row['cell_id']]
                         require(float(row['surface_temperature_c']) == cell['values'][row['thermal_date']]['temperature'], 'CSV numerical value mismatch')
                         require(row['optical_date'] == ('2026-09-15' if row['thermal_date'] == '2026-09-14' else '2026-09-30'), 'Wrong optical date')
+                        photographed = row['cell_id'] in ['V04-23', 'V28-17', 'V18-26']
+                        require(row['media_exact_per_file_time'] == 'Unknown', 'An exact media time was invented')
+                        require('Pending' in row['project_review_status'], 'Photo collection completed the project review')
+                        if photographed:
+                            require(row['media_photographer'] == 'Abdulrahman Almohannadi', 'Photographer confirmation missing')
+                            require('13:00–14:00 Qatar (UTC+3)' in row['media_capture_window'], 'Shared capture window missing')
+                            require(row['media_metadata_source'] == 'Nasser Alhuri user confirmation; not EXIF', 'Confirmation misattributed to EXIF')
+                            require(row['media_collection_status'].startswith('Complete for supplied media batch'), 'Batch completion not recorded')
+                        else:
+                            require(row['media_photographer'] == row['media_capture_window'] == 'Unknown', 'Unreceived site evidence was invented')
                     require({r['cell_id'] for r in rows} == {r['cell_id'] for r in reviews}, 'CSV locations mismatch')
                     return {'filename': downloaded.suggested_filename, 'rows': len(rows), 'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
                 check('actual CSV download and content', download)
