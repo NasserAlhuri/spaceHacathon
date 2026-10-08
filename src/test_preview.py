@@ -6,6 +6,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 from playwright.sync_api import sync_playwright
+from check_site_media import check_site_media
 
 
 def main():
@@ -33,8 +34,8 @@ def main():
                 assert 'Loading' not in page.locator('#map-caption').inner_text()
                 assert page.locator('header').evaluate('(e) => getComputedStyle(e).backgroundColor') == 'rgb(17, 38, 60)'
                 assert page.locator('#map-frame').bounding_box()['height'] > 500
-                images = page.evaluate("""async () => {const images=JSON.parse(document.getElementById('preview-images').textContent); return Promise.all(Object.entries(images).map(async ([name,src])=>{const image=new Image();image.src=src;await image.decode();return {name,width:image.naturalWidth,height:image.naturalHeight};}));}""")
-                assert len(images) == 12 and all(i['width'] > 0 and i['height'] > 0 for i in images)
+                images = page.evaluate("""async () => {const images=JSON.parse(document.getElementById('preview-images').textContent); return Promise.all(Object.entries(images).filter(([name,src])=>src.startsWith('data:image/')).map(async ([name,src])=>{const image=new Image();image.src=src;await image.decode();return {name,width:image.naturalWidth,height:image.naturalHeight};}));}""")
+                assert len(images) == 23 and all(i['width'] > 0 and i['height'] > 0 for i in images)
                 record['decoded_images'] = images
                 for date in ['2026-09-14', '2026-09-30']:
                     page.locator('#date').select_option(date)
@@ -48,9 +49,9 @@ def main():
                     assert page.locator('.local-details h3').inner_text()
                     evidence = page.locator('.evidence-status').inner_text()
                     assert ('Nasser confirms site visits' in evidence) == (cid in ['V04-23','V28-17','V04-24'])
-                    assert 'Evidence pending' in page.locator('.photo-gallery').inner_text()
-                    assert page.locator('.photo-gallery img').count() == 0
                     assert 'User counts, use times and detailed shade assessment have not been measured' in evidence
+                reviews = page.evaluate("JSON.parse(document.getElementById('preview-review').textContent).cells")
+                record['received_site_media'] = check_site_media(page, reviews)
                 assert 'have not been measured' in page.locator('#review-status').inner_text()
                 page.locator('#comparison-toggle').click()
                 assert page.locator('#comparison-body tr').count() == 5

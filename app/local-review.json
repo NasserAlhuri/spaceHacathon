@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "recorded_date": "2026-10-06",
   "scope": "Separate local review; does not change satellite measurements or ranking.",
   "study_boundary_points": [
@@ -63,15 +63,92 @@
         "statement": "Nasser reports visiting the sites and confirms that the described physical situation is the same as in September 2026. Exact visit dates were not supplied.",
         "scope": "Physical site description; not measured temperature, NDVI, all-day shade, passenger counts, ownership or expansion plans."
       },
-      "photos": [],
-      "photo_status": "Evidence pending; photographs not received",
+      "photos": [
+        {
+          "src": "assets/site-photos/V04-23-01.jpeg",
+          "original_filename": "V04-23-01.jpeg",
+          "caption": "Bus-stop sign beside a paved sidewalk, roadway and dense roadside trees. No shelter is visible in this view; shade at other times is not established.",
+          "caption_author": "Codex visual inspection, 2026-10-08; descriptive view only",
+          "observer": "Unknown",
+          "captured_at": "Unknown",
+          "location": "Unknown",
+          "viewing_direction": "Unknown",
+          "site_association": "V04-23",
+          "association_basis": "Exact supplied filename prefix; not surveyed camera coordinates",
+          "received_at": "2026-10-08",
+          "source": "Nasser-supplied site media archive",
+          "sha256": "a1bd817f71f26ae70e79dc787cf0ec1a37e2488b41dda6829b561cc9ce608c1d"
+        },
+        {
+          "src": "assets/site-photos/V04-23-02.jpeg",
+          "original_filename": "V04-23-02.jpeg",
+          "caption": "Sidewalk ending beside a sandy roadside shoulder and a row of trees, with vehicles on and beside the road. Route continuity and safe access are not established.",
+          "caption_author": "Codex visual inspection, 2026-10-08; descriptive view only",
+          "observer": "Unknown",
+          "captured_at": "Unknown",
+          "location": "Unknown",
+          "viewing_direction": "Unknown",
+          "site_association": "V04-23",
+          "association_basis": "Exact supplied filename prefix; not surveyed camera coordinates",
+          "received_at": "2026-10-08",
+          "source": "Nasser-supplied site media archive",
+          "sha256": "4a93ad64b3206b69b4e5f0936919eac04baeca7b26a2b57176a6e7bc88275c6e"
+        },
+        {
+          "src": "assets/site-photos/V04-23-03.jpeg",
+          "original_filename": "V04-23-03.jpeg",
+          "caption": "Portrait view along the paved sidewalk and sandy shoulder beside the road, with trees and vehicles. This view is not a user-count or safety measurement.",
+          "caption_author": "Codex visual inspection, 2026-10-08; descriptive view only",
+          "observer": "Unknown",
+          "captured_at": "Unknown",
+          "location": "Unknown",
+          "viewing_direction": "Unknown",
+          "site_association": "V04-23",
+          "association_basis": "Exact supplied filename prefix; not surveyed camera coordinates",
+          "received_at": "2026-10-08",
+          "source": "Nasser-supplied site media archive",
+          "sha256": "f530cab85c6bf46b487fa7b7e7ef4ab77f4ca2b2c107987ee112303b412f4dbd"
+        },
+        {
+          "src": "assets/site-photos/V04-23-04.jpeg",
+          "original_filename": "V04-23-04.jpeg",
+          "caption": "Paved sidewalk approaching a bus-stop sign, with trees alongside the road. No shelter is visible in this frame; all-day waiting-area shade is unknown.",
+          "caption_author": "Codex visual inspection, 2026-10-08; descriptive view only",
+          "observer": "Unknown",
+          "captured_at": "Unknown",
+          "location": "Unknown",
+          "viewing_direction": "Unknown",
+          "site_association": "V04-23",
+          "association_basis": "Exact supplied filename prefix; not surveyed camera coordinates",
+          "received_at": "2026-10-08",
+          "source": "Nasser-supplied site media archive",
+          "sha256": "b507d8de5210cd60b0f748d258f9b79e1fd45f284995f7d60d5eb00683833f9c"
+        },
+        {
+          "src": "assets/site-photos/V04-23-05.jpeg",
+          "original_filename": "V04-23-05.jpeg",
+          "caption": "Wider view of the sidewalk, road, bus-stop sign and roadside tree row. Coverage and use outside this view are unknown.",
+          "caption_author": "Codex visual inspection, 2026-10-08; descriptive view only",
+          "observer": "Unknown",
+          "captured_at": "Unknown",
+          "location": "Unknown",
+          "viewing_direction": "Unknown",
+          "site_association": "V04-23",
+          "association_basis": "Exact supplied filename prefix; not surveyed camera coordinates",
+          "received_at": "2026-10-08",
+          "source": "Nasser-supplied site media archive",
+          "sha256": "8b7bf03d370d45c097b36c6302625f1b47db1148239417fe97234f3f077086d2"
+        }
+      ],
+      "photo_status": "Received 5 photographs; capture date/time Unknown; detailed assessment pending",
       "geometry_status": "Cell centre only; precise site or route geometry remains unverified",
       "unknowns": [
         "User counts and use times",
         "Detailed shade across use times",
         "Ownership, permissions, cost and feasibility"
       ],
-      "visit_confirmation_status": "Confirmed by Nasser for the original reviewed sites; exact visit dates unspecified"
+      "visit_confirmation_status": "Confirmed by Nasser for the original reviewed sites; exact visit dates unspecified",
+      "videos": []
     },
     {
       "cell_id": "V28-17",
@@ -103,15 +180,77 @@
         "statement": "Nasser reports visiting the sites and confirms that the described physical situation is the same as in September 2026. Exact visit dates were not supplied.",
         "scope": "Physical site description; not measured temperature, NDVI, all-day shade, passenger counts, ownership or expansion plans."
       },
-      "photos": [],
-      "photo_status": "Evidence pending; photographs not received",
+      "photos": [
+        {
+          "src": "assets/site-photos/V28-17-01.jpeg",
+          "original_filename": "V28-17-01.jpeg",
+          "caption": "Marked paved path lined with trees and lights, with a fence alongside. Some tree shadows are visible at this unknown capture time; shade through the day is unmeasured.",
+          "caption_author": "Codex visual inspection, 2026-10-08; descriptive view only",
+          "observer": "Unknown",
+          "captured_at": "Unknown",
+          "location": "Unknown",
+          "viewing_direction": "Unknown",
+          "site_association": "V28-17",
+          "association_basis": "Exact supplied filename prefix; not surveyed camera coordinates",
+          "received_at": "2026-10-08",
+          "source": "Nasser-supplied site media archive",
+          "sha256": "a73daf0092bb05293097d06f26c0771f8ac3b4ae8bd29a11d2ce6c8de3d89bbe"
+        },
+        {
+          "src": "assets/site-photos/V28-17-02.jpeg",
+          "original_filename": "V28-17-02.jpeg",
+          "caption": "Tree and fence beside the path, with a road, vehicles and palms beyond. This view does not establish parking use or pedestrian counts.",
+          "caption_author": "Codex visual inspection, 2026-10-08; descriptive view only",
+          "observer": "Unknown",
+          "captured_at": "Unknown",
+          "location": "Unknown",
+          "viewing_direction": "Unknown",
+          "site_association": "V28-17",
+          "association_basis": "Exact supplied filename prefix; not surveyed camera coordinates",
+          "received_at": "2026-10-08",
+          "source": "Nasser-supplied site media archive",
+          "sha256": "bd54a348ceb3542e1dd09deafe4136e658f4a81396bef4b8bd248319fb80c57f"
+        },
+        {
+          "src": "assets/site-photos/V28-17-03.jpeg",
+          "original_filename": "V28-17-03.jpeg",
+          "caption": "Curved marked path with trees, lights and a fence beside the stadium area. Precise camera position and route connections are unknown.",
+          "caption_author": "Codex visual inspection, 2026-10-08; descriptive view only",
+          "observer": "Unknown",
+          "captured_at": "Unknown",
+          "location": "Unknown",
+          "viewing_direction": "Unknown",
+          "site_association": "V28-17",
+          "association_basis": "Exact supplied filename prefix; not surveyed camera coordinates",
+          "received_at": "2026-10-08",
+          "source": "Nasser-supplied site media archive",
+          "sha256": "17539382657b1494047f34931e6134bbe15784d0abe11e8d6c9af221bb129e71"
+        },
+        {
+          "src": "assets/site-photos/V28-17-04.jpeg",
+          "original_filename": "V28-17-04.jpeg",
+          "caption": "Al Bayt Stadium visible beyond paved parking and sandy ground, with foreground trees. Event-day use and shade coverage are not established.",
+          "caption_author": "Codex visual inspection, 2026-10-08; descriptive view only",
+          "observer": "Unknown",
+          "captured_at": "Unknown",
+          "location": "Unknown",
+          "viewing_direction": "Unknown",
+          "site_association": "V28-17",
+          "association_basis": "Exact supplied filename prefix; not surveyed camera coordinates",
+          "received_at": "2026-10-08",
+          "source": "Nasser-supplied site media archive",
+          "sha256": "4dca2c243cd92bd052f8e67c04f31dc35e53eec7626fd57afa4a036d347a0d54"
+        }
+      ],
+      "photo_status": "Received 4 photographs; capture date/time Unknown; detailed assessment pending",
       "geometry_status": "Cell centre only; precise site or route geometry remains unverified",
       "unknowns": [
         "User counts and use times",
         "Detailed shade across use times",
         "Ownership, permissions, cost and feasibility"
       ],
-      "visit_confirmation_status": "Confirmed by Nasser for the original reviewed sites; exact visit dates unspecified"
+      "visit_confirmation_status": "Confirmed by Nasser for the original reviewed sites; exact visit dates unspecified",
+      "videos": []
     },
     {
       "cell_id": "V04-24",
@@ -144,14 +283,15 @@
         "scope": "Physical site description; not measured temperature, NDVI, all-day shade, passenger counts, ownership or expansion plans."
       },
       "photos": [],
-      "photo_status": "Evidence pending; photographs not received",
+      "photo_status": "Evidence pending; photographs and videos not received",
       "geometry_status": "Cell centre only; precise site or route geometry remains unverified",
       "unknowns": [
         "User counts and use times",
         "Detailed shade across use times",
         "Ownership, permissions, cost and feasibility"
       ],
-      "visit_confirmation_status": "Confirmed by Nasser for the original reviewed sites; exact visit dates unspecified"
+      "visit_confirmation_status": "Confirmed by Nasser for the original reviewed sites; exact visit dates unspecified",
+      "videos": []
     },
     {
       "cell_id": "V18-26",
@@ -165,7 +305,7 @@
         -2100,
         -240
       ],
-      "observation": "Abdulrahman identifies a jogging route, with a restaurant, laundry and supermarket across the road. He reports sand and mangroves on the right side of the path and says nearby mangroves do not shade the path. Viewing direction, route geometry, business locations, observation dates and photographs are not supplied. These are qualitative reports, not measured use or all-day shade.",
+      "observation": "Abdulrahman identifies a jogging route, with a restaurant, laundry and supermarket across the road. He reports sand and mangroves on the right side of the path and says nearby mangroves do not shade the path. Two photographs and one video were subsequently received with V18-26 filenames. Capture dates/times, viewing bearing, full route geometry and business coordinates remain Unknown or unverified. These are qualitative reports, not measured use or all-day shade.",
       "usage_pattern": "Jogging use reported; counts, duration and use times unknown.",
       "shade": "Abdulrahman reports no shade on the path from nearby mangroves; dated photographs and detailed shade measurements pending.",
       "walking_access": "Route geometry, rest points, crossings and access safety unverified.",
@@ -175,7 +315,7 @@
       "recorded_date": "2026-10-07",
       "observation_date": null,
       "evidence_type": "User-supplied attributed local report; dated evidence pending",
-      "field_status": "reported; detailed assessment and photographs pending",
+      "field_status": "reported; two photographs and one video received; capture date/time Unknown; detailed assessment pending",
       "visit_confirmation_status": "Separate visit confirmation for this added location is not recorded",
       "geometry_status": "Supplied reference point verified inside V18-26; it does not define the full route",
       "reference_point": {
@@ -185,18 +325,66 @@
         "source": "User-supplied brief; shortened link not independently resolved",
         "coordinate_status": "Point-in-cell geometry checked; route extent unknown"
       },
-      "photos": [],
-      "photo_status": "Evidence pending; photographs not received",
+      "photos": [
+        {
+          "src": "assets/site-photos/V18-26-01.jpeg",
+          "original_filename": "V18-26-01.jpeg",
+          "caption": "Marked paved path beside a road and sandy open ground, with buildings, boats and vegetation in the background. Exact route extent and plant species are unverified.",
+          "caption_author": "Codex visual inspection, 2026-10-08; descriptive view only",
+          "observer": "Unknown",
+          "captured_at": "Unknown",
+          "location": "Unknown",
+          "viewing_direction": "Unknown",
+          "site_association": "V18-26",
+          "association_basis": "Exact supplied filename prefix; not surveyed camera coordinates",
+          "received_at": "2026-10-08",
+          "source": "Nasser-supplied site media archive",
+          "sha256": "727e8d1713622991d65511d2f77cc085638302434b5cba8f36d0a8da299404e6"
+        },
+        {
+          "src": "assets/site-photos/V18-26-02.jpeg",
+          "original_filename": "V18-26-02.jpeg",
+          "caption": "View along the marked path with sandy ground on one side and a road and buildings on the other. Palms are visible farther along; all-day path shade is unmeasured.",
+          "caption_author": "Codex visual inspection, 2026-10-08; descriptive view only",
+          "observer": "Unknown",
+          "captured_at": "Unknown",
+          "location": "Unknown",
+          "viewing_direction": "Unknown",
+          "site_association": "V18-26",
+          "association_basis": "Exact supplied filename prefix; not surveyed camera coordinates",
+          "received_at": "2026-10-08",
+          "source": "Nasser-supplied site media archive",
+          "sha256": "66c73a4319ec8636bee9c1f967bb32f54bbb7ecb128a9a83b188adf23f976e51"
+        }
+      ],
+      "photo_status": "Received 2 photographs and 1 video; capture date/time Unknown; detailed assessment pending",
       "unknowns": [
         "route geometry",
         "restaurant/laundry/supermarket coordinates",
         "current mangrove geometry",
-        "photos and capture dates/times",
+        "Capture dates/times, photographer and precise camera coordinates",
         "use counts/times",
         "detailed shade",
         "ownership/access/permissions/cost/feasibility"
       ],
-      "satellite_summary_note": "47.47\u00b0C mean of date-level cell medians; mean green share 0.0386%; 72% retained coverage; rank 275/373, scenario range 203\u2013336. Low greenery does not establish the locations of nearby trees or why the signal is low."
+      "satellite_summary_note": "47.47\u00b0C mean of date-level cell medians; mean green share 0.0386%; 72% retained coverage; rank 275/373, scenario range 203\u2013336. Low greenery does not establish the locations of nearby trees or why the signal is low.",
+      "videos": [
+        {
+          "src": "assets/site-photos/V18-26-03.mp4",
+          "original_filename": "V18-26-03.mp4",
+          "caption": "Short pan from a marked path across sandy ground, scattered vegetation and boats, returning to the path and road. This does not verify mangrove boundaries, use counts or capture time.",
+          "caption_author": "Codex visual inspection, 2026-10-08; descriptive view only",
+          "observer": "Unknown",
+          "captured_at": "Unknown",
+          "location": "Unknown",
+          "viewing_direction": "Unknown",
+          "site_association": "V18-26",
+          "association_basis": "Exact supplied filename prefix; not surveyed camera coordinates",
+          "received_at": "2026-10-08",
+          "source": "Nasser-supplied site media archive",
+          "sha256": "c918dd7f638d6b400ecc7f5df44ef3137fd5ede5c03c18415c6ebdcc296dc197"
+        }
+      ]
     },
     {
       "cell_id": "V24-07",
@@ -224,13 +412,14 @@
       "visit_confirmation_status": "Separate visit confirmation for this added location is not recorded",
       "geometry_status": "Cell-level reference only; exact empty-land and bus-hub positions pending",
       "photos": [],
-      "photo_status": "Evidence pending; photographs not received",
+      "photo_status": "Evidence pending; photographs and videos not received",
       "unknowns": [
         "Exact site and bus-hub coordinates",
         "Observation date/time and photos",
         "Use counts and use at other times",
         "Shade, ownership, permissions and feasibility"
-      ]
+      ],
+      "videos": []
     }
   ],
   "presentation_examples": [
@@ -242,5 +431,7 @@
     "V04-23",
     "V28-17",
     "V04-24"
-  ]
+  ],
+  "media_receipt_date": "2026-10-08",
+  "media_scope": "Filename-based site association only; capture date/time, photographer, viewing bearing and precise camera coordinates Unknown. No measured use, shade, historical classification validation or ranking update."
 }

@@ -5,7 +5,7 @@ Responsibilities corrected at Nasser's request on 7 October 2026; original assig
 | Member | Responsibility | Concrete deliverable | Status |
 |---|---|---|---|
 | Nasser Alhuri | Team coordination and submission | Coordinate the team, consolidate checks and approve the final submission | Site visits confirmed by Nasser; coordination/final approval pending |
-| Abdulrahman Almohannadi | Review the project and collect photographs/local observations | Review the boundary, case interpretations and limitations; supply actual dated photographs, locations and observations | Attributed reports recorded; project review, photographs and detailed assessment pending |
+| Abdulrahman Almohannadi | Review the project and collect photographs/local observations | Review the boundary, case interpretations and limitations; supply actual dated photographs, locations and observations | Attributed reports recorded; Nasser supplied 11 photographs and one video across three sites; capture metadata, remaining-site media, project review and detailed assessment pending; member completion not confirmed |
 | Mohammed Almarri | Practise the presentation | Rehearse the English pitch, timing, project explanation and judge answers | Pending; no rehearsal confirmed |
 | Majed Alkuwari | Review slides and explain the limitations | Check the slides against the README and practise explaining scientific limitations | Pending |
 | Ali Alkubaisi | Demonstrate the project and prepare judge questions | Rehearse the portable map demonstration and prepare likely judge questions with answers | Pending |
@@ -22,4 +22,4 @@ Local observations supplied by Abdulrahman are recorded in Local-Review.md. Nass
 
 Do not mark reviews complete or credit contributions until the corresponding member actually performs and confirms them. All five platform registrations were observed as Signed in; this does not verify nationality eligibility or scientific review.
 
-The added V18-26 and V24-07 observations are attributed reports from the improvement brief. No separate visit confirmation, photographs or observation dates/times were supplied for them. Prepared scripts and automated checks do not complete Mohammed's rehearsal or Abdulrahman's project review/photo collection. SamGeo and additional models remain deferred.
+The added V18-26 and V24-07 observations are attributed reports from the improvement brief. No separate visit confirmation or observation dates/times were supplied for them. On 8 October Nasser supplied two V18-26 photographs and one video; V24-07 media remain pending. Their receipt does not confirm Abdulrahman completed his assigned work. Prepared scripts and automated checks do not complete Mohammed's rehearsal or Abdulrahman's project review/photo collection. SamGeo and additional models remain deferred.

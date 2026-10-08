@@ -7,9 +7,14 @@ const reviewFor=id=>localReview.cells.find(c=>c.cell_id===id);
 const reviewPhotoSource=src=>src;
 function photoGallery(review){
  const photos=Array.isArray(review.photos)?review.photos:[];
- const received=photos.filter(p=>p && typeof p.src==='string' && /^assets\/site-photos\/[a-zA-Z0-9_/-]+\.(?:jpe?g|png|webp)$/.test(p.src));
- if(!received.length)return '<section class="photo-gallery"><h4>Photographs and dated evidence</h4><p class="evidence-pending">Evidence pending — photographs not received. Capture date/time, location and captions will be recorded when supplied.</p></section>';
- return '<section class="photo-gallery"><h4>Photographs and dated evidence</h4>'+received.map(p=>`<figure><a href="${escapeHtml(reviewPhotoSource(p.src))}" target="_blank" rel="noopener"><img src="${escapeHtml(reviewPhotoSource(p.src))}" alt="${escapeHtml(p.caption||'Site photograph; caption unknown')}" loading="lazy"></a><figcaption>${escapeHtml(p.caption||'Caption unknown')}<br>Observer: ${escapeHtml(p.observer||'Unknown')}. Capture: ${escapeHtml(p.captured_at||'Unknown')}. Location: ${escapeHtml(p.location||'Unknown')}. Evidence: supplied photograph; broader conditions remain unmeasured.</figcaption></figure>`).join('')+'</section>';
+ const videos=Array.isArray(review.videos)?review.videos:[];
+ const received=[...photos.filter(p=>p && typeof p.src==='string' && /^assets\/site-photos\/[a-zA-Z0-9_-]+\.(?:jpe?g|png|webp)$/.test(p.src)).map(p=>({...p,kind:'photograph'})),...videos.filter(p=>p && typeof p.src==='string' && /^assets\/site-photos\/[a-zA-Z0-9_-]+\.(?:mp4|webm)$/.test(p.src)).map(p=>({...p,kind:'video'}))];
+ if(!received.length)return '<section class="photo-gallery"><h4>Site evidence gallery</h4><p class="evidence-pending">Evidence pending — photographs and videos not received. Capture date/time and precise location remain Unknown.</p></section>';
+ return '<section class="photo-gallery"><h4>Site evidence gallery</h4><p class="cell-note">'+escapeHtml(review.photo_status)+' Site association follows supplied filenames; precise camera locations, capture dates/times and photographer remain Unknown. These views do not measure use or shade through the day.</p>'+received.map(p=>{
+  const src=escapeHtml(reviewPhotoSource(p.src)),caption=escapeHtml(p.caption||'Caption unknown');
+  const media=p.kind==='video'?`<video src="${src}" controls playsinline preload="metadata" aria-label="${caption}">Video playback is unavailable. Use the original-file link below.</video><a href="${src}" download="${escapeHtml(p.original_filename||'site-video.mp4')}">Download original video</a>`:`<a href="${src}" download="${escapeHtml(p.original_filename||'site-photograph.jpg')}"><img src="${src}" alt="${caption}" loading="lazy"></a>`;
+  return `<figure>${media}<figcaption><strong>${escapeHtml(p.original_filename||'Filename unknown')}</strong><br>${caption}<br>Photographer: ${escapeHtml(p.observer||'Unknown')}. Capture: ${escapeHtml(p.captured_at||'Unknown')}. Location: ${escapeHtml(p.location||'Unknown')}. Viewing direction: ${escapeHtml(p.viewing_direction||'Unknown')}. Evidence: supplied ${p.kind}; broader conditions remain unmeasured.</figcaption></figure>`;
+ }).join('')+'</section>';
 }
 function localDetails(cell){
  const review=reviewFor(cell.id);if(!review)return '';
@@ -92,7 +97,7 @@ $('focus-selection').addEventListener('click',()=>{if(!state.cell||!data)return;
 function renderComparison(){
  const body=$('comparison-body');body.replaceChildren();
  for(const review of localReview.cells){const cell=data.cells.find(c=>c.id===review.cell_id);if(!cell)continue;const row=document.createElement('tr');const values=[review.name,cell.id,cell.values[state.date].temperature.toFixed(1)+' °C',((cell.values[state.date].greenery>0&&cell.values[state.date].greenery<0.1)?cell.values[state.date].greenery.toFixed(4):cell.values[state.date].greenery.toFixed(1))+'%',`Rank ${cell.planning.scenario_best_rank}–${cell.planning.scenario_worst_rank}`,review.usage_pattern,review.next_check];for(const value of values){const td=document.createElement('td');td.textContent=value;row.append(td);}body.append(row);}
- $('comparison-date').textContent=`Satellite values for ${state.date}; local reports recorded 6 and 7 October 2026. Nasser confirmed visits to the original three sites; added-location visit confirmation and dated photographs are pending.`;
+ $('comparison-date').textContent=`Satellite values for ${state.date}; local reports recorded 6 and 7 October 2026. Site media received 8 October: 11 photographs and one video across V04-23, V28-17 and V18-26. Capture dates/times are Unknown. Nasser confirmed visits to the original three sites; added-location visit confirmation remains pending.`;
 }
 $('comparison-toggle').addEventListener('click',()=>{const panel=$('comparison');panel.hidden=!panel.hidden;$('comparison-toggle').setAttribute('aria-expanded',String(!panel.hidden));if(!panel.hidden)renderComparison();});
 function reviewCsv(){

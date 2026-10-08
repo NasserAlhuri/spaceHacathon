@@ -42,8 +42,9 @@ Presentation PDF: at most 50 MB. Optional ZIP: at most 200 MB. The portable map 
 - [x] Actual artifact 11431542823 retrieved and verified; executed notebook and reports saved.
 - [x] Both backup branches preserved unchanged.
 - [x] Current public repository meets the organizer's supplied access instruction; no collaborator invitations needed.
-- [x] Latest retained Chromium HTTP checks (29 groups per desktop/mobile profile) and offline preview pass. Exact current app/preview bytes are unchanged; results/dynamic-world-paired-review-verification.json is the latest matching evidence. Earlier browser/gallery reports remain historical.
-- [ ] Physical-device/member acceptance, Mohammed's presentation practice and Abdulrahman's project review/photo collection.
+- [x] Latest gallery revision: real Chromium HTTP and offline desktop/mobile checks of all received media and existing map controls. Current evidence is results/site-media-verification-2026-10-08.json; previous browser/gallery reports remain historical.
+- [x] Receive and inspect 11 photographs and one video; map exact filename IDs to three site galleries and embed originals in the standalone preview. Capture date/time remains Unknown; V04-24 and V24-07 media remain pending.
+- [ ] Physical-device/member acceptance, Mohammed's presentation practice and Abdulrahman's project review, capture metadata and remaining photo collection; member completion not confirmed.
 - [x] Nasser completed authorized Code Editor setup, execution and export; five actual CSVs and primary transition TIFF match supplied hashes.
 - [x] Reassemble six supplied parts and verify both exact annual TIFFs; all eight export hashes and actual finite-band/probability/grid/transition checks passed.
 - [x] Receive and verify both unique dated 2021 RGB/QA60 references and original provenance; byte-identical duplicate ignored. See metadata/dynamic-world-reference-manifest.json and results/dynamic-world-reference-verification.json.

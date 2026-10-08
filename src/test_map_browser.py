@@ -10,6 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
+from check_site_media import check_site_media
 
 
 def main():
@@ -35,13 +36,19 @@ def main():
             browser = playwright.chromium.launch(executable_path=args.chromium, headless=True, args=['--no-sandbox', '--disable-dev-shm-usage'])
             result['browser'] = {'engine': 'Chromium', 'version': browser.version}
             for name, viewport in [('desktop', {'width': 1440, 'height': 900}), ('mobile', {'width': 390, 'height': 844})]:
-                profile = {'name': name, 'viewport': viewport, 'touch_emulation': name == 'mobile', 'checks': [], 'page_errors': [], 'console_errors': [], 'failed_requests': [], 'http_errors': []}
+                profile = {'name': name, 'viewport': viewport, 'touch_emulation': name == 'mobile', 'checks': [], 'page_errors': [], 'console_errors': [], 'failed_requests': [], 'media_request_cancellations': [], 'http_errors': []}
                 result['profiles'].append(profile)
                 context = browser.new_context(viewport=viewport, is_mobile=name == 'mobile', has_touch=name == 'mobile', device_scale_factor=1, accept_downloads=True)
                 page = context.new_page()
                 page.on('pageerror', lambda e, r=profile: r['page_errors'].append(str(e)))
                 page.on('console', lambda m, r=profile: r['console_errors'].append(m.text) if m.type == 'error' else None)
-                page.on('requestfailed', lambda q, r=profile: r['failed_requests'].append({'url': q.url, 'failure': q.failure}))
+                # Chromium cancels metadata preload when selecting another cell removes a video.
+                # Keep these visible separately; actual video decoding/playback must still pass.
+                def request_failed(request, record=profile):
+                    cancelled = request.failure == 'net::ERR_ABORTED' and request.url.endswith('/V18-26-03.mp4')
+                    record['media_request_cancellations' if cancelled else 'failed_requests'].append(
+                        {'url': request.url, 'failure': request.failure})
+                page.on('requestfailed', request_failed)
                 page.on('response', lambda q, r=profile: r['http_errors'].append({'url': q.url, 'status': q.status}) if q.status >= 400 else None)
                 page.set_default_timeout(8000)
 
@@ -89,6 +96,8 @@ def main():
                             'Coverage percentage differs from actual exports')
                     return {'source':'immutable actual CSV', 'primary_gate':'failed', 'scientific_review':'pending'}
                 check('historical experiment matches actual CSV and retains failed gate/Unknown', historical_experiment)
+                check('all received site photographs decode, video plays to end, metadata remains Unknown',
+                      lambda: check_site_media(page, reviews, args.output))
 
                 for date in data['dates']:
                     for layer in ['temperature', 'greenery', 'buildings', 'priority', 'uncertainty']:

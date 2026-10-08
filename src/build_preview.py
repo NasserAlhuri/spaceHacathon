@@ -26,11 +26,14 @@ def build(app, destination):
     image_names = ['assets/satellite.jpg', 'assets/excluded.png']
     image_names += [f'assets/{layer}-{date}.png' for layer in ['temperature', 'greenery', 'buildings', 'priority', 'uncertainty'] for date in data['dates']]
     for cell in review.get('cells', []):
-        for photo in cell.get('photos', []):
-            name = photo.get('src', '')
-            if not re.fullmatch(r'assets/site-photos/[a-zA-Z0-9_/-]+\.(?:jpe?g|png|webp)', name):
-                raise ValueError(f'Unsafe site-photo path: {name}')
-            image_names.append(name)
+        for kind, suffix in [('photos', r'jpe?g|png|webp'), ('videos', r'mp4|webm')]:
+            for media in cell.get(kind, []):
+                name = media.get('src', '')
+                if not re.fullmatch(r'assets/site-photos/[a-zA-Z0-9_-]+\.(' + suffix + ')', name):
+                    raise ValueError(f'Unsafe site-media path: {name}')
+                if app.resolve() not in (app / name).resolve().parents:
+                    raise ValueError(f'Site-media path escapes app: {name}')
+                image_names.append(name)
     image_names = list(dict.fromkeys(image_names))
     images = {}
     for name in image_names:
@@ -52,7 +55,7 @@ def build(app, destination):
     html = replace_once(html, '<script src="app.js"></script>', scripts)
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(html)
-    return {'output': str(destination), 'bytes': destination.stat().st_size, 'sha256': hashlib.sha256(destination.read_bytes()).hexdigest(), 'embedded_images': len(images), 'cells': len(data['cells']), 'dates': data['dates']}
+    return {'output': str(destination), 'bytes': destination.stat().st_size, 'sha256': hashlib.sha256(destination.read_bytes()).hexdigest(), 'embedded_images': sum(src.startswith('data:image/') for src in images.values()), 'embedded_videos': sum(src.startswith('data:video/') for src in images.values()), 'cells': len(data['cells']), 'dates': data['dates']}
 
 
 if __name__ == '__main__':
