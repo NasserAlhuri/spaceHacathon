@@ -44,7 +44,10 @@ def build(root, output, source_commit):
     output.mkdir(parents=True, exist_ok=True)
     copies = ['docs/UrbanHeat-AlKhor-Pitch.pdf', 'docs/UrbanHeat-AlKhor-Pitch.pptx',
               'preview/UrbanHeat-AlKhor-Preview.html', 'docs/Three-Minute-Presentation.md',
-              'docs/Judge-Questions.md', 'PROJECT_STATE.md']
+              'docs/Judge-Questions.md', 'PROJECT_STATE.md',
+              'docs/Live-Pitch-Up-to-Ten-Minutes.md', 'docs/Five-Minute-Judge-QA.md',
+              'docs/Live-Demo-Runbook.md', 'docs/Demo-Fallback-Screenshots.pdf',
+              'docs/Orientation-Requirements-and-Handoff.md']
     for name in copies:
         shutil.copyfile(root / name, output / Path(name).name)
     readme = output / 'DELIVERY-README.md'
@@ -54,7 +57,12 @@ def build(root, output, source_commit):
                       '- [Editable PowerPoint](UrbanHeat-AlKhor-Pitch.pptx)\n'
                       '- [Full project ZIP](UrbanHeat-AlKhor-Project.zip)\n'
                       '- [Standalone map](UrbanHeat-AlKhor-Preview.html): open with Chrome or Edge.\n'
-                      '- [Three-minute English script](Three-Minute-Presentation.md)\n'
+                      '- [Live pitch up to ten minutes](Live-Pitch-Up-to-Ten-Minutes.md)\n'
+                      '- [Separate five-minute Q&A](Five-Minute-Judge-QA.md)\n'
+                      '- [Offline demo runbook](Live-Demo-Runbook.md)\n'
+                      '- [Real screenshot fallback](Demo-Fallback-Screenshots.pdf)\n'
+                      '- [Orientation requirements](Orientation-Requirements-and-Handoff.md)\n'
+                      '- [Optional three-minute overview](Three-Minute-Presentation.md)\n'
                       '- [Judge questions](Judge-Questions.md)\n'
                       '- [Project state](PROJECT_STATE.md)\n'
                       '- [Verification report](DELIVERY-VERIFICATION.json)\n'
@@ -155,19 +163,42 @@ def build(root, output, source_commit):
     if field_photos.exists():
         current = json.loads(field_photos.read_text())
         assert current['pdf_pages'] == current['pptx_slides'] == 12
-        for name, expected in current['files'].items():
-            assert digest((root / name).read_bytes()) == expected['sha256'], name
-        report['current_field_photo_presentation'] = current
+        if not (root / 'results/orientation-revision-verification-2026-10-09.json').exists():
+            for name, expected in current['files'].items():
+                assert digest((root / name).read_bytes()) == expected['sha256'], name
+        report['historical_field_photo_presentation'] = current
         with readme.open('a') as handle:
             handle.write('\nCurrent slide 6 shows one original photograph per presentation example '
                          'with the confirmed common date/window and explicit Nasser/not-EXIF provenance. '
                          'Both formats retain twelve slides/pages; the result table is unchanged. '
                          f"The spoken script contains {current['script_timing']['word_count']} words; "
-                         'actual rehearsal and member acceptance remain pending. Current presentation '
+                         'actual rehearsal and member acceptance remain pending. Earlier photo-insertion '
                          'evidence: results/field-photo-slides-verification-2026-10-08.json and '
                          'docs/Field-Photo-Slides-2026-10-08.md. Native desktop PowerPoint was not '
                          'available; PDF visual and PPTX structural checks do not certify its rendering. '
                          'Previous presentation/script hashes are historical.\n')
+        checksums[readme.name] = {'bytes': readme.stat().st_size, 'sha256': digest(readme.read_bytes())}
+    orientation = root / 'results/orientation-revision-verification-2026-10-09.json'
+    if orientation.exists():
+        current = json.loads(orientation.read_text())
+        assert current['pdf_pages'] == current['pptx_slides'] == 12
+        for name, expected in current['files'].items():
+            assert digest((root / name).read_bytes()) == expected['sha256'], name
+        report['current_orientation_presentation'] = current
+        with readme.open('a') as handle:
+            handle.write('\nCurrent delivery prepares a shortlisted pitch up to ten minutes, followed '
+                         'by five-minute Q&A according to the supplied orientation review. The '
+                         '8:20 target and 75-second offline demo are team preparation choices. '
+                         'The live script has 895 spoken words including demo narration; the '
+                         '394-word compact overview remains optional. Real offline screenshots '
+                         'provide a fallback. No actual invitation, slot or member rehearsal is '
+                         'confirmed. The internal 10 October preparation target does not resolve '
+                         'conflicting reported organizer cutoffs. Existing data/ranks/media and '
+                         'both backups remain unchanged. Current evidence is '
+                         'results/orientation-revision-verification-2026-10-09.json; prior '
+                         'presentation/script hashes are historical. Native PowerPoint rendering '
+                         'and live-account final requirements remain unverified. No submission '
+                         'or organizer contact performed.\n')
         checksums[readme.name] = {'bytes': readme.stat().st_size, 'sha256': digest(readme.read_bytes())}
     (output / 'DELIVERY-VERIFICATION.json').write_text(json.dumps(report, indent=2) + '\n')
     (output / 'SHA256SUMS.json').write_text(json.dumps(checksums, indent=2) + '\n')

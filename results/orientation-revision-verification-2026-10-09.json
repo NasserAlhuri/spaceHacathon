@@ -1,0 +1,788 @@
+{
+  "checked_at_utc": "2026-10-08T22:22:47.513985+00:00",
+  "user_facing_date": "2026-10-09",
+  "user_facing_timezone": "Asia/Qatar",
+  "status": "orientation_revision_artifact_checks_passed_actual_member_rehearsal_and_native_powerpoint_pending",
+  "baseline_public_commit": "8abc67fd2027d6480aac93dbeba690c57620ee0e",
+  "baseline_public_files": 260,
+  "supplied_review_bytes_preserved": true,
+  "supplied_review_sha256": "a8694ead2f3756891644d72558fd01300b424242441a169f76a331114542e835",
+  "underlying_transcript_recordings_live_guide_independently_checked": false,
+  "pdf_pages": 12,
+  "pptx_slides": 12,
+  "changed_slide_text_parts": [
+    2,
+    3,
+    4,
+    10,
+    11
+  ],
+  "text_nodes_changed": 8,
+  "pptx_non_text_xml_geometry_fonts_theme_media_unrelated_parts": "exact",
+  "slide_6_photos_captions_provenance_and_slide_8_table_xml": "exact unchanged",
+  "photographs": [
+    {
+      "case": "V04-23 | Bus-stop road",
+      "filename": "V04-23-01.jpeg",
+      "sha256": "a1bd817f71f26ae70e79dc787cf0ec1a37e2488b41dda6829b561cc9ce608c1d",
+      "pptx_original_bytes": true,
+      "pdf_original_bytes": true
+    },
+    {
+      "case": "V28-17 | Stadium parking",
+      "filename": "V28-17-04.jpeg",
+      "sha256": "4dca2c243cd92bd052f8e67c04f31dc35e53eec7626fd57afa4a036d347a0d54",
+      "pptx_original_bytes": true,
+      "pdf_original_bytes": true
+    },
+    {
+      "case": "V18-26 | Jogging route",
+      "filename": "V18-26-02.jpeg",
+      "sha256": "66c73a4319ec8636bee9c1f967bb32f54bbb7ecb128a9a83b188adf23f976e51",
+      "pptx_original_bytes": true,
+      "pdf_original_bytes": true
+    }
+  ],
+  "pdf_pptx_text_matches": 98,
+  "pdf_text_span_boundary_checks": 128,
+  "pdf_pixel_checks": [
+    {
+      "slide": 1,
+      "unchanged_rendered_pixels": "identical"
+    },
+    {
+      "slide": 2,
+      "pixels_outside_reviewed_regions": "identical"
+    },
+    {
+      "slide": 3,
+      "pixels_outside_reviewed_regions": "identical"
+    },
+    {
+      "slide": 4,
+      "pixels_outside_reviewed_regions": "identical"
+    },
+    {
+      "slide": 5,
+      "unchanged_rendered_pixels": "identical"
+    },
+    {
+      "slide": 6,
+      "unchanged_rendered_pixels": "identical"
+    },
+    {
+      "slide": 7,
+      "unchanged_rendered_pixels": "identical"
+    },
+    {
+      "slide": 8,
+      "unchanged_rendered_pixels": "identical"
+    },
+    {
+      "slide": 9,
+      "unchanged_rendered_pixels": "identical"
+    },
+    {
+      "slide": 10,
+      "pixels_outside_reviewed_regions": "identical"
+    },
+    {
+      "slide": 11,
+      "pixels_outside_reviewed_regions": "identical"
+    },
+    {
+      "slide": 12,
+      "unchanged_rendered_pixels": "identical"
+    }
+  ],
+  "visual_review": "Revised PDF slides 2/3/4/10/11 and retained photo slide 6 inspected at presentation scale; no obvious clipping/overlap. Real screenshot fallback inspected separately.",
+  "native_desktop_powerpoint_opened": false,
+  "native_render_limit": "PowerPoint/LibreOffice unavailable; PPTX structural and PDF visual checks do not certify actual-computer font/render acceptance.",
+  "pdf_method": "Retain original pages; targeted existing Noto Sans regular-size/colour/baseline text replacement. No native PowerPoint export claim.",
+  "live_pitch_timing": {
+    "date": "2026-10-09",
+    "timezone": "Asia/Qatar",
+    "word_count": 895,
+    "non_demo_words": 821,
+    "demo_words": 74,
+    "assumed_words_per_minute": 135,
+    "estimated_non_demo_speech_seconds": 364.89,
+    "demo_budget_seconds": 75,
+    "estimated_demo_speech_within_demo_seconds": 32.89,
+    "planned_total_seconds": 500,
+    "planning_pause_transition_margin_seconds": 60.11,
+    "organizer_reported_pitch_max_seconds": 600,
+    "separate_question_budget_seconds": 300,
+    "actual_pitch_rehearsal_seconds": null,
+    "actual_qa_rehearsal_seconds": null,
+    "actual_member_demo_rehearsal": null,
+    "status": "Preparation estimates only; member timed rehearsal pending",
+    "sections": [
+      {
+        "slide": 1,
+        "start_seconds": 0,
+        "end_seconds": 20,
+        "non_demo_spoken_words": 38,
+        "estimated_non_demo_speech_seconds": 16.89
+      },
+      {
+        "slide": 2,
+        "start_seconds": 20,
+        "end_seconds": 65,
+        "non_demo_spoken_words": 91,
+        "estimated_non_demo_speech_seconds": 40.44
+      },
+      {
+        "slide": 3,
+        "start_seconds": 65,
+        "end_seconds": 110,
+        "non_demo_spoken_words": 89,
+        "estimated_non_demo_speech_seconds": 39.56
+      },
+      {
+        "slide": 4,
+        "start_seconds": 110,
+        "end_seconds": 165,
+        "non_demo_spoken_words": 100,
+        "estimated_non_demo_speech_seconds": 44.44
+      },
+      {
+        "slide": 5,
+        "start_seconds": 165,
+        "end_seconds": 205,
+        "non_demo_spoken_words": 83,
+        "estimated_non_demo_speech_seconds": 36.89
+      },
+      {
+        "slide": 6,
+        "start_seconds": 205,
+        "end_seconds": 250,
+        "non_demo_spoken_words": 89,
+        "estimated_non_demo_speech_seconds": 39.56
+      },
+      {
+        "slide": 7,
+        "start_seconds": 250,
+        "end_seconds": 275,
+        "non_demo_spoken_words": 42,
+        "estimated_non_demo_speech_seconds": 18.67
+      },
+      {
+        "slide": 8,
+        "start_seconds": 275,
+        "end_seconds": 375,
+        "non_demo_spoken_words": 35,
+        "estimated_non_demo_speech_seconds": 15.56
+      },
+      {
+        "slide": 9,
+        "start_seconds": 375,
+        "end_seconds": 420,
+        "non_demo_spoken_words": 95,
+        "estimated_non_demo_speech_seconds": 42.22
+      },
+      {
+        "slide": 10,
+        "start_seconds": 420,
+        "end_seconds": 465,
+        "non_demo_spoken_words": 90,
+        "estimated_non_demo_speech_seconds": 40.0
+      },
+      {
+        "slide": 11,
+        "start_seconds": 465,
+        "end_seconds": 485,
+        "non_demo_spoken_words": 42,
+        "estimated_non_demo_speech_seconds": 18.67
+      },
+      {
+        "slide": 12,
+        "start_seconds": 485,
+        "end_seconds": 500,
+        "non_demo_spoken_words": 27,
+        "estimated_non_demo_speech_seconds": 12.0
+      }
+    ]
+  },
+  "compact_spoken_words": 394,
+  "compact_spoken_text_changed": false,
+  "qa_mock_budget_seconds": 300,
+  "qa_prepared_rounds": 6,
+  "demo_capture": {
+    "method": "Real Chromium offline, exact unchanged standalone HTML via set_content; two unmodified UI screenshots",
+    "browser_version": "151.0.7922.173",
+    "map_viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "gallery_viewport": {
+      "width": 700,
+      "height": 900
+    },
+    "scope": "Limited preparation capture: select all three cases, switch dates/layers, decode first gallery, open comparison; not a full regression or member rehearsal",
+    "page_errors": [],
+    "offline": true,
+    "source_preview_sha256": "73bc8f8b9f4a2cf0e48e9ae3636226fdafd56b87ca1d880502370ca2d466e9b7",
+    "instrumentation_limit": "Initial all-image wait timed out because offscreen photographs are lazy-loaded; corrected to scroll/decode the actual captured first photograph. Not a complete gallery regression.",
+    "screenshots": {
+      "demo-map.jpg": {
+        "bytes": 120214,
+        "sha256": "3f6948d3f829d9b353fd8bbfd2ade354912e86f744f4787a3d4f9fcdf831a25c"
+      },
+      "demo-gallery.jpg": {
+        "bytes": 71782,
+        "sha256": "6140cc062160bdfe88c60568e30c1e4894f5532e194f6281c099bde9fa61c3d4"
+      }
+    },
+    "fallback_pdf": {
+      "bytes": 471832,
+      "sha256": "47d70ac2b8a19375836fdb556f7d22a449b9c1f368d5565ba4e9f1e1f89737e2"
+    },
+    "original_app_preview_media_modified": false,
+    "native_devices_member_acceptance": "pending"
+  },
+  "full_browser_regression_rerun": false,
+  "existing_browser_proof": "results/site-media-capture-verification-2026-10-08.json matches exact unchanged app/preview",
+  "relative_links_checked": [
+    {
+      "file": "README.md",
+      "target": "PROJECT_STATE.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "pilot.ipynb",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "requirements.txt",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "data/sample_input/",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "results/",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/UrbanHeat-AlKhor-Pitch.pdf",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/UrbanHeat-AlKhor-Pitch.pptx",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "preview/UrbanHeat-AlKhor-Preview.html",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/Live-Demo-Runbook.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/Live-Pitch-Up-to-Ten-Minutes.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/Five-Minute-Judge-QA.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/Three-Minute-Presentation.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/Delivery-Guide.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/Orientation-Requirements-and-Handoff.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/Delivery-Guide.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "preview/UrbanHeat-AlKhor-Preview.html",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/Preview-Guide.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "results/planning-map.png",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "results/multidate-temperature.png",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/Browser-Review.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/Dynamic-World-Paired-Reference-Review.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/Dynamic-World-Assessment.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/Earth-Engine-Access.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "metadata/dynamic-world-export-manifest.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/Site-Evidence-Guide.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/Site-Media-Receipt-2026-10-08.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/Field-Photo-Slides-2026-10-08.md",
+      "exists": true
+    },
+    {
+      "file": "docs/Three-Minute-Presentation.md",
+      "target": "Live-Pitch-Up-to-Ten-Minutes.md",
+      "exists": true
+    },
+    {
+      "file": "docs/Three-Minute-Presentation.md",
+      "target": "Field-Photo-Slides-2026-10-08.md",
+      "exists": true
+    },
+    {
+      "file": "docs/Judge-Questions.md",
+      "target": "Five-Minute-Judge-QA.md",
+      "exists": true
+    },
+    {
+      "file": "docs/Submission-Checklist.md",
+      "target": "Orientation-Requirements-and-Handoff.md",
+      "exists": true
+    },
+    {
+      "file": "docs/Delivery-Guide.md",
+      "target": "UrbanHeat-AlKhor-Pitch.pdf",
+      "exists": true
+    },
+    {
+      "file": "docs/Delivery-Guide.md",
+      "target": "UrbanHeat-AlKhor-Pitch.pptx",
+      "exists": true
+    },
+    {
+      "file": "docs/Delivery-Guide.md",
+      "target": "../preview/UrbanHeat-AlKhor-Preview.html",
+      "exists": true
+    },
+    {
+      "file": "docs/Delivery-Guide.md",
+      "target": "Live-Pitch-Up-to-Ten-Minutes.md",
+      "exists": true
+    },
+    {
+      "file": "docs/Delivery-Guide.md",
+      "target": "Five-Minute-Judge-QA.md",
+      "exists": true
+    },
+    {
+      "file": "docs/Delivery-Guide.md",
+      "target": "Three-Minute-Presentation.md",
+      "exists": true
+    },
+    {
+      "file": "docs/Delivery-Guide.md",
+      "target": "Judge-Questions.md",
+      "exists": true
+    },
+    {
+      "file": "docs/Delivery-Guide.md",
+      "target": "Live-Demo-Runbook.md",
+      "exists": true
+    },
+    {
+      "file": "docs/Delivery-Guide.md",
+      "target": "Demo-Fallback-Screenshots.pdf",
+      "exists": true
+    },
+    {
+      "file": "docs/Delivery-Guide.md",
+      "target": "Orientation-Requirements-and-Handoff.md",
+      "exists": true
+    },
+    {
+      "file": "docs/Delivery-Guide.md",
+      "target": "Earth-Engine-Access.md",
+      "exists": true
+    },
+    {
+      "file": "docs/Delivery-Guide.md",
+      "target": "Site-Evidence-Guide.md",
+      "exists": true
+    },
+    {
+      "file": "docs/Delivery-Guide.md",
+      "target": "Team-Review.md",
+      "exists": true
+    },
+    {
+      "file": "docs/Delivery-Guide.md",
+      "target": "../PROJECT_STATE.md",
+      "exists": true
+    },
+    {
+      "file": "docs/Delivery-Guide.md",
+      "target": "Preview-Guide.md",
+      "exists": true
+    },
+    {
+      "file": "docs/Orientation-Requirements-and-Handoff.md",
+      "target": "Orientation-Requirements-External-Review-2026-10-08.md",
+      "exists": true
+    }
+  ],
+  "protected_prior_public_files": 247,
+  "protected_files": [
+    ".github/workflows/notebook-check.yml",
+    ".gitignore",
+    "DATA-LICENSES.md",
+    "LICENSE",
+    "analysis-config.json",
+    "aoi.geojson",
+    "app/app.js",
+    "app/assets/buildings-2026-09-14.png",
+    "app/assets/buildings-2026-09-30.png",
+    "app/assets/data.json",
+    "app/assets/excluded.png",
+    "app/assets/greenery-2026-09-14.png",
+    "app/assets/greenery-2026-09-30.png",
+    "app/assets/priority-2026-09-14.png",
+    "app/assets/priority-2026-09-30.png",
+    "app/assets/satellite.jpg",
+    "app/assets/site-photos/V04-23-01.jpeg",
+    "app/assets/site-photos/V04-23-02.jpeg",
+    "app/assets/site-photos/V04-23-03.jpeg",
+    "app/assets/site-photos/V04-23-04.jpeg",
+    "app/assets/site-photos/V04-23-05.jpeg",
+    "app/assets/site-photos/V18-26-01.jpeg",
+    "app/assets/site-photos/V18-26-02.jpeg",
+    "app/assets/site-photos/V18-26-03.mp4",
+    "app/assets/site-photos/V28-17-01.jpeg",
+    "app/assets/site-photos/V28-17-02.jpeg",
+    "app/assets/site-photos/V28-17-03.jpeg",
+    "app/assets/site-photos/V28-17-04.jpeg",
+    "app/assets/temperature-2026-09-14.png",
+    "app/assets/temperature-2026-09-30.png",
+    "app/assets/uncertainty-2026-09-14.png",
+    "app/assets/uncertainty-2026-09-30.png",
+    "app/index.html",
+    "app/local-review.json",
+    "app/style.css",
+    "data/dynamic_world/raw/2026-10-07/AlKhor_DW_coverage.csv",
+    "data/dynamic_world/raw/2026-10-07/AlKhor_DW_matched_changes.csv",
+    "data/dynamic_world/raw/2026-10-07/AlKhor_DW_provenance.csv",
+    "data/dynamic_world/raw/2026-10-07/AlKhor_DW_transition_2021_2026.tif",
+    "data/dynamic_world/raw/2026-10-07/AlKhor_DW_transitions.csv",
+    "data/dynamic_world/raw/2026-10-07/AlKhor_DW_whole_window_areas.csv",
+    "data/dynamic_world/raw/2026-10-07/AlKhor_DynamicWorld_September_2021.tif",
+    "data/dynamic_world/raw/2026-10-07/AlKhor_DynamicWorld_September_2026.tif",
+    "data/dynamic_world/reference/2026-10-08/AlKhor_Sentinel2_Reference_20210901.tif",
+    "data/dynamic_world/reference/2026-10-08/AlKhor_Sentinel2_Reference_20210926.tif",
+    "data/dynamic_world/reference/2026-10-08/AlKhor_Sentinel2_Reference_provenance.csv",
+    "data/sample_input/SHA256.json",
+    "data/sample_input/blue.tif",
+    "data/sample_input/green.tif",
+    "data/sample_input/landsat/cdist.tif",
+    "data/sample_input/landsat/lwir11.tif",
+    "data/sample_input/landsat/qa.tif",
+    "data/sample_input/landsat/qa_pixel.tif",
+    "data/sample_input/landsat/qa_radsat.tif",
+    "data/sample_input/multidate/LC08_L2SP_162042_20260906_02_T1/cdist.tif",
+    "data/sample_input/multidate/LC08_L2SP_162042_20260906_02_T1/lwir11.tif",
+    "data/sample_input/multidate/LC08_L2SP_162042_20260906_02_T1/qa.tif",
+    "data/sample_input/multidate/LC08_L2SP_162042_20260906_02_T1/qa_pixel.tif",
+    "data/sample_input/multidate/LC08_L2SP_162042_20260906_02_T1/qa_radsat.tif",
+    "data/sample_input/multidate/LC09_L2SP_162042_20260914_02_T1/cdist.tif",
+    "data/sample_input/multidate/LC09_L2SP_162042_20260914_02_T1/lwir11.tif",
+    "data/sample_input/multidate/LC09_L2SP_162042_20260914_02_T1/qa.tif",
+    "data/sample_input/multidate/LC09_L2SP_162042_20260914_02_T1/qa_pixel.tif",
+    "data/sample_input/multidate/LC09_L2SP_162042_20260914_02_T1/qa_radsat.tif",
+    "data/sample_input/multidate/S2B_39RWJ_20260905_0_L2A/blue.tif",
+    "data/sample_input/multidate/S2B_39RWJ_20260905_0_L2A/green.tif",
+    "data/sample_input/multidate/S2B_39RWJ_20260905_0_L2A/nir.tif",
+    "data/sample_input/multidate/S2B_39RWJ_20260905_0_L2A/red.tif",
+    "data/sample_input/multidate/S2B_39RWJ_20260905_0_L2A/scl.tif",
+    "data/sample_input/multidate/S2B_39RWJ_20260905_0_L2A/swir16.tif",
+    "data/sample_input/multidate/S2B_39RWJ_20260915_0_L2A/blue.tif",
+    "data/sample_input/multidate/S2B_39RWJ_20260915_0_L2A/green.tif",
+    "data/sample_input/multidate/S2B_39RWJ_20260915_0_L2A/nir.tif",
+    "data/sample_input/multidate/S2B_39RWJ_20260915_0_L2A/red.tif",
+    "data/sample_input/multidate/S2B_39RWJ_20260915_0_L2A/scl.tif",
+    "data/sample_input/multidate/S2B_39RWJ_20260915_0_L2A/swir16.tif",
+    "data/sample_input/nir.tif",
+    "data/sample_input/red.tif",
+    "data/sample_input/reference/osm-map.osm",
+    "data/sample_input/reference/worldcover2021.tif",
+    "data/sample_input/scl.tif",
+    "data/sample_input/swir16.tif",
+    "docs/Browser-Review.md",
+    "docs/Delivery-Review.md",
+    "docs/Discovery-Resources.md",
+    "docs/Dynamic-World-Assessment.md",
+    "docs/Dynamic-World-External-Export-Review.md",
+    "docs/Dynamic-World-Paired-Reference-Review.md",
+    "docs/Dynamic-World-Reassembly-and-Scientific-Review.md",
+    "docs/Earth-Engine-Access.md",
+    "docs/Field-Photo-Slides-2026-10-08.md",
+    "docs/Final-Content-External-Review-2026-10-08.md",
+    "docs/Final-Content-Revision.md",
+    "docs/Improvement-Change-Log.md",
+    "docs/Improvement-Revision.md",
+    "docs/Latest-Handover.md",
+    "docs/Local-Review.md",
+    "docs/PoC-Description.md",
+    "docs/Preview-Guide.md",
+    "docs/Publication-Review.md",
+    "docs/Site-Evidence-Guide.md",
+    "docs/Site-Media-Receipt-2026-10-08.md",
+    "docs/Verification-Report.md",
+    "docs/history/Dynamic-World-Assessment-2026-10-07.md",
+    "docs/history/Dynamic-World-Assessment-2026-10-08-before-paired.md",
+    "docs/history/Dynamic-World-Reassembly-and-Scientific-Review-2026-10-08-before-paired.md",
+    "docs/history/Earth-Engine-Access-2026-10-07.md",
+    "docs/history/Earth-Engine-Access-2026-10-08-before-paired.md",
+    "landsat-scene.json",
+    "metadata/dynamic-world-export-manifest.json",
+    "metadata/dynamic-world-manual-review.csv",
+    "metadata/dynamic-world-plan.json",
+    "metadata/dynamic-world-reference-manifest.json",
+    "metadata/dynamic-world-review-candidates.csv",
+    "metadata/dynamic-world-scientific-samples.csv",
+    "metadata/dynamic-world-transfer/README-TRANSFER.md",
+    "metadata/dynamic-world-transfer/REASSEMBLY.json",
+    "metadata/dynamic-world-transfer/reassemble.py",
+    "metadata/multidate/LC08_L2SP_162042_20260906_02_T1.json",
+    "metadata/multidate/LC09_L2SP_162042_20260914_02_T1.json",
+    "metadata/multidate/S2B_39RWJ_20260905_0_L2A.json",
+    "metadata/multidate/S2B_39RWJ_20260915_0_L2A.json",
+    "metadata/original-results-sha256.json",
+    "metadata/reference-provenance.json",
+    "metadata/site-media-capture-confirmation-2026-10-08.json",
+    "metadata/site-media-receipt-2026-10-08.json",
+    "metadata/worldcover.json",
+    "pilot.ipynb",
+    "preview/UrbanHeat-AlKhor-Preview.html",
+    "requirements-lock.txt",
+    "requirements.txt",
+    "results/accepted-temperature-review.png",
+    "results/browser-review.json",
+    "results/browser-review/before.json",
+    "results/browser-review/desktop.png",
+    "results/browser-review/mobile-comparison.png",
+    "results/browser-review/mobile-focused.png",
+    "results/browser-review/mobile.png",
+    "results/coastal-audit.png",
+    "results/coastal-date-audit.csv",
+    "results/coastal-multidate-summary.json",
+    "results/coastal-sensitivity.csv",
+    "results/common-inland-mask.tif",
+    "results/common-temp-2026-09-06.tif",
+    "results/common-temp-2026-09-14.tif",
+    "results/common-temp-2026-09-30.tif",
+    "results/context-cells.csv",
+    "results/delivery-browser-review.json",
+    "results/delivery-review.json",
+    "results/dynamic-world-2026-diagnostic-context.png",
+    "results/dynamic-world-browser-review.json",
+    "results/dynamic-world-browser-review/desktop-final.png",
+    "results/dynamic-world-browser-review/mobile-final.png",
+    "results/dynamic-world-dated-imagery-diagnostic.json",
+    "results/dynamic-world-export-status.json",
+    "results/dynamic-world-paired-context/page-1.png",
+    "results/dynamic-world-paired-context/page-2.png",
+    "results/dynamic-world-paired-context/page-3.png",
+    "results/dynamic-world-paired-context/page-4.png",
+    "results/dynamic-world-paired-context/page-5.png",
+    "results/dynamic-world-paired-context/page-6.png",
+    "results/dynamic-world-paired-render-verification.json",
+    "results/dynamic-world-paired-review-verification.json",
+    "results/dynamic-world-raster-verification.json",
+    "results/dynamic-world-raw-label-diagnostic.json",
+    "results/dynamic-world-reassembly-verification.json",
+    "results/dynamic-world-reference-verification.json",
+    "results/dynamic-world-review-selection.json",
+    "results/dynamic-world-scientific-context/page-1.png",
+    "results/dynamic-world-scientific-context/page-2.png",
+    "results/dynamic-world-scientific-context/page-3.png",
+    "results/dynamic-world-scientific-context/page-4.png",
+    "results/dynamic-world-scientific-review.json",
+    "results/dynamic-world-scientific-sample-selection.json",
+    "results/dynamic-world-table-verification.json",
+    "results/earthengine-access-check.json",
+    "results/expanded-workflow-verification.json",
+    "results/field-photo-slide-review/slide-6.png",
+    "results/field-photo-slides-verification-2026-10-08.json",
+    "results/final-content-revision-verification.json",
+    "results/final-content-slide-review/slide-10.png",
+    "results/final-content-slide-review/slide-5.png",
+    "results/final-content-slide-review/slide-9.png",
+    "results/fresh-run-evidence.json",
+    "results/history/dynamic-world-export-status-2026-10-08-before-paired.json",
+    "results/history/dynamic-world-export-status-before-final-content-2026-10-08.json",
+    "results/history/dynamic-world-manual-review-before-paired.csv",
+    "results/history/dynamic-world-scientific-review-2026-10-08-before-paired.json",
+    "results/history/dynamic-world-scientific-samples-before-paired.csv",
+    "results/improvement-browser-review.json",
+    "results/improvement-revision-verification.json",
+    "results/improvement-verification.json",
+    "results/jogging-point-check.json",
+    "results/local-greenery-audit.json",
+    "results/local-map-check.json",
+    "results/local-review-map.png",
+    "results/multidate-grid.csv",
+    "results/multidate-grid.geojson",
+    "results/multidate-temperature.png",
+    "results/notebook-verification-inprocess.json",
+    "results/notebook-verification.json",
+    "results/original-results-comparison.json",
+    "results/osm-reference.geojson",
+    "results/photo-review-check.json",
+    "results/planning-cells.csv",
+    "results/planning-cells.geojson",
+    "results/planning-map.png",
+    "results/planning-sensitivity.csv",
+    "results/planning-summary.json",
+    "results/presentation-case-map.png",
+    "results/preview-verification.json",
+    "results/reference-review.png",
+    "results/reference-samples.csv",
+    "results/site-media-capture-verification-2026-10-08.json",
+    "results/site-media-verification-2026-10-08.json",
+    "scene.json",
+    "src/add_field_photos_to_presentation.py",
+    "src/audit_local_greenery.py",
+    "src/build_preview.py",
+    "src/check_notebook.py",
+    "src/check_site_media.py",
+    "src/coastal_multidate.py",
+    "src/dynamic_world_earthengine.js",
+    "src/export_dynamic_world_2021_reference_rgb.js",
+    "src/export_map.py",
+    "src/fetch_osm.py",
+    "src/fetch_sample.py",
+    "src/planning.py",
+    "src/prepare_dynamic_world_review.py",
+    "src/render_dynamic_world_paired_review.py",
+    "src/render_presentation_cases.py",
+    "src/render_review_figures.py",
+    "src/review_dynamic_world_exports.py",
+    "src/review_dynamic_world_imagery.js",
+    "src/revise_final_presentation.py",
+    "src/test_dynamic_world_rasters.py",
+    "src/test_dynamic_world_validation.py",
+    "src/test_map_browser.py",
+    "src/test_map_review.mjs",
+    "src/test_preview.py",
+    "src/test_review_photos.py",
+    "src/validate_dynamic_world.py",
+    "src/validate_dynamic_world_rasters.py",
+    "src/validate_dynamic_world_references.py",
+    "src/verify.py",
+    "src/verify_field_photo_slides.py",
+    "src/verify_reproduction.py"
+  ],
+  "original_input_hashes_verified": 35,
+  "original_analytical_csv_hashes_verified": 7,
+  "original_received_media_hashes_verified": 12,
+  "analysis_rerun": false,
+  "new_model_or_satellite_data": false,
+  "ranking_changed": false,
+  "primary_dw_confidence": 0.6,
+  "primary_dw_common_coverage_percent": 30.938509530941776,
+  "unchanged_coverage_gate_percent": 50,
+  "primary_gate": "failed",
+  "Unknown_excluded_common_percent": 69.06149046905821,
+  "independent_scientific_and_member_reviews": "pending until personally confirmed",
+  "actual_rehearsal_invitation_slot_attendance": "unconfirmed",
+  "internal_preparation_target": "2026-10-10; team buffer, not organizer cutoff",
+  "exact_organizer_cutoff_live_account_guide": "unresolved/unverified; conflicting reported sources retained",
+  "screen_recording": "optional according to supplied review; not produced; field video separate",
+  "organizer_contact_form_changes_submission": "not performed",
+  "files": {
+    "docs/UrbanHeat-AlKhor-Pitch.pdf": {
+      "bytes": 2568247,
+      "sha256": "b5e25813afb14dddb23163f0f8bca5091c29034988a29df923141f1b2f326328"
+    },
+    "docs/UrbanHeat-AlKhor-Pitch.pptx": {
+      "bytes": 2924785,
+      "sha256": "516a1547a10d2109d5334887ff89dd1cdc4bc5c44e58616f75705392cf6f0e5b"
+    },
+    "docs/Live-Pitch-Up-to-Ten-Minutes.md": {
+      "bytes": 11564,
+      "sha256": "281065ae2e79e3b2caf4966c9ffba29a01a53e5a058b11e2b3ae229e0f1fd8f3"
+    },
+    "docs/Five-Minute-Judge-QA.md": {
+      "bytes": 4649,
+      "sha256": "2968a84a4573468a3054113e0dfc778dd900c7b343ae4e13b4d9a3ae7b00e053"
+    },
+    "docs/Live-Demo-Runbook.md": {
+      "bytes": 3711,
+      "sha256": "44a6fe0b9689f79207f0f34c683472e99a2bca0b176b2d0096462a2735f5988b"
+    },
+    "docs/Demo-Fallback-Screenshots.pdf": {
+      "bytes": 471832,
+      "sha256": "47d70ac2b8a19375836fdb556f7d22a449b9c1f368d5565ba4e9f1e1f89737e2"
+    },
+    "docs/Three-Minute-Presentation.md": {
+      "bytes": 6056,
+      "sha256": "4ae74f6e588dd8372ec9d099845b210cfd7bdbb8869d9dc2e8a523abf2b3d300"
+    },
+    "docs/Judge-Questions.md": {
+      "bytes": 12215,
+      "sha256": "5951f58e18fab2f0b6fc5a8d4edd472260706cbe9990fd0afdb1120034049953"
+    },
+    "metadata/live-pitch-timing-2026-10-09.json": {
+      "bytes": 2700,
+      "sha256": "37e250c2e8c33b421d982003269d3d6aeeaf8c243c5ff6daa8e5705caf797b73"
+    }
+  }
+}

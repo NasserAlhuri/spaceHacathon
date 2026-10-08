@@ -1,6 +1,6 @@
-# Three-minute presentation script
+# Optional three-minute overview — compact script
 
-Team Al Zubarah — UrbanHeat AI, Al Khor. Use the revised twelve-slide PDF or PowerPoint. Target: 180 seconds. The spoken sections contain **394 whitespace-separated words**. At approximately 135 words per minute, speech takes about 175 seconds, leaving about 5 seconds for short transitions. These are planning estimates; actual timing must come from Mohammed's rehearsal, which remains pending. Headings and timing cues are not spoken. Avoid live map interaction within the three-minute slot; keep the offline preview ready for questions.
+Team Al Zubarah — UrbanHeat AI, Al Khor. This is an optional compact overview, not the reported live-pitch limit. Primary preparation is [up to ten minutes plus separate five-minute Q&A](Live-Pitch-Up-to-Ten-Minutes.md); the prepared live target is 8:20 including a short demo. Use the revised twelve-slide PDF or PowerPoint. Compact target: 180 seconds. The spoken sections contain **394 whitespace-separated words**. At approximately 135 words per minute, speech takes about 175 seconds, leaving about 5 seconds for short transitions. These are planning estimates; actual timing must come from Mohammed's rehearsal, which remains pending. Headings and timing cues are not spoken. Avoid live map interaction within the three-minute slot; keep the offline preview ready for questions.
 
 ## Slide 1 — 0:00–0:11
 
@@ -52,7 +52,7 @@ Our public package includes sources, licences and reproducible evidence. Thank y
 
 ## Rehearsal and demonstration cues
 
-- Mohammed should rehearse the complete spoken text aloud with a timer and record the actual duration; no rehearsal is certified here. Shorten transitions if needed; do not drop the visits-versus-measurements or temperature limitations.
+- Primary practice is the live pitch, demo and separate five-minute Q&A. If this optional compact overview is used, Mohammed should rehearse it aloud with a timer and record the actual duration; no rehearsal is certified here. Shorten transitions if needed; do not drop the visits-versus-measurements or temperature limitations.
 - For questions, open `preview/UrbanHeat-AlKhor-Preview.html` in a browser. Select V04-23, V28-17 and V18-26 for presentation cases; V04-24 remains available. Compare all five reviewed sites and show the two dates. Review CSV export has ten rows: five sites × two dates.
 - On slide 6, point to the three actual photographs. The visible date/window applies to all three; no exact time is assigned per file. The original context map remains in the complete project.
 - Treat quoted temperatures as cell summaries, not surveyed point measurements. Keep Unknown values visible and distinguish reported conditions from quantitative measurements.
@@ -61,3 +61,5 @@ Our public package includes sources, licences and reproducible evidence. Thank y
 Current presentation/image/text checks: results/field-photo-slides-verification-2026-10-08.json and [Field photo slides](Field-Photo-Slides-2026-10-08.md). App/gallery and offline preview are unchanged; their latest matching checks remain results/site-media-capture-verification-2026-10-08.json. Earlier presentation/script checks are historical. No actual speaking time is certified.
 
 Capture note: Nasser confirms all supplied media were collected by Abdulrahman on 8 October 2026 within a shared 13:00–14:00 Qatar (UTC+3) window, not EXIF. Exact individual capture times remain Unknown. This note is not part of the timed spoken script; project review remains pending.
+
+Current orientation/deck preparation evidence: results/orientation-revision-verification-2026-10-09.json. The 394 spoken words remain unchanged; headers and preparation labels are not spoken. No optional application screen recording or actual rehearsal is claimed.

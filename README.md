@@ -8,6 +8,16 @@ This open-data PoC combines satellite surface temperature, green-pixel share, co
 
 For current progress and the next unfinished task, start with [PROJECT_STATE.md](PROJECT_STATE.md).
 
+## Review-ready presentation and demonstration
+
+- [Executable notebook](pilot.ipynb), [pinned dependencies](requirements.txt), [sample inputs](data/sample_input/) and [existing outputs](results/).
+- [Twelve-page presentation PDF](docs/UrbanHeat-AlKhor-Pitch.pdf) and [editable twelve-slide PowerPoint](docs/UrbanHeat-AlKhor-Pitch.pptx), with three original field photographs.
+- [Complete offline preview](preview/UrbanHeat-AlKhor-Preview.html) and [75-second demo/fallback runbook](docs/Live-Demo-Runbook.md).
+- [Live pitch up to ten minutes](docs/Live-Pitch-Up-to-Ten-Minutes.md): prepared 8:20 including demo/transitions, with [separate five-minute Q&A](docs/Five-Minute-Judge-QA.md). Actual rehearsal is pending.
+- [Optional three-minute overview](docs/Three-Minute-Presentation.md), [delivery guide](docs/Delivery-Guide.md) and [orientation source/requirements/deadline limits](docs/Orientation-Requirements-and-Handoff.md).
+
+The proposed municipal planning user would choose where to inspect first, then assess use, shade, access, ownership and feasibility. No planner adoption, paid pilot, partnership, revenue, cooling or time saving is established. The supplied review reports shortlisted-pitch timing; no invitation/slot is confirmed. The internal preparation target is 10 October 2026, while exact organizer cutoff statements remain unresolved. No account-form change, organizer contact or hackathon submission was performed.
+
 ## 1. Intended user and use case
 
 An urban planner can use the map to arrange site visits before proposing shade or planting improvements. Each candidate shows the contributing indicators, observed coverage and rank sensitivity. The review locations also show separate team-member local observations, reported use and next checks; unknown use and shade remain unknown. Visits must establish pedestrian activity, shade, walking access, ownership and feasibility before considering trees, shelters or route improvements. No user interview, measured time saving or cooling benefit is claimed.
@@ -77,7 +87,7 @@ For the portable interactive map, after generating assets:
 python -m http.server 8000 --directory app
 ```
 
-For the delivery bundle, three-minute English script and judge questions, see [Delivery-Guide.md](docs/Delivery-Guide.md). Member reviews and final submission approval remain pending.
+For the delivery bundle, up-to-ten-minute English live script, separate five-minute Q&A and optional compact overview, see [Delivery-Guide.md](docs/Delivery-Guide.md). Member reviews and final submission approval remain pending.
 
 For a single-file preview or an offline copy, use [preview/UrbanHeat-AlKhor-Preview.html](preview/UrbanHeat-AlKhor-Preview.html). It embeds the full app resources. See [Preview-Guide.md](docs/Preview-Guide.md) for download/opening steps and test limits.
 
@@ -177,3 +187,5 @@ The existing review interface supports local photograph galleries, capture metad
 ## Current field photographs in the presentation — 8 October 2026
 
 The existing twelve-slide PDF/PowerPoint now show one received original field photograph per presentation example on slide 6: V04-23 bus-stop road, V28-17 stadium parking and V18-26 jogging route. The visible common caption records Abdulrahman Almohannadi, 8 October 2026, shared 13:00–14:00 Qatar (UTC+3), confirmed by Nasser rather than EXIF; exact per-file time remains Unknown. The result table, analysis and ranking are unchanged. The English script has 394 spoken words; Mohammed rehearsal and member/project reviews remain pending. See [photo selection, design checks and native PowerPoint limits](docs/Field-Photo-Slides-2026-10-08.md) and results/field-photo-slides-verification-2026-10-08.json. The full app/standalone preview remain unchanged with their latest matching browser evidence. No hackathon submission was performed.
+
+Current orientation/pitch/deck checks: results/orientation-revision-verification-2026-10-09.json. Earlier presentation/script proofs remain historical. All original analysis/ranks, inputs/tables, photographs, historical exports/references and both backups remain unchanged. App/standalone bytes are unchanged; their prior matching technical browser evidence remains applicable. Native PowerPoint acceptance and actual member practice/reviews remain pending.

@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-09",
+  "timezone": "Asia/Qatar",
+  "word_count": 895,
+  "non_demo_words": 821,
+  "demo_words": 74,
+  "assumed_words_per_minute": 135,
+  "estimated_non_demo_speech_seconds": 364.89,
+  "demo_budget_seconds": 75,
+  "estimated_demo_speech_within_demo_seconds": 32.89,
+  "planned_total_seconds": 500,
+  "planning_pause_transition_margin_seconds": 60.11,
+  "organizer_reported_pitch_max_seconds": 600,
+  "separate_question_budget_seconds": 300,
+  "actual_pitch_rehearsal_seconds": null,
+  "actual_qa_rehearsal_seconds": null,
+  "actual_member_demo_rehearsal": null,
+  "status": "Preparation estimates only; member timed rehearsal pending",
+  "sections": [
+    {
+      "slide": 1,
+      "start_seconds": 0,
+      "end_seconds": 20,
+      "non_demo_spoken_words": 38,
+      "estimated_non_demo_speech_seconds": 16.89
+    },
+    {
+      "slide": 2,
+      "start_seconds": 20,
+      "end_seconds": 65,
+      "non_demo_spoken_words": 91,
+      "estimated_non_demo_speech_seconds": 40.44
+    },
+    {
+      "slide": 3,
+      "start_seconds": 65,
+      "end_seconds": 110,
+      "non_demo_spoken_words": 89,
+      "estimated_non_demo_speech_seconds": 39.56
+    },
+    {
+      "slide": 4,
+      "start_seconds": 110,
+      "end_seconds": 165,
+      "non_demo_spoken_words": 100,
+      "estimated_non_demo_speech_seconds": 44.44
+    },
+    {
+      "slide": 5,
+      "start_seconds": 165,
+      "end_seconds": 205,
+      "non_demo_spoken_words": 83,
+      "estimated_non_demo_speech_seconds": 36.89
+    },
+    {
+      "slide": 6,
+      "start_seconds": 205,
+      "end_seconds": 250,
+      "non_demo_spoken_words": 89,
+      "estimated_non_demo_speech_seconds": 39.56
+    },
+    {
+      "slide": 7,
+      "start_seconds": 250,
+      "end_seconds": 275,
+      "non_demo_spoken_words": 42,
+      "estimated_non_demo_speech_seconds": 18.67
+    },
+    {
+      "slide": 8,
+      "start_seconds": 275,
+      "end_seconds": 375,
+      "non_demo_spoken_words": 35,
+      "estimated_non_demo_speech_seconds": 15.56
+    },
+    {
+      "slide": 9,
+      "start_seconds": 375,
+      "end_seconds": 420,
+      "non_demo_spoken_words": 95,
+      "estimated_non_demo_speech_seconds": 42.22
+    },
+    {
+      "slide": 10,
+      "start_seconds": 420,
+      "end_seconds": 465,
+      "non_demo_spoken_words": 90,
+      "estimated_non_demo_speech_seconds": 40.0
+    },
+    {
+      "slide": 11,
+      "start_seconds": 465,
+      "end_seconds": 485,
+      "non_demo_spoken_words": 42,
+      "estimated_non_demo_speech_seconds": 18.67
+    },
+    {
+      "slide": 12,
+      "start_seconds": 485,
+      "end_seconds": 500,
+      "non_demo_spoken_words": 27,
+      "estimated_non_demo_speech_seconds": 12.0
+    }
+  ]
+}

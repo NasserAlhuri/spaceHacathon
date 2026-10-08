@@ -1,6 +1,6 @@
 # Al Khor submission checklist
 
-Updated 8 October 2026. Revised review package only; nothing submitted. Current photo/content/design evidence is [Field-Photo-Slides-2026-10-08.md](Field-Photo-Slides-2026-10-08.md); earlier AI/NDVI wording corrections are retained. Earlier verification records remain historical.
+Updated 9 October 2026. Revised review package only; nothing submitted. Current orientation/content/design evidence is [Orientation-Requirements-and-Handoff.md](Orientation-Requirements-and-Handoff.md) and results/orientation-revision-verification-2026-10-09.json; earlier AI/NDVI/photo changes are retained. Earlier verification records remain historical.
 
 ## Prepared
 
@@ -18,7 +18,7 @@ Updated 8 October 2026. Revised review package only; nothing submitted. Current 
 - [x] March 2023 Street View camera reference located inside V04-23; exact stop coordinate remains unverified.
 - [x] Separate greenery audit reproduces V04-23's 0% result without changing the threshold or ranking.
 - [x] Named map examples, study boundary, comparison and review CSV added.
-- [x] Clean regeneration, numerical checks, separate audit and map-control tests passed; original seven CSV tables unchanged. Prior final-content revision inspected slides 5/9/10. Current field-photo revision inspected slides 6/8/11/12; the other eight page renders are unchanged. Technical Chromium desktop/mobile-emulation checks are complete; physical-device/member acceptance remains pending.
+- [x] Clean regeneration, numerical checks, separate audit and map-control tests passed; original seven CSV tables unchanged. Prior final-content revision inspected slides 5/9/10. The previous photo revision inspected slides 6/8/11/12. Current orientation changes inspect slides 2/3/4/10/11; the other seven page renders, all photographs and slide-8 table are unchanged. Technical Chromium desktop/mobile-emulation checks are complete; physical-device/member acceptance remains pending.
 
 - [x] One original field photograph for each of V04-23, V28-17 and V18-26 shown on existing slide 6. Shared 8 October 2026 13:00–14:00 Qatar (UTC+3) window and photographer visible, confirmed by Nasser rather than EXIF; exact individual time remains Unknown. PDF/PPTX retain 12 pages/slides and the unchanged table. Current structural/visual evidence: results/field-photo-slides-verification-2026-10-08.json.
 - [ ] Open the editable PPTX on the actual presentation computer to confirm native fonts/rendering. PDF visual inspection does not certify native PowerPoint rendering.
@@ -29,7 +29,7 @@ Updated 8 October 2026. Revised review package only; nothing submitted. Current 
 - [x] Repository visibility verified public on 6 October 2026. Recheck final links before submission.
 - [ ] Complete assigned member reviews in Team-Review.md. Role assignment is not evidence that a review occurred.
 - [ ] Review boundary, candidate sites and contributed reference-label conflicts.
-- [x] Organizer message supplied by Nasser confirms 11 October; hour/timezone unspecified. Plan to finish before the date. See Organizer-Access-and-Deadline.md.
+- [x] Organizer message supplied by Nasser confirms 11 October; hour/timezone unspecified. The supplied review reports conflicting transcript/public-page cutoffs. Use 10 October 2026 as an internal preparation target; exact organizer cutoff remains unresolved. See Organizer-Access-and-Deadline.md.
 - [ ] Attach the final PDF and optional ZIP to the form and verify their names and sizes.
 - [ ] Truthfully confirm repository contents and organizer access only after the access gate is satisfied.
 - [ ] Obtain the user's final approval before clicking Submit. Do not contact organizers without explicit authorization.
@@ -54,5 +54,10 @@ Presentation PDF: at most 50 MB. Optional ZIP: at most 200 MB. The portable map 
 - [x] Assistant paired review of 18 target locations across four dates is complete (72 dated views, not 72 independent sites). All 18 rows and ambiguities are recorded in metadata/dynamic-world-manual-review.csv. This is not independent exact-class validation or member confirmation.
 - [ ] Complete independent scientific validation. Eight broad clear patterns are not eight confirmed correct classes or 8/18 accuracy; the three potential disagreement flags overlap ambiguous cases and are not confirmed model errors. Primary 0.60 common coverage stays 30.94%, below the unchanged 50% gate; Unknown/excluded common support stays 69.06%. General change claims remain blocked; 2023 is deferred.
 - [x] Correct external-AI explanation, NDVI-reference wording and assistant-versus-independent-review status across the twelve-slide PDF/PPTX, script, judge answers and draft. Current evidence: results/final-content-revision-verification.json.
-- [ ] Mohammed records an actual timed rehearsal; the script's 180-second cues are estimates, not completed rehearsal evidence.
+- [x] Prepare a separate English live pitch up to ten minutes, with an 8:20 preparation target and 75-second offline demo, plus separate five-minute questions. Preserve the 394-word compact overview as optional. No actual shortlist/slot is confirmed.
+- [x] Prepare two real offline map/gallery screenshot fallback pages from exact unchanged preview bytes; classify the limited capture separately from retained full browser tests/member practice.
+- [x] Explicit proposed municipal planning user, inspection/ownership/feasibility decision path and future pilot/value hypothesis; no actual adoption, paid pilot, revenue or measured benefit claimed.
+- [ ] Mohammed records an actual timed pitch+demo+transitions run and a separate five-minute Q&A practice; 500-second live and 180-second compact cues are estimates.
+- [ ] Check actual invitation/slot, attendance and live account guide/countdown/file requirements before a final form step. A single presenter is allowed according to the review; no attendance is confirmed.
+- [ ] Optional two-to-three-minute application recording if useful and separately requested; not a mandatory requirement in the supplied review. Six-second field video is not relabelled. No Docker, new model, hyperspectral retrieval or hosting added for this handoff.
 - [ ] Final hackathon submission approval. Nothing submitted.
