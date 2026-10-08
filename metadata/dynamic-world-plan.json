@@ -1,5 +1,5 @@
 {
-  "status": "actual_code_editor_exports_received_primary_coverage_failed_manual_review_pending",
+  "status": "all_original_exports_verified_complete_raster_checks_primary_coverage_failed_paired_review_pending",
   "dataset": "GOOGLE/DYNAMICWORLD/V1",
   "source": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1",
   "years": [
@@ -72,9 +72,10 @@
   "unknown_rule": "No observation, fewer than three valid observations, or composite confidence below the threshold; never counted as bare or zero greenery",
   "change_support": "Intersection of accepted pixels on both years at each threshold",
   "manual_review_required": true,
-  "manual_review_status": "paired 2021/2026 review pending; eight 2026-only visual diagnostics do not validate change",
+  "manual_review_status": "18 locations/36 dated 2026 context views reviewed; 2021 RGB missing, paired scientific review pending",
   "integration_with_priority": "None; original WorldCover eligibility, NDVI, temperature, rankings and seven CSVs are preserved",
   "licence": "CC BY 4.0; actual exports retain required Dynamic World attribution and modified Copernicus Sentinel data (2021, 2026) notice",
   "team_model": "None; Dynamic World is an upstream AI product; SamGeo and additional models deferred",
-  "execution_history": "Nasser authorized Code Editor execution/export succeeded after fallback correction; managed runtime API remains blocked"
+  "execution_history": "Nasser authorized Code Editor execution/export succeeded after fallback correction; managed runtime API remains blocked",
+  "technical_reassembly_status": "six parts/two exact annual originals match supplied REASSEMBLY and original export hashes; all eight raw files verified"
 }

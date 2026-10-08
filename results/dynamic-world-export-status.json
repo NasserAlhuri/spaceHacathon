@@ -1,20 +1,17 @@
 {
-  "checked_at_utc": "2026-10-07T20:41:11.990424+00:00",
+  "checked_at_utc": "2026-10-08T04:41:37.107176+00:00",
   "status": "limited_coverage_experiment_primary_gate_failed_scientific_review_pending",
-  "baseline_live_commit": "14bd1e1e626cf71f667db4062fbbd4aea271e573",
+  "baseline_live_commit": "64badcc11d699d8bede7d27196fdc56eb569a6fa",
   "code_editor_execution_and_exports": "succeeded as recorded by Nasser supplied review and actual provenance/export files",
   "managed_runtime_api_access": "still blocked; not the Code Editor execution status",
-  "raw_files_locally_checksum_verified": 6,
+  "raw_files_locally_checksum_verified": 8,
   "raw_files_total_expected": 8,
   "whole_external_archive_locally_verified": false,
-  "missing_annual_files": [
-    "AlKhor_DynamicWorld_September_2021.tif",
-    "AlKhor_DynamicWorld_September_2026.tif"
-  ],
-  "transfer_blocker": "32 MiB executor limit; authorized Drive streaming reference materialization CONNECT 403 under enforced proxy host policy",
+  "missing_annual_files": [],
+  "transfer_blocker": null,
   "raw_files_original_bytes_preserved": true,
   "table_integrity": "passed on five actual original CSVs",
-  "raster_integrity": "partial: actual primary transition checksum/grid/type verified; annual probability and finite-support comparison incomplete",
+  "raster_integrity": "passed complete actual annual/transition grid, names/order, encoding, all finite probabilities/counts/confidence/argmax and primary class-pair checks",
   "scene_counts": {
     "2021": 6,
     "2026": 8
@@ -26,8 +23,8 @@
   "publication_ready": false,
   "general_change_result_adopted": false,
   "display": "limited real coverage/Unknown demonstration only; no historical year map or general change claim",
-  "dated_imagery_review": "eight 2026-only stable/Unknown visual diagnostics; no paired 2021/2026 validation or accuracy estimate",
-  "scientific_review": "pending",
+  "dated_imagery_review": "18 actual changed/stable/built/bare/coastal/vegetation/Unknown locations; 36 dated 2026 views visually inspected; 2021 RGB missing, no paired validation or accuracy estimate",
+  "scientific_review": "paired 2021/2026 and independent scientific review pending; technical checks do not establish classification accuracy",
   "teammate_reviews": "pending until individually confirmed",
   "photographs_received": false,
   "original_inputs_hashes_verified": 35,
@@ -41,14 +38,19 @@
     "desktop": 29,
     "mobile_emulation": 29
   },
-  "offline_preview": "passed on desktop/mobile emulation; zero JS errors and zero network requests",
-  "presentation": "12-slide PPTX and 12-page PDF; changed pages 10/12 visually inspected",
+  "offline_preview": "passed on desktop/mobile emulation; zero JS/console errors and zero HTTP/HTTPS requests",
+  "presentation": "12-slide PPTX/12-page PDF unchanged; already states successful exports, failed coverage and pending scientific review",
   "browser_test_repair": "Historical coverage introduced a second scroll container; comparison test selector scoped to #comparison. Initial selector failure retained externally; final full suite passed.",
   "remaining": [
-    "Transfer two existing annual TIFFs, verify exact hashes and all finite-band/probability/transition checks",
-    "Retrieve and inspect suitably dated 2021 source RGB at changed/stable, built/bare, vegetation/coastal targets and document paired reference labels/disagreements/uncertainty",
-    "Complete independent scientific and member reviews; preserve failed primary coverage gate even after successful raster checks"
+    "Retrieve/provide suitably dated 2021 RGB/QA evidence at recorded 18 target locations; exact 1/26 September source helper prepared",
+    "Check actual date/source/cloud visibility, record paired reference labels/disagreements/uncertainty and complete independent scientific review",
+    "Keep unchanged failed primary 50% gate and limited-experiment decision regardless of technical/imagery success; teammate reviews remain pending"
   ],
   "2023_SamGeo_other_models": "deferred",
-  "submission": "not performed; separate final approval required"
+  "submission": "not performed; separate final approval required",
+  "transfer_resolution": "six uploaded ZIPs/parts CRC and SHA256 verified; supplied reassemble.py inspected and run unchanged; both exact annual originals match original export hashes",
+  "border_handling": "7,886 nonfinite annual-border pixels carry raw transition zero; excluded explicitly. Centre-only region support and finite clipped export support reported separately.",
+  "original_input_hashes_verified": 35,
+  "new_reference_helper": "src/export_dynamic_world_2021_reference_rgb.js: specific missing 2021 source RGB/QA need; prepared/syntax-checked, not executed, no new DW export or model",
+  "full_external_archive_locally_verified": false
 }

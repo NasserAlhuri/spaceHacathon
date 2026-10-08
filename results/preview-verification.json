@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-10-07T20:38:03.468648+00:00",
-  "preview_sha256": "48657f7ab6e6b6237f8ba71353c8add956ef91b7bec5dc080daff7934a484116",
+  "checked_at_utc": "2026-10-08T04:38:52.449533+00:00",
+  "preview_sha256": "b849e54e72829d28207f6eb710ce830b733c90131a0f69f300ccf421db9749d4",
   "offline": true,
   "delivery": "HTML content loaded through Playwright set_content; managed Chromium policy blocks file:// navigation",
   "profiles": [

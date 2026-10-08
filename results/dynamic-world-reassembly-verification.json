@@ -1,0 +1,90 @@
+{
+  "status": "exact_original_annual_files_reassembled_and_verified",
+  "source_archives": [
+    {
+      "name": "DW-2021-part-01.zip",
+      "bytes": 24004083,
+      "sha256": "0d22c45e7c2cce942c2c18b079a03444731740dce4532f16fb356a54d4194ef0"
+    },
+    {
+      "name": "DW-2021-part-02.zip",
+      "bytes": 24004083,
+      "sha256": "185a1a2cd16655079a98a1188841fa39b22f1cf493cc48f0012bf5b63ad3bf61"
+    },
+    {
+      "name": "DW-2021-part-03.zip",
+      "bytes": 22950186,
+      "sha256": "c5d2d8ec8b3edc68aa63263ecf11beda329155d91053c29687bc533452d71521"
+    },
+    {
+      "name": "DW-2026-part-01.zip",
+      "bytes": 24004083,
+      "sha256": "ff82724524596b99d5095f38d0cf27ed7fe5efedfd8ceda14eedf7059805de35"
+    },
+    {
+      "name": "DW-2026-part-02.zip",
+      "bytes": 24004083,
+      "sha256": "f90a4c430e8ba8597d993187d62d39eb9290952e3c4f238d4f9d668254073755"
+    },
+    {
+      "name": "DW-2026-part-03.zip",
+      "bytes": 23049567,
+      "sha256": "a821be179059e55b6003cca1fdf2b0f911e97664d3a136809e0dcc5404a24b5b"
+    }
+  ],
+  "archive_crc_checks": "six passed",
+  "duplicate_helper_and_manifest_bytes": "identical across six ZIPs",
+  "parts_checked": 6,
+  "annual_files_checked": 2,
+  "original_export_review_hashes_match": true,
+  "script": "supplied reassemble.py inspected and executed unchanged",
+  "scientific_classification_accuracy": "not established by assembly",
+  "files": [
+    {
+      "name": "AlKhor_DynamicWorld_September_2021.tif",
+      "bytes": 70946103,
+      "sha256": "dbd607e338d1feeafabace35b74d62836253412d85f270eacc8fde0aebbe3617",
+      "parts": [
+        {
+          "name": "DW-2021-part-01.bin",
+          "bytes": 24000000,
+          "sha256": "d730bf61438f3ebdfa74a4ef314c55a38a83d0889fd20a4f08628e67576504cf"
+        },
+        {
+          "name": "DW-2021-part-02.bin",
+          "bytes": 24000000,
+          "sha256": "d1669992bce944d7a59e70cedd5d1939cf1581b65a21c940f17474b4dbf99211"
+        },
+        {
+          "name": "DW-2021-part-03.bin",
+          "bytes": 22946103,
+          "sha256": "a36f039b798478a25fbf60356bed3a7e38f9a822e904a5d5c45847f4f01369ca"
+        }
+      ]
+    },
+    {
+      "name": "AlKhor_DynamicWorld_September_2026.tif",
+      "bytes": 71045484,
+      "sha256": "7fe54821078d813fcb9b00baaea005eda8249260616901b40701457e8ce4fdf4",
+      "parts": [
+        {
+          "name": "DW-2026-part-01.bin",
+          "bytes": 24000000,
+          "sha256": "a877b2ea3304967721c06abb7049bdfdb3463b4c9c9ef6dfd98cb387ffec574a"
+        },
+        {
+          "name": "DW-2026-part-02.bin",
+          "bytes": 24000000,
+          "sha256": "f38f8e9ed7e28b1be7ede1336c6a3562624b4a590f214fd759f8f2e5882fcc32"
+        },
+        {
+          "name": "DW-2026-part-03.bin",
+          "bytes": 23045484,
+          "sha256": "33d6b4e081fde1fb793e6ba2af482a9c6bd26d953bb67f6fe740a43084b87a78"
+        }
+      ]
+    }
+  ],
+  "script_sha256": "57682990c92b7fddbcbd64c72019eea569a19e2e5b11b94b7aec68712a0e06bf",
+  "manifest_sha256": "866fa7131d4b9195113ffc05dd560e245f70ef119b4d76aecfc1e555dfdd725a"
+}

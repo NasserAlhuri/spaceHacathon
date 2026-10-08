@@ -45,5 +45,6 @@ Presentation PDF: at most 50 MB. Optional ZIP: at most 200 MB. The portable map 
 - [x] New Chromium HTTP map checks (28 per desktop/mobile profile), offline preview and temporary gallery-fixture checks.
 - [ ] Physical-device/member acceptance, Mohammed's presentation practice and Abdulrahman's project review/photo collection.
 - [x] Nasser completed authorized Code Editor setup, execution and export; five actual CSVs and primary transition TIFF match supplied hashes.
-- [ ] Transfer two existing annual TIFFs and complete finite-support/probability/source checks and paired dated-imagery scientific review. Primary 0.60 common coverage is 30.94%, below the unchanged 50% gate; general change claims remain blocked. 2023 remains deferred.
+- [x] Reassemble six supplied parts and verify both exact annual TIFFs; all eight export hashes and actual finite-band/probability/grid/transition checks passed.
+- [ ] Obtain dated 2021 RGB and complete paired reference/source interpretation and independent scientific review. Primary 0.60 common coverage is 30.94%, below the unchanged 50% gate; general change claims remain blocked. 2023 remains deferred.
 - [ ] Final hackathon submission approval. Nothing submitted.

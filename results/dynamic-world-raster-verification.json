@@ -1,5 +1,5 @@
 {
-  "status": "partial_raster_checks_annual_files_missing",
+  "status": "raster_integrity_checked_scientific_release_blocked",
   "publication_ready": false,
   "raster_checks": {
     "AlKhor_DW_transition_2021_2026.tif": {
@@ -33,15 +33,193 @@
       "outside_rectangle_pixels": 9813,
       "outside_rectangle_non_nodata_pixels": 8652,
       "outside_region_display": "must be Unknown; raw border codes are not evidence",
-      "annual_finite_support_comparison": "pending until both annual files are available"
+      "annual_finite_support_comparison": "passed; all nonfinite/outside-region pixels remain excluded"
+    },
+    "AlKhor_DynamicWorld_September_2021.tif": {
+      "bytes": 70946103,
+      "sha256": "dbd607e338d1feeafabace35b74d62836253412d85f270eacc8fde0aebbe3617",
+      "crs": "EPSG:32639",
+      "transform": [
+        10.0,
+        0.0,
+        544635.0,
+        0.0,
+        -10.0,
+        2845905.0
+      ],
+      "width": 1108,
+      "height": 1057,
+      "band_count": 12,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "declared_nodata": -9999.0,
+      "band_descriptions": [
+        "p_water",
+        "p_trees",
+        "p_grass",
+        "p_flooded_vegetation",
+        "p_crops",
+        "p_shrub_and_scrub",
+        "p_built",
+        "p_bare",
+        "p_snow_and_ice",
+        "observation_count",
+        "confidence",
+        "class"
+      ],
+      "nonfinite_pixels": 7886,
+      "probability_sum_max_absolute_deviation": 6.0111284255981445e-05,
+      "probability_sum_numerical_tolerance": 0.0001,
+      "valid_observation_count_range": [
+        4,
+        6
+      ],
+      "confidence_equals_max": true,
+      "class_equals_argmax": true,
+      "finite_export_pixels": 1163270,
+      "finite_center_in_region_pixels": 1161343,
+      "finite_export_centres_outside_rectangle": 1927
+    },
+    "AlKhor_DynamicWorld_September_2026.tif": {
+      "bytes": 71045484,
+      "sha256": "7fe54821078d813fcb9b00baaea005eda8249260616901b40701457e8ce4fdf4",
+      "crs": "EPSG:32639",
+      "transform": [
+        10.0,
+        0.0,
+        544635.0,
+        0.0,
+        -10.0,
+        2845905.0
+      ],
+      "width": 1108,
+      "height": 1057,
+      "band_count": 12,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "declared_nodata": -9999.0,
+      "band_descriptions": [
+        "p_water",
+        "p_trees",
+        "p_grass",
+        "p_flooded_vegetation",
+        "p_crops",
+        "p_shrub_and_scrub",
+        "p_built",
+        "p_bare",
+        "p_snow_and_ice",
+        "observation_count",
+        "confidence",
+        "class"
+      ],
+      "nonfinite_pixels": 7886,
+      "probability_sum_max_absolute_deviation": 5.791895091533661e-05,
+      "probability_sum_numerical_tolerance": 0.0001,
+      "valid_observation_count_range": [
+        7,
+        8
+      ],
+      "confidence_equals_max": true,
+      "class_equals_argmax": true,
+      "finite_export_pixels": 1163270,
+      "finite_center_in_region_pixels": 1161343,
+      "finite_export_centres_outside_rectangle": 1927
     }
   },
-  "missing_files": [
-    "AlKhor_DynamicWorld_September_2021.tif",
-    "AlKhor_DynamicWorld_September_2026.tif"
-  ],
+  "missing_files": [],
   "scientific_review": "pending",
   "region_rule": "Projected pixel centres transformed into unchanged WGS84 study rectangle; finite annual support also mandatory",
   "area_rule": "Raster counts use projected 100 m2 pixels for diagnostics only. Scientific coverage display uses unmodified Earth Engine CSV pixelArea sums.",
-  "boundary_note": "Centre-based rectangle checks may differ at clipped edge pixels; do not interpret border codes as transitions."
+  "boundary_note": "Centre-based rectangle checks may differ at clipped edge pixels; do not interpret border codes as transitions.",
+  "primary_transition_check": {
+    "status": "passed_on_finite_study_support",
+    "ignored_nonfinite_or_outside_pixels": 9813,
+    "ignored_border_non_nodata_pixels": 8652
+  },
+  "original_clipped_support_transition_check": {
+    "status": "passed",
+    "finite_export_pixels": 1163270,
+    "primary_matched_pixels": 360063,
+    "nonfinite_border_pixels": 7886,
+    "border_zero_pixels_not_water_transitions": 7886
+  },
+  "threshold_pixel_diagnostics": [
+    {
+      "threshold": 0.5,
+      "matched_center_region_pixels": 845352,
+      "changed_pixels": 351,
+      "positive_transition_categories_equal_csv": true,
+      "projected_center_region_count_area_m2": 84535200,
+      "original_finite_export_matched_pixels": 846930,
+      "original_finite_export_transition_pixel_counts": {
+        "0": 105446,
+        "7": 301,
+        "30": 501,
+        "60": 10062,
+        "69": 50,
+        "70": 730570
+      },
+      "original_finite_export_count_area_m2": 84693000,
+      "earth_engine_csv_common_area_m2": 84586894.73216449,
+      "projected_original_count_vs_ee_area_relative_difference": 0.0012543936997744254,
+      "area_difference_is_not_classification_accuracy": true
+    },
+    {
+      "threshold": 0.6,
+      "matched_center_region_pixels": 359297,
+      "changed_pixels": 0,
+      "positive_transition_categories_equal_csv": true,
+      "projected_center_region_count_area_m2": 35929700,
+      "original_finite_export_matched_pixels": 360063,
+      "original_finite_export_transition_pixel_counts": {
+        "0": 91688,
+        "60": 5408,
+        "70": 262967
+      },
+      "original_finite_export_count_area_m2": 36006300,
+      "earth_engine_csv_common_area_m2": 35954878.06368992,
+      "projected_original_count_vs_ee_area_relative_difference": 0.0014301796885249907,
+      "area_difference_is_not_classification_accuracy": true
+    },
+    {
+      "threshold": 0.7,
+      "matched_center_region_pixels": 56700,
+      "changed_pixels": 0,
+      "positive_transition_categories_equal_csv": true,
+      "projected_center_region_count_area_m2": 5670000,
+      "original_finite_export_matched_pixels": 56929,
+      "original_finite_export_transition_pixel_counts": {
+        "0": 55406,
+        "60": 1523
+      },
+      "original_finite_export_count_area_m2": 5692900,
+      "earth_engine_csv_common_area_m2": 5673699.217789746,
+      "projected_original_count_vs_ee_area_relative_difference": 0.0033841734419142178,
+      "area_difference_is_not_classification_accuracy": true
+    }
+  ]
 }

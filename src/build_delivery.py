@@ -73,13 +73,16 @@ def build(root, output, source_commit):
     dynamic_world = root / 'results/dynamic-world-export-status.json'
     if dynamic_world.exists():
         with readme.open('a') as handle:
-            handle.write('\nActual Dynamic World Code Editor exports succeeded. The ZIP includes the five '
-                         'immutable CSVs and primary transition TIFF received here, not the two '
-                         'transfer-blocked annual composites or original 137 MB external archive. '
-                         'Their expected hashes and missing-file status are documented. Primary common '
+            handle.write('\nActual Dynamic World Code Editor exports succeeded. The ZIP includes all eight '
+                         'immutable original exports: five CSVs, two exact reassembled annual TIFFs '
+                         'and the primary transition TIFF. Six supplied parts and both assembled '
+                         'original hashes were verified. The original 137 MB external ZIP itself is '
+                         'not included or independently archive-hash verified. Primary common '
                          'coverage is 30.94%, below the unchanged 50% gate; paired scientific review is '
-                         'pending. Only a limited coverage experiment is shown. No general change '
-                         'result is adopted. See docs/Dynamic-World-Assessment.md.\n')
+                         'pending because dated 2021 reference RGB is missing. Actual complete raster '
+                         'integrity and 2026-only diagnostics do not establish classification accuracy. '
+                         'Only a limited coverage experiment is shown. No general change result is '
+                         'adopted. See docs/Dynamic-World-Reassembly-and-Scientific-Review.md.\n')
     names = sorted([*manifest, 'PACKAGE-SHA256.json'])
     archive_path = output / 'UrbanHeat-AlKhor-Project.zip'
     with zipfile.ZipFile(archive_path, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
@@ -107,14 +110,14 @@ def build(root, output, source_commit):
               'submission': 'not performed; separate final approval required'}
     improvement = root / 'results/improvement-revision-verification.json'
     if improvement.exists():
-        report['improvement_status'] = json.loads(improvement.read_text())
+        report['previous_improvement_milestone'] = json.loads(improvement.read_text())
     if dynamic_world.exists():
         report['dynamic_world_current_status'] = json.loads(dynamic_world.read_text())
         with readme.open('a') as handle:
             handle.write('\nHistorical comparison status is recorded in '
-                         'UrbanHeat-AlKhor/results/improvement-revision-verification.json inside the ZIP. '
-                         'Prepared Earth Engine code and synthetic tests do not prove actual local '
-                         'historical data access, coverage or scientifically validated changes.\n')
+                         'UrbanHeat-AlKhor/results/dynamic-world-export-status.json inside the ZIP. '
+                         'It supersedes the retained earlier improvement milestone. Technical '
+                         'export/raster checks do not establish scientifically validated change.\n')
         checksums[readme.name] = {'bytes': readme.stat().st_size, 'sha256': digest(readme.read_bytes())}
     (output / 'DELIVERY-VERIFICATION.json').write_text(json.dumps(report, indent=2) + '\n')
     (output / 'SHA256SUMS.json').write_text(json.dumps(checksums, indent=2) + '\n')

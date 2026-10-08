@@ -1,0 +1,50 @@
+{
+  "format": "byte-split-v1",
+  "chunk_bytes": 24000000,
+  "files": [
+    {
+      "name": "AlKhor_DynamicWorld_September_2021.tif",
+      "bytes": 70946103,
+      "sha256": "dbd607e338d1feeafabace35b74d62836253412d85f270eacc8fde0aebbe3617",
+      "parts": [
+        {
+          "name": "DW-2021-part-01.bin",
+          "bytes": 24000000,
+          "sha256": "d730bf61438f3ebdfa74a4ef314c55a38a83d0889fd20a4f08628e67576504cf"
+        },
+        {
+          "name": "DW-2021-part-02.bin",
+          "bytes": 24000000,
+          "sha256": "d1669992bce944d7a59e70cedd5d1939cf1581b65a21c940f17474b4dbf99211"
+        },
+        {
+          "name": "DW-2021-part-03.bin",
+          "bytes": 22946103,
+          "sha256": "a36f039b798478a25fbf60356bed3a7e38f9a822e904a5d5c45847f4f01369ca"
+        }
+      ]
+    },
+    {
+      "name": "AlKhor_DynamicWorld_September_2026.tif",
+      "bytes": 71045484,
+      "sha256": "7fe54821078d813fcb9b00baaea005eda8249260616901b40701457e8ce4fdf4",
+      "parts": [
+        {
+          "name": "DW-2026-part-01.bin",
+          "bytes": 24000000,
+          "sha256": "a877b2ea3304967721c06abb7049bdfdb3463b4c9c9ef6dfd98cb387ffec574a"
+        },
+        {
+          "name": "DW-2026-part-02.bin",
+          "bytes": 24000000,
+          "sha256": "f38f8e9ed7e28b1be7ede1336c6a3562624b4a590f214fd759f8f2e5882fcc32"
+        },
+        {
+          "name": "DW-2026-part-03.bin",
+          "bytes": 23045484,
+          "sha256": "33d6b4e081fde1fb793e6ba2af482a9c6bd26d953bb67f6fe740a43084b87a78"
+        }
+      ]
+    }
+  ]
+}

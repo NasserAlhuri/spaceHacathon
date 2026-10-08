@@ -4,7 +4,7 @@
     "name": "drive-download-20261007T201055Z-1-001.zip",
     "bytes": 137120705,
     "sha256": "b67a6eca5208f9ddc4dc03bd5b0b8e5fb338622a2e50d439dd7f86e136a700c6",
-    "verification": "reported_in_supplied_review; whole archive transfer blocked, not independently verified here"
+    "verification": "Original whole archive not transferred; all eight individual original members are independently checksum-verified. Repacking cannot establish original archive SHA."
   },
   "files": {
     "AlKhor_DW_coverage.csv": {
@@ -40,15 +40,22 @@
     "AlKhor_DynamicWorld_September_2021.tif": {
       "bytes": 70946103,
       "sha256": "dbd607e338d1feeafabace35b74d62836253412d85f270eacc8fde0aebbe3617",
-      "local_status": "transfer_blocked_32_MiB_limit"
+      "local_status": "bytes_verified_exact_original_after_reassembly"
     },
     "AlKhor_DynamicWorld_September_2026.tif": {
       "bytes": 71045484,
       "sha256": "7fe54821078d813fcb9b00baaea005eda8249260616901b40701457e8ce4fdf4",
-      "local_status": "transfer_blocked_32_MiB_limit"
+      "local_status": "bytes_verified_exact_original_after_reassembly"
     }
   },
   "source_script_commit": "14bd1e1e626cf71f667db4062fbbd4aea271e573",
-  "retrieval": "Six authenticated Google Drive files; no sharing permissions changed; matching all six review hashes",
-  "raw_files_immutable": true
+  "retrieval": "All eight exact original files now verified. Two annual TIFFs were reconstructed from six uploaded byte parts, checked against supplied REASSEMBLY.json and original review hashes. Six earlier files remain immutable.",
+  "raw_files_immutable": true,
+  "reassembly": {
+    "date": "2026-10-08",
+    "parts": 6,
+    "original_year_files": 2,
+    "manifest": "metadata/dynamic-world-transfer/REASSEMBLY.json",
+    "report": "results/dynamic-world-reassembly-verification.json"
+  }
 }
