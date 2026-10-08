@@ -129,7 +129,7 @@ def build(root, output, source_commit):
         checksums[readme.name] = {'bytes': readme.stat().st_size, 'sha256': digest(readme.read_bytes())}
     final_content = root / 'results/final-content-revision-verification.json'
     if final_content.exists():
-        report['final_content_revision'] = json.loads(final_content.read_text())
+        report['historical_final_content_revision'] = json.loads(final_content.read_text())
         with readme.open('a') as handle:
             handle.write('\nThe revised twelve-slide PDF/PPTX, 388-word spoken script, judge answers and '
                          'checklist include the three final AI/NDVI/review-status corrections. Earlier '
@@ -150,6 +150,24 @@ def build(root, output, source_commit):
                          'and precise camera positions remain Unknown. Collection of this supplied '
                          'batch is complete; project review and historical class validation remain pending. '
                          'See docs/Site-Media-Receipt-2026-10-08.md inside the ZIP.\n')
+        checksums[readme.name] = {'bytes': readme.stat().st_size, 'sha256': digest(readme.read_bytes())}
+    field_photos = root / 'results/field-photo-slides-verification-2026-10-08.json'
+    if field_photos.exists():
+        current = json.loads(field_photos.read_text())
+        assert current['pdf_pages'] == current['pptx_slides'] == 12
+        for name, expected in current['files'].items():
+            assert digest((root / name).read_bytes()) == expected['sha256'], name
+        report['current_field_photo_presentation'] = current
+        with readme.open('a') as handle:
+            handle.write('\nCurrent slide 6 shows one original photograph per presentation example '
+                         'with the confirmed common date/window and explicit Nasser/not-EXIF provenance. '
+                         'Both formats retain twelve slides/pages; the result table is unchanged. '
+                         f"The spoken script contains {current['script_timing']['word_count']} words; "
+                         'actual rehearsal and member acceptance remain pending. Current presentation '
+                         'evidence: results/field-photo-slides-verification-2026-10-08.json and '
+                         'docs/Field-Photo-Slides-2026-10-08.md. Native desktop PowerPoint was not '
+                         'available; PDF visual and PPTX structural checks do not certify its rendering. '
+                         'Previous presentation/script hashes are historical.\n')
         checksums[readme.name] = {'bytes': readme.stat().st_size, 'sha256': digest(readme.read_bytes())}
     (output / 'DELIVERY-VERIFICATION.json').write_text(json.dumps(report, indent=2) + '\n')
     (output / 'SHA256SUMS.json').write_text(json.dumps(checksums, indent=2) + '\n')

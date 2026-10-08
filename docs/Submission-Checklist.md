@@ -1,6 +1,6 @@
 # Al Khor submission checklist
 
-Updated 8 October 2026. Revised review package only; nothing submitted. Current content/design evidence is [Final-Content-Revision.md](Final-Content-Revision.md). Earlier verification records remain historical.
+Updated 8 October 2026. Revised review package only; nothing submitted. Current photo/content/design evidence is [Field-Photo-Slides-2026-10-08.md](Field-Photo-Slides-2026-10-08.md); earlier AI/NDVI wording corrections are retained. Earlier verification records remain historical.
 
 ## Prepared
 
@@ -18,7 +18,10 @@ Updated 8 October 2026. Revised review package only; nothing submitted. Current 
 - [x] March 2023 Street View camera reference located inside V04-23; exact stop coordinate remains unverified.
 - [x] Separate greenery audit reproduces V04-23's 0% result without changing the threshold or ranking.
 - [x] Named map examples, study boundary, comparison and review CSV added.
-- [x] Clean regeneration, numerical checks, separate audit and map-control tests passed; original seven CSV tables unchanged. Changed slides 5/9/10 rendered and inspected after this content revision; the nine other page renders are unchanged. Technical Chromium desktop/mobile-emulation checks are complete; physical-device/member acceptance remains pending.
+- [x] Clean regeneration, numerical checks, separate audit and map-control tests passed; original seven CSV tables unchanged. Prior final-content revision inspected slides 5/9/10. Current field-photo revision inspected slides 6/8/11/12; the other eight page renders are unchanged. Technical Chromium desktop/mobile-emulation checks are complete; physical-device/member acceptance remains pending.
+
+- [x] One original field photograph for each of V04-23, V28-17 and V18-26 shown on existing slide 6. Shared 8 October 2026 13:00–14:00 Qatar (UTC+3) window and photographer visible, confirmed by Nasser rather than EXIF; exact individual time remains Unknown. PDF/PPTX retain 12 pages/slides and the unchanged table. Current structural/visual evidence: results/field-photo-slides-verification-2026-10-08.json.
+- [ ] Open the editable PPTX on the actual presentation computer to confirm native fonts/rendering. PDF visual inspection does not certify native PowerPoint rendering.
 
 ## Final gates
 
