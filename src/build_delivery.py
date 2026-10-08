@@ -78,11 +78,15 @@ def build(root, output, source_commit):
                          'and the primary transition TIFF. Six supplied parts and both assembled '
                          'original hashes were verified. The original 137 MB external ZIP itself is '
                          'not included or independently archive-hash verified. Primary common '
-                         'coverage is 30.94%, below the unchanged 50% gate; paired scientific review is '
-                         'pending because dated 2021 reference RGB is missing. Actual complete raster '
-                         'integrity and 2026-only diagnostics do not establish classification accuracy. '
+                         'coverage is 30.94%, below the unchanged 50% gate. The two unique 2021 reference '
+                         'RGB/QA TIFFs and provenance are included; the exact duplicate was ignored. '
+                         'The assistant paired review of 18 targets/72 dated views is complete: eight '
+                         'clear broad patterns, ten exact-class ambiguities and three overlapping '
+                         'potential disagreement flags. Independent scientific review remains pending; '
+                         'technical integrity and source-linked convenience views do not establish '
+                         'classification accuracy, causes or citywide change totals. '
                          'Only a limited coverage experiment is shown. No general change result is '
-                         'adopted. See docs/Dynamic-World-Reassembly-and-Scientific-Review.md.\n')
+                         'adopted. See docs/Dynamic-World-Paired-Reference-Review.md.\n')
     names = sorted([*manifest, 'PACKAGE-SHA256.json'])
     archive_path = output / 'UrbanHeat-AlKhor-Project.zip'
     with zipfile.ZipFile(archive_path, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:

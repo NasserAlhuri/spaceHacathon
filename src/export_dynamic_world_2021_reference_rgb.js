@@ -1,5 +1,6 @@
-// Prepared only, not executed in this runtime. Use Nasser's already authorized Code Editor.
-// Specific missing evidence: two small dated 2021 RGB/QA exports for the 18 recorded targets.
+// Reproduction helper; not executed in this runtime. Actual corresponding Code Editor
+// exports and provenance were supplied by Nasser on 8 October 2026 and verified locally.
+// The missing-reference transfer is resolved; no repeat export is needed. See the paired review.
 // No Dynamic World rerun, threshold adjustment, new model, original data/rank overwrite,
 // organizer contact or submission. Asset readback and scientific review remain pending.
 var CREATE_REFERENCE_EXPORTS = false; // Inspect source dates/visibility first, then enable.

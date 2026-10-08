@@ -1,0 +1,32 @@
+{
+  "received_date": "2026-10-08",
+  "supplied_archive": {
+    "name": "drive-download-20261008T051100Z-1-001.zip",
+    "bytes": 13627301,
+    "sha256": "880a652f0a87ba16da1aff301697a4de97b2592570cba1cc4f4f56cba437ff51",
+    "CRC": "passed"
+  },
+  "unique_original_files": {
+    "data/dynamic_world/reference/2026-10-08/AlKhor_Sentinel2_Reference_20210901.tif": {
+      "bytes": 4544131,
+      "sha256": "45e40220f4d12e0f08b00844b84bc2a58e2d9f9419d85d5849cfe90e2ca3576e"
+    },
+    "data/dynamic_world/reference/2026-10-08/AlKhor_Sentinel2_Reference_20210926.tif": {
+      "bytes": 4584679,
+      "sha256": "350f4cc51c628d6d99daab4ea4aa3dbb969bbb54cf97cd9e41c177f690a259af"
+    },
+    "data/dynamic_world/reference/2026-10-08/AlKhor_Sentinel2_Reference_provenance.csv": {
+      "bytes": 774,
+      "sha256": "064635df2a3208132713d7bd157d182d4624cb86218b646a24f2b9893c90ae6a"
+    }
+  },
+  "excluded_duplicate": {
+    "filename": "AlKhor_Sentinel2_Reference_20210901(1).tif",
+    "bytes": 4544131,
+    "sha256": "45e40220f4d12e0f08b00844b84bc2a58e2d9f9419d85d5849cfe90e2ca3576e",
+    "byte_identical_to": "AlKhor_Sentinel2_Reference_20210901.tif",
+    "action": "ignored as explicitly requested; uploaded archive preserved separately"
+  },
+  "independence": "Source-linked Sentinel reference visualizations, not independent ground truth",
+  "original_analysis": "unchanged"
+}

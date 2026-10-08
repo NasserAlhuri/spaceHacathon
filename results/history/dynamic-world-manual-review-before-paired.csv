@@ -1,0 +1,1 @@
+sample_id,longitude,latitude,before_year,after_year,predicted_before,predicted_after,reference_source,reference_capture_date,reviewer,review_date,reference_label_before,reference_label_after,ambiguity,status

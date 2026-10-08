@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-10-08T05:23:53.565581+00:00",
-  "status": "limited_coverage_experiment_primary_gate_failed_paired_assistant_review_complete_independent_review_pending",
+  "checked_at_utc": "2026-10-08T04:41:37.107176+00:00",
+  "status": "limited_coverage_experiment_primary_gate_failed_scientific_review_pending",
   "baseline_live_commit": "64badcc11d699d8bede7d27196fdc56eb569a6fa",
   "code_editor_execution_and_exports": "succeeded as recorded by Nasser supplied review and actual provenance/export files",
   "managed_runtime_api_access": "still blocked; not the Code Editor execution status",
@@ -23,8 +23,8 @@
   "publication_ready": false,
   "general_change_result_adopted": false,
   "display": "limited real coverage/Unknown demonstration only; no historical year map or general change claim",
-  "dated_imagery_review": "18 unchanged targets; all 72 dated 2021/2026 views inspected; eight clear broad patterns, ten exact-class ambiguities; three overlapping potential disagreement flags",
-  "scientific_review": "independent scientific review pending; same-source convenience review cannot estimate accuracy; failed primary coverage unchanged",
+  "dated_imagery_review": "18 actual changed/stable/built/bare/coastal/vegetation/Unknown locations; 36 dated 2026 views visually inspected; 2021 RGB missing, no paired validation or accuracy estimate",
+  "scientific_review": "paired 2021/2026 and independent scientific review pending; technical checks do not establish classification accuracy",
   "teammate_reviews": "pending until individually confirmed",
   "photographs_received": false,
   "original_inputs_hashes_verified": 35,
@@ -42,18 +42,15 @@
   "presentation": "12-slide PPTX/12-page PDF unchanged; already states successful exports, failed coverage and pending scientific review",
   "browser_test_repair": "Historical coverage introduced a second scroll container; comparison test selector scoped to #comparison. Initial selector failure retained externally; final full suite passed.",
   "remaining": [
-    "Independent reviewer to assess the 18 paired interpretations and potential disagreement flags; do not record member confirmation without their own response.",
-    "Use independently sourced higher-resolution dated evidence or field/context documentation if exact coastal/urban class or causal change claims are required.",
-    "Retain limited experiment with failed primary coverage; do not lower threshold, change boundary or substitute sensitivity result."
+    "Retrieve/provide suitably dated 2021 RGB/QA evidence at recorded 18 target locations; exact 1/26 September source helper prepared",
+    "Check actual date/source/cloud visibility, record paired reference labels/disagreements/uncertainty and complete independent scientific review",
+    "Keep unchanged failed primary 50% gate and limited-experiment decision regardless of technical/imagery success; teammate reviews remain pending"
   ],
   "2023_SamGeo_other_models": "deferred",
   "submission": "not performed; separate final approval required",
   "transfer_resolution": "six uploaded ZIPs/parts CRC and SHA256 verified; supplied reassemble.py inspected and run unchanged; both exact annual originals match original export hashes",
   "border_handling": "7,886 nonfinite annual-border pixels carry raw transition zero; excluded explicitly. Centre-only region support and finite clipped export support reported separately.",
   "original_input_hashes_verified": 35,
-  "new_reference_helper": "user-supplied actual 2021 reference exports received; no repeat export required. Runtime has not independently fetched source assets.",
-  "full_external_archive_locally_verified": false,
-  "reference_2021_transfer": "resolved; two unique dated RGB/QA60 TIFFs and source CSV verified; exact duplicate ignored",
-  "paired_assistant_visual_review": "complete; descriptive observations, not accepted exact nine-class truth",
-  "reference_data_files_verified": 3
+  "new_reference_helper": "src/export_dynamic_world_2021_reference_rgb.js: specific missing 2021 source RGB/QA need; prepared/syntax-checked, not executed, no new DW export or model",
+  "full_external_archive_locally_verified": false
 }

@@ -1,7 +1,9 @@
 """Select spatial diagnostic samples and render dated 2026 context read-only.
 
 This is a convenience review, not an accuracy sample or paired change validation.
-The current workspace has no dated 2021 RGB evidence. Original analytical inputs
+This is the retained pre-reference selection/2026-only renderer. The current
+paired review uses render_dynamic_world_paired_review.py; do not rerun this
+selector over completed review metadata. Original analytical inputs
 and all export rasters are only read. Classes below the primary rule stay Unknown.
 """
 import csv

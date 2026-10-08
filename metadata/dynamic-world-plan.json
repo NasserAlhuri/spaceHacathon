@@ -72,7 +72,7 @@
   "unknown_rule": "No observation, fewer than three valid observations, or composite confidence below the threshold; never counted as bare or zero greenery",
   "change_support": "Intersection of accepted pixels on both years at each threshold",
   "manual_review_required": true,
-  "manual_review_status": "18 locations/36 dated 2026 context views reviewed; 2021 RGB missing, paired scientific review pending",
+  "manual_review_status": "paired assistant visual review complete: 18 targets/72 dated 2021/2026 views; independent scientific review pending; primary failed coverage and Unknown unchanged",
   "integration_with_priority": "None; original WorldCover eligibility, NDVI, temperature, rankings and seven CSVs are preserved",
   "licence": "CC BY 4.0; actual exports retain required Dynamic World attribution and modified Copernicus Sentinel data (2021, 2026) notice",
   "team_model": "None; Dynamic World is an upstream AI product; SamGeo and additional models deferred",

@@ -1,0 +1,268 @@
+{
+  "status": "reference_file_metadata_grid_and_target_checks_passed",
+  "files": [
+    {
+      "filename": "AlKhor_Sentinel2_Reference_20210901.tif",
+      "source_asset_id": "COPERNICUS/S2_HARMONIZED/20210901T070619_20210901T071620_T39RWJ",
+      "acquired_utc": "2021-09-01 07:22:28",
+      "scene_cloud_percent": 0.0,
+      "shape": [
+        1057,
+        1108
+      ],
+      "crs": "EPSG:32639",
+      "transform": [
+        10.0,
+        0.0,
+        544635.0,
+        0.0,
+        -10.0,
+        2845905.0
+      ],
+      "bands": [
+        "red",
+        "green",
+        "blue",
+        "qa60"
+      ],
+      "dtype": "UInt16",
+      "nodata": 65535.0,
+      "all_grid_finite_valid_samples": 1171156,
+      "valid_rgb_channel_samples_at_255": 969265,
+      "qa60_values": [
+        0
+      ],
+      "flagged_cloud_cirrus_valid_samples": 0,
+      "targets": [
+        {
+          "sample_id": "DWR-01",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-02",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-03",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-04",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-05",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-06",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-07",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-08",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-09",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-10",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-11",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-12",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-13",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-14",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-15",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-16",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-17",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-18",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        }
+      ]
+    },
+    {
+      "filename": "AlKhor_Sentinel2_Reference_20210926.tif",
+      "source_asset_id": "COPERNICUS/S2_HARMONIZED/20210926T070641_20210926T072035_T39RWJ",
+      "acquired_utc": "2021-09-26 07:22:35",
+      "scene_cloud_percent": 0.0,
+      "shape": [
+        1057,
+        1108
+      ],
+      "crs": "EPSG:32639",
+      "transform": [
+        10.0,
+        0.0,
+        544635.0,
+        0.0,
+        -10.0,
+        2845905.0
+      ],
+      "bands": [
+        "red",
+        "green",
+        "blue",
+        "qa60"
+      ],
+      "dtype": "UInt16",
+      "nodata": 65535.0,
+      "all_grid_finite_valid_samples": 1171156,
+      "valid_rgb_channel_samples_at_255": 988108,
+      "qa60_values": [
+        0
+      ],
+      "flagged_cloud_cirrus_valid_samples": 0,
+      "targets": [
+        {
+          "sample_id": "DWR-01",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-02",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-03",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-04",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-05",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-06",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-07",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-08",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-09",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-10",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-11",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-12",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-13",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-14",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-15",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-16",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-17",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        },
+        {
+          "sample_id": "DWR-18",
+          "qa60": 0,
+          "cloud_or_cirrus_flag": false
+        }
+      ]
+    }
+  ],
+  "independent_remote_asset_readback": false,
+  "capture_dates_source": "Original user-supplied Code Editor provenance; not independently queried by this runtime",
+  "scientific_release": false,
+  "qa_limit": "QA60 native 60 m bits and 0% scene cloud are screening evidence, not perfect cloud/visibility truth",
+  "duplicate": {
+    "filename": "AlKhor_Sentinel2_Reference_20210901(1).tif",
+    "bytes": 4544131,
+    "sha256": "45e40220f4d12e0f08b00844b84bc2a58e2d9f9419d85d5849cfe90e2ca3576e",
+    "byte_identical_to": "AlKhor_Sentinel2_Reference_20210901.tif",
+    "action": "ignored as explicitly requested; uploaded archive preserved separately"
+  },
+  "sample_count": 18,
+  "display_limits": "2021 exported display RGB at fixed 0..3500 DN -> 0..255; L1C and 2026 L2A brightness/colour are not quantitative change evidence. Clipping and 10 m mixtures limit exact labels."
+}

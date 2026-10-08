@@ -1,0 +1,142 @@
+{
+  "status": "paired_contexts_rendered_for_visual_inspection",
+  "sample_locations": 18,
+  "context_count": 72,
+  "dates": [
+    "20210901",
+    "20210926",
+    "20260905",
+    "20260915"
+  ],
+  "sample_target_checks": [
+    {
+      "sample_id": "DWR-01",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-02",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-03",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-04",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-05",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-06",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-07",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-08",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-09",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-10",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-11",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-12",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-13",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-14",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-15",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-16",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-17",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    },
+    {
+      "sample_id": "DWR-18",
+      "qa60_20210901": 0,
+      "qa60_20210926": 0,
+      "qa60_cloud_or_cirrus_at_target": false,
+      "dated_context_count": 4
+    }
+  ],
+  "source_grid_handling": "2021 exact DW grid; 2026 native 5 m offset georeferenced with nearest sampling",
+  "display_only": true,
+  "baseline_analysis_rerun": false
+}

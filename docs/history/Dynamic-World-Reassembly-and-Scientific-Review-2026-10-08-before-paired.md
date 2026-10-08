@@ -1,7 +1,5 @@
 # Exact annual reassembly and scientific review — 8 October 2026
 
-**Current follow-up:** both unique 2021 references and their provenance are now verified, and all 18 targets/72 dated 2021/2026 views were reviewed. See [current paired observations](Dynamic-World-Paired-Reference-Review.md). The 2026-only diagnostic and missing-reference passages below are retained as the explicitly superseded pre-reference milestone. The failed primary coverage and independent scientific review remain unresolved.
-
 ## Completed transfer and technical verification
 
 The six uploaded `DW-2021-part-01/02/03.zip` and `DW-2026-part-01/02/03.zip` archives were extracted into one separate staging directory. All ZIP CRC checks passed, and the copies of `REASSEMBLY.json`, `reassemble.py` and the transfer README were byte-identical across archives. The supplied 994-byte script was inspected and executed unchanged. It only reads local parts, verifies their sizes/SHA256 and writes the two output files in its own directory. Every part and assembled original matched `REASSEMBLY.json` and the already recorded original export hashes:
@@ -27,7 +25,7 @@ The checker now fails if named band order or positive transition categories disa
 
 At 0.50 the 351 differing pixels comprise 301 water→bare and 50 bare→built classifications. They are not validated historical changes. Primary selected-support stability is not citywide stability. Displayed scientific coverage/areas use the untouched Earth Engine pixelArea CSV sums. Full exported pixel counts ×100 m² exceed those EE areas by approximately 0.1254%, 0.1430% and 0.3384%. Centre-only counts are a separate conservative diagnostic. These differences are area conventions/boundary support, not accuracy estimates. No threshold, study boundary or baseline result was adjusted to make the result pass.
 
-## Prior 2026-only diagnostic — superseded by the paired review
+## Expanded dated-image diagnostic — still incomplete scientific validation
 
 `src/review_dynamic_world_exports.py` prepared 18 actual target locations from changed/stable, built/bare, water/coastal, low-confidence vegetation and Unknown strata. Small strata use 8-connected components; larger strata use separated row quantiles. Within-stratum targets are separated by at least 300 m when possible and kept inside the image context margin. Only one suitably separated bare→built target was available under this selection rule; do not pretend three independent construction examples were checked. The convenience sample is biased and not designed to estimate citywide accuracy. Coordinates, confidence, raw labels, accepted 0.50 labels and primary 0.60 Unknown status are explicit in `metadata/dynamic-world-scientific-samples.csv`.
 
@@ -43,7 +41,7 @@ All 36 context views, from the preserved and source-dated **5 and 15 September 2
 
 The source Sentinel views themselves are not independent ground truth. No overall accuracy, error rate, surveyed growth or vegetation-change total is estimated. The paired manual-review CSV remains empty; Abdulrahman's review/photos, Mohammed's presentation practice and other teammate tasks are pending until independently confirmed.
 
-## Prior missing-reference request and helper — now resolved by supplied exports
+## Exact remaining evidence and prepared helper
 
 The specific missing reference is 2021 RGB with source/date and cloud/visibility evidence at the recorded changed/stable and vegetation/coastal targets. `src/export_dynamic_world_2021_reference_rgb.js` is a prepared, syntax-checked helper for Nasser's **already authorized** Code Editor. It uses the original provenance-linked source IDs:
 
